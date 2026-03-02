@@ -6,6 +6,7 @@ category: "metrics"
 tags: ["metrics", "unit economics", "growth", "marketing"]
 difficulty: "intermediate"
 publishedDate: 2024-01-01
+primaryKeyword: "customer acquisition cost"
 acronym: "CAC"
 relatedTerms: ["ltv", "product-market-fit", "churn-rate"]
 seoKeywords: ["customer acquisition cost", "CAC startup", "how to calculate CAC", "CAC LTV ratio"]

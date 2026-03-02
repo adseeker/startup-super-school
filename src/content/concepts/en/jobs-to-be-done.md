@@ -6,6 +6,7 @@ category: "framework"
 tags: ["framework", "customer research", "product strategy", "positioning", "clay christensen"]
 difficulty: "intermediate"
 publishedDate: 2024-01-01
+primaryKeyword: "Jobs to Be Done"
 origin: "Clayton Christensen, Tony Ulwick — 1990s to 2000s"
 relatedConcepts: ["lean-startup", "customer-development"]
 seoKeywords: ["jobs to be done framework", "JTBD startup", "what is jobs to be done", "Clayton Christensen JTBD"]

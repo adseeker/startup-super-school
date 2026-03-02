@@ -6,6 +6,7 @@ category: "fundraising"
 tags: ["fundraising", "venture capital", "early stage", "investors"]
 difficulty: "beginner"
 publishedDate: 2024-01-01
+primaryKeyword: "seed round"
 relatedTerms: ["series-a", "angel-investor", "runway", "burn-rate"]
 seoKeywords: ["seed round startup", "seed funding", "seed round size", "how to raise seed round"]
 ---

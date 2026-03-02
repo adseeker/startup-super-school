@@ -6,6 +6,7 @@ category: "methodology"
 tags: ["methodology", "validation", "iteration", "product", "eric ries"]
 difficulty: "beginner"
 publishedDate: 2024-01-01
+primaryKeyword: "Lean Startup"
 origin: "Eric Ries, 2011"
 relatedConcepts: ["jobs-to-be-done", "customer-development", "agile"]
 seoKeywords: ["lean startup methodology", "what is lean startup", "build measure learn", "validated learning startup"]
@@ -66,7 +67,7 @@ The goal is to minimize the total time through this loop — not to execute any 
 ## Key Concepts
 
 ### Minimum Viable Product (MVP)
-The smallest thing you can build to test a specific hypothesis. See: [MVP](/en/glossary/mvp).
+The smallest thing you can build to test a specific hypothesis. The minimum viable product reduces the cost and time of testing whether a hypothesis is worth pursuing.
 
 ### Innovation Accounting
 A system for measuring startup progress that looks at leading indicators — activation rates, retention, referral — rather than lagging ones like revenue.

@@ -6,6 +6,7 @@ category: "strategy"
 tags: ["strategy", "validation", "growth", "retention"]
 difficulty: "beginner"
 publishedDate: 2024-01-01
+primaryKeyword: "product-market fit"
 acronym: "PMF"
 relatedTerms: ["mvp", "churn-rate", "retention"]
 seoKeywords: ["product market fit", "PMF startup", "how to find product market fit", "signs of PMF"]

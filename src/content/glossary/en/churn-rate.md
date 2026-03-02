@@ -6,6 +6,7 @@ category: "metrics"
 tags: ["metrics", "retention", "saas", "unit economics"]
 difficulty: "beginner"
 publishedDate: 2024-01-01
+primaryKeyword: "churn rate"
 relatedTerms: ["ltv", "mrr", "product-market-fit"]
 seoKeywords: ["churn rate startup", "what is churn", "customer churn", "revenue churn vs customer churn"]
 ---

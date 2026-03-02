@@ -6,6 +6,7 @@ category: "validation"
 tags: ["validation", "idea", "customer discovery", "lean startup", "mvp"]
 difficulty: "beginner"
 publishedDate: 2024-01-01
+primaryKeyword: "idea validation"
 readingTime: 12
 seoKeywords: ["validate startup idea", "startup idea validation", "how to test startup idea", "customer discovery startup"]
 ---

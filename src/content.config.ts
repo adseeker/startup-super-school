@@ -16,6 +16,13 @@ const baseSchema = z.object({
   publishedDate: z.coerce.date(),
   lastUpdated: z.coerce.date().optional(),
   published: z.boolean().default(true),
+  /**
+   * The main keyword this page is optimized for.
+   * Used by the autolinker: when this phrase appears in another article,
+   * it becomes an anchor pointing back here (max 2 times per article).
+   * Must be unique across all content. Use lowercase.
+   */
+  primaryKeyword: z.string().optional(),
   seoKeywords: z.array(z.string()).optional(),
   image: z
     .object({

@@ -6,6 +6,7 @@ category: "product"
 tags: ["product", "mvp", "building", "lean startup", "launch"]
 difficulty: "beginner"
 publishedDate: 2024-01-01
+primaryKeyword: "build an MVP"
 readingTime: 14
 seoKeywords: ["how to build MVP", "build minimum viable product", "MVP development guide", "launch startup MVP"]
 ---
