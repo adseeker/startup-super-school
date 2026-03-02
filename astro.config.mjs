@@ -56,7 +56,7 @@ const keywordMap = buildKeywordMap();
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://startup-super-school.vercel.app',
+  site: 'https://www.startupsuperschool.com/',
   output: 'static',
   adapter: vercel(),
 
