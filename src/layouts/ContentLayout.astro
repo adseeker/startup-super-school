@@ -25,6 +25,8 @@ interface Props {
   ogImage?: string;
   slug?: string;
   video?: boolean;
+  faqs?: Array<{ question: string; answer: string }>;
+  steps?: Array<{ name: string; text: string }>;
 }
 
 const {
@@ -44,6 +46,8 @@ const {
   ogImage,
   slug,
   video,
+  faqs,
+  steps,
 } = Astro.props;
 
 const t = getTranslations(locale);
@@ -73,6 +77,16 @@ const jsonLd = sectionSlug === 'glossary'
       datePublished: publishedDate.toISOString(),
       ...(lastUpdated ? { dateModified: lastUpdated.toISOString() } : {}),
       estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '0' },
+      ...(steps && steps.length > 0
+        ? {
+            step: steps.map((s, i) => ({
+              '@type': 'HowToStep',
+              position: i + 1,
+              name: s.name,
+              text: s.text,
+            })),
+          }
+        : {}),
     }
   : {
       '@context': 'https://schema.org',
@@ -85,9 +99,25 @@ const jsonLd = sectionSlug === 'glossary'
       publisher: {
         '@type': 'Organization',
         name: t.site.name,
-        url: Astro.site?.href,
+        url: siteUrl,
       },
     };
+
+// FAQPage JSON-LD (generated when faqs frontmatter is present)
+const faqLd = faqs && faqs.length > 0
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer,
+        },
+      })),
+    }
+  : null;
 
 // BreadcrumbList JSON-LD
 const breadcrumbLd = {
@@ -128,6 +158,8 @@ const breadcrumbLd = {
 >
   <!-- Extra JSON-LD: BreadcrumbList -->
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+  <!-- Extra JSON-LD: FAQPage (only when faqs frontmatter is present) -->
+  {faqLd && <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqLd)} />}
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
     <!-- Breadcrumb -->

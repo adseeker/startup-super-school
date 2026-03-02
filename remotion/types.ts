@@ -5,4 +5,5 @@ export interface ContentIntroProps {
   category: string;
   tags: string[];
   difficulty: 'beginner' | 'intermediate' | 'advanced';
+  keyPoints: string[];
 }

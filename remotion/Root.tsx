@@ -12,13 +12,20 @@ const RemotionRoot: React.FC = () => (
     width={1280}
     height={720}
     defaultProps={{
-      title: 'MVP — Minimum Viable Product',
+      title: 'How to Build a Startup Product Roadmap',
       description:
-        'An MVP is the simplest version of a product that allows you to validate a key assumption with real users.',
-      section: 'glossary',
+        'Learn how to build a product roadmap that drives alignment without stifling adaptability — from prioritization to stakeholder communication.',
+      section: 'guides',
       category: 'product',
-      tags: ['product', 'lean', 'validation'],
-      difficulty: 'beginner',
+      tags: ['product', 'roadmap', 'planning', 'team', 'strategy'],
+      difficulty: 'intermediate',
+      keyPoints: [
+        'What a Product Roadmap Is (and Is Not)',
+        'Why Roadmaps Fail at Startups',
+        'The Now / Next / Later Framework',
+        'How to Prioritize: RICE and ICE Scoring',
+        'Pre-PMF vs. Post-PMF Roadmaps',
+      ],
     } satisfies ContentIntroProps}
   />
 );

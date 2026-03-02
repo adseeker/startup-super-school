@@ -21,7 +21,6 @@ const { section, slug } = args;
 
 if (!section || !slug) {
   console.error('Usage: node scripts/render-video.mjs --section=<section> --slug=<slug>');
-  console.error('  section: glossary | guides | concepts | articles');
   process.exit(1);
 }
 
@@ -31,53 +30,41 @@ if (!validSections.includes(section)) {
   process.exit(1);
 }
 
-// --- Read frontmatter ---
+// --- Read file ---
 const contentPath = join(ROOT, 'src', 'content', section, 'en', `${slug}.md`);
 let raw;
 try {
   raw = readFileSync(contentPath, 'utf-8');
 } catch {
-  console.error(`Content file not found: ${contentPath}`);
+  console.error(`File not found: ${contentPath}`);
   process.exit(1);
 }
 
-// Extract YAML frontmatter between ---
+// --- Extract frontmatter ---
 const fmMatch = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/);
 if (!fmMatch) {
-  console.error('Could not find frontmatter in content file.');
+  console.error('Could not find frontmatter.');
   process.exit(1);
 }
 const fm = fmMatch[1];
 
 function extractField(yaml, key) {
-  const re = new RegExp(`^${key}:\\s*(.+)$`, 'm');
-  const m = yaml.match(re);
+  const m = yaml.match(new RegExp(`^${key}:\\s*(.+)$`, 'm'));
   return m ? m[1].replace(/^['"]|['"]$/g, '').trim() : '';
 }
 
 function extractArray(yaml, key) {
-  // Supports inline arrays: tags: ["a", "b"] or tags: [a, b]
-  const inlineRe = new RegExp(`^${key}:\\s*\\[([^\\]]+)\\]`, 'm');
-  const inlineMatch = yaml.match(inlineRe);
-  if (inlineMatch) {
-    return inlineMatch[1]
-      .split(',')
-      .map((s) => s.replace(/^['"\s]+|['"\s]+$/g, ''));
+  const inlineM = yaml.match(new RegExp(`^${key}:\\s*\\[([^\\]]+)\\]`, 'm'));
+  if (inlineM) {
+    return inlineM[1].split(',').map((s) => s.replace(/^['"\s]+|['"\s]+$/g, ''));
   }
-
-  // Supports block arrays:
-  // tags:
-  //   - a
-  //   - b
-  const blockRe = new RegExp(`^${key}:\\s*\\n((?:\\s+-\\s+.+\\n?)*)`, 'm');
-  const blockMatch = yaml.match(blockRe);
-  if (blockMatch) {
-    return blockMatch[1]
+  const blockM = yaml.match(new RegExp(`^${key}:\\s*\\n((?:\\s+-\\s+.+\\n?)*)`, 'm'));
+  if (blockM) {
+    return blockM[1]
       .split('\n')
       .filter((l) => l.trim().startsWith('-'))
       .map((l) => l.replace(/^\s*-\s*/, '').replace(/^['"]|['"]$/g, '').trim());
   }
-
   return [];
 }
 
@@ -88,34 +75,62 @@ const difficulty = extractField(fm, 'difficulty') || 'beginner';
 const tags = extractArray(fm, 'tags');
 
 if (!title || !description) {
-  console.error('Could not extract required fields (title, description) from frontmatter.');
+  console.error('Missing required frontmatter fields (title, description).');
   process.exit(1);
 }
 
-console.log(`\nRendering video for: ${title}`);
-console.log(`  section:     ${section}`);
-console.log(`  slug:        ${slug}`);
-console.log(`  category:    ${category}`);
-console.log(`  difficulty:  ${difficulty}`);
-console.log(`  tags:        ${tags.join(', ')}\n`);
+// --- Extract H2 headings from body (key points) ---
+const bodyMatch = raw.match(/^---[\s\S]*?---\r?\n([\s\S]*)$/);
+const body = bodyMatch ? bodyMatch[1] : '';
 
-// --- Prepare output directory ---
+const SKIP_HEADINGS = ['key takeaway', 'conclusion', 'summary', 'tldr', 'tl;dr'];
+
+const h2Regex = /^## (.+)$/gm;
+const keyPoints = [];
+let match;
+while ((match = h2Regex.exec(body)) !== null) {
+  const heading = match[1].trim();
+  if (!SKIP_HEADINGS.includes(heading.toLowerCase())) {
+    keyPoints.push(heading);
+  }
+}
+// Max 5 key points for the video
+const trimmedPoints = keyPoints.slice(0, 5);
+
+console.log(`\nRendering: ${title}`);
+console.log(`  section:    ${section}`);
+console.log(`  slug:       ${slug}`);
+console.log(`  difficulty: ${difficulty}`);
+console.log(`  tags:       ${tags.join(', ')}`);
+console.log(`  key points: ${trimmedPoints.length}`);
+trimmedPoints.forEach((p, i) => console.log(`    ${i + 1}. ${p}`));
+console.log('');
+
+// --- Output dir ---
 const outDir = join(ROOT, 'public', 'videos', section);
 mkdirSync(outDir, { recursive: true });
 const outFile = join(outDir, `${slug}.mp4`);
 
-// --- Build props JSON ---
-const props = JSON.stringify({ title, description, section, category, tags, difficulty });
+// --- Build props ---
+const props = {
+  title,
+  description,
+  section,
+  category,
+  tags,
+  difficulty,
+  keyPoints: trimmedPoints,
+};
 
-// --- Run Remotion render ---
-const cmd = `npx remotion render ContentIntro "${outFile}" --props='${props.replace(/'/g, "\\'")}'`;
+const propsJson = JSON.stringify(props).replace(/'/g, "\\'");
+const cmd = `npx remotion render ContentIntro "${outFile}" --props='${propsJson}'`;
 
-console.log('Running:', cmd, '\n');
+console.log('Running render...\n');
 
 try {
   execSync(cmd, { cwd: ROOT, stdio: 'inherit' });
-  console.log(`\nVideo rendered successfully: ${outFile}`);
-} catch (err) {
+  console.log(`\nDone: ${outFile}`);
+} catch {
   console.error('\nRendering failed.');
   process.exit(1);
 }

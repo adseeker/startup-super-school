@@ -1,89 +1,157 @@
 import React from 'react';
 import { useCurrentFrame, useVideoConfig, spring, interpolate } from 'remotion';
+import { loadFont } from '@remotion/google-fonts/Inter';
 import type { ContentIntroProps } from '../types';
 
-type Props = Pick<ContentIntroProps, 'title' | 'section'> & { accentColor: string };
+const { fontFamily } = loadFont();
 
-export const TitleCard: React.FC<Props> = ({ title, section, accentColor }) => {
+type Props = Pick<ContentIntroProps, 'title' | 'section' | 'description'> & {
+  accentColor: string;
+};
+
+export const TitleCard: React.FC<Props> = ({ title, section, description, accentColor }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const progress = spring({ frame, fps, config: { damping: 12, stiffness: 80 } });
+  const words = title.split(' ');
 
-  const opacity = interpolate(progress, [0, 1], [0, 1]);
-  const translateY = interpolate(progress, [0, 1], [40, 0]);
+  // Line draws in from left — starts at frame 10
+  const lineProgress = spring({
+    frame: Math.max(0, frame - 10),
+    fps,
+    config: { stiffness: 400, damping: 30 },
+  });
+
+  // Subtitle fades in after title
+  const subProgress = spring({
+    frame: Math.max(0, frame - words.length * 3 - 8),
+    fps,
+    config: { stiffness: 200, damping: 24 },
+  });
 
   return (
     <div
       style={{
         width: '100%',
         height: '100%',
-        backgroundColor: '#FFFFFF',
+        backgroundColor: accentColor,
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'center',
-        borderTop: `8px solid ${accentColor}`,
-        fontFamily: 'Inter, sans-serif',
-        padding: '60px',
+        padding: '80px',
         boxSizing: 'border-box',
+        fontFamily,
         position: 'relative',
+        overflow: 'hidden',
       }}
     >
-      {/* Section badge */}
-      <div
-        style={{
-          position: 'absolute',
-          top: '40px',
-          left: '60px',
-          backgroundColor: accentColor,
-          color: '#FFFFFF',
-          padding: '6px 16px',
-          borderRadius: '4px',
-          fontSize: '14px',
+      {/* Geometric circles — depth */}
+      <div style={{
+        position: 'absolute',
+        right: '-140px',
+        top: '-140px',
+        width: '480px',
+        height: '480px',
+        borderRadius: '50%',
+        border: '80px solid rgba(255,255,255,0.07)',
+        pointerEvents: 'none',
+      }} />
+      <div style={{
+        position: 'absolute',
+        right: '80px',
+        bottom: '-180px',
+        width: '320px',
+        height: '320px',
+        borderRadius: '50%',
+        border: '50px solid rgba(255,255,255,0.05)',
+        pointerEvents: 'none',
+      }} />
+
+      {/* Section label */}
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: '10px',
+        marginBottom: '36px',
+        opacity: interpolate(
+          spring({ frame, fps, config: { stiffness: 400, damping: 28 } }),
+          [0, 1], [0, 1]
+        ),
+      }}>
+        <div style={{
+          width: '6px',
+          height: '6px',
+          borderRadius: '50%',
+          backgroundColor: 'rgba(255,255,255,0.6)',
+        }} />
+        <span style={{
+          color: 'rgba(255,255,255,0.6)',
+          fontSize: '13px',
           fontWeight: 700,
-          letterSpacing: '2px',
+          letterSpacing: '3px',
           textTransform: 'uppercase',
-          opacity,
-        }}
-      >
-        {section}
+        }}>
+          {section}
+        </span>
       </div>
 
-      {/* Title */}
-      <div
-        style={{
-          opacity,
-          transform: `translateY(${translateY}px)`,
-          textAlign: 'center',
-          maxWidth: '900px',
-        }}
-      >
-        <h1
-          style={{
-            fontSize: '56px',
-            fontWeight: 800,
-            color: '#111827',
-            lineHeight: 1.2,
-            margin: 0,
-          }}
-        >
-          {title}
-        </h1>
+      {/* Title — word by word from below */}
+      <div style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        columnGap: '14px',
+        rowGap: '4px',
+        maxWidth: '920px',
+        marginBottom: '40px',
+      }}>
+        {words.map((word, i) => {
+          const wp = spring({
+            frame: Math.max(0, frame - i * 3),
+            fps,
+            config: { stiffness: 380, damping: 22 },
+          });
+          return (
+            <span
+              key={i}
+              style={{
+                display: 'inline-block',
+                transform: `translateY(${interpolate(wp, [0, 1], [64, 0])}px)`,
+                opacity: interpolate(wp, [0, 1], [0, 1]),
+                fontSize: '52px',
+                fontWeight: 800,
+                color: '#FFFFFF',
+                lineHeight: 1.15,
+                letterSpacing: '-1px',
+              }}
+            >
+              {word}
+            </span>
+          );
+        })}
       </div>
 
-      {/* Bottom accent line */}
-      <div
-        style={{
-          position: 'absolute',
-          bottom: '40px',
-          left: '60px',
-          right: '60px',
-          height: '2px',
-          backgroundColor: `${accentColor}33`,
-          opacity,
-        }}
-      />
+      {/* Divider line — draws in */}
+      <div style={{
+        width: `${interpolate(lineProgress, [0, 1], [0, 240])}px`,
+        height: '3px',
+        backgroundColor: 'rgba(255,255,255,0.35)',
+        borderRadius: '2px',
+        marginBottom: '28px',
+      }} />
+
+      {/* Subtitle */}
+      <p style={{
+        margin: 0,
+        fontSize: '18px',
+        fontWeight: 400,
+        color: 'rgba(255,255,255,0.65)',
+        maxWidth: '700px',
+        lineHeight: 1.5,
+        opacity: interpolate(subProgress, [0, 1], [0, 1]),
+        transform: `translateY(${interpolate(subProgress, [0, 1], [16, 0])}px)`,
+      }}>
+        {description}
+      </p>
     </div>
   );
 };

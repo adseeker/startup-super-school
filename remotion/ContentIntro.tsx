@@ -1,8 +1,8 @@
 import React from 'react';
-import { AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate, Sequence } from 'remotion';
+import { AbsoluteFill, Sequence } from 'remotion';
 import { TitleCard } from './components/TitleCard';
-import { DefinitionSlide } from './components/DefinitionSlide';
-import { TagsSlide } from './components/TagsSlide';
+import { KeyPointSlide } from './components/KeyPointSlide';
+import { OutroSlide } from './components/OutroSlide';
 import type { ContentIntroProps } from './types';
 
 const ACCENT_COLORS: Record<ContentIntroProps['section'], string> = {
@@ -12,59 +12,57 @@ const ACCENT_COLORS: Record<ContentIntroProps['section'], string> = {
   articles: '#E11D48',
 };
 
-// Timeline
-// 0–180   TitleCard
-// 181–600 DefinitionSlide
-// 601–870 TagsSlide
-// 871–900 Fade out
-const TITLE_END = 180;
-const DEFINITION_START = 181;
-const DEFINITION_END = 600;
-const TAGS_START = 601;
-const TAGS_END = 870;
-const FADEOUT_START = 871;
+const TITLE_FRAMES = 120; // 4s
+const OUTRO_FRAMES = 90;  // 3s
+const TOTAL_FRAMES = 900;
 
 export const ContentIntro: React.FC<ContentIntroProps> = ({
   title,
   description,
   section,
-  category: _category,
   tags,
-  difficulty,
+  difficulty: _difficulty,
+  category: _category,
+  keyPoints,
 }) => {
-  const frame = useCurrentFrame();
-  const { durationInFrames } = useVideoConfig();
   const accentColor = ACCENT_COLORS[section];
 
-  const globalOpacity = interpolate(
-    frame,
-    [FADEOUT_START, durationInFrames],
-    [1, 0],
-    { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }
-  );
+  const pointsCount = keyPoints.length;
+  const pointsFrames = TOTAL_FRAMES - TITLE_FRAMES - OUTRO_FRAMES;
+  const framesPerPoint = pointsCount > 0 ? Math.floor(pointsFrames / pointsCount) : pointsFrames;
+  const outroStart = TITLE_FRAMES + pointsCount * framesPerPoint;
 
   return (
-    <AbsoluteFill style={{ backgroundColor: '#FFFFFF', opacity: globalOpacity }}>
-      <Sequence from={0} durationInFrames={TITLE_END + 1}>
-        <TitleCard title={title} section={section} accentColor={accentColor} />
-      </Sequence>
-
-      <Sequence from={DEFINITION_START} durationInFrames={DEFINITION_END - DEFINITION_START + 1}>
-        <DefinitionSlide
+    <AbsoluteFill style={{ backgroundColor: '#FFFFFF' }}>
+      {/* Slide 1 — Title */}
+      <Sequence from={0} durationInFrames={TITLE_FRAMES}>
+        <TitleCard
           title={title}
+          section={section}
           description={description}
           accentColor={accentColor}
-          startFrame={DEFINITION_START}
         />
       </Sequence>
 
-      <Sequence from={TAGS_START} durationInFrames={TAGS_END - TAGS_START + 1}>
-        <TagsSlide
-          tags={tags}
-          difficulty={difficulty}
-          accentColor={accentColor}
-          startFrame={TAGS_START}
-        />
+      {/* Slides 2..N — Key points */}
+      {keyPoints.map((point, i) => (
+        <Sequence
+          key={i}
+          from={TITLE_FRAMES + i * framesPerPoint}
+          durationInFrames={framesPerPoint}
+        >
+          <KeyPointSlide
+            point={point}
+            index={i}
+            total={pointsCount}
+            accentColor={accentColor}
+          />
+        </Sequence>
+      ))}
+
+      {/* Last slide — Outro */}
+      <Sequence from={outroStart} durationInFrames={TOTAL_FRAMES - outroStart}>
+        <OutroSlide tags={tags} accentColor={accentColor} />
       </Sequence>
     </AbsoluteFill>
   );

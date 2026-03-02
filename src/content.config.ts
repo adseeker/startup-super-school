@@ -25,6 +25,9 @@ const baseSchema = z.object({
    */
   primaryKeyword: z.string().optional(),
   seoKeywords: z.array(z.string()).optional(),
+  faqs: z
+    .array(z.object({ question: z.string(), answer: z.string() }))
+    .optional(),
   image: z
     .object({
       url: z.string(),
@@ -47,6 +50,9 @@ const guidesCollection = defineCollection({
   type: 'content',
   schema: baseSchema.extend({
     readingTime: z.number().optional(),
+    steps: z
+      .array(z.object({ name: z.string(), text: z.string() }))
+      .optional(),
   }),
 });
 
