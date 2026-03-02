@@ -9,6 +9,28 @@ publishedDate: 2024-05-24
 primaryKeyword: "build an MVP"
 readingTime: 14
 seoKeywords: ["how to build MVP", "build minimum viable product", "MVP development guide", "launch startup MVP"]
+steps:
+  - name: "Define What You Need to Validate"
+    text: "Before writing a line of code, answer: What is the single most important assumption I need to validate? What is the minimum test I need to run? What would 'validated' look like specifically? If your core assumption is 'people will pay for this,' a landing page with a payment CTA might be your MVP — no product needed."
+  - name: "Distill Your Core Value Hypothesis"
+    text: "Write one sentence: '[User type] who wants to [desired outcome] can use [your product] to [how you deliver that outcome].' Everything in your MVP should serve this sentence. If a feature does not help users achieve the core outcome, it does not belong in the MVP."
+  - name: "Scope Ruthlessly — Cut Everything Non-Essential"
+    text: "List every feature you could build. For each one, ask: is it essential (core value cannot be delivered without it), nice-to-have (improves experience but not required), or not now? Build only the essential features. Move everything else to a V2 list. Common cuts: user roles, mobile app, API integrations, admin dashboard, multi-language support."
+  - name: "Choose the Right MVP Type"
+    text: "Match the MVP format to the assumption you are testing. Use a landing page to test demand. Use a Figma prototype to test UX. Use a concierge MVP (manual service delivery) to test whether customers value the outcome before automating it. Use a Wizard of Oz MVP to fake automation while validating the experience. Only build software if a simpler test cannot answer your question."
+  - name: "Build and Launch to Early Adopters"
+    text: "Build the essential features only. When you are embarrassed by the product — but it delivers the core value — it is ready to launch. Recruit 10–20 early adopters manually, not through paid ads. These users should be your ideal customer profile, not everyone. Give them direct access to you for feedback."
+  - name: "Run the Learning Loop"
+    text: "After launch, talk to every user. Track the one metric that proves your core value hypothesis — activation rate, retention after day 7, or willingness to pay. Distinguish between 'they used it' and 'they got value from it.' Use what you learn to decide whether to iterate on the same hypothesis or pivot to a new one."
+faqs:
+  - question: "How do you decide what to include in an MVP?"
+    answer: "Apply one test to every potential feature: without this, can the core value still be delivered? If yes, cut it. The MVP should include only features that are essential to demonstrating value — everything else is scope creep. Common mistakes include adding user roles, mobile support, integrations, and analytics dashboards to a product that has not yet proven its core value."
+  - question: "What are the different types of MVPs a startup can build?"
+    answer: "The main types are: Landing Page (test demand via sign-ups or payment), Concierge (manually deliver the service before automating it), Wizard of Oz (simulate automation while humans do the work behind the scenes), Piecemeal (assemble from existing tools like Zapier and Airtable), and Single Feature (ship only the core differentiator). The right type depends on what assumption you are testing."
+  - question: "When is an MVP ready to launch?"
+    answer: "Your MVP is ready when it delivers enough value for your specific early adopter to choose it over doing nothing — and you have a mechanism to collect behavioral feedback. The rule of thumb: launch when you are embarrassed by it. If every feature feels polished and complete, you have built too much and delayed learning by weeks or months."
+  - question: "How do you know if your MVP is working?"
+    answer: "Look for behavioral signals, not vanity metrics. Signs it is working: users return without being prompted, they find workarounds when features are missing (indicating high motivation), they refer others unprompted, and at least some are willing to pay before the product is complete. Signs it is not working: users try it once and do not return, engagement requires constant manual prompting, and no one complains when you turn it off."
 ---
 
 ## Before You Build Anything

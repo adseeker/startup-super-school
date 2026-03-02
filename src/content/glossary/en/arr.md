@@ -9,6 +9,15 @@ publishedDate: 2024-03-04
 primaryKeyword: "annual recurring revenue"
 relatedTerms: ["mrr", "churn-rate", "ltv", "burn-rate"]
 seoKeywords: ["annual recurring revenue", "ARR startup", "what is ARR", "ARR vs MRR"]
+faqs:
+  - question: "What is the difference between ARR and MRR?"
+    answer: "ARR (Annual Recurring Revenue) and MRR (Monthly Recurring Revenue) measure the same thing at different time scales — ARR = MRR × 12. MRR is better for day-to-day operational tracking at early stages where the business moves fast. ARR is preferred for fundraising, investor reporting, and valuation once a company reaches $1M ARR or begins signing annual contracts."
+  - question: "Does one-time revenue count toward ARR?"
+    answer: "No. ARR counts only recurring, predictable subscription revenue. One-time setup fees, professional services, consulting revenue, and non-recurring training fees are explicitly excluded. Mixing non-recurring revenue into ARR overstates the business's durability and misleads investors about true recurring revenue."
+  - question: "What ARR do you need to raise a Series A?"
+    answer: "The typical Series A threshold in the current market is $3–5M ARR with strong year-over-year growth (100%+) and evidence of a repeatable sales motion. Some firms will move earlier on exceptional teams, but $3M ARR is the most commonly cited minimum for a credible Series A conversation in B2B SaaS."
+  - question: "What is net new ARR?"
+    answer: "Net new ARR is the change in ARR from one period to the next: Net New ARR = New ARR + Expansion ARR − Churned ARR − Contraction ARR. It is the most accurate measure of ARR momentum because it accounts for both growth and losses. A company can show flat net new ARR despite strong new logo growth if churn is eating the gains."
 ---
 
 ## What Is ARR (Annual Recurring Revenue)?

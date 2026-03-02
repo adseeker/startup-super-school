@@ -11,6 +11,15 @@ acronym: "OKRs"
 origin: "Andy Grove (Intel), popularized by John Doerr (Kleiner Perkins) at Google in 1999"
 relatedConcepts: ["lean-startup", "north-star-metric"]
 seoKeywords: ["OKRs startup", "objectives and key results", "how to write OKRs", "OKR examples startup"]
+faqs:
+  - question: "What is the difference between OKRs and KPIs?"
+    answer: "KPIs (Key Performance Indicators) monitor ongoing business health — they tell you how the business is running. OKRs set ambitious goals and align teams around what to change — they tell you what you are trying to improve. KPIs are continuous measurements; OKRs run on quarterly or annual sprints. Both are necessary and serve different purposes."
+  - question: "How many OKRs should a startup team have per quarter?"
+    answer: "3–4 objectives per team maximum, each with 2–5 key results. More than that is not focus — it is a wish list. The primary value of OKRs is forcing prioritization: if everything is an OKR, nothing is. Early-stage startups should often limit themselves to 1–2 company-level objectives to stay focused on the one metric that matters most."
+  - question: "Should OKRs be tied to employee compensation?"
+    answer: "No — this is one of the most common and damaging OKR mistakes. When OKRs are linked to bonuses, people set conservative, easy-to-hit targets and work defensively rather than ambitiously. OKRs are designed to encourage stretch goals where hitting 60–70% is considered a success. Tying them to pay changes the incentive structure entirely."
+  - question: "What is a good OKR score at the end of the quarter?"
+    answer: "OKRs are typically graded 0–1.0. A score of 0.6–0.7 is considered healthy — it means targets were genuinely ambitious. Consistently scoring 1.0 means targets were too conservative. Scores below 0.3 suggest the targets were unrealistic or the team was under-resourced. The honest grading conversation at quarter-end is often more valuable than the score itself."
 ---
 
 ## What Are OKRs?

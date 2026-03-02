@@ -10,6 +10,15 @@ primaryKeyword: "Lean Startup"
 origin: "Eric Ries, 2011"
 relatedConcepts: ["jobs-to-be-done", "customer-development", "agile"]
 seoKeywords: ["lean startup methodology", "what is lean startup", "build measure learn", "validated learning startup"]
+faqs:
+  - question: "What is the Build-Measure-Learn loop in the Lean Startup?"
+    answer: "The Build-Measure-Learn loop is the core feedback cycle of the Lean Startup methodology. You start with an idea, build the smallest possible test of that idea (an MVP), measure how real users interact with it, and learn whether your assumptions were correct. The goal is to complete this loop as fast as possible — each iteration generates validated learning that informs the next."
+  - question: "What is validated learning?"
+    answer: "Validated learning is empirically proven insight about customers, their behavior, and what creates value for them. It is the unit of progress in the Lean Startup — not features shipped or lines of code written. An assumption is validated when real user behavior confirms or refutes it, not when internal teams agree it is probably true."
+  - question: "What is the difference between a pivot and an iteration in the Lean Startup?"
+    answer: "An iteration is a small adjustment within the same strategic direction — tweaking a feature, improving onboarding, changing a price point. A pivot is a structured course correction that changes a fundamental assumption about the business — the customer segment, the problem being solved, the revenue model, or the channel. Pivots are informed by validated learning showing that the current direction is not working."
+  - question: "Is the Lean Startup methodology only for early-stage companies?"
+    answer: "No. Eric Ries explicitly designed the Lean Startup for any organization operating under uncertainty — which includes product teams inside large corporations, not just early-stage startups. The Build-Measure-Learn loop is applicable any time you are making decisions without complete information about what customers want."
 ---
 
 ## Origins

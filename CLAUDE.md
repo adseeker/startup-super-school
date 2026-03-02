@@ -257,10 +257,26 @@ npx remotion studio
 - **Meta description**: From frontmatter `description` field (≤160 chars)
 - **Open Graph**: Title, description, image, type, locale
 - **Twitter Card**: `summary_large_image`
-- **JSON-LD**: `Article` / `HowTo` / `DefinedTerm` per section; `BreadcrumbList` on every content page
+- **JSON-LD schemas** (see full table below)
 - **Sitemap**: Auto-generated at `/sitemap-index.xml` by `@astrojs/sitemap`
 - **RSS**: At `/rss.xml` — includes articles and guides
 - **robots.txt**: At `/robots.txt` — allows all crawlers
+
+### JSON-LD Schema map
+
+Every page emits structured data automatically. No extra code needed — schemas are driven by frontmatter fields.
+
+| Page / Section | Schemas emitted |
+|----------------|-----------------|
+| Homepage | `WebSite` (with `SearchAction`) + `Organization` |
+| All content pages | Main schema (see below) + `BreadcrumbList` |
+| + `faqs` in frontmatter | + `FAQPage` (rich results in Google) |
+| Glossary pages | `DefinedTerm` + `DefinedTermSet` |
+| Guides pages | `HowTo` (+ `step[]` when `steps` in frontmatter) |
+| Concepts pages | `Article` |
+| Articles pages | `Article` |
+
+**Rule: every new content page must include `faqs`.** FAQs generate `FAQPage` rich results in Google — they are one of the highest-value SEO signals available for this type of content. Do not publish a page without at least 3–4 well-written FAQs in the frontmatter.
 
 ---
 
@@ -322,9 +338,55 @@ npx remotion studio
 
 1. Create or edit the `.md` file in `src/content/{section}/en/`
 2. Verify `description` is ≤160 chars (count manually or use a tool)
-3. Run `npm run build` — Zod will catch schema errors before deploy
-4. If adding `video: true`, generate the video first (see video SOP above)
-5. Commit with `git add` (specific files, not `-A`) and push
+3. **Add `faqs` — mandatory for every page** (see SOP below)
+4. For guides: **add `steps`** — mandatory for every guide (enables HowTo rich results)
+5. Run `npm run build` — Zod will catch schema errors before deploy
+6. If adding `video: true`, generate the video first (see video SOP above)
+7. Commit with `git add` (specific files, not `-A`) and push
+
+### SOP: Schema markup — FAQs and Steps (mandatory for all new content)
+
+**This is not optional.** Every content page must include `faqs` in frontmatter. Guide pages must also include `steps`. These fields drive FAQPage and HowTo rich results in Google Search.
+
+#### Adding FAQs to any content page
+
+```yaml
+faqs:
+  - question: "What is X?"
+    answer: "X is ... [complete, standalone answer — 2–4 sentences]"
+  - question: "How does X work?"
+    answer: "X works by ... [no references to 'this article' or 'as mentioned above']"
+  - question: "What is the difference between X and Y?"
+    answer: "X does A, while Y does B ..."
+  - question: "When should you use X?"
+    answer: "Use X when ... avoid it when ..."
+```
+
+**FAQ writing rules:**
+- Minimum 3 questions, ideally 4
+- Questions must match real search queries (think: what would someone Google?)
+- Answers must be self-contained — Google shows them without surrounding context
+- No answer should reference "this article", "as described above", or "see below"
+- Each answer: 2–5 sentences, factually accurate, no padding
+
+#### Adding Steps to guides (HowTo schema)
+
+```yaml
+steps:
+  - name: "Step name (short, imperative)"
+    text: "What the user actually does in this step. 1–3 sentences, specific and actionable."
+  - name: "Next step name"
+    text: "..."
+```
+
+**Steps rules:**
+- Map each step to a main `##` heading in the guide body
+- 4–8 steps is the right range
+- `text` must describe the action, not just restate the heading
+
+#### Backfilling existing content
+
+All existing content pages should eventually have `faqs` added. Prioritize by traffic potential (core terms first: MVP, PMF, burn rate, runway, ARR, churn rate are already done).
 
 ### SOP: Modify the Zod schema (`src/content.config.ts`)
 
@@ -378,3 +440,5 @@ git push
 - The video player only appears when **both** `video: true` is in frontmatter **and** the `.mp4` file exists in `public/videos/`
 - Remotion files in `remotion/` are NOT processed by Astro's Vite pipeline — they are standalone TypeScript compiled by Remotion's bundler
 - GTM is already installed globally — do not add a second GTM or GA script in code
+- **Do not publish content without `faqs`** — missing FAQs means missing `FAQPage` rich results in Google
+- **Do not publish a guide without `steps`** — missing steps means the `HowTo` schema has no structured step data for Google rich results

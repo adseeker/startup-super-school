@@ -10,6 +10,15 @@ primaryKeyword: "minimum viable product"
 acronym: "MVP"
 relatedTerms: ["product-market-fit", "lean-startup", "pivot"]
 seoKeywords: ["minimum viable product", "MVP startup", "what is an MVP", "build MVP"]
+faqs:
+  - question: "What is the difference between an MVP and a prototype?"
+    answer: "A prototype tests feasibility and design — it is typically non-functional or clickable only. An MVP is a working product that delivers real value to early adopters and is instrumented to capture behavioral data. The prototype answers 'Can it be built?' while the MVP answers 'Will they actually use it?'"
+  - question: "How long should it take to build an MVP?"
+    answer: "Most MVPs should take 4–12 weeks to build. If it is taking longer, the scope is almost certainly too large. The goal is to test your most critical assumption as quickly as possible — every extra week of building is a week without real user feedback."
+  - question: "Does an MVP have to be a software product?"
+    answer: "No. An MVP can be a landing page, a manual concierge service, a Wizard of Oz simulation, or even a spreadsheet. The right form depends on what assumption you need to validate. If you need to test demand, a landing page with a payment CTA may be your MVP."
+  - question: "What is the most common MVP mistake founders make?"
+    answer: "Building too much. Most founders treat MVP as version 1.0 rather than the minimum test of a single assumption. The result is months of development before getting any real user feedback. The famous rule: ship when you are embarrassed by it — if every feature feels polished, you have built too much."
 ---
 
 ## What Is an MVP?

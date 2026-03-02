@@ -10,6 +10,15 @@ primaryKeyword: "network effects"
 origin: "Metcalfe's Law, Robert Metcalfe, 1980s"
 relatedConcepts: ["growth-loops", "flywheel-effect", "jobs-to-be-done"]
 seoKeywords: ["network effects startup", "what are network effects", "network effects business", "Metcalfe's law startup"]
+faqs:
+  - question: "What are the main types of network effects?"
+    answer: "There are six main types: Direct (same-side) effects where each new user adds value to all existing users, like messaging apps; Indirect (cross-side) effects in marketplaces where growth on one side benefits the other; Data network effects where more users generate more data that improves the product; Social/status effects tied to who else is on the network; Local network effects that depend on geographic density; and Compatibility/standards effects from widespread adoption of a shared format."
+  - question: "What is the cold start problem in network effects businesses?"
+    answer: "The cold start problem is the paradox that network-effect products are least valuable when they have the fewest users — yet you need users to make the product valuable. The proven solution is to find a small 'atomic network' where the product already delivers value at low user count, achieve density there, then expand outward. Airbnb solved this by focusing on a single city; Uber launched market by market."
+  - question: "Do all technology companies have network effects?"
+    answer: "No. Most B2B SaaS products do not have network effects — a project management tool used by one company does not become more valuable because another company also uses it. What many companies have instead are switching costs (high friction to leave) or habits (users return because the product is excellent). These are valuable, but they are not network effects and do not produce the same compounding defensibility."
+  - question: "What is Metcalfe's Law?"
+    answer: "Metcalfe's Law states that the value of a network is proportional to the square of the number of connected users. For a network of n users, the number of possible connections is n(n−1)/2, which approximates n² at scale. This means doubling the number of users more than doubles the value of the network — and explains why network-effect businesses become increasingly hard to displace as they grow."
 ---
 
 ## Origins

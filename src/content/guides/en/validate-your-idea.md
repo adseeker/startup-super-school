@@ -9,6 +9,28 @@ publishedDate: 2025-01-11
 primaryKeyword: "idea validation"
 readingTime: 12
 seoKeywords: ["validate startup idea", "startup idea validation", "how to test startup idea", "customer discovery startup"]
+steps:
+  - name: "Write Down Your Assumptions"
+    text: "Before talking to anyone, capture every assumption embedded in your idea: who has the problem, how severe it is, whether your approach solves it better than alternatives, and whether people would pay. Then prioritize — start with the assumption that, if wrong, would kill your idea fastest."
+  - name: "Get Out of the Building"
+    text: "Talk to 20–30 potential customers in the first few weeks — not friends or family. Find them on LinkedIn, Reddit, Slack communities, and professional networks. You are looking for people who genuinely match your target customer profile, not people who will be polite."
+  - name: "Run Discovery Interviews"
+    text: "Conduct structured interviews using the Mom Test framework: talk about their life and past behavior, not your idea. Ask about specifics — 'Tell me about the last time you experienced this problem' — not hypotheticals. Listen for pain intensity and existing workarounds, not validation."
+  - name: "Analyze Patterns"
+    text: "After 10 interviews, review your notes for recurring themes. What phrases keep coming up? What workarounds do multiple people share? Which assumptions were confirmed, and which were wrong? Signal emerges from patterns across conversations, not from a single enthusiastic response."
+  - name: "Test Demand Without Building"
+    text: "If discovery interviews confirm the problem exists, run a demand test before building. A landing page with an email capture or payment CTA, a fake-door test, or a pre-sale can validate willingness to pay without writing a line of product code. Drive 200–500 targeted visitors and measure conversion."
+  - name: "Define Your Validation Bar"
+    text: "Before running experiments, decide explicitly what 'validated' means. Set the bar in advance — 'we are validated when 10 non-friends pay $50 upfront' is stronger than 'we have 100 waitlist signups.' Define the criterion before you see the results, or you will rationalize weak signals as success."
+faqs:
+  - question: "How many customer interviews do you need to validate a startup idea?"
+    answer: "Aim for 20–30 conversations in the first few weeks. This is the minimum to see patterns rather than anecdotes. After 5–10 interviews you may start hearing recurring themes, but 20+ gives you enough signal to make confident decisions about whether the problem is real, who has it most acutely, and whether your assumptions need revision."
+  - question: "What is a smoke test for idea validation?"
+    answer: "A smoke test (or demand test) checks whether people will take a meaningful action — sign up, pay, or request access — before a product is built. Common formats include a landing page with a payment CTA, a fake-door test (a button that leads to a waiting list), or a pre-sale. The goal is to measure revealed preference, not stated intent."
+  - question: "What questions should you ask in customer discovery interviews?"
+    answer: "Focus on past behavior and specific situations: 'Tell me about the last time you faced this problem,' 'How are you currently solving it?', 'What does it cost you — in time, money, or frustration?', 'Have you tried other solutions? What happened?' Avoid asking 'Would you use X?' — hypothetical questions generate polite but unreliable answers."
+  - question: "How do you know when a startup idea is validated?"
+    answer: "An idea is validated when real people take a concrete, costly action that demonstrates genuine demand — paying money, signing a letter of intent, or repeatedly returning to use an early product. Validation is not verbal enthusiasm ('that sounds great!'), email signups from friends, or surveys. Set a specific numeric bar before running experiments and hold yourself to it."
 ---
 
 ## Why Validation Matters

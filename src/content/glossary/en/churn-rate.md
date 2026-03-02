@@ -9,6 +9,15 @@ publishedDate: 2024-07-11
 primaryKeyword: "churn rate"
 relatedTerms: ["ltv", "mrr", "product-market-fit"]
 seoKeywords: ["churn rate startup", "what is churn", "customer churn", "revenue churn vs customer churn"]
+faqs:
+  - question: "What is the difference between customer churn and revenue churn?"
+    answer: "Customer churn (logo churn) measures the percentage of customer accounts lost. Revenue churn measures the percentage of recurring revenue lost. Revenue churn is more meaningful because not all customers are equal — losing one $10,000/month enterprise customer is far more significant than losing ten $100/month accounts, even though the logo churn rate is the same."
+  - question: "What is a good monthly churn rate for a SaaS startup?"
+    answer: "Benchmarks vary by segment: B2B SaaS serving SMBs should target 2–5% monthly churn; enterprise-focused SaaS should aim for 0.5–1%. B2C subscription products typically see 5–8% monthly churn. At 5% monthly churn, a company loses roughly 46% of its customer base in a year, which is why even small improvements in retention compound significantly."
+  - question: "What is negative churn and why does it matter?"
+    answer: "Negative net revenue churn occurs when expansion revenue from existing customers — upgrades, upsells, additional seats — exceeds revenue lost from cancellations. If you lose $2,000/month in churned MRR but gain $3,500 in expansions, your net revenue churn is −3%. Negative churn is a powerful growth engine because the business grows even with zero new customer acquisition."
+  - question: "What are the most common reasons customers churn?"
+    answer: "The most frequent causes are: value not realized due to poor onboarding, competitive alternatives that offer better pricing or features, budget cuts (especially in B2B during economic downturns), use-case mismatch where the wrong customers were acquired, and product gaps that block critical workflows. The best diagnostic tool is talking to churned customers within 48 hours of cancellation."
 ---
 
 ## What Is Churn Rate?

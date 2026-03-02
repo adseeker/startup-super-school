@@ -9,6 +9,15 @@ publishedDate: 2024-06-11
 primaryKeyword: "burn rate"
 relatedTerms: ["runway", "seed-round", "profitability"]
 seoKeywords: ["burn rate startup", "what is burn rate", "monthly burn rate", "gross vs net burn rate"]
+faqs:
+  - question: "What is the difference between gross burn rate and net burn rate?"
+    answer: "Gross burn rate is total monthly operating expenses — salaries, rent, cloud costs, and all other outgoings. Net burn rate subtracts any monthly revenue: Net Burn = Gross Expenses − Monthly Revenue. Net burn is the more important figure because it tells you how fast you are actually depleting cash, not just how much you are spending."
+  - question: "What is a good burn rate for a seed-stage startup?"
+    answer: "Typical seed-stage monthly burn falls between $50,000 and $150,000, depending on team size and location. However, the absolute number matters less than the burn multiple — how much cash you burn per dollar of net new ARR. A burn multiple below 1.5x is considered healthy; above 2x warrants review."
+  - question: "How does burn rate affect fundraising?"
+    answer: "Burn rate directly determines your runway, which in turn determines when you must raise your next round. Most investors expect founders to begin fundraising with at least 6 months of runway remaining. A high burn rate with slow growth signals poor capital efficiency, which can make fundraising harder and result in worse terms."
+  - question: "How can a startup reduce its burn rate quickly?"
+    answer: "The fastest levers are payroll (the largest cost for most startups), SaaS tool consolidation, and deferring non-critical hires. Negotiating annual contracts for recurring services can cut costs 20–30%. Setting explicit burn targets per quarter, reviewed by the board, creates accountability and prevents cost creep."
 ---
 
 ## What Is Burn Rate?

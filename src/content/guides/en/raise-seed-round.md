@@ -9,6 +9,28 @@ publishedDate: 2024-12-12
 primaryKeyword: "how to raise a seed round"
 readingTime: 16
 seoKeywords: ["how to raise seed round", "seed funding startup guide", "raise seed capital startup", "startup seed fundraising"]
+steps:
+  - name: "Understand What a Seed Round Is"
+    text: "A seed round is a milestone-driven bet on team, thesis, and early evidence. Investors expect you to have cleared concept risk — a product, some traction or strong demand evidence, and a coherent story about how you become a large business. Typical seed rounds in 2024: $1–3M in the US at $6–12M post-money valuation using a SAFE or priced equity round."
+  - name: "Prepare Your Materials Before Starting"
+    text: "Before approaching any investor, prepare: a tight narrative (why this problem, why now, why you), a 10-slide pitch deck that reads as a standalone document, a basic data room (deck, 12-month financial model, cap table, legal docs), and a target list of 80–120 investors segmented by tier. Starting without these is wasting first impressions."
+  - name: "Build Your Warm Introduction Pipeline"
+    text: "Warm introductions convert at 5–10x the rate of cold outreach. Identify portfolio companies at each target fund, reach the CEO on LinkedIn, and ask for a one-paragraph intro. Give existing investors and advisors a specific list of 10 investors you want to meet, with a pre-written email they can forward."
+  - name: "Run the Fundraising Process"
+    text: "Run a compressed, parallel process — reach out to all Tier 1 and 2 investors in the same week and schedule meetings close together. The typical funnel: 100 investors contacted → 30 warm intros → 10–15 first meetings → 4–6 second meetings → 1–3 term sheets. Plan for this math and you will not be demoralized by rejection."
+  - name: "Negotiate the Term Sheet"
+    text: "When term sheets arrive, focus negotiation on: valuation (pre-money), pro-rata rights for future rounds, information rights, and board composition. SAFE notes have fewer terms to negotiate. Avoid over-optimizing on valuation at the expense of investor quality — the right lead investor is worth more than an extra $500K on the cap."
+  - name: "Close the Round"
+    text: "Once you have a lead investor and a signed term sheet, move fast to close. Send the data room immediately, introduce co-investors, get legal documents drafted quickly, and set a hard close date. Most rounds take 4–8 weeks from term sheet to wire. Communicate progress to all investors and maintain urgency."
+faqs:
+  - question: "What is the difference between pre-seed and seed funding?"
+    answer: "Pre-seed is typically raised on the idea and team alone — often $250K–$750K from friends, family, and angels with no real product. Seed is different: investors expect you to have cleared concept risk, meaning a working product, some traction or strong evidence of demand, and a clear story about how you become a large business. Seed rounds in 2024 typically range from $1–3M in the US."
+  - question: "How long does it take to raise a seed round?"
+    answer: "From preparation to close, a seed round typically takes 6–9 months. The active fundraising process — from first investor outreach to signed term sheet — usually takes 3–4 months. Closing (legal docs, wire transfer) adds another 4–8 weeks. This is why you should start raising when you have at least 6 months of runway, not 3."
+  - question: "What documents do you need to raise a seed round?"
+    answer: "The minimum data room for a seed raise includes: your pitch deck (10–12 slides, standalone readable), a 12-month financial model, your cap table, incorporation documents, IP assignment agreements, and any customer references or NPS data if available. Use DocSend or a shared Google Drive folder with link analytics so you can see who is reading what."
+  - question: "Why do warm introductions matter so much for fundraising?"
+    answer: "Warm introductions convert at 5–10x the rate of cold outreach because they transfer trust from someone the investor already respects. VCs receive hundreds of cold pitches per week — most go unread. A one-paragraph intro from a portfolio founder or mutual contact gets the email opened and a meeting scheduled. Building your warm intro pipeline before starting the process is one of the highest-leverage activities in fundraising."
 ---
 
 ## What a Seed Round Actually Is

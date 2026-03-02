@@ -9,6 +9,15 @@ publishedDate: 2024-12-20
 primaryKeyword: "startup runway"
 relatedTerms: ["burn-rate", "seed-round", "bridge-round"]
 seoKeywords: ["startup runway", "how much runway startup", "runway calculation", "18 months runway"]
+faqs:
+  - question: "How much runway should a startup have before fundraising?"
+    answer: "You should start fundraising when you have at least 6 months of runway remaining — not 3. Fundraising typically takes 3–6 months from first pitch to wire transfer, and running close to zero cash creates panic-driven decisions and weakens your negotiating position. Begin the process earlier than feels necessary."
+  - question: "How is startup runway calculated?"
+    answer: "Runway = Cash Balance ÷ Net Monthly Burn Rate. If you have $600,000 in the bank and burn $50,000 per month net of revenue, your runway is 12 months. Always use net burn (expenses minus revenue), not gross burn, for an accurate picture."
+  - question: "How much runway should a startup raise in each funding round?"
+    answer: "The standard target is 18–24 months of runway after closing. This gives you enough time to hit the milestones needed to unlock the next round at better terms — typically: pre-seed needs 12–18 months, seed and Series A need 18–24 months, and later rounds target 24–36 months."
+  - question: "How can a startup extend runway without raising money?"
+    answer: "The main levers are growing revenue (every dollar of new MRR reduces net burn), cutting costs (headcount, contracts, deferred spend), raising a small bridge round from existing investors, or using revenue-based financing to borrow against future revenue without dilution."
 ---
 
 ## What Is Runway?

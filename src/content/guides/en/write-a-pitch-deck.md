@@ -9,6 +9,28 @@ publishedDate: 2025-01-20
 primaryKeyword: "pitch deck"
 readingTime: 15
 seoKeywords: ["startup pitch deck", "how to write pitch deck", "pitch deck slides", "fundraising pitch deck template"]
+steps:
+  - name: "Understand What a Pitch Deck Must Accomplish"
+    text: "A pitch deck is not a business plan — it is a story with evidence designed to make an investor want to learn more. The average VC spends 3 minutes and 44 seconds reviewing a deck. Your goal is a single reaction: 'I need to know more about this.' Everything else is secondary."
+  - name: "Write a Compelling One-Liner"
+    text: "Before building any slides, nail your one-liner using this formula: '[Company] is [what you do] for [who] so that [outcome they care about].' This sentence becomes your cover slide and the north star for every other slide. If you cannot explain your business in one sentence, the deck will not be coherent."
+  - name: "Build the Problem and Solution Slides"
+    text: "The Problem slide is the single most important slide — it must make investors feel the pain. Quantify it, use a real user story, and establish that the status quo is inadequate. The Solution slide describes what you have built with one sentence and a screenshot, demo GIF, or product video. Show the outcome you deliver, not a feature list."
+  - name: "Add Market Size, Traction, and Business Model"
+    text: "Use bottom-up market sizing (number of potential customers × average contract value) rather than citing a research report — it is more credible. Show traction with the most compelling data you have: revenue, growth rate, retention, pilot customers. The business model slide should show how you make money and your pricing logic."
+  - name: "Build the Team and Ask Slides"
+    text: "The team slide should explain why you specifically are the right people to solve this problem. Highlight relevant domain expertise, past startup experience, and unfair advantages. The Ask slide states how much you are raising, what it will be used for (headcount, product, sales), and what milestone it funds you to."
+  - name: "Apply Good Design and Test It"
+    text: "Keep slides to one idea each, use white space generously, limit text to what is essential, and use visuals wherever possible. Send the deck to 2–3 trusted people and ask what questions they still have after reading it — those gaps are what you need to fix. Iterate before sending to investors."
+faqs:
+  - question: "How many slides should a startup pitch deck have?"
+    answer: "10 slides is the standard, covering: Cover, Problem, Solution, Market Size, Traction, Product, Business Model, Team, Go-to-Market, and The Ask. Never exceed 15 slides. Investors read hundreds of decks per month — a longer deck signals you cannot prioritize, not that you have more to say."
+  - question: "How long do investors spend reviewing a startup pitch deck?"
+    answer: "According to DocSend research, the average VC spends 3 minutes and 44 seconds reviewing a deck before deciding whether to take a meeting. The most time is spent on the Team, Traction, and Financials slides. This means your deck must communicate the core story without being read carefully — it is a teaser, not a document."
+  - question: "What is the most important slide in a pitch deck?"
+    answer: "The Problem slide. It must make the investor feel the pain acutely — quantified, specific, and with a clear explanation of why the current solution is inadequate. If an investor does not believe the problem is real and significant, nothing else in the deck matters. Many founders spend too much time on the Solution and not enough on making the problem visceral."
+  - question: "Should you include financial projections in a seed stage pitch deck?"
+    answer: "Yes, but frame them as a model of your assumptions, not a prediction. A 12–18 month model showing key drivers (customer acquisition, pricing, headcount) demonstrates that you understand your business mechanics. Avoid 5-year projections at seed — they are not credible and waste slide space. Show the path to the next fundraising milestone, not an exit scenario."
 ---
 
 ## What Makes a Pitch Deck Work

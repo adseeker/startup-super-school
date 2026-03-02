@@ -10,6 +10,15 @@ primaryKeyword: "product-market fit"
 acronym: "PMF"
 relatedTerms: ["mvp", "churn-rate", "retention"]
 seoKeywords: ["product market fit", "PMF startup", "how to find product market fit", "signs of PMF"]
+faqs:
+  - question: "How do you know when you have product-market fit?"
+    answer: "The clearest signs are behavioral: users return without being prompted, organic word-of-mouth exceeds paid acquisition, users complain loudly when the product is down, and your team struggles to keep up with demand. Sean Ellis's 40% Rule is a popular quantitative proxy — if 40% or more of users say they would be 'very disappointed' if they could no longer use your product, you likely have PMF."
+  - question: "What is the Sean Ellis test for product-market fit?"
+    answer: "The Sean Ellis test asks users: 'How would you feel if you could no longer use this product?' with response options including 'very disappointed,' 'somewhat disappointed,' and 'not disappointed.' If 40% or more answer 'very disappointed,' it is a strong signal of product-market fit. Below 40% suggests the product needs more iteration."
+  - question: "Can you lose product-market fit after achieving it?"
+    answer: "Yes. PMF exists on a spectrum and can erode if the market shifts, competitors improve, or your product fails to evolve. This is particularly common when a startup achieves PMF with one customer segment and then tries to expand to adjacent segments where the same product does not resonate."
+  - question: "What metrics indicate product-market fit in a SaaS business?"
+    answer: "Key PMF metrics in SaaS include: monthly churn below 2%, a retention curve that flattens above 0% (cohort analysis), DAU/MAU ratio above 20%, NPS of 40 or higher in B2C, and strong word-of-mouth or referral-driven growth. No single metric is definitive — look for convergence across multiple signals."
 ---
 
 ## What Is Product-Market Fit?
