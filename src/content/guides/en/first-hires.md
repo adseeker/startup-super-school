@@ -5,7 +5,7 @@ locale: "en"
 category: "team"
 tags: ["team", "hiring", "people", "founders", "scaling"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-08-12
 primaryKeyword: "startup first hires"
 readingTime: 14
 seoKeywords: ["startup first hires", "how to hire startup", "first employees startup", "startup hiring guide"]

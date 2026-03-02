@@ -5,7 +5,7 @@ locale: "en"
 category: "growth"
 tags: ["growth", "virality", "acquisition", "product", "metrics"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2025-01-15
 primaryKeyword: "viral coefficient"
 relatedTerms: ["growth-hacking", "product-led-growth", "north-star-metric", "cac"]
 seoKeywords: ["viral coefficient startup", "what is viral coefficient", "K factor startup", "viral growth metric"]

@@ -5,7 +5,7 @@ locale: "en"
 category: "strategy"
 tags: ["strategy", "sales", "growth", "B2B", "enterprise"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-23
 primaryKeyword: "sales-led growth"
 acronym: "SLG"
 relatedTerms: ["product-led-growth", "cac", "ltv", "go-to-market-strategy"]

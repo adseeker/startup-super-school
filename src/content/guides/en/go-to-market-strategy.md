@@ -5,7 +5,7 @@ locale: "en"
 category: "growth"
 tags: ["growth", "GTM", "sales", "marketing", "strategy"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-08-24
 primaryKeyword: "go-to-market strategy"
 readingTime: 16
 seoKeywords: ["go-to-market strategy startup", "GTM strategy", "how to build go to market", "startup GTM"]

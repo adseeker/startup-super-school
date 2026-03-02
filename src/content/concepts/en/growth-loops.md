@@ -5,7 +5,7 @@ locale: "en"
 category: "growth"
 tags: ["growth", "product", "acquisition", "retention", "strategy"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-08-30
 primaryKeyword: "growth loops"
 origin: "Reforge, Brian Balfour, 2018"
 relatedConcepts: ["network-effects", "flywheel-effect", "jobs-to-be-done"]

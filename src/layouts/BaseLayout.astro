@@ -61,6 +61,7 @@ const siteTitle = `${title} — ${t.site.name}`;
       siteName={t.site.name}
       jsonLd={jsonLd}
     />
+    <slot name="head" />
   </head>
   <body class="min-h-screen flex flex-col">
     <Header locale={locale} />

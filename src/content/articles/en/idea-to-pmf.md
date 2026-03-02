@@ -5,7 +5,7 @@ locale: "en"
 category: "strategy"
 tags: ["product-market fit", "strategy", "validation", "product", "startup"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-09-01
 primaryKeyword: "product-market fit roadmap"
 readingTime: 15
 author: "Startup Super School"

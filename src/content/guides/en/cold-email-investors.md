@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "investors", "outreach", "email", "pitch"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-07-17
 primaryKeyword: "cold email investors"
 readingTime: 10
 seoKeywords: ["cold email investors", "how to email VCs", "investor cold outreach", "startup fundraising email"]

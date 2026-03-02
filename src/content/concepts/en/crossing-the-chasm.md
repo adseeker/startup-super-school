@@ -5,7 +5,7 @@ locale: "en"
 category: "strategy"
 tags: ["strategy", "go-to-market", "marketing", "product adoption", "B2B"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-07-25
 primaryKeyword: "crossing the chasm"
 origin: "Geoffrey Moore, 1991"
 relatedConcepts: ["jobs-to-be-done", "customer-development"]

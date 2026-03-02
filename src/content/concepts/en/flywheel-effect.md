@@ -5,7 +5,7 @@ locale: "en"
 category: "strategy"
 tags: ["strategy", "growth", "compounding", "business model"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-08-16
 primaryKeyword: "flywheel effect"
 origin: "Jim Collins, Good to Great, 2001"
 relatedConcepts: ["network-effects", "growth-loops", "jobs-to-be-done"]

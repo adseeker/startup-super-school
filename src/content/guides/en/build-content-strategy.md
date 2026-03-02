@@ -5,7 +5,7 @@ locale: "en"
 category: "growth"
 tags: ["growth", "content marketing", "SEO", "acquisition", "marketing"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-05-06
 primaryKeyword: "startup content marketing"
 readingTime: 14
 seoKeywords: ["startup content marketing strategy", "content marketing for startups", "how to build content strategy startup", "startup SEO content"]

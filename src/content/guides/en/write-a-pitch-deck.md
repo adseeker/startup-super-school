@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "pitch deck", "investors", "storytelling", "Series A"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2025-01-20
 primaryKeyword: "pitch deck"
 readingTime: 15
 seoKeywords: ["startup pitch deck", "how to write pitch deck", "pitch deck slides", "fundraising pitch deck template"]

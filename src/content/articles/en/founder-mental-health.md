@@ -5,7 +5,7 @@ locale: "en"
 category: "founders"
 tags: ["founders", "mental health", "burnout", "wellbeing", "leadership"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-08-18
 primaryKeyword: "founder burnout"
 readingTime: 11
 author: "Startup Super School"

@@ -5,7 +5,7 @@ locale: "en"
 category: "metrics"
 tags: ["metrics", "product", "onboarding", "retention", "SaaS"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-01-19
 primaryKeyword: "activation rate"
 relatedTerms: ["north-star-metric", "churn-rate", "product-market-fit", "cohort-analysis"]
 seoKeywords: ["activation rate startup", "what is activation rate", "user activation rate SaaS", "how to improve activation rate"]

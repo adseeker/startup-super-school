@@ -5,7 +5,7 @@ locale: "en"
 category: "framework"
 tags: ["framework", "product", "customer research", "positioning", "strategy"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2025-01-12
 primaryKeyword: "value proposition canvas"
 origin: "Alexander Osterwalder and Yves Pigneur, 2012; formalized in Value Proposition Design, 2014"
 relatedConcepts: ["jobs-to-be-done", "business-model-canvas", "customer-development"]

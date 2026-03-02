@@ -5,7 +5,7 @@ locale: "en"
 category: "strategy"
 tags: ["strategy", "growth", "product", "monetization", "SaaS"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-08-20
 primaryKeyword: "freemium model"
 relatedTerms: ["product-led-growth", "ltv", "cac", "churn-rate", "activation-rate"]
 seoKeywords: ["freemium model startup", "what is freemium", "freemium vs free trial", "freemium business model"]

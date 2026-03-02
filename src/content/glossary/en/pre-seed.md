@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "early stage", "funding", "investors"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-07
 primaryKeyword: "pre-seed round"
 relatedTerms: ["seed-round", "angel-investor", "bootstrapping"]
 seoKeywords: ["pre-seed funding", "what is pre-seed round", "pre-seed startup", "pre-seed vs seed"]

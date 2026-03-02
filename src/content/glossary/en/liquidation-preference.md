@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "legal", "investors", "equity", "term sheet"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-09-15
 primaryKeyword: "liquidation preference"
 relatedTerms: ["term-sheet", "cap-table", "series-a", "equity-dilution"]
 seoKeywords: ["liquidation preference startup", "what is liquidation preference", "1x liquidation preference", "participating preferred stock"]

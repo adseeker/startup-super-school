@@ -5,7 +5,7 @@ locale: "en"
 category: "methodology"
 tags: ["methodology", "validation", "iteration", "product", "eric ries"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-09-11
 primaryKeyword: "Lean Startup"
 origin: "Eric Ries, 2011"
 relatedConcepts: ["jobs-to-be-done", "customer-development", "agile"]

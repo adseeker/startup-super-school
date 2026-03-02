@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "legal", "Y Combinator", "early stage"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-22
 primaryKeyword: "SAFE agreement"
 relatedTerms: ["convertible-note", "seed-round", "cap-table"]
 seoKeywords: ["SAFE agreement startup", "what is a SAFE note", "simple agreement future equity", "SAFE vs convertible note"]

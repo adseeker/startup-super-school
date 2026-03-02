@@ -5,7 +5,7 @@ locale: "en"
 category: "finance"
 tags: ["finance", "metrics", "profitability", "SaaS", "fundraising"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2025-01-09
 primaryKeyword: "unit economics"
 relatedTerms: ["cac", "ltv", "churn-rate", "burn-rate"]
 seoKeywords: ["unit economics startup", "what is unit economics", "LTV CAC ratio startup", "unit economics SaaS"]

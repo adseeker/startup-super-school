@@ -5,7 +5,7 @@ locale: "en"
 category: "strategy"
 tags: ["SaaS", "micro-SaaS", "indie", "bootstrapping", "product"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-17
 primaryKeyword: "micro-SaaS"
 readingTime: 12
 author: "Startup Super School"

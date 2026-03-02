@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "legal", "investors", "negotiation", "term sheet"]
 difficulty: "advanced"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-13
 primaryKeyword: "how to read a term sheet"
 readingTime: 18
 seoKeywords: ["how to read a term sheet", "term sheet negotiation", "startup term sheet guide", "VC term sheet explained"]

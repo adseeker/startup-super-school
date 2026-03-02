@@ -5,7 +5,7 @@ locale: "en"
 category: "operations"
 tags: ["legal", "operations", "founders", "incorporation", "equity"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-30
 primaryKeyword: "startup legal checklist"
 readingTime: 14
 author: "Startup Super School"

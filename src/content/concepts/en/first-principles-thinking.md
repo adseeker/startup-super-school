@@ -5,7 +5,7 @@ locale: "en"
 category: "methodology"
 tags: ["methodology", "strategy", "innovation", "problem-solving", "reasoning"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-08-14
 primaryKeyword: "first principles thinking"
 origin: "Aristotle (philosophical origin); popularized in startups by Elon Musk, 2010s"
 relatedConcepts: ["design-thinking", "lean-startup", "jobs-to-be-done"]

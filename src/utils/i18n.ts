@@ -34,6 +34,11 @@ export function getAlternateUrls(
   }));
 }
 
+/** Slugify a tag for use in URLs */
+export function slugifyTag(tag: string): string {
+  return tag.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+}
+
 /** Format a date for display */
 export function formatDate(date: Date, locale: Locale = 'en'): string {
   return new Intl.DateTimeFormat(locale, {

@@ -5,7 +5,7 @@ locale: "en"
 category: "metrics"
 tags: ["metrics", "unit economics", "revenue", "retention"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-09-17
 primaryKeyword: "lifetime value"
 acronym: "LTV"
 relatedTerms: ["cac", "churn-rate", "mrr"]

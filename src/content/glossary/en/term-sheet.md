@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "legal", "investors", "negotiation"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2025-01-06
 primaryKeyword: "term sheet"
 relatedTerms: ["seed-round", "series-a", "safe", "cap-table"]
 seoKeywords: ["term sheet startup", "what is a term sheet", "term sheet explained", "VC term sheet"]

@@ -5,7 +5,7 @@ locale: "en"
 category: "strategy"
 tags: ["strategy", "product-market fit", "early stage", "growth", "retention"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2025-01-18
 readingTime: 10
 author: "Startup Super School"
 seoKeywords: ["why product market fit matters", "product market fit importance", "finding PMF startup", "PMF before scaling"]

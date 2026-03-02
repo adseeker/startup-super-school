@@ -5,7 +5,7 @@ locale: "en"
 category: "team"
 tags: ["team", "co-founder", "founding", "early stage"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-08-10
 primaryKeyword: "find a co-founder"
 readingTime: 12
 seoKeywords: ["how to find a cofounder", "find co-founder startup", "cofounder search", "startup cofounder"]

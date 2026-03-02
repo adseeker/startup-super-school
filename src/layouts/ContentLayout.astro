@@ -3,7 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 import DifficultyBadge from '../components/DifficultyBadge.astro';
 import TableOfContents from '../components/TableOfContents.astro';
 import RelatedContent from '../components/RelatedContent.astro';
-import { getTranslations, formatDate, localePath } from '../utils/i18n';
+import { getTranslations, formatDate, localePath, slugifyTag } from '../utils/i18n';
 import type { Locale } from '../utils/i18n';
 import type { MarkdownHeading } from 'astro';
 
@@ -43,20 +43,71 @@ const {
 } = Astro.props;
 
 const t = getTranslations(locale);
+const siteUrl = Astro.site?.href?.replace(/\/$/, '') ?? '';
 
-const jsonLd = {
+// Per-type JSON-LD schema
+const jsonLd = sectionSlug === 'glossary'
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'DefinedTerm',
+      name: title,
+      description,
+      inLanguage: locale,
+      inDefinedTermSet: {
+        '@type': 'DefinedTermSet',
+        name: `${t.site.name} Glossary`,
+        url: `${siteUrl}${localePath(locale, 'glossary')}`,
+      },
+    }
+  : sectionSlug === 'guides'
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: title,
+      description,
+      inLanguage: locale,
+      datePublished: publishedDate.toISOString(),
+      ...(lastUpdated ? { dateModified: lastUpdated.toISOString() } : {}),
+      estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '0' },
+    }
+  : {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: title,
+      description,
+      inLanguage: locale,
+      datePublished: publishedDate.toISOString(),
+      ...(lastUpdated ? { dateModified: lastUpdated.toISOString() } : {}),
+      publisher: {
+        '@type': 'Organization',
+        name: t.site.name,
+        url: Astro.site?.href,
+      },
+    };
+
+// BreadcrumbList JSON-LD
+const breadcrumbLd = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
-  headline: title,
-  description,
-  inLanguage: locale,
-  datePublished: publishedDate.toISOString(),
-  ...(lastUpdated ? { dateModified: lastUpdated.toISOString() } : {}),
-  publisher: {
-    '@type': 'Organization',
-    name: t.site.name,
-    url: Astro.site?.href,
-  },
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: t.nav.home,
+      item: `${siteUrl}${localePath(locale, '')}`,
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: t.content.sections[sectionSlug],
+      item: `${siteUrl}${localePath(locale, sectionSlug)}`,
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: title,
+    },
+  ],
 };
 ---
 
@@ -71,6 +122,9 @@ const jsonLd = {
   ogImage={ogImage}
   jsonLd={jsonLd}
 >
+  <!-- Extra JSON-LD: BreadcrumbList -->
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
     <!-- Breadcrumb -->
     <nav class="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
@@ -97,7 +151,7 @@ const jsonLd = {
               </span>
             )}
           </div>
-          <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">
+          <h1 data-pagefind-meta="title" class="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">
             {title}
           </h1>
           <p class="text-xl text-gray-600 leading-relaxed">{description}</p>
@@ -112,7 +166,9 @@ const jsonLd = {
         </header>
 
         <!-- Article body -->
-        <div class="prose prose-gray prose-lg max-w-none
+        <div
+          data-pagefind-body
+          class="prose prose-gray prose-lg max-w-none
           prose-headings:font-semibold prose-headings:text-gray-900
           prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
           prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
@@ -133,9 +189,12 @@ const jsonLd = {
           <div class="mt-10 pt-6 border-t border-gray-200">
             <div class="flex flex-wrap gap-2">
               {tags.map((tag) => (
-                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-700">
+                <a
+                  href={localePath(locale, `tags/${slugifyTag(tag)}`)}
+                  class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition-colors no-underline"
+                >
                   {tag}
-                </span>
+                </a>
               ))}
             </div>
           </div>
@@ -143,7 +202,7 @@ const jsonLd = {
       </article>
 
       <!-- Sidebar -->
-      <aside class="mt-10 lg:mt-0 space-y-8">
+      <aside data-pagefind-ignore class="mt-10 lg:mt-0 space-y-8">
         {headings.length > 1 && (
           <TableOfContents headings={headings} locale={locale} />
         )}

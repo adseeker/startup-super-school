@@ -5,7 +5,7 @@ locale: "en"
 category: "framework"
 tags: ["framework", "go-to-market", "marketing", "product", "strategy"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2025-01-05
 primaryKeyword: "technology adoption lifecycle"
 origin: "Everett Rogers, Diffusion of Innovations, 1962"
 relatedConcepts: ["crossing-the-chasm", "customer-development", "jobs-to-be-done"]

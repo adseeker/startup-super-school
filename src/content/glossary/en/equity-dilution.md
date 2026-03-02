@@ -5,7 +5,7 @@ locale: "en"
 category: "equity"
 tags: ["equity", "fundraising", "cap table", "ownership"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-08-08
 primaryKeyword: "equity dilution"
 relatedTerms: ["cap-table", "term-sheet", "seed-round", "series-a"]
 seoKeywords: ["equity dilution startup", "what is dilution startup", "how dilution works", "founder dilution funding"]

@@ -5,7 +5,7 @@ locale: "en"
 category: "equity"
 tags: ["equity", "hiring", "compensation", "negotiation", "team"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-09-29
 primaryKeyword: "how to negotiate equity"
 readingTime: 12
 seoKeywords: ["how to negotiate equity startup", "startup equity offer negotiation", "negotiate stock options startup", "startup compensation equity"]

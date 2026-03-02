@@ -5,7 +5,7 @@ locale: "en"
 category: "exits"
 tags: ["exits", "M&A", "team", "acquisition", "talent"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-01-10
 primaryKeyword: "acqui-hire"
 relatedTerms: ["cap-table", "vesting", "equity-dilution"]
 seoKeywords: ["acqui-hire startup", "what is an acqui-hire", "acqui-hire vs acquisition", "talent acquisition startup"]

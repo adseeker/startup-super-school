@@ -5,7 +5,7 @@ locale: "en"
 category: "metrics"
 tags: ["metrics", "SaaS", "finance", "analytics", "growth"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-21
 primaryKeyword: "SaaS metrics for founders"
 readingTime: 14
 author: "Startup Super School"

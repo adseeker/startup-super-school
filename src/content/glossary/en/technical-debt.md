@@ -5,7 +5,7 @@ locale: "en"
 category: "engineering"
 tags: ["engineering", "product", "development", "scaling"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2025-01-04
 primaryKeyword: "technical debt"
 relatedTerms: ["mvp", "lean-startup"]
 seoKeywords: ["technical debt startup", "what is technical debt", "managing technical debt", "technical debt software"]

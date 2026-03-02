@@ -5,7 +5,7 @@ locale: "en"
 category: "growth"
 tags: ["growth", "experimentation", "analytics", "product", "metrics"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-19
 primaryKeyword: "growth experimentation"
 readingTime: 13
 seoKeywords: ["startup growth experiments", "how to run growth experiments", "growth experimentation startup", "A/B testing startup growth"]

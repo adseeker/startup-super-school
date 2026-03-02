@@ -5,7 +5,7 @@ locale: "en"
 category: "strategy"
 tags: ["strategy", "competition", "market research", "positioning"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-07-19
 primaryKeyword: "startup competitive analysis"
 readingTime: 12
 seoKeywords: ["competitive analysis startup", "how to analyze competitors startup", "startup competition research", "competitive landscape"]

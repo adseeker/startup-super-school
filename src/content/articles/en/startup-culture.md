@@ -5,7 +5,7 @@ locale: "en"
 category: "team"
 tags: ["team", "culture", "leadership", "founders", "hiring"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-28
 primaryKeyword: "startup culture"
 readingTime: 12
 author: "Startup Super School"

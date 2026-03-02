@@ -5,7 +5,7 @@ locale: "en"
 category: "finance"
 tags: ["finance", "metrics", "SaaS", "profitability", "unit economics"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-08-26
 primaryKeyword: "gross margin"
 relatedTerms: ["unit-economics", "burn-rate", "arr", "ltv"]
 seoKeywords: ["gross margin startup", "what is gross margin", "SaaS gross margin", "gross margin formula startup"]

@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "legal", "debt", "early stage"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-07-23
 primaryKeyword: "convertible note"
 relatedTerms: ["safe", "seed-round", "cap-table", "term-sheet"]
 seoKeywords: ["convertible note startup", "what is a convertible note", "convertible note vs SAFE", "startup debt financing"]

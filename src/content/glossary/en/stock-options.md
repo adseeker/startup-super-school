@@ -5,7 +5,7 @@ locale: "en"
 category: "equity"
 tags: ["equity", "compensation", "team", "hiring", "incentives"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2025-01-03
 primaryKeyword: "stock options startup"
 relatedTerms: ["vesting", "vesting-cliff", "cap-table", "equity-dilution"]
 seoKeywords: ["stock options startup", "what are stock options", "employee stock options", "startup equity options"]

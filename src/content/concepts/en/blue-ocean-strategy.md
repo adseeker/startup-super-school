@@ -5,7 +5,7 @@ locale: "en"
 category: "strategy"
 tags: ["strategy", "market", "competition", "innovation", "positioning"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-03-22
 primaryKeyword: "blue ocean strategy"
 origin: "W. Chan Kim and Renée Mauborgne, 2004"
 relatedConcepts: ["jobs-to-be-done", "crossing-the-chasm"]

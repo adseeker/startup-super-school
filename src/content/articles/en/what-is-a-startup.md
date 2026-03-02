@@ -5,7 +5,7 @@ locale: "en"
 category: "fundamentals"
 tags: ["fundamentals", "startup definition", "entrepreneurship", "business model"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2025-01-16
 readingTime: 8
 author: "Startup Super School"
 seoKeywords: ["what is a startup", "startup definition", "startup vs small business", "what makes a startup"]

@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "venture capital", "growth", "scaling"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-25
 primaryKeyword: "Series A"
 relatedTerms: ["seed-round", "angel-investor", "product-market-fit", "runway"]
 seoKeywords: ["Series A funding", "Series A startup", "how to raise Series A", "Series A metrics"]

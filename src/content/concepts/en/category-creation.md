@@ -5,7 +5,7 @@ locale: "en"
 category: "strategy"
 tags: ["strategy", "marketing", "positioning", "brand", "go-to-market"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-07-09
 primaryKeyword: "category creation startup"
 origin: "Al Ries and Jack Trout, Positioning: The Battle for Your Mind, 1981; modernized by Christopher Lochhead et al., Play Bigger, 2016"
 relatedConcepts: ["crossing-the-chasm", "blue-ocean-strategy", "jobs-to-be-done"]

@@ -5,7 +5,7 @@ locale: "en"
 category: "product"
 tags: ["product", "validation", "lean startup", "iteration"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-09-27
 primaryKeyword: "minimum viable product"
 acronym: "MVP"
 relatedTerms: ["product-market-fit", "lean-startup", "pivot"]

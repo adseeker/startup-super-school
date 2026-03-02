@@ -5,7 +5,7 @@ locale: "en"
 category: "methodology"
 tags: ["methodology", "product", "innovation", "user research", "problem solving"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-08-02
 primaryKeyword: "design thinking"
 origin: "IDEO and Stanford d.school, popularized 2000s"
 relatedConcepts: ["customer-development", "jobs-to-be-done", "lean-startup"]

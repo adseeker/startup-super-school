@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "bootstrapping", "venture capital", "strategy", "independence"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-03-31
 primaryKeyword: "bootstrapping vs VC"
 readingTime: 13
 author: "Startup Super School"

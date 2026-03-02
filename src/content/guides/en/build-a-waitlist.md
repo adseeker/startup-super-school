@@ -5,7 +5,7 @@ locale: "en"
 category: "growth"
 tags: ["growth", "launch", "marketing", "pre-launch", "validation"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-04-27
 primaryKeyword: "build a waitlist"
 readingTime: 11
 seoKeywords: ["build a waitlist", "pre-launch waitlist", "startup waitlist strategy", "how to build waitlist startup"]

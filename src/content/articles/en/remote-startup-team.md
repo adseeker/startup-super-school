@@ -5,7 +5,7 @@ locale: "en"
 category: "team"
 tags: ["team", "remote work", "operations", "culture", "hiring"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-14
 primaryKeyword: "remote startup team"
 readingTime: 13
 author: "Startup Super School"

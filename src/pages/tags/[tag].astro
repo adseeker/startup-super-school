@@ -1,0 +1,116 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ContentCard from '../../components/ContentCard.astro';
+import { getCollection } from 'astro:content';
+import { slugifyTag, localePath } from '../../utils/i18n';
+
+export async function getStaticPaths() {
+  const locale = 'en' as const;
+
+  const [glossaryEntries, guidesEntries, conceptsEntries, articlesEntries] = await Promise.all([
+    getCollection('glossary', ({ data }) => data.locale === locale && data.published !== false),
+    getCollection('guides', ({ data }) => data.locale === locale && data.published !== false),
+    getCollection('concepts', ({ data }) => data.locale === locale && data.published !== false),
+    getCollection('articles', ({ data }) => data.locale === locale && data.published !== false),
+  ]);
+
+  const allEntries = [
+    ...glossaryEntries.map(e => ({ ...e, section: 'glossary' as const })),
+    ...guidesEntries.map(e => ({ ...e, section: 'guides' as const })),
+    ...conceptsEntries.map(e => ({ ...e, section: 'concepts' as const })),
+    ...articlesEntries.map(e => ({ ...e, section: 'articles' as const })),
+  ];
+
+  // Collect all unique slugified tags
+  const tagSet = new Set<string>();
+  for (const entry of allEntries) {
+    for (const tag of entry.data.tags) {
+      tagSet.add(slugifyTag(tag));
+    }
+  }
+
+  return [...tagSet].map((tag) => ({
+    params: { tag },
+    props: { tag, allEntries },
+  }));
+}
+
+const locale = 'en' as const;
+const { tag, allEntries } = Astro.props;
+
+// Filter entries matching this tag
+const matching = allEntries.filter((entry: any) =>
+  entry.data.tags.some((t: string) => slugifyTag(t) === tag)
+);
+
+// Group by section
+const sections = ['glossary', 'guides', 'concepts', 'articles'] as const;
+const grouped = Object.fromEntries(
+  sections.map(s => [s, matching.filter((e: any) => e.section === s)])
+) as Record<typeof sections[number], typeof matching>;
+
+const sectionLabels: Record<typeof sections[number], string> = {
+  glossary: 'Glossary',
+  guides: 'Guides',
+  concepts: 'Concepts',
+  articles: 'Articles',
+};
+
+// Find one original tag for display (unslugified)
+const displayTag = allEntries
+  .flatMap((e: any) => e.data.tags)
+  .find((t: string) => slugifyTag(t) === tag) ?? tag;
+---
+
+<BaseLayout
+  title={`#${displayTag} — Startup Super School`}
+  description={`All content tagged with "${displayTag}" on Startup Super School.`}
+  locale={locale}
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <header class="mb-10">
+      <nav class="text-sm text-gray-500 mb-4">
+        <a href={localePath(locale, '')} class="hover:text-gray-700 no-underline">Home</a>
+        <span class="mx-2">›</span>
+        <span class="text-gray-900">#{displayTag}</span>
+      </nav>
+      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">
+        #{displayTag}
+      </h1>
+      <p class="text-gray-500 mt-2">{matching.length} result{matching.length !== 1 ? 's' : ''}</p>
+    </header>
+
+    <div class="space-y-12">
+      {sections.map((section) => {
+        const sectionEntries = grouped[section];
+        if (sectionEntries.length === 0) return null;
+        return (
+          <section>
+            <h2 class="text-xl font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">
+              {sectionLabels[section]}
+            </h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {sectionEntries.map((entry: any) => {
+                const slug = entry.slug.split('/').pop();
+                return (
+                  <div class="relative">
+                    <ContentCard
+                      title={entry.data.title}
+                      description={entry.data.description}
+                      href={localePath(locale, `${section}/${slug}`)}
+                      difficulty={entry.data.difficulty}
+                      category={entry.data.category}
+                      tags={entry.data.tags}
+                      locale={locale}
+                      readingTime={'readingTime' in entry.data ? entry.data.readingTime : undefined}
+                    />
+                  </div>
+                );
+              })}
+            </div>
+          </section>
+        );
+      })}
+    </div>
+  </div>
+</BaseLayout>

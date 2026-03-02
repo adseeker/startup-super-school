@@ -5,7 +5,7 @@ locale: "en"
 category: "metrics"
 tags: ["metrics", "revenue", "SaaS", "finance"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-09-25
 primaryKeyword: "monthly recurring revenue"
 relatedTerms: ["arr", "churn-rate", "ltv", "burn-rate"]
 seoKeywords: ["monthly recurring revenue", "MRR startup", "what is MRR", "how to calculate MRR"]

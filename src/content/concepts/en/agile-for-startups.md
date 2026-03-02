@@ -5,7 +5,7 @@ locale: "en"
 category: "methodology"
 tags: ["methodology", "engineering", "product", "iteration", "scrum"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-01-28
 primaryKeyword: "agile development"
 origin: "Agile Manifesto, 17 software developers, 2001"
 relatedConcepts: ["lean-startup", "customer-development", "rice-framework"]

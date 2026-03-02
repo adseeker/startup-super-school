@@ -5,7 +5,7 @@ locale: "en"
 category: "operations"
 tags: ["operations", "goal setting", "team alignment", "metrics", "google"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-10-09
 primaryKeyword: "OKRs"
 acronym: "OKRs"
 origin: "Andy Grove (Intel), popularized by John Doerr (Kleiner Perkins) at Google in 1999"

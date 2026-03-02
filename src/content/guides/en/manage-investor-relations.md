@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "investors", "communication", "board", "strategy"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-09-19
 primaryKeyword: "investor relations startup"
 readingTime: 12
 seoKeywords: ["investor relations startup", "how to manage investors startup", "startup investor updates", "founder investor communication"]

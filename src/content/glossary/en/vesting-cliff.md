@@ -5,7 +5,7 @@ locale: "en"
 category: "equity"
 tags: ["equity", "team", "compensation", "founders"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2025-01-13
 primaryKeyword: "vesting cliff"
 relatedTerms: ["vesting", "cap-table"]
 seoKeywords: ["vesting cliff startup", "what is a vesting cliff", "1 year cliff vesting", "equity cliff explained"]

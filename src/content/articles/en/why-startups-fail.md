@@ -5,7 +5,7 @@ locale: "en"
 category: "strategy"
 tags: ["strategy", "failure", "product-market fit", "validation", "founders"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2025-01-19
 primaryKeyword: "why startups fail"
 readingTime: 11
 author: "Startup Super School"

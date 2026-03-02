@@ -5,7 +5,7 @@ locale: "en"
 category: "framework"
 tags: ["framework", "strategy", "competition", "market analysis", "business model"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-05
 primaryKeyword: "Porter's Five Forces"
 origin: "Michael Porter, Harvard Business School, 1979"
 relatedConcepts: ["blue-ocean-strategy", "crossing-the-chasm", "jobs-to-be-done"]

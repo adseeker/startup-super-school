@@ -5,7 +5,7 @@ locale: "en"
 category: "product"
 tags: ["product", "mvp", "design", "user experience", "early stage"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-09-21
 primaryKeyword: "minimum loveable product"
 origin: "Brian de Haaff, Aha!, 2013; popularized as reaction to MVP misuse"
 relatedConcepts: ["lean-startup", "customer-development", "jobs-to-be-done"]

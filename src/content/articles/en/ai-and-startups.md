@@ -3,9 +3,9 @@ title: "How AI Is Reshaping the Startup Landscape"
 description: "AI investment hit $100B+ in 2024. But the real shift isn't the money — it's what AI does to startup economics, moats, and team size."
 locale: "en"
 category: "technology"
-tags: ["AI", "technology", "startups", "innovation", "2025"]
+tags: ["AI", "technology", "startups", "innovation"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-02-06
 primaryKeyword: "AI startups"
 readingTime: 13
 author: "Startup Super School"

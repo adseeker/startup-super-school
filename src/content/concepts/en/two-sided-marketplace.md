@@ -5,7 +5,7 @@ locale: "en"
 category: "business model"
 tags: ["business model", "marketplace", "network effects", "platform", "strategy"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2025-01-08
 primaryKeyword: "two-sided marketplace"
 origin: "Jean Tirole and Jean-Charles Rochet, platform economics research, 2003"
 relatedConcepts: ["network-effects", "flywheel-effect", "growth-loops"]

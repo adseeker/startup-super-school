@@ -5,7 +5,7 @@ locale: "en"
 category: "framework"
 tags: ["framework", "strategy", "business model", "planning"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-07-03
 primaryKeyword: "business model canvas"
 origin: "Alexander Osterwalder and Yves Pigneur, Business Model Generation, 2010"
 relatedConcepts: ["lean-startup", "jobs-to-be-done", "customer-development"]

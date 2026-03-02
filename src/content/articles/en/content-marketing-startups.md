@@ -5,7 +5,7 @@ locale: "en"
 category: "marketing"
 tags: ["content marketing", "SEO", "inbound", "growth", "organic"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-07-21
 primaryKeyword: "content marketing for startups"
 readingTime: 11
 seoKeywords: ["content marketing startup", "startup SEO strategy", "inbound marketing startup", "startup content strategy 2024"]

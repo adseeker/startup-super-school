@@ -5,7 +5,7 @@ locale: "en"
 category: "framework"
 tags: ["framework", "product", "prioritization", "customer satisfaction", "features"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-09-09
 primaryKeyword: "Kano model"
 origin: "Noriaki Kano, Tokyo University of Science, 1984"
 relatedConcepts: ["jobs-to-be-done", "rice-framework", "customer-development"]

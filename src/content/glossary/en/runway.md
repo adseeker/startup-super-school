@@ -5,7 +5,7 @@ locale: "en"
 category: "finance"
 tags: ["finance", "metrics", "fundraising", "survival"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-20
 primaryKeyword: "startup runway"
 relatedTerms: ["burn-rate", "seed-round", "bridge-round"]
 seoKeywords: ["startup runway", "how much runway startup", "runway calculation", "18 months runway"]

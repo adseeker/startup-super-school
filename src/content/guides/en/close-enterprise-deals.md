@@ -5,7 +5,7 @@ locale: "en"
 category: "growth"
 tags: ["sales", "enterprise", "B2B", "revenue", "growth"]
 difficulty: "advanced"
-publishedDate: 2024-01-01
+publishedDate: 2024-07-13
 primaryKeyword: "enterprise sales startup"
 readingTime: 16
 seoKeywords: ["enterprise sales startup", "how to close enterprise deals", "B2B enterprise sales guide", "startup enterprise customer"]

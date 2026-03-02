@@ -5,7 +5,7 @@ locale: "en"
 category: "equity"
 tags: ["equity", "compensation", "founders", "employees", "investors"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-29
 primaryKeyword: "startup equity"
 readingTime: 13
 author: "Startup Super School"

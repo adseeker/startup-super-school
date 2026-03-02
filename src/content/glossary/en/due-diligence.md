@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "legal", "investors", "process"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-08-06
 primaryKeyword: "due diligence"
 relatedTerms: ["term-sheet", "cap-table", "seed-round", "series-a"]
 seoKeywords: ["due diligence startup", "what is due diligence", "investor due diligence process", "startup DD checklist"]

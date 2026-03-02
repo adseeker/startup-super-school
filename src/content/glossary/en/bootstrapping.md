@@ -5,7 +5,7 @@ locale: "en"
 category: "strategy"
 tags: ["strategy", "funding", "independence", "growth"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-04-09
 primaryKeyword: "bootstrapping"
 relatedTerms: ["runway", "burn-rate", "seed-round"]
 seoKeywords: ["bootstrapping startup", "what is bootstrapping", "bootstrap vs VC", "self-funded startup"]

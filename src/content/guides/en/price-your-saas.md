@@ -5,7 +5,7 @@ locale: "en"
 category: "product"
 tags: ["pricing", "SaaS", "revenue", "strategy", "monetization"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-08
 primaryKeyword: "SaaS pricing strategy"
 readingTime: 15
 seoKeywords: ["SaaS pricing strategy", "how to price SaaS", "SaaS pricing models", "startup pricing guide"]

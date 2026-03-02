@@ -5,7 +5,7 @@ locale: "en"
 category: "metrics"
 tags: ["metrics", "analytics", "retention", "product"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-07-15
 primaryKeyword: "cohort analysis"
 relatedTerms: ["churn-rate", "ltv", "nrr", "product-market-fit"]
 seoKeywords: ["cohort analysis startup", "what is cohort analysis", "retention cohort analysis", "SaaS cohort analysis"]

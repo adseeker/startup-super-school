@@ -5,7 +5,7 @@ locale: "en"
 category: "metrics"
 tags: ["metrics", "revenue", "SaaS", "retention", "growth"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-10-07
 primaryKeyword: "net revenue retention"
 relatedTerms: ["mrr", "arr", "churn-rate", "ltv"]
 seoKeywords: ["net revenue retention", "NRR startup", "what is NRR", "net dollar retention SaaS"]

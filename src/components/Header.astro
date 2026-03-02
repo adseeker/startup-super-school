@@ -1,6 +1,7 @@
 ---
 import { getTranslations, localePath } from '../utils/i18n';
 import type { Locale } from '../utils/i18n';
+import SearchBar from './SearchBar.astro';
 
 interface Props {
   locale: Locale;
@@ -49,6 +50,7 @@ const currentPath = Astro.url.pathname;
             {label}
           </a>
         ))}
+        <SearchBar locale={locale} />
       </nav>
 
       <!-- Mobile menu button -->
@@ -81,6 +83,9 @@ const currentPath = Astro.url.pathname;
           {label}
         </a>
       ))}
+      <div class="px-3 py-2">
+        <SearchBar locale={locale} />
+      </div>
     </nav>
   </div>
 </header>

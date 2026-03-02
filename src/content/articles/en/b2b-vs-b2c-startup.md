@@ -5,7 +5,7 @@ locale: "en"
 category: "strategy"
 tags: ["strategy", "B2B", "B2C", "business model", "market"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-03-13
 primaryKeyword: "B2B vs B2C startup"
 readingTime: 12
 author: "Startup Super School"

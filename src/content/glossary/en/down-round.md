@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "valuation", "investors", "equity", "dilution"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-08-04
 primaryKeyword: "down round"
 relatedTerms: ["equity-dilution", "term-sheet", "series-a", "bridge-round", "anti-dilution"]
 seoKeywords: ["down round startup", "what is a down round", "down round effects", "startup valuation drop"]

@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const locale = 'en' as const;
+const query = Astro.url.searchParams.get('q') ?? '';
+---
+
+<BaseLayout
+  title="Search"
+  description="Search glossary terms, guides, concepts and articles on Startup Super School."
+  locale={locale}
+>
+  <link slot="head" rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-gray-900">Search results</h1>
+    </header>
+    <div id="search"></div>
+  </div>
+
+  <script define:vars={{ query }}>
+    window.addEventListener('DOMContentLoaded', async () => {
+      // @ts-ignore - pagefind is generated at build time
+      const { PagefindUI } = await import('/pagefind/pagefind-ui.js');
+      new PagefindUI({
+        element: '#search',
+        showSubResults: true,
+        defaultValue: query,
+      });
+    });
+  </script>
+</BaseLayout>

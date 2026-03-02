@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "financing", "alternative funding", "bootstrapping", "SaaS"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-15
 primaryKeyword: "revenue-based financing"
 acronym: "RBF"
 relatedTerms: ["bootstrapping", "burn-rate", "arr", "runway"]

@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "Series A", "venture capital", "growth", "investors"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-02-15
 primaryKeyword: "Series A funding"
 readingTime: 14
 author: "Startup Super School"

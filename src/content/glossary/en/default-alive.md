@@ -5,7 +5,7 @@ locale: "en"
 category: "strategy"
 tags: ["strategy", "finance", "survival", "bootstrapping", "metrics"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-07-31
 primaryKeyword: "default alive"
 origin: "Paul Graham, Y Combinator, 2015"
 relatedTerms: ["burn-rate", "runway", "bootstrapping", "unit-economics"]

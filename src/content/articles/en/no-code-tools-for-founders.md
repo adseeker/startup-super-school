@@ -5,7 +5,7 @@ locale: "en"
 category: "technology"
 tags: ["tools", "no-code", "technology", "MVP", "productivity"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-10-03
 primaryKeyword: "no-code tools founders"
 readingTime: 11
 author: "Startup Super School"

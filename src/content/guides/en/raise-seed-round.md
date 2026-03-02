@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "seed stage", "investors", "pitch", "venture capital"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-12
 primaryKeyword: "how to raise a seed round"
 readingTime: 16
 seoKeywords: ["how to raise seed round", "seed funding startup guide", "raise seed capital startup", "startup seed fundraising"]

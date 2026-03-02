@@ -1,0 +1,48 @@
+---
+import { getTranslations, localePath } from '../utils/i18n';
+import type { Locale } from '../utils/i18n';
+
+interface Props {
+  locale: Locale;
+  placeholder?: string;
+  large?: boolean;
+}
+
+const { locale, placeholder, large = false } = Astro.props;
+const t = getTranslations(locale);
+const ph = placeholder ?? t.search.placeholder;
+---
+
+<form
+  action={localePath(locale, 'search')}
+  method="get"
+  role="search"
+  class:list={['relative flex items-center', large ? 'w-full max-w-xl mx-auto' : 'w-full max-w-xs']}
+>
+  <div class="relative w-full">
+    <svg
+      class:list={[
+        'absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 shrink-0',
+        large ? 'h-5 w-5' : 'h-4 w-4',
+      ]}
+      fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 1 0 5.197 5.197a7.5 7.5 0 0 0 10.606 10.606z" />
+    </svg>
+    <input
+      type="search"
+      name="q"
+      placeholder={ph}
+      autocomplete="off"
+      class:list={[
+        'w-full rounded-lg border border-gray-300 bg-white text-gray-900 placeholder-gray-400',
+        'focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent',
+        'transition',
+        large
+          ? 'pl-11 pr-4 py-3 text-base'
+          : 'pl-9 pr-3 py-2 text-sm',
+      ]}
+    />
+  </div>
+</form>

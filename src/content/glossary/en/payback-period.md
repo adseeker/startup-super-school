@@ -5,7 +5,7 @@ locale: "en"
 category: "finance"
 tags: ["finance", "metrics", "unit economics", "SaaS", "growth"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-02
 primaryKeyword: "payback period"
 relatedTerms: ["cac", "ltv", "unit-economics", "arr", "gross-margin"]
 seoKeywords: ["payback period startup", "CAC payback period", "what is payback period SaaS", "startup payback period benchmark"]

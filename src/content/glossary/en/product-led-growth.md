@@ -5,7 +5,7 @@ locale: "en"
 category: "growth"
 tags: ["growth", "product", "strategy", "SaaS", "acquisition"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-10
 primaryKeyword: "product-led growth"
 relatedTerms: ["north-star-metric", "churn-rate", "ltv"]
 seoKeywords: ["product led growth", "what is PLG", "product-led growth SaaS", "PLG strategy startup"]

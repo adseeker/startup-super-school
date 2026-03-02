@@ -5,7 +5,7 @@ locale: "en"
 category: "framework"
 tags: ["framework", "customer research", "product strategy", "positioning", "clay christensen"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-09-07
 primaryKeyword: "Jobs to Be Done"
 origin: "Clayton Christensen, Tony Ulwick — 1990s to 2000s"
 relatedConcepts: ["lean-startup", "customer-development"]

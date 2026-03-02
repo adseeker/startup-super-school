@@ -5,7 +5,7 @@ locale: "en"
 category: "strategy"
 tags: ["strategy", "validation", "growth", "retention"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-11
 primaryKeyword: "product-market fit"
 acronym: "PMF"
 relatedTerms: ["mvp", "churn-rate", "retention"]

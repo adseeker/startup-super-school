@@ -5,7 +5,7 @@ locale: "en"
 category: "product"
 tags: ["analytics", "metrics", "product", "data", "tools"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-27
 primaryKeyword: "startup analytics setup"
 readingTime: 12
 seoKeywords: ["startup analytics setup", "how to set up startup analytics", "analytics tools for startups", "startup metrics tracking"]

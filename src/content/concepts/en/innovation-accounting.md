@@ -5,7 +5,7 @@ locale: "en"
 category: "methodology"
 tags: ["methodology", "metrics", "lean startup", "validation", "product"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-09-03
 primaryKeyword: "innovation accounting"
 origin: "Eric Ries, The Lean Startup, 2011"
 relatedConcepts: ["lean-startup", "okrs", "north-star-metric"]

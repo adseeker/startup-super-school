@@ -5,7 +5,7 @@ locale: "en"
 category: "product"
 tags: ["product", "roadmap", "planning", "team", "strategy"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-05-15
 primaryKeyword: "product roadmap startup"
 readingTime: 13
 seoKeywords: ["product roadmap startup", "how to build product roadmap", "startup product planning", "agile product roadmap"]

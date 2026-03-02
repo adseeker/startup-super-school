@@ -8,6 +8,7 @@ import { readdirSync, readFileSync } from 'fs';
 import { join, resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { rehypeInternalLinks } from './src/plugins/rehype-internal-links.mjs';
+import pagefind from 'astro-pagefind';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -86,5 +87,6 @@ export default defineConfig({
       },
     }),
     mdx(),
+    pagefind(),
   ],
 });

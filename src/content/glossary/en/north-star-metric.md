@@ -5,7 +5,7 @@ locale: "en"
 category: "metrics"
 tags: ["metrics", "product", "strategy", "growth"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-10-05
 primaryKeyword: "north star metric"
 relatedTerms: ["product-led-growth", "churn-rate", "ltv"]
 seoKeywords: ["north star metric startup", "what is north star metric", "NSM examples", "how to choose north star metric"]

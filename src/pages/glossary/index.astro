@@ -12,6 +12,17 @@ const entries = await getCollection('glossary', ({ data }) => {
 });
 
 const sorted = entries.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+// Group by first letter
+const letterMap = new Map<string, typeof sorted>();
+for (const entry of sorted) {
+  const letter = entry.data.title[0].toUpperCase();
+  if (!letterMap.has(letter)) letterMap.set(letter, []);
+  letterMap.get(letter)!.push(entry);
+}
+
+const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+const activeLetters = new Set(letterMap.keys());
 ---
 
 <BaseLayout
@@ -20,29 +31,56 @@ const sorted = entries.sort((a, b) => a.data.title.localeCompare(b.data.title));
   locale={locale}
 >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-    <header class="mb-10">
+    <header class="mb-8">
       <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">
         {t.nav.glossary}
       </h1>
       <p class="text-xl text-gray-600">{t.content.sectionDescriptions.glossary}</p>
     </header>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      {sorted.map((entry) => {
-        const slug = entry.slug.split('/').pop();
-        return (
-          <div class="relative">
-            <ContentCard
-              title={entry.data.title}
-              description={entry.data.description}
-              href={localePath(locale, `glossary/${slug}`)}
-              difficulty={entry.data.difficulty}
-              category={entry.data.category}
-              tags={entry.data.tags}
-              locale={locale}
-            />
+
+    <!-- Letter jump nav -->
+    <nav class="mb-10 flex flex-wrap gap-1" aria-label="Alphabet navigation">
+      {alphabet.map((letter) => (
+        activeLetters.has(letter)
+          ? <a
+              href={`#letter-${letter}`}
+              class="inline-flex items-center justify-center w-8 h-8 rounded text-sm font-medium text-indigo-600 bg-indigo-50 hover:bg-indigo-100 transition-colors no-underline"
+            >
+              {letter}
+            </a>
+          : <span class="inline-flex items-center justify-center w-8 h-8 rounded text-sm text-gray-300">
+              {letter}
+            </span>
+      ))}
+    </nav>
+
+    <!-- Letter sections -->
+    <div class="space-y-12">
+      {[...letterMap.entries()].map(([letter, letterEntries]) => (
+        <section id={`letter-${letter}`}>
+          <h2 class="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-200">
+            {letter}
+          </h2>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {letterEntries.map((entry) => {
+              const slug = entry.slug.split('/').pop();
+              return (
+                <div class="relative">
+                  <ContentCard
+                    title={entry.data.title}
+                    description={entry.data.description}
+                    href={localePath(locale, `glossary/${slug}`)}
+                    difficulty={entry.data.difficulty}
+                    category={entry.data.category}
+                    tags={entry.data.tags}
+                    locale={locale}
+                  />
+                </div>
+              );
+            })}
           </div>
-        );
-      })}
+        </section>
+      ))}
     </div>
   </div>
 </BaseLayout>

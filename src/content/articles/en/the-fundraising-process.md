@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "investors", "venture capital", "pitch", "process"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2025-01-07
 primaryKeyword: "startup fundraising process"
 readingTime: 15
 author: "Startup Super School"

@@ -5,7 +5,7 @@ locale: "en"
 category: "strategy"
 tags: ["strategy", "startup", "entrepreneurship", "business model", "growth"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2025-01-02
 primaryKeyword: "startup vs small business"
 readingTime: 10
 author: "Startup Super School"

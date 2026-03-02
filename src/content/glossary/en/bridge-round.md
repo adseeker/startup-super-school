@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "financing", "investors", "runway", "early stage"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-04-18
 primaryKeyword: "bridge round"
 relatedTerms: ["runway", "burn-rate", "convertible-note", "safe", "seed-round"]
 seoKeywords: ["bridge round startup", "what is a bridge round", "startup bridge financing", "bridge loan startup"]

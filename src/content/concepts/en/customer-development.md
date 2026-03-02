@@ -5,7 +5,7 @@ locale: "en"
 category: "methodology"
 tags: ["methodology", "validation", "lean startup", "customer research"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-07-27
 primaryKeyword: "customer development"
 origin: "Steve Blank, 1990s–2000s; formalized in The Four Steps to the Epiphany, 2003"
 relatedConcepts: ["lean-startup", "jobs-to-be-done"]

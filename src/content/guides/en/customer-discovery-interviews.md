@@ -5,7 +5,7 @@ locale: "en"
 category: "validation"
 tags: ["validation", "customer research", "interviews", "product", "lean startup"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-07-29
 primaryKeyword: "customer discovery interviews"
 readingTime: 13
 seoKeywords: ["customer discovery interviews", "how to run customer interviews", "discovery interview startup", "user research startup"]

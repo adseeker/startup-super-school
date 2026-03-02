@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "investors", "term sheet", "equity", "follow-on"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-09
 primaryKeyword: "pro-rata rights"
 relatedTerms: ["term-sheet", "cap-table", "seed-round", "series-a", "equity-dilution"]
 seoKeywords: ["pro-rata rights startup", "what are pro-rata rights", "pro-rata investment rights", "follow-on investment rights"]

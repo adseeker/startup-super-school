@@ -5,7 +5,7 @@ locale: "en"
 category: "strategy"
 tags: ["strategy", "growth", "defensibility", "platform", "moat"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-10-01
 primaryKeyword: "network effects"
 origin: "Metcalfe's Law, Robert Metcalfe, 1980s"
 relatedConcepts: ["growth-loops", "flywheel-effect", "jobs-to-be-done"]

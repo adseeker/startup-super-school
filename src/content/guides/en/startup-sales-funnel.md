@@ -5,7 +5,7 @@ locale: "en"
 category: "growth"
 tags: ["growth", "sales", "funnel", "revenue", "B2B"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2025-01-01
 primaryKeyword: "startup sales funnel"
 readingTime: 13
 seoKeywords: ["startup sales funnel", "B2B sales funnel startup", "how to build sales funnel startup", "early stage sales funnel"]

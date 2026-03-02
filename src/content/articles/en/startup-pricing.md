@@ -5,7 +5,7 @@ locale: "en"
 category: "strategy"
 tags: ["pricing", "revenue", "strategy", "SaaS", "monetization"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-31
 primaryKeyword: "startup pricing"
 readingTime: 13
 author: "Startup Super School"

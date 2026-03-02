@@ -5,7 +5,7 @@ locale: "en"
 category: "equity"
 tags: ["equity", "fundraising", "investors", "ownership"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-07-07
 primaryKeyword: "cap table"
 relatedTerms: ["equity-dilution", "vesting", "seed-round"]
 seoKeywords: ["cap table startup", "what is a cap table", "capitalization table", "startup equity cap table"]

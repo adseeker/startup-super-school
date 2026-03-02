@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "valuation", "investors", "equity", "term sheet"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-06
 primaryKeyword: "pre-money valuation"
 relatedTerms: ["term-sheet", "equity-dilution", "cap-table", "seed-round", "safe"]
 seoKeywords: ["pre-money valuation startup", "post-money valuation startup", "pre-money vs post-money", "startup valuation explained"]

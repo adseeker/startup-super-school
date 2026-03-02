@@ -5,7 +5,7 @@ locale: "en"
 category: "growth"
 tags: ["growth", "sales", "early stage", "acquisition", "customers"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-08-22
 primaryKeyword: "how to get first customers"
 readingTime: 14
 seoKeywords: ["how to get first customers startup", "first 100 customers startup", "early customer acquisition startup", "startup first sales"]

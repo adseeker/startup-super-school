@@ -5,7 +5,7 @@ locale: "en"
 category: "metrics"
 tags: ["metrics", "SaaS", "finance", "growth", "profitability"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-18
 primaryKeyword: "rule of 40"
 relatedTerms: ["arr", "mrr", "nrr", "burn-rate", "gross-margin"]
 seoKeywords: ["rule of 40 SaaS", "what is rule of 40", "rule of 40 startup", "SaaS rule of 40 metric"]

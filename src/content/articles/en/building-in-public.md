@@ -5,7 +5,7 @@ locale: "en"
 category: "growth"
 tags: ["growth", "marketing", "community", "transparency", "founder brand"]
 difficulty: "beginner"
-publishedDate: 2024-01-01
+publishedDate: 2024-06-02
 primaryKeyword: "building in public"
 readingTime: 11
 author: "Startup Super School"

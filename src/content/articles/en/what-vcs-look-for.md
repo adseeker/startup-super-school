@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "investors", "venture capital", "seed stage", "pitch"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2025-01-17
 primaryKeyword: "what VCs look for"
 readingTime: 12
 author: "Startup Super School"

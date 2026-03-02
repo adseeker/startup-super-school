@@ -5,7 +5,7 @@ locale: "en"
 category: "growth"
 tags: ["growth", "marketing", "acquisition", "experimentation"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-08-28
 primaryKeyword: "growth hacking"
 relatedTerms: ["product-led-growth", "north-star-metric", "cac"]
 seoKeywords: ["growth hacking", "what is growth hacking", "growth hacking techniques", "startup growth hacking examples"]

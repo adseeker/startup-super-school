@@ -5,7 +5,7 @@ locale: "en"
 category: "exits"
 tags: ["exits", "public markets", "fundraising", "scaling", "equity"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-09-05
 primaryKeyword: "initial public offering"
 acronym: "IPO"
 relatedTerms: ["series-a", "cap-table", "equity-dilution", "arr"]

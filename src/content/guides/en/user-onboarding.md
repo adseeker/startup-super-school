@@ -5,7 +5,7 @@ locale: "en"
 category: "product"
 tags: ["product", "onboarding", "retention", "SaaS", "activation"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2025-01-10
 primaryKeyword: "SaaS user onboarding"
 readingTime: 14
 seoKeywords: ["SaaS user onboarding", "how to improve user onboarding", "startup onboarding flow", "user activation onboarding"]

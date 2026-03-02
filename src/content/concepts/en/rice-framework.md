@@ -5,7 +5,7 @@ locale: "en"
 category: "framework"
 tags: ["framework", "product", "prioritization", "roadmap", "product management"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-16
 primaryKeyword: "RICE framework"
 origin: "Intercom, 2015"
 relatedConcepts: ["okrs", "jobs-to-be-done"]

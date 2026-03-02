@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "legal", "B2B", "sales", "enterprise"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-09-13
 primaryKeyword: "letter of intent"
 acronym: "LOI"
 relatedTerms: ["due-diligence", "term-sheet", "seed-round"]

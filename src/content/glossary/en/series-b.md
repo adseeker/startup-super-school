@@ -5,7 +5,7 @@ locale: "en"
 category: "fundraising"
 tags: ["fundraising", "funding", "venture capital", "growth", "scaling"]
 difficulty: "intermediate"
-publishedDate: 2024-01-01
+publishedDate: 2024-12-26
 primaryKeyword: "Series B round"
 relatedTerms: ["series-a", "seed-round", "arr", "nrr", "unit-economics"]
 seoKeywords: ["Series B round startup", "what is Series B funding", "Series B requirements", "how to raise Series B"]
