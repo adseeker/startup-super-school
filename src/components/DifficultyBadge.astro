@@ -1,0 +1,27 @@
+---
+import { getTranslations } from '../utils/i18n';
+import type { Locale } from '../utils/i18n';
+
+interface Props {
+  difficulty: 'beginner' | 'intermediate' | 'advanced';
+  locale: Locale;
+}
+
+const { difficulty, locale } = Astro.props;
+const t = getTranslations(locale);
+
+const styles = {
+  beginner: 'bg-green-100 text-green-700',
+  intermediate: 'bg-yellow-100 text-yellow-700',
+  advanced: 'bg-red-100 text-red-700',
+};
+---
+
+<span
+  class:list={[
+    'inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium',
+    styles[difficulty],
+  ]}
+>
+  {t.content.difficulty[difficulty]}
+</span>

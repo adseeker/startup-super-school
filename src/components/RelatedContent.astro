@@ -1,0 +1,57 @@
+---
+import { getCollection } from 'astro:content';
+import { getTranslations } from '../utils/i18n';
+import type { Locale } from '../utils/i18n';
+
+interface Props {
+  currentTags: string[];
+  currentSection: 'glossary' | 'guides' | 'concepts' | 'articles';
+  locale: Locale;
+  currentSlug?: string;
+  limit?: number;
+}
+
+const { currentTags, currentSection, locale, currentSlug, limit = 4 } = Astro.props;
+const t = getTranslations(locale);
+
+// Fetch entries from the same section and find related by tag overlap
+const allEntries = await getCollection(currentSection, ({ data }) => {
+  return data.locale === locale && data.published !== false;
+});
+
+const scored = allEntries
+  .filter((entry) => entry.slug !== currentSlug)
+  .map((entry) => {
+    const overlap = entry.data.tags.filter((tag: string) => currentTags.includes(tag)).length;
+    return { entry, overlap };
+  })
+  .filter(({ overlap }) => overlap > 0)
+  .sort((a, b) => b.overlap - a.overlap)
+  .slice(0, limit);
+
+const sectionPath = `/${locale}/${currentSection}`;
+---
+
+{scored.length > 0 && (
+  <div class="bg-indigo-50 rounded-xl p-5 border border-indigo-100">
+    <p class="font-semibold text-gray-900 mb-3 text-xs uppercase tracking-wider">
+      {t.content.relatedContent}
+    </p>
+    <ul class="space-y-3">
+      {scored.map(({ entry }) => {
+        const slug = entry.slug.split('/').pop();
+        return (
+          <li>
+            <a
+              href={`${sectionPath}/${slug}`}
+              class="text-sm text-indigo-700 hover:text-indigo-900 no-underline font-medium leading-snug block"
+            >
+              {entry.data.title}
+            </a>
+            <p class="text-xs text-gray-500 mt-0.5 line-clamp-2">{entry.data.description}</p>
+          </li>
+        );
+      })}
+    </ul>
+  </div>
+)}

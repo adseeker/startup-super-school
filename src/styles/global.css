@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --color-accent: oklch(0.511 0.262 276.966); /* indigo-600 */
+  --color-accent-hover: oklch(0.457 0.24 277.023); /* indigo-700 */
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white text-gray-900;
+  }
+
+  a {
+    @apply text-indigo-600 hover:text-indigo-800 transition-colors;
+  }
+}

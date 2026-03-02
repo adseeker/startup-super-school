@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://startup-super-school.vercel.app/sitemap-index.xml

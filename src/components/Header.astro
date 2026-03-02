@@ -1,0 +1,94 @@
+---
+import { getTranslations } from '../utils/i18n';
+import type { Locale } from '../utils/i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = getTranslations(locale);
+
+const navLinks = [
+  { href: `/${locale}/glossary`, label: t.nav.glossary },
+  { href: `/${locale}/guides`, label: t.nav.guides },
+  { href: `/${locale}/concepts`, label: t.nav.concepts },
+  { href: `/${locale}/articles`, label: t.nav.articles },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="border-b border-gray-200 bg-white sticky top-0 z-40">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <a
+        href={`/${locale}`}
+        class="flex items-center gap-2 no-underline text-gray-900 hover:text-indigo-600 transition-colors"
+      >
+        <span class="text-2xl font-bold tracking-tight">
+          <span class="text-indigo-600">S</span>tartup
+          <span class="text-indigo-600">S</span>uper
+          <span class="text-indigo-600">S</span>chool
+        </span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-6" aria-label="Main navigation">
+        {navLinks.map(({ href, label }) => (
+          <a
+            href={href}
+            class:list={[
+              'text-sm font-medium no-underline transition-colors',
+              currentPath.startsWith(href)
+                ? 'text-indigo-600'
+                : 'text-gray-600 hover:text-gray-900',
+            ]}
+          >
+            {label}
+          </a>
+        ))}
+      </nav>
+
+      <!-- Mobile menu button -->
+      <button
+        type="button"
+        class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none"
+        aria-label="Toggle menu"
+        id="mobile-menu-button"
+      >
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile nav -->
+  <div class="md:hidden hidden border-t border-gray-200" id="mobile-menu">
+    <nav class="px-4 py-3 space-y-1">
+      {navLinks.map(({ href, label }) => (
+        <a
+          href={href}
+          class:list={[
+            'block px-3 py-2 rounded-md text-sm font-medium no-underline',
+            currentPath.startsWith(href)
+              ? 'bg-indigo-50 text-indigo-600'
+              : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900',
+          ]}
+        >
+          {label}
+        </a>
+      ))}
+    </nav>
+  </div>
+</header>
+
+<script>
+  const button = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+  button?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>

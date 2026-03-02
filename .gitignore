@@ -1,0 +1,8 @@
+dist/
+.vercel/
+node_modules/
+.astro/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo

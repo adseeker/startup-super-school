@@ -1,0 +1,158 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import DifficultyBadge from '../components/DifficultyBadge.astro';
+import TableOfContents from '../components/TableOfContents.astro';
+import RelatedContent from '../components/RelatedContent.astro';
+import { getTranslations, formatDate } from '../utils/i18n';
+import type { Locale } from '../utils/i18n';
+import type { MarkdownHeading } from 'astro';
+
+interface Props {
+  title: string;
+  description: string;
+  locale: Locale;
+  category: string;
+  tags: string[];
+  difficulty: 'beginner' | 'intermediate' | 'advanced';
+  publishedDate: Date;
+  lastUpdated?: Date;
+  readingTime?: number;
+  headings: MarkdownHeading[];
+  sectionSlug: 'glossary' | 'guides' | 'concepts' | 'articles';
+  seoKeywords?: string[];
+  relatedSlugs?: string[];
+  canonicalUrl?: string;
+  ogImage?: string;
+}
+
+const {
+  title,
+  description,
+  locale,
+  category,
+  tags,
+  difficulty,
+  publishedDate,
+  lastUpdated,
+  readingTime,
+  headings,
+  sectionSlug,
+  seoKeywords,
+  canonicalUrl,
+  ogImage,
+} = Astro.props;
+
+const t = getTranslations(locale);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description,
+  inLanguage: locale,
+  datePublished: publishedDate.toISOString(),
+  ...(lastUpdated ? { dateModified: lastUpdated.toISOString() } : {}),
+  publisher: {
+    '@type': 'Organization',
+    name: t.site.name,
+    url: Astro.site?.href,
+  },
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  locale={locale}
+  type="article"
+  publishedDate={publishedDate}
+  lastUpdated={lastUpdated}
+  canonicalUrl={canonicalUrl}
+  ogImage={ogImage}
+  jsonLd={jsonLd}
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <!-- Breadcrumb -->
+    <nav class="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+      <a href={`/${locale}`} class="hover:text-gray-700 no-underline">{t.nav.home}</a>
+      <span class="mx-2">›</span>
+      <a href={`/${locale}/${sectionSlug}`} class="hover:text-gray-700 capitalize no-underline">
+        {t.content.sections[sectionSlug]}
+      </a>
+      <span class="mx-2">›</span>
+      <span class="text-gray-900">{title}</span>
+    </nav>
+
+    <div class="lg:grid lg:grid-cols-[1fr_280px] lg:gap-12">
+      <!-- Main content -->
+      <article>
+        <!-- Header -->
+        <header class="mb-8">
+          <div class="flex flex-wrap items-center gap-3 mb-4">
+            <DifficultyBadge difficulty={difficulty} locale={locale} />
+            <span class="text-sm text-gray-500 capitalize">{category}</span>
+            {readingTime && (
+              <span class="text-sm text-gray-500">
+                {t.content.readingTime.replace('{n}', String(readingTime))}
+              </span>
+            )}
+          </div>
+          <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">
+            {title}
+          </h1>
+          <p class="text-xl text-gray-600 leading-relaxed">{description}</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs text-gray-500">
+            <span>{t.content.publishedOn.replace('{date}', formatDate(publishedDate, locale))}</span>
+            {lastUpdated && (
+              <span>
+                · {t.content.lastUpdated.replace('{date}', formatDate(lastUpdated, locale))}
+              </span>
+            )}
+          </div>
+        </header>
+
+        <!-- Article body -->
+        <div class="prose prose-gray prose-lg max-w-none
+          prose-headings:font-semibold prose-headings:text-gray-900
+          prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
+          prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
+          prose-p:text-gray-700 prose-p:leading-relaxed
+          prose-a:text-indigo-600 prose-a:no-underline hover:prose-a:underline
+          prose-strong:text-gray-900
+          prose-blockquote:border-indigo-400 prose-blockquote:text-gray-600
+          prose-code:text-indigo-700 prose-code:bg-indigo-50 prose-code:px-1 prose-code:rounded
+          prose-pre:bg-gray-900 prose-pre:text-gray-100
+          prose-table:text-sm
+          prose-th:text-left prose-th:font-semibold
+          prose-img:rounded-lg">
+          <slot />
+        </div>
+
+        <!-- Tags -->
+        {tags.length > 0 && (
+          <div class="mt-10 pt-6 border-t border-gray-200">
+            <div class="flex flex-wrap gap-2">
+              {tags.map((tag) => (
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-700">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="mt-10 lg:mt-0 space-y-8">
+        {headings.length > 1 && (
+          <TableOfContents headings={headings} locale={locale} />
+        )}
+        <RelatedContent
+          currentTags={tags}
+          currentSection={sectionSlug}
+          locale={locale}
+        />
+      </aside>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,44 @@
+---
+import { getTranslations } from '../utils/i18n';
+import type { Locale } from '../utils/i18n';
+import type { MarkdownHeading } from 'astro';
+
+interface Props {
+  headings: MarkdownHeading[];
+  locale: Locale;
+}
+
+const { headings, locale } = Astro.props;
+const t = getTranslations(locale);
+
+// Only include h2 and h3
+const filteredHeadings = headings.filter((h) => h.depth <= 3);
+---
+
+{filteredHeadings.length > 1 && (
+  <nav
+    class="bg-gray-50 rounded-xl p-5 text-sm border border-gray-200"
+    aria-label={t.content.tableOfContents}
+  >
+    <p class="font-semibold text-gray-900 mb-3 text-xs uppercase tracking-wider">
+      {t.content.tableOfContents}
+    </p>
+    <ol class="space-y-2">
+      {filteredHeadings.map((heading) => (
+        <li
+          class:list={[
+            'leading-snug',
+            heading.depth === 3 ? 'ml-4' : '',
+          ]}
+        >
+          <a
+            href={`#${heading.slug}`}
+            class="text-gray-600 hover:text-indigo-600 no-underline transition-colors"
+          >
+            {heading.text}
+          </a>
+        </li>
+      ))}
+    </ol>
+  </nav>
+)}
