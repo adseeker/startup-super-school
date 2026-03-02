@@ -6,18 +6,24 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "render-video": "node scripts/render-video.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/rss": "^4.0.15",
     "@astrojs/sitemap": "^3.7.0",
     "@astrojs/vercel": "^9.0.4",
+    "@remotion/cli": "^4.0.431",
+    "@remotion/google-fonts": "^4.0.431",
+    "@remotion/renderer": "^4.0.431",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.2.1",
     "astro": "^5.17.1",
     "astro-pagefind": "^1.8.5",
+    "remotion": "^4.0.431",
     "tailwindcss": "^4.2.1",
-    "unist-util-visit": "^5.1.0"
+    "unist-util-visit": "^5.1.0",
+    "zod": "^4.3.6"
   }
 }

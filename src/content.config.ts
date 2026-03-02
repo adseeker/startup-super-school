@@ -16,6 +16,7 @@ const baseSchema = z.object({
   publishedDate: z.coerce.date(),
   lastUpdated: z.coerce.date().optional(),
   published: z.boolean().default(true),
+  video: z.boolean().optional(),
   /**
    * The main keyword this page is optimized for.
    * Used by the autolinker: when this phrase appears in another article,

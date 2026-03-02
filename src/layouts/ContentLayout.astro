@@ -23,6 +23,8 @@ interface Props {
   relatedSlugs?: string[];
   canonicalUrl?: string;
   ogImage?: string;
+  slug?: string;
+  video?: boolean;
 }
 
 const {
@@ -40,6 +42,8 @@ const {
   seoKeywords,
   canonicalUrl,
   ogImage,
+  slug,
+  video,
 } = Astro.props;
 
 const t = getTranslations(locale);
@@ -140,6 +144,19 @@ const breadcrumbLd = {
     <div class="lg:grid lg:grid-cols-[1fr_280px] lg:gap-12">
       <!-- Main content -->
       <article>
+        <!-- Video intro (optional) -->
+        {video && slug && (
+          <div class="mb-8 rounded-xl overflow-hidden shadow-sm" data-pagefind-ignore>
+            <video
+              src={`/videos/${sectionSlug}/${slug}.mp4`}
+              controls
+              preload="metadata"
+              class="w-full aspect-video"
+              aria-label={`Video introduction: ${title}`}
+            />
+          </div>
+        )}
+
         <!-- Header -->
         <header class="mb-8">
           <div class="flex flex-wrap items-center gap-3 mb-4">

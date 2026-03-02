@@ -14,8 +14,9 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content, headings } = await entry.render();
-const { title, description, locale, category, tags, difficulty, publishedDate, lastUpdated, readingTime, seoKeywords } =
+const { title, description, locale, category, tags, difficulty, publishedDate, lastUpdated, readingTime, seoKeywords, video } =
   entry.data;
+const slug = entry.slug.split('/').pop()!;
 ---
 
 <ContentLayout
@@ -32,6 +33,8 @@ const { title, description, locale, category, tags, difficulty, publishedDate, l
   sectionSlug="articles"
   seoKeywords={seoKeywords}
   canonicalUrl={Astro.url.href}
+  slug={slug}
+  video={video}
 >
   <Content />
 </ContentLayout>
