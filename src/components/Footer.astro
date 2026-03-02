@@ -1,5 +1,5 @@
 ---
-import { getTranslations } from '../utils/i18n';
+import { getTranslations, localePath } from '../utils/i18n';
 import type { Locale } from '../utils/i18n';
 
 interface Props {
@@ -17,7 +17,7 @@ const copyright = t.footer.copyright.replace('{year}', String(year));
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
       <!-- Brand -->
       <div class="md:col-span-2">
-        <a href={`/${locale}`} class="text-xl font-bold text-gray-900 no-underline">
+        <a href={localePath(locale, '')} class="text-xl font-bold text-gray-900 no-underline">
           Startup Super School
         </a>
         <p class="mt-2 text-sm text-gray-500 max-w-xs">
@@ -30,22 +30,22 @@ const copyright = t.footer.copyright.replace('{year}', String(year));
         <h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase">Learn</h3>
         <ul class="mt-4 space-y-2">
           <li>
-            <a href={`/${locale}/glossary`} class="text-sm text-gray-500 hover:text-gray-900 no-underline">
+            <a href={localePath(locale, 'glossary')} class="text-sm text-gray-500 hover:text-gray-900 no-underline">
               {t.nav.glossary}
             </a>
           </li>
           <li>
-            <a href={`/${locale}/guides`} class="text-sm text-gray-500 hover:text-gray-900 no-underline">
+            <a href={localePath(locale, 'guides')} class="text-sm text-gray-500 hover:text-gray-900 no-underline">
               {t.nav.guides}
             </a>
           </li>
           <li>
-            <a href={`/${locale}/concepts`} class="text-sm text-gray-500 hover:text-gray-900 no-underline">
+            <a href={localePath(locale, 'concepts')} class="text-sm text-gray-500 hover:text-gray-900 no-underline">
               {t.nav.concepts}
             </a>
           </li>
           <li>
-            <a href={`/${locale}/articles`} class="text-sm text-gray-500 hover:text-gray-900 no-underline">
+            <a href={localePath(locale, 'articles')} class="text-sm text-gray-500 hover:text-gray-900 no-underline">
               {t.nav.articles}
             </a>
           </li>
@@ -57,12 +57,12 @@ const copyright = t.footer.copyright.replace('{year}', String(year));
         <h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase">Resources</h3>
         <ul class="mt-4 space-y-2">
           <li>
-            <a href={`/rss.xml`} class="text-sm text-gray-500 hover:text-gray-900 no-underline">
+            <a href="/rss.xml" class="text-sm text-gray-500 hover:text-gray-900 no-underline">
               RSS Feed
             </a>
           </li>
           <li>
-            <a href={`/sitemap-index.xml`} class="text-sm text-gray-500 hover:text-gray-900 no-underline">
+            <a href="/sitemap-index.xml" class="text-sm text-gray-500 hover:text-gray-900 no-underline">
               Sitemap
             </a>
           </li>

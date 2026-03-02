@@ -1,9 +1,9 @@
 ---
-import ContentLayout from '../../../layouts/ContentLayout.astro';
+import ContentLayout from '../../layouts/ContentLayout.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-  const entries = await getCollection('guides', ({ data }) => {
+  const entries = await getCollection('articles', ({ data }) => {
     return data.locale === 'en' && data.published !== false;
   });
   return entries.map((entry) => ({
@@ -29,7 +29,7 @@ const { title, description, locale, category, tags, difficulty, publishedDate, l
   lastUpdated={lastUpdated}
   readingTime={readingTime}
   headings={headings}
-  sectionSlug="guides"
+  sectionSlug="articles"
   seoKeywords={seoKeywords}
   canonicalUrl={Astro.url.href}
 >

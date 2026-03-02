@@ -1,5 +1,5 @@
 ---
-import { getTranslations } from '../utils/i18n';
+import { getTranslations, localePath } from '../utils/i18n';
 import type { Locale } from '../utils/i18n';
 
 interface Props {
@@ -10,10 +10,10 @@ const { locale } = Astro.props;
 const t = getTranslations(locale);
 
 const navLinks = [
-  { href: `/${locale}/glossary`, label: t.nav.glossary },
-  { href: `/${locale}/guides`, label: t.nav.guides },
-  { href: `/${locale}/concepts`, label: t.nav.concepts },
-  { href: `/${locale}/articles`, label: t.nav.articles },
+  { href: localePath(locale, 'glossary'), label: t.nav.glossary },
+  { href: localePath(locale, 'guides'), label: t.nav.guides },
+  { href: localePath(locale, 'concepts'), label: t.nav.concepts },
+  { href: localePath(locale, 'articles'), label: t.nav.articles },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -24,7 +24,7 @@ const currentPath = Astro.url.pathname;
     <div class="flex items-center justify-between h-16">
       <!-- Logo -->
       <a
-        href={`/${locale}`}
+        href={localePath(locale, '')}
         class="flex items-center gap-2 no-underline text-gray-900 hover:text-indigo-600 transition-colors"
       >
         <span class="text-2xl font-bold tracking-tight">

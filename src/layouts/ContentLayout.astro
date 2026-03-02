@@ -3,7 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 import DifficultyBadge from '../components/DifficultyBadge.astro';
 import TableOfContents from '../components/TableOfContents.astro';
 import RelatedContent from '../components/RelatedContent.astro';
-import { getTranslations, formatDate } from '../utils/i18n';
+import { getTranslations, formatDate, localePath } from '../utils/i18n';
 import type { Locale } from '../utils/i18n';
 import type { MarkdownHeading } from 'astro';
 
@@ -74,9 +74,9 @@ const jsonLd = {
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
     <!-- Breadcrumb -->
     <nav class="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
-      <a href={`/${locale}`} class="hover:text-gray-700 no-underline">{t.nav.home}</a>
+      <a href={localePath(locale, '')} class="hover:text-gray-700 no-underline">{t.nav.home}</a>
       <span class="mx-2">›</span>
-      <a href={`/${locale}/${sectionSlug}`} class="hover:text-gray-700 capitalize no-underline">
+      <a href={localePath(locale, sectionSlug)} class="hover:text-gray-700 capitalize no-underline">
         {t.content.sections[sectionSlug]}
       </a>
       <span class="mx-2">›</span>

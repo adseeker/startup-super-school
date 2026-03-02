@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import { getTranslations } from '../utils/i18n';
+import { getTranslations, localePath } from '../utils/i18n';
 import type { Locale } from '../utils/i18n';
 
 interface Props {
@@ -29,7 +29,7 @@ const scored = allEntries
   .sort((a, b) => b.overlap - a.overlap)
   .slice(0, limit);
 
-const sectionPath = `/${locale}/${currentSection}`;
+const sectionPath = localePath(locale, currentSection);
 ---
 
 {scored.length > 0 && (

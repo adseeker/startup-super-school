@@ -1,33 +1,31 @@
 ---
-import BaseLayout from '../../../layouts/BaseLayout.astro';
-import ContentCard from '../../../components/ContentCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ContentCard from '../../components/ContentCard.astro';
 import { getCollection } from 'astro:content';
-import { getTranslations } from '../../../utils/i18n';
+import { getTranslations, localePath } from '../../utils/i18n';
 
 const locale = 'en' as const;
 const t = getTranslations(locale);
 
-const entries = await getCollection('glossary', ({ data }) => {
+const entries = await getCollection('guides', ({ data }) => {
   return data.locale === locale && data.published !== false;
 });
 
-// Sort alphabetically by title
-const sorted = entries.sort((a, b) => a.data.title.localeCompare(b.data.title));
+const sorted = entries.sort(
+  (a, b) => b.data.publishedDate.valueOf() - a.data.publishedDate.valueOf(),
+);
 ---
 
 <BaseLayout
-  title="Glossary"
-  description={t.content.sectionDescriptions.glossary}
+  title="Guides"
+  description={t.content.sectionDescriptions.guides}
   locale={locale}
 >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
     <header class="mb-10">
-      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">
-        {t.nav.glossary}
-      </h1>
-      <p class="text-xl text-gray-600">{t.content.sectionDescriptions.glossary}</p>
+      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">{t.nav.guides}</h1>
+      <p class="text-xl text-gray-600">{t.content.sectionDescriptions.guides}</p>
     </header>
-
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {sorted.map((entry) => {
         const slug = entry.slug.split('/').pop();
@@ -36,11 +34,12 @@ const sorted = entries.sort((a, b) => a.data.title.localeCompare(b.data.title));
             <ContentCard
               title={entry.data.title}
               description={entry.data.description}
-              href={`/${locale}/glossary/${slug}`}
+              href={localePath(locale, `guides/${slug}`)}
               difficulty={entry.data.difficulty}
               category={entry.data.category}
               tags={entry.data.tags}
               locale={locale}
+              readingTime={entry.data.readingTime}
             />
           </div>
         );
