@@ -5,7 +5,7 @@
 **Startup Super School** is a startup-world encyclopedia built with Astro 5.
 It provides definitions, guides, concepts, and articles for founders, operators, and builders.
 
-**Live URL**: https://startup-super-school.vercel.app
+**Live URL**: https://www.startupsuperschool.com/
 **GitHub**: https://github.com/adseeker/startup-super-school
 
 ---
