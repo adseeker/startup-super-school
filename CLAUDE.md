@@ -333,11 +333,18 @@ npx remotion studio
 1. Read `CLAUDE.md` (this file) in full
 2. Run `npm run build` to confirm the baseline is clean before touching anything
 3. Read every file you plan to modify — never edit blind
+4. When creating new content: list existing slugs first to avoid duplicates
+   ```bash
+   ls src/content/glossary/en/ src/content/guides/en/ src/content/concepts/en/ src/content/articles/en/
+   ```
 
 ### SOP: Add or update a content piece
 
 1. Create or edit the `.md` file in `src/content/{section}/en/`
-2. Verify `description` is ≤160 chars (count manually or use a tool)
+2. Verify `description` is ≤160 chars — use this one-liner, do not guess:
+   ```bash
+   echo -n "your description here" | wc -c
+   ```
 3. **Add `faqs` — mandatory for every page** (see SOP below)
 4. For guides: **add `steps`** — mandatory for every guide (enables HowTo rich results)
 5. Run `npm run build` — Zod will catch schema errors before deploy
