@@ -7,7 +7,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "render-video": "node scripts/render-video.mjs"
+    "render-video": "node scripts/render-video.mjs",
+    "submit-indexnow": "node scripts/submit-indexnow.mjs",
+    "submit-indexnow:all": "node scripts/submit-indexnow.mjs --all"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
