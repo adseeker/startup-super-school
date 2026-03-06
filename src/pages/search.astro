@@ -24,11 +24,16 @@ const locale = 'en' as const;
     function initSearch() {
       // Read query client-side — Astro.url has no searchParams at static build time
       const query = new URLSearchParams(window.location.search).get('q') ?? '';
-      new PagefindUI({
-        element: '#search',
-        showSubResults: true,
-        defaultValue: query,
-      });
+      new PagefindUI({ element: '#search', showSubResults: true });
+
+      // Pre-fill and auto-search if ?q= is in the URL (PagefindUI has no defaultValue option)
+      if (query) {
+        const input = document.querySelector('#search input[type="text"]') as HTMLInputElement | null;
+        if (input) {
+          input.value = query;
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+        }
+      }
     }
 
     if (document.readyState === 'loading') {
