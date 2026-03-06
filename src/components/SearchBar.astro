@@ -17,9 +17,9 @@ const ph = placeholder ?? t.search.placeholder;
   action={localePath(locale, 'search')}
   method="get"
   role="search"
-  class:list={['relative flex items-center', large ? 'w-full max-w-xl mx-auto' : 'w-full max-w-xs']}
+  class:list={['flex items-center gap-2', large ? 'w-full max-w-xl mx-auto' : 'w-full max-w-xs']}
 >
-  <div class="relative w-full">
+  <div class="relative flex-1">
     <svg
       class:list={[
         'absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 shrink-0',
@@ -45,4 +45,18 @@ const ph = placeholder ?? t.search.placeholder;
       ]}
     />
   </div>
+  <button
+    type="submit"
+    aria-label="Search"
+    class:list={[
+      'shrink-0 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-colors',
+      large ? 'px-5 py-3 text-base' : 'px-3 py-2 text-sm',
+    ]}
+  >
+    {large ? 'Search' : (
+      <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+      </svg>
+    )}
+  </button>
 </form>
