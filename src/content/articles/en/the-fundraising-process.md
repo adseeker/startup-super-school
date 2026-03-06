@@ -1,5 +1,5 @@
 ---
-title: "The Startup Fundraising Process, Explained Start to Finish"
+title: "The Startup Fundraising Process"
 description: "The fundraising process is opaque by design. This article maps every phase — from prep to close — so you can run it like an operator."
 locale: "en"
 category: "fundraising"

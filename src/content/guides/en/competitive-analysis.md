@@ -1,5 +1,5 @@
 ---
-title: "How to Do a Competitive Analysis for Your Startup"
+title: "How to Do a Competitive Analysis"
 description: "Learn to find competitors, compare them across key dimensions, and turn competitive intel into a differentiation narrative that wins deals."
 locale: "en"
 category: "strategy"

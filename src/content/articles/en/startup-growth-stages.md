@@ -1,5 +1,5 @@
 ---
-title: "The Stages of Startup Growth: From Idea to Scale"
+title: "The Stages of Startup Growth"
 description: "The five stages of startup growth explained — from ideation to scale — with key milestones, exit criteria, and common failure modes for each phase."
 locale: "en"
 category: "strategy"

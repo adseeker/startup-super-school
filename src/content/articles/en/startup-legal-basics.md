@@ -1,5 +1,5 @@
 ---
-title: "Startup Legal Basics: What Founders Need to Get Right Early"
+title: "Startup Legal Basics for Founders"
 description: "Four legal decisions — incorporation, co-founder equity, IP assignment, and the 83(b) election — can make or break your company. Get them right early."
 locale: "en"
 category: "operations"

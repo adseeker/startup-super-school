@@ -1,5 +1,5 @@
 ---
-title: "Why Most Startups Fail — And What to Do Differently"
+title: "Why Most Startups Fail and What to Do"
 description: "90% of startups fail. The data reveals it's rarely bad luck — it's specific, avoidable mistakes most founders repeat."
 locale: "en"
 category: "strategy"

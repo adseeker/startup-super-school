@@ -1,5 +1,5 @@
 ---
-title: "Content Marketing for Startups: How to Build Compounding Growth"
+title: "Content Marketing for Startups"
 description: "How startups can use content marketing to build authority, drive organic traffic, and generate inbound leads without a large marketing budget."
 locale: "en"
 category: "marketing"

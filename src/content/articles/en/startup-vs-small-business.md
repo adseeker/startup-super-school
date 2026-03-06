@@ -1,5 +1,5 @@
 ---
-title: "Startup vs. Small Business: What's the Actual Difference?"
+title: "Startup vs. Small Business: Key Differences"
 description: "A startup and a small business are fundamentally different organizations with different goals, capital, and exit logic. Here's the real difference."
 locale: "en"
 category: "strategy"

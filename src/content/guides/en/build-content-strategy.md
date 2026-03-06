@@ -1,5 +1,5 @@
 ---
-title: "How to Build a Content Marketing Strategy for Your Startup"
+title: "How to Build a Content Marketing Strategy"
 description: "A practical framework for building a startup content strategy that drives compounding organic traffic, inbound leads, and category authority."
 locale: "en"
 category: "growth"

@@ -1,5 +1,5 @@
 ---
-title: "How to Design SaaS User Onboarding That Actually Works"
+title: "How to Design SaaS User Onboarding"
 description: "A practical guide to designing SaaS onboarding that activates users fast, reduces churn, and maximizes the ROI of every signup you earn."
 locale: "en"
 category: "product"

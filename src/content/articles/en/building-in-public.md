@@ -1,5 +1,5 @@
 ---
-title: "Building in Public: Why Radical Transparency Is a Growth Strategy"
+title: "Building in Public: A Growth Strategy"
 description: "Building in public turns your startup journey into a distribution channel. Here's how founders use radical transparency to build audience, trust, and revenue."
 locale: "en"
 category: "growth"

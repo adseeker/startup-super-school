@@ -1,5 +1,5 @@
 ---
-title: "From Idea to Product-Market Fit: A Founder's Roadmap"
+title: "From Idea to Product-Market Fit"
 description: "Everyone says 'find PMF' — almost no one explains how. This is the five-stage roadmap from idea to genuine product-market fit, with signals at each step."
 locale: "en"
 category: "strategy"

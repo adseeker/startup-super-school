@@ -1,5 +1,5 @@
 ---
-title: "Startup Equity Explained: What It Is, How It Works, and What It's Worth"
+title: "Startup Equity Explained"
 description: "Equity is ownership — but most founders and employees can't do the math. Here's exactly how startup equity works, dilutes, and pays out."
 locale: "en"
 category: "equity"

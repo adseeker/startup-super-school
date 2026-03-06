@@ -1,5 +1,5 @@
 ---
-title: "What Is Venture Capital? How VC Works, Who It's For, and What It Costs"
+title: "What Is Venture Capital?"
 description: "How venture capital works — VC fund structure, what investors look for, fund economics, dilution, and whether VC is the right path for your startup."
 locale: "en"
 category: "fundraising"

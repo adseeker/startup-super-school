@@ -1,5 +1,5 @@
 ---
-title: "The Founder Mental Health Crisis — and What to Do About It"
+title: "The Founder Mental Health Crisis"
 description: "50% of founders experience mental health conditions. Here's why founder burnout is structural — and the specific tools that actually help."
 locale: "en"
 category: "founders"

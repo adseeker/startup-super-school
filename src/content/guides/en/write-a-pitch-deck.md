@@ -1,5 +1,5 @@
 ---
-title: "How to Write a Startup Pitch Deck That Raises Money"
+title: "How to Write a Startup Pitch Deck"
 description: "A complete guide to building a startup pitch deck — what slides to include, what investors look for, and mistakes that get decks deleted immediately."
 locale: "en"
 category: "fundraising"

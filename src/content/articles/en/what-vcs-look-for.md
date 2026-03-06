@@ -1,5 +1,5 @@
 ---
-title: "What VCs Really Look for in a Seed-Stage Startup"
+title: "What VCs Look for in a Startup"
 description: "VCs say they back great teams in big markets. The reality is more specific — and more useful. Here's the actual framework seed investors use to decide."
 locale: "en"
 category: "fundraising"

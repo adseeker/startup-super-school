@@ -1,5 +1,5 @@
 ---
-title: "B2B vs. B2C Startup: How to Choose the Right Model"
+title: "B2B vs. B2C: Choosing the Right Model"
 description: "B2B and B2C startups play completely different games. Here's how to choose the model that fits your market, your skills, and your capital plan."
 locale: "en"
 category: "strategy"

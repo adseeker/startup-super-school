@@ -1,5 +1,5 @@
 ---
-title: "The Rise of Micro-SaaS: Building Small, Profitable Software Businesses"
+title: "The Rise of Micro-SaaS"
 description: "Micro-SaaS proves you don't need to raise millions or hire a team to build a valuable software business. Here's why the model works."
 locale: "en"
 category: "strategy"

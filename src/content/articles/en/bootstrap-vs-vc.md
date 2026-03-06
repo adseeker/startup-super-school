@@ -1,5 +1,5 @@
 ---
-title: "Bootstrapping vs. VC Funding: Which Path Is Right for You?"
+title: "Bootstrapping vs. VC Funding"
 description: "VC or bootstrap? The answer depends on your market, your ambitions, and what you're willing to trade. Here's how to decide."
 locale: "en"
 category: "fundraising"

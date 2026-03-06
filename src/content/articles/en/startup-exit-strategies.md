@@ -1,5 +1,5 @@
 ---
-title: "Startup Exit Strategies: Acquisition, IPO, and Everything In Between"
+title: "Startup Exit Strategies Explained"
 description: "A complete guide to startup exit strategies — how acquisitions, IPOs, and secondaries work, and what founders need to know before planning an exit."
 locale: "en"
 category: "fundraising"

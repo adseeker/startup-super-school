@@ -1,5 +1,5 @@
 ---
-title: "How Startup Culture Actually Gets Built — and Why It Matters"
+title: "How Startup Culture Gets Built"
 description: "Culture isn't ping-pong tables — it's what behaviors get rewarded and punished. Here's how founders actually build it."
 locale: "en"
 category: "team"

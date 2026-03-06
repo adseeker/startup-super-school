@@ -1,5 +1,5 @@
 ---
-title: "How to Validate Your Startup Idea Before Building"
+title: "How to Validate Your Startup Idea"
 description: "A practical, step-by-step guide to validating your startup idea with real people before writing a single line of code — saving months of wasted effort."
 locale: "en"
 category: "validation"

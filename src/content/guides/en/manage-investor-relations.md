@@ -1,5 +1,5 @@
 ---
-title: "How to Manage Investor Relations as a Startup Founder"
+title: "How to Manage Investor Relations"
 description: "Build a systematic investor relations practice — from monthly update emails to board meetings — that keeps investors engaged and working for you."
 locale: "en"
 category: "fundraising"

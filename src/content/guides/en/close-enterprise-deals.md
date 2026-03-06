@@ -1,5 +1,5 @@
 ---
-title: "How to Close Your First Enterprise Deals as a Startup"
+title: "How to Close Your First Enterprise Deals"
 description: "A tactical guide to landing your first enterprise customers: navigating buying committees, running POCs, and closing deals that stick."
 locale: "en"
 category: "growth"

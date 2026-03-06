@@ -1,5 +1,5 @@
 ---
-title: "Why Product-Market Fit Is the Only Thing That Matters (At First)"
+title: "Why Product-Market Fit Matters"
 description: "Before scaling, only one thing matters: product-market fit. Here's why it's the central challenge of early-stage startups and what it actually takes to find it."
 locale: "en"
 category: "strategy"
@@ -83,7 +83,7 @@ There is no formula. But there is a process:
 The most expensive way to test a hypothesis is to build the product and then find out you were wrong. The cheapest is to talk to 20–30 target users before writing a line of code.
 
 ### 3. Build the minimum to test the hypothesis
-Not the whole product — the minimum that lets you observe whether users get value and come back. See: [How to Build Your First MVP](/en/guides/build-your-mvp).
+Not the whole product — the minimum that lets you observe whether users get value and come back. See: [How to Build Your First MVP](/guides/build-your-mvp).
 
 ### 4. Measure retention, not acquisition
 Your retention curve tells you whether PMF exists. If retention flattens above 0% (i.e., some users keep coming back), there's signal. If it curves to zero, there isn't.

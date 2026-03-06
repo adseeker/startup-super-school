@@ -1,5 +1,5 @@
 ---
-title: "How to Make Your First 5 Hires as a Startup Founder"
+title: "How to Make Your First 5 Hires"
 description: "A practical guide to hiring your first employees — how to define the roles, run the process, set comp, and avoid the mistakes that derail early teams."
 locale: "en"
 category: "team"
