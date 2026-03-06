@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && npx pagefind --site .vercel/output/static",
     "preview": "astro preview",
     "astro": "astro",
     "render-video": "node scripts/render-video.mjs",
@@ -27,5 +27,9 @@
     "tailwindcss": "^4.2.1",
     "unist-util-visit": "^5.1.0",
     "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3"
   }
 }
