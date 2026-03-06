@@ -18,12 +18,12 @@ const locale = 'en' as const;
     <div id="search"></div>
   </div>
 
-  <script is:inline>
-    async function initSearch() {
+  <script>
+    import { PagefindUI } from '@pagefind/default-ui';
+
+    function initSearch() {
       // Read query client-side — Astro.url has no searchParams at static build time
       const query = new URLSearchParams(window.location.search).get('q') ?? '';
-
-      const { PagefindUI } = await import('/pagefind/pagefind-ui.js');
       new PagefindUI({
         element: '#search',
         showSubResults: true,
@@ -31,7 +31,6 @@ const locale = 'en' as const;
       });
     }
 
-    // Guard against DOMContentLoaded already having fired (inline script edge case)
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', initSearch);
     } else {
