@@ -2,7 +2,6 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const locale = 'en' as const;
-const query = Astro.url.searchParams.get('q') ?? '';
 ---
 
 <BaseLayout
@@ -19,15 +18,24 @@ const query = Astro.url.searchParams.get('q') ?? '';
     <div id="search"></div>
   </div>
 
-  <script define:vars={{ query }}>
-    window.addEventListener('DOMContentLoaded', async () => {
-      // @ts-ignore - pagefind is generated at build time
+  <script is:inline>
+    async function initSearch() {
+      // Read query client-side — Astro.url has no searchParams at static build time
+      const query = new URLSearchParams(window.location.search).get('q') ?? '';
+
       const { PagefindUI } = await import('/pagefind/pagefind-ui.js');
       new PagefindUI({
         element: '#search',
         showSubResults: true,
         defaultValue: query,
       });
-    });
+    }
+
+    // Guard against DOMContentLoaded already having fired (inline script edge case)
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initSearch);
+    } else {
+      initSearch();
+    }
   </script>
 </BaseLayout>
