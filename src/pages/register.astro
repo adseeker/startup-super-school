@@ -94,9 +94,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   const { data: { user } } = await supabase.auth.getUser();
   if (user) window.location.href = '/';
 
-  const form = document.getElementById('register-form') as HTMLFormElement;
-  const errorDiv = document.getElementById('form-error')!;
-  const submitBtn = document.getElementById('submit-btn') as HTMLButtonElement;
+  const form = document.getElementById('register-form');
+  const errorDiv = document.getElementById('form-error');
+  const submitBtn = document.getElementById('submit-btn');
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -104,10 +104,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     submitBtn.textContent = 'Creating account…';
     submitBtn.disabled = true;
 
-    const first_name = (document.getElementById('first_name') as HTMLInputElement).value.trim();
-    const last_name = (document.getElementById('last_name') as HTMLInputElement).value.trim();
-    const email = (document.getElementById('email') as HTMLInputElement).value;
-    const password = (document.getElementById('password') as HTMLInputElement).value;
+    const first_name = document.getElementById('first_name').value.trim();
+    const last_name = document.getElementById('last_name').value.trim();
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
 
     const { data, error } = await supabase.auth.signUp({ email, password });
 
