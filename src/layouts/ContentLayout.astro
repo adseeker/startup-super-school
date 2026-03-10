@@ -6,6 +6,8 @@ import RelatedContent from '../components/RelatedContent.astro';
 import { getTranslations, formatDate, localePath, slugifyTag } from '../utils/i18n';
 import type { Locale } from '../utils/i18n';
 import type { MarkdownHeading } from 'astro';
+import { getCollection } from 'astro:content';
+import { CURRICULUM_TRACKS, getTrackForContent } from '../data/curriculum';
 
 interface Props {
   title: string;
@@ -52,6 +54,48 @@ const {
 
 const t = getTranslations(locale);
 const siteUrl = Astro.site?.href?.replace(/\/$/, '') ?? '';
+
+// ── Find next item in curriculum track ─────────────────────────────────
+type NextItem = { title: string; href: string; section: string; readingTime?: number } | null;
+let nextItem: NextItem = null;
+
+if (slug) {
+  const trackSlug = getTrackForContent(category, tags);
+  if (trackSlug) {
+    const track = CURRICULUM_TRACKS.find(t => t.slug === trackSlug)!;
+
+    const [glossary, guides, concepts, articles] = await Promise.all([
+      getCollection('glossary', ({ data }) => data.published !== false),
+      getCollection('guides', ({ data }) => data.published !== false),
+      getCollection('concepts', ({ data }) => data.published !== false),
+      getCollection('articles', ({ data }) => data.published !== false),
+    ]);
+
+    type FlatItem = { section: string; slug: string; title: string; difficulty: string; readingTime?: number; category: string; tags: string[] };
+    const allItems: FlatItem[] = [
+      ...glossary.map(e => ({ section: 'glossary', slug: e.slug.split('/').pop()!, title: e.data.title, difficulty: e.data.difficulty, category: e.data.category, tags: e.data.tags })),
+      ...guides.map(e => ({ section: 'guides', slug: e.slug.split('/').pop()!, title: e.data.title, difficulty: e.data.difficulty, category: e.data.category, tags: e.data.tags, readingTime: 'readingTime' in e.data ? (e.data.readingTime as number | undefined) : undefined })),
+      ...concepts.map(e => ({ section: 'concepts', slug: e.slug.split('/').pop()!, title: e.data.title, difficulty: e.data.difficulty, category: e.data.category, tags: e.data.tags })),
+      ...articles.map(e => ({ section: 'articles', slug: e.slug.split('/').pop()!, title: e.data.title, difficulty: e.data.difficulty, category: e.data.category, tags: e.data.tags, readingTime: 'readingTime' in e.data ? (e.data.readingTime as number | undefined) : undefined })),
+    ];
+
+    const diffOrder: Record<string, number> = { beginner: 0, intermediate: 1, advanced: 2 };
+    const trackItems = allItems
+      .filter(item => getTrackForContent(item.category, item.tags) === track.slug)
+      .sort((a, b) => (diffOrder[a.difficulty] ?? 0) - (diffOrder[b.difficulty] ?? 0));
+
+    const currentIdx = trackItems.findIndex(item => item.section === sectionSlug && item.slug === slug);
+    if (currentIdx !== -1 && currentIdx < trackItems.length - 1) {
+      const next = trackItems[currentIdx + 1];
+      nextItem = {
+        title: next.title,
+        href: `/${next.section}/${next.slug}`,
+        section: next.section,
+        readingTime: next.readingTime,
+      };
+    }
+  }
+}
 
 // Per-type JSON-LD schema
 const jsonLd = sectionSlug === 'glossary'
@@ -248,6 +292,58 @@ const breadcrumbLd = {
             </div>
           </div>
         )}
+
+        <!-- Completion check (bottom of article) -->
+        {slug && (
+          <div class="mt-8 pt-6 border-t border-gray-200" data-pagefind-ignore>
+            <button
+              data-completion-btn
+              data-section={sectionSlug}
+              data-slug={slug}
+              class="completion-btn-default inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 border border-gray-300 text-gray-600 hover:border-indigo-400 hover:text-indigo-600"
+            >
+              <span data-completion-icon>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+              </span>
+              <span data-completion-label>Mark as complete</span>
+            </button>
+            <p id="completion-guest-hint" class="hidden mt-2 text-xs text-gray-400">
+              <a href="/register" class="text-indigo-500 hover:text-indigo-700 font-medium">Create a free account</a> to track your progress.
+            </p>
+
+            {/* Up next — revealed client-side after marking complete */}
+            {nextItem && (
+              <div
+                id="up-next-panel"
+                class="hidden mt-5 flex items-center gap-4 rounded-xl bg-indigo-50 border border-indigo-100 px-5 py-4"
+              >
+                <div class="shrink-0 w-9 h-9 rounded-full bg-indigo-100 flex items-center justify-center">
+                  <svg class="w-5 h-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <p class="text-xs font-semibold text-indigo-400 uppercase tracking-wide mb-0.5">Up next</p>
+                  <a
+                    href={nextItem.href}
+                    class="font-semibold text-indigo-700 hover:text-indigo-900 no-underline hover:underline text-sm leading-snug block truncate"
+                  >
+                    {nextItem.title}
+                  </a>
+                  {nextItem.readingTime && (
+                    <p class="text-xs text-indigo-400 mt-0.5">{nextItem.readingTime} min read</p>
+                  )}
+                </div>
+                <a
+                  href={nextItem.href}
+                  class="shrink-0 px-4 py-2 bg-indigo-600 text-white text-xs font-semibold rounded-lg hover:bg-indigo-700 transition-colors no-underline"
+                >
+                  Continue →
+                </a>
+              </div>
+            )}
+          </div>
+        )}
       </article>
 
       <!-- Sidebar -->
@@ -255,6 +351,49 @@ const breadcrumbLd = {
         {headings.length > 1 && (
           <TableOfContents headings={headings} locale={locale} />
         )}
+
+        <!-- Completion check (sidebar) -->
+        {slug && (
+          <div class="rounded-xl border border-gray-200 p-4">
+            <p class="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-3">Your progress</p>
+            <button
+              data-completion-btn
+              data-section={sectionSlug}
+              data-slug={slug}
+              class="completion-btn-default w-full inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 border border-gray-300 text-gray-600 hover:border-indigo-400 hover:text-indigo-600"
+            >
+              <span data-completion-icon>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+              </span>
+              <span data-completion-label>Mark as complete</span>
+            </button>
+            <p id="sidebar-guest-hint" class="hidden mt-2 text-xs text-gray-400 text-center">
+              <a href="/register" class="text-indigo-500 hover:text-indigo-700 font-medium">Create a free account</a> to save progress.
+            </p>
+
+            {nextItem && (
+              <div id="up-next-panel-sidebar" class="hidden mt-4 pt-4 border-t border-gray-100">
+                <p class="text-xs font-semibold text-indigo-400 uppercase tracking-wide mb-2">Up next</p>
+                <a
+                  href={nextItem.href}
+                  class="block font-semibold text-indigo-700 hover:text-indigo-900 no-underline hover:underline text-sm leading-snug mb-1"
+                >
+                  {nextItem.title}
+                </a>
+                {nextItem.readingTime && (
+                  <p class="text-xs text-indigo-400 mb-3">{nextItem.readingTime} min read</p>
+                )}
+                <a
+                  href={nextItem.href}
+                  class="block w-full text-center px-4 py-2 bg-indigo-600 text-white text-xs font-semibold rounded-lg hover:bg-indigo-700 transition-colors no-underline"
+                >
+                  Continue →
+                </a>
+              </div>
+            )}
+          </div>
+        )}
+
         <RelatedContent
           currentTags={tags}
           currentSection={sectionSlug}
@@ -263,4 +402,86 @@ const breadcrumbLd = {
       </aside>
     </div>
   </div>
+<!-- Completion check script -->
+<script>
+  import { supabase } from '../lib/supabase';
+
+  const DONE_CLASS = ['border-green-500', 'text-green-600', 'bg-green-50'];
+  const DEFAULT_CLASS = ['border-gray-300', 'text-gray-600'];
+  const SVG_EMPTY = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>';
+  const SVG_DONE = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg>';
+
+  function applyState(btn: HTMLElement, done: boolean) {
+    const icon = btn.querySelector('[data-completion-icon]');
+    const label = btn.querySelector('[data-completion-label]');
+    if (done) {
+      btn.classList.remove('completion-btn-default', ...DEFAULT_CLASS);
+      btn.classList.add(...DONE_CLASS);
+      if (icon) icon.innerHTML = SVG_DONE;
+      if (label) label.textContent = 'Completed';
+    } else {
+      btn.classList.remove(...DONE_CLASS);
+      btn.classList.add('completion-btn-default', ...DEFAULT_CLASS);
+      if (icon) icon.innerHTML = SVG_EMPTY;
+      if (label) label.textContent = 'Mark as complete';
+    }
+  }
+
+  function syncAll(done: boolean) {
+    document.querySelectorAll<HTMLElement>('[data-completion-btn]').forEach(btn => applyState(btn, done));
+  }
+
+  const { data: { user } } = await supabase.auth.getUser();
+  const btns = document.querySelectorAll<HTMLElement>('[data-completion-btn]');
+
+  if (btns.length > 0) {
+    const section = btns[0].dataset.section!;
+    const slug = btns[0].dataset.slug!;
+
+    if (!user) {
+      // Guest: show hint, clicking redirects to /register
+      document.getElementById('completion-guest-hint')?.classList.remove('hidden');
+      document.getElementById('sidebar-guest-hint')?.classList.remove('hidden');
+      btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          window.location.href = `/register?next=${encodeURIComponent(window.location.pathname)}`;
+        });
+      });
+    } else {
+      // Logged in: load state from Supabase
+      const { data: existing } = await supabase
+        .from('completions')
+        .select('id')
+        .eq('user_id', user.id)
+        .eq('section', section)
+        .eq('slug', slug)
+        .maybeSingle();
+
+      function setUpNext(visible: boolean) {
+        const action = visible ? 'remove' : 'add';
+        document.getElementById('up-next-panel')?.classList[action]('hidden');
+        document.getElementById('up-next-panel-sidebar')?.classList[action]('hidden');
+      }
+
+      let isDone = !!existing;
+      syncAll(isDone);
+      setUpNext(isDone);
+
+      btns.forEach(btn => {
+        btn.addEventListener('click', async () => {
+          if (!isDone) {
+            await supabase.from('completions').insert({ user_id: user.id, section, slug });
+            isDone = true;
+          } else {
+            await supabase.from('completions').delete()
+              .eq('user_id', user.id).eq('section', section).eq('slug', slug);
+            isDone = false;
+          }
+          syncAll(isDone);
+          setUpNext(isDone);
+        });
+      });
+    }
+  }
+</script>
 </BaseLayout>

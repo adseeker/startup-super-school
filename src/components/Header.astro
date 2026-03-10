@@ -1,7 +1,6 @@
 ---
 import { getTranslations, localePath } from '../utils/i18n';
 import type { Locale } from '../utils/i18n';
-import SearchBar from './SearchBar.astro';
 
 interface Props {
   locale: Locale;
@@ -11,6 +10,7 @@ const { locale } = Astro.props;
 const t = getTranslations(locale);
 
 const navLinks = [
+  { href: localePath(locale, 'curriculum'), label: 'Curriculum' },
   { href: localePath(locale, 'glossary'), label: t.nav.glossary },
   { href: localePath(locale, 'guides'), label: t.nav.guides },
   { href: localePath(locale, 'concepts'), label: t.nav.concepts },
@@ -50,7 +50,14 @@ const currentPath = Astro.url.pathname;
             {label}
           </a>
         ))}
-        <SearchBar locale={locale} />
+        <!-- Auth nav (populated by JS) -->
+        <div class="w-px h-4 bg-gray-200"></div>
+        <div id="header-auth" class="flex items-center gap-4">
+          <a id="auth-login-link" href="/login" class="hidden text-sm font-medium text-gray-600 hover:text-gray-900 no-underline transition-colors">Log in</a>
+          <a id="auth-register-link" href="/register" class="hidden text-sm font-medium px-4 py-1.5 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors no-underline">Sign up</a>
+          <a id="auth-profile-link" href="/profile" class="hidden text-sm font-medium text-gray-600 hover:text-indigo-600 no-underline transition-colors truncate max-w-[140px]"></a>
+          <button id="auth-logout-btn" class="hidden text-sm text-gray-400 hover:text-gray-600 transition-colors">Log out</button>
+        </div>
       </nav>
 
       <!-- Mobile menu button -->
@@ -83,8 +90,17 @@ const currentPath = Astro.url.pathname;
           {label}
         </a>
       ))}
-      <div class="px-3 py-2">
-        <SearchBar locale={locale} />
+      <a href={localePath(locale, 'search')} class="flex items-center gap-2 px-3 py-2 text-sm text-gray-600 hover:text-gray-900 no-underline">
+        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 1 0 5.197 5.197a7.5 7.5 0 0 0 10.606 10.606z" />
+        </svg>
+        Search
+      </a>
+      <div class="px-3 pt-2 border-t border-gray-100 flex gap-3">
+        <a id="mobile-auth-login" href="/login" class="hidden text-sm font-medium text-gray-600 no-underline">Log in</a>
+        <a id="mobile-auth-register" href="/register" class="hidden text-sm font-medium text-indigo-600 no-underline">Sign up</a>
+        <a id="mobile-auth-profile" href="/profile" class="hidden text-sm font-medium text-gray-600 no-underline"></a>
+        <button id="mobile-auth-logout" class="hidden text-sm text-gray-400">Log out</button>
       </div>
     </nav>
   </div>
@@ -96,4 +112,37 @@ const currentPath = Astro.url.pathname;
   button?.addEventListener('click', () => {
     menu?.classList.toggle('hidden');
   });
+</script>
+
+<script>
+  import { supabase } from '../lib/supabase';
+
+  const { data: { user } } = await supabase.auth.getUser();
+
+  if (user) {
+    const { data: profile } = await supabase.from('profiles').select('first_name').eq('id', user.id).maybeSingle();
+    const displayName = profile?.first_name || user.email?.split('@')[0] || 'My account';
+
+    const profileLink = document.getElementById('auth-profile-link') as HTMLAnchorElement;
+    profileLink.textContent = displayName;
+    profileLink.classList.remove('hidden');
+    document.getElementById('auth-logout-btn')?.classList.remove('hidden');
+
+    const mobileProfile = document.getElementById('mobile-auth-profile') as HTMLAnchorElement;
+    mobileProfile.textContent = displayName;
+    mobileProfile.classList.remove('hidden');
+    document.getElementById('mobile-auth-logout')?.classList.remove('hidden');
+  } else {
+    document.getElementById('auth-login-link')?.classList.remove('hidden');
+    document.getElementById('auth-register-link')?.classList.remove('hidden');
+    document.getElementById('mobile-auth-login')?.classList.remove('hidden');
+    document.getElementById('mobile-auth-register')?.classList.remove('hidden');
+  }
+
+  async function logout() {
+    await supabase.auth.signOut();
+    window.location.href = '/';
+  }
+  document.getElementById('auth-logout-btn')?.addEventListener('click', logout);
+  document.getElementById('mobile-auth-logout')?.addEventListener('click', logout);
 </script>

@@ -22,6 +22,7 @@ It provides definitions, guides, concepts, and articles for founders, operators,
 | RSS | `@astrojs/rss` at `/rss.xml` |
 | Deployment | Vercel (`@astrojs/vercel` adapter, static mode) |
 | Video | Remotion 4 — programmatic React video, rendered locally |
+| Auth & DB | Supabase (client-side JS SDK) — `profiles`, `completions` tables |
 | Analytics | Google Tag Manager (GTM-5TNQT7V), installed in `BaseLayout.astro` |
 
 ---
@@ -40,6 +41,11 @@ src/
 │   └── en.ts                ← All UI strings for English
 ├── utils/
 │   └── i18n.ts              ← getTranslations(), formatDate(), getAlternateUrls()
+├── lib/
+│   ├── supabase.ts          ← Supabase client singleton + Profile type
+│   └── xp.ts                ← computeXp(), getLevelInfo(), computeStreak(), LEVELS, XP_PER_SECTION
+├── data/
+│   └── curriculum.ts        ← CURRICULUM_TRACKS array + getTrackForContent(category, tags)
 ├── layouts/
 │   ├── BaseLayout.astro     ← Full HTML doc, head (GTM), SEO, header/footer
 │   └── ContentLayout.astro  ← Article body + video player + ToC sidebar + related content
@@ -52,10 +58,16 @@ src/
 │   ├── TableOfContents.astro ← Auto-generated from h2/h3 headings
 │   └── RelatedContent.astro ← Related entries by tag overlap
 └── pages/
-    ├── index.astro          ← Homepage
+    ├── index.astro          ← Homepage (personalized for logged-in users)
     ├── search.astro         ← Pagefind search
     ├── rss.xml.ts           ← RSS feed (articles + guides)
     ├── tags/[tag].astro     ← Tag listing pages
+    ├── login.astro          ← Login form (signInWithPassword)
+    ├── register.astro       ← Sign-up form (first_name, last_name, email, password)
+    ├── profile.astro        ← User profile: XP, level, streaks, curriculum progress, activity feed
+    ├── curriculum/
+    │   ├── index.astro      ← All tracks overview
+    │   └── [track].astro    ← Individual track page (slug from CURRICULUM_TRACKS)
     ├── glossary/
     │   ├── index.astro
     │   └── [slug].astro
@@ -312,7 +324,11 @@ npx remotion studio
 - Vercel is connected to GitHub — every push to `main` triggers a deploy automatically
 - Build command: `npm run build`
 - Output: `.vercel/output/static` (auto-detected)
-- No environment variables needed
+- **Required environment variables** (set in Vercel project settings):
+  - `PUBLIC_SUPABASE_URL` — Supabase project URL (e.g. `https://xxxx.supabase.co`)
+  - `PUBLIC_SUPABASE_ANON_KEY` — Supabase publishable/anon key
+  - These must also be present in `.env` locally for `npm run dev` to work
+  - Both need the `PUBLIC_` prefix so Astro exposes them to client-side scripts
 
 ---
 
@@ -423,6 +439,43 @@ All existing content pages should eventually have `faqs` added. Prioritize by tr
 4. Push to `main` — Vercel auto-deploys on every push
 5. **Never force-push**, never `--no-verify`, never amend published commits
 
+### SOP: Supabase auth (client-side pattern)
+
+This site is fully static — auth runs 100% client-side via `@supabase/supabase-js`. No SSR or middleware.
+
+**Architecture**:
+- `src/lib/supabase.ts` — exports a singleton `supabase` client. Import this everywhere.
+- `src/pages/login.astro` / `register.astro` — plain HTML forms, auth logic in `<script>` tags via `supabase.auth.signInWithPassword()` / `signUp()`
+- `src/pages/profile.astro` — fetches user + completions from Supabase client-side on page load
+- `src/components/Header.astro` — calls `supabase.auth.getUser()` in a `<script>` to show/hide auth nav items
+- `profiles` table has `id` (= `auth.users.id`), `first_name`, `last_name`, `bio`, `interests`, etc.
+- `completions` table has `user_id`, `section`, `slug`, `completed_at`
+
+**Setup checklist for a new environment**:
+1. Create Supabase project
+2. Run migrations: `profiles` table (linked to `auth.users`), `completions` table, RLS policies
+3. Add `PUBLIC_SUPABASE_URL` and `PUBLIC_SUPABASE_ANON_KEY` to `.env` (local) and Vercel env vars (production)
+4. In Supabase Dashboard → Auth → Providers → Email: disable "Confirm email" during dev (re-enable + add custom SMTP for production)
+
+**Key pattern — top-level await in `<script>`**:
+```ts
+// Astro <script> tags are ESM modules — top-level await is supported
+const { data: { user } } = await supabase.auth.getUser();
+if (user) {
+  // show logged-in UI
+} else {
+  // show guest UI
+}
+// Never use `return` at top level — wrap in `if` blocks
+```
+
+**Key pattern — `?next=` redirect after login/register**:
+```ts
+const redirect = new URLSearchParams(window.location.search).get('next') ?? '/';
+window.location.href = redirect;
+```
+Link to login as: `href="/login?next=/profile"`.
+
 ### SOP: Regenerate a video after content changes
 
 If an article's H2 headings change significantly:
@@ -442,10 +495,19 @@ git push
 - `description` must be ≤160 chars — Zod will fail the build if exceeded
 - `locale` in frontmatter must be `"en"` (the only supported value currently)
 - Content slugs come from the filename — use lowercase kebab-case
-- `publishedDate` must be a valid ISO date string (`YYYY-MM-DD`)
+- `publishedDate` must be a valid ISO date string (`YYYY-MM-DD`) and must reflect the **real current date** (read from the `currentDate` value in the system context) — never invent a date or copy dates from existing content as reference, as existing articles have incorrect placeholder dates
 - The `en/` folder in `src/content/glossary/en/` does NOT appear in the URL — the slug is extracted with `.split('/').pop()`
 - The video player only appears when **both** `video: true` is in frontmatter **and** the `.mp4` file exists in `public/videos/`
 - Remotion files in `remotion/` are NOT processed by Astro's Vite pipeline — they are standalone TypeScript compiled by Remotion's bundler
 - GTM is already installed globally — do not add a second GTM or GA script in code
 - **Do not publish content without `faqs`** — missing FAQs means missing `FAQPage` rich results in Google
 - **Do not publish a guide without `steps`** — missing steps means the `HowTo` schema has no structured step data for Google rich results
+- **`title` in frontmatter must be ≤ 47 chars** — the rendered `<title>` tag is `{title} — Startup Super School` (23-char suffix), reaching exactly 70 chars at 47 frontmatter chars. Bing and Google flag titles over 70. Check with: `echo -n "your title here — Startup Super School" | wc -c`
+- **Internal links must never include `/en/` in the path** — content lives under `src/content/glossary/en/` etc. but `en/` is stripped from URLs. Always link as `/guides/slug`, `/glossary/slug`, etc. Periodically grep for `/en/` in content bodies to catch stale links: `grep -r "/en/" src/content/`
+- **`pagefind-ui.js` is an IIFE with no ES module exports** — `const { PagefindUI } = await import('/pagefind/pagefind-ui.js')` always returns `undefined` (the file only sets `window.PagefindUI`). The widget silently never renders. Always import from the npm package in a regular `<script>` tag: `import { PagefindUI } from '@pagefind/default-ui'`
+- **`PagefindUI` has no `defaultValue` option** — to pre-fill the search box from `?q=` and auto-trigger the search, manually set the input value and dispatch an `input` event after `new PagefindUI()`: `input.value = query; input.dispatchEvent(new Event('input', { bubbles: true }))`
+- **`return` at top-level in Astro `<script>` tags is a syntax error** — Astro bundles `<script>` as ESM modules; `return` is not allowed outside a function. Use `if (user) { ... }` guard blocks instead of early returns.
+- **Supabase email rate limit on free tier** — the shared transactional email pool throttles new signups globally. For local development, disable "Confirm email" in Supabase Dashboard → Authentication → Providers → Email. Re-enable before going to production with a custom SMTP.
+- **`PUBLIC_` prefix required for browser-accessible env vars** — in Astro, only `import.meta.env.PUBLIC_*` variables are included in client bundles. Any env var without the `PUBLIC_` prefix is `undefined` in the browser (even if it exists in `.env`). Supabase keys must be `PUBLIC_SUPABASE_URL` and `PUBLIC_SUPABASE_ANON_KEY`.
+- **Build-time data for client scripts**: when a client-side `<script>` needs data computed at build time (e.g. tag lists, track mappings, title lookups), embed it as JSON in a hidden `data-*` attribute on a `<div>` in the Astro template, then read it with `JSON.parse(el.dataset.key)` in the script. This avoids API calls and is safe for static sites.
+- **esbuild fails on TypeScript generics in `<script>` blocks AND in Astro template expressions** — esbuild processes `<script>` blocks in transpile-only mode and chokes on TypeScript generics. Remove all of the following from `<script>` tags: `Record<string, X>`, `Array<{...}>`, `as const`, `as HTMLElement`, `: TypeAnnotation` on function params, `!` non-null assertions. The same restriction applies to JSX template expression contexts (inside `{...}` in the template section) — e.g., `(['a', 'b'] as const).map(...)` or a `.map((x: string) => ...)` callback inside the template will also fail. The error location reported by esbuild is often misleading; when debugging, scan both the `<script>` block and all `{...}` template expressions.

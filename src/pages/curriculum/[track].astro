@@ -1,0 +1,361 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { CURRICULUM_TRACKS, getTrackForContent } from '../../data/curriculum';
+
+export async function getStaticPaths() {
+  return CURRICULUM_TRACKS.map((track) => ({
+    params: { track: track.slug },
+  }));
+}
+
+const { track: trackSlug } = Astro.params;
+const track = CURRICULUM_TRACKS.find((t) => t.slug === trackSlug)!;
+
+// Fetch all content
+const [glossary, guides, concepts, articles] = await Promise.all([
+  getCollection('glossary', ({ data }) => data.published !== false),
+  getCollection('guides', ({ data }) => data.published !== false),
+  getCollection('concepts', ({ data }) => data.published !== false),
+  getCollection('articles', ({ data }) => data.published !== false),
+]);
+
+type TrackItem = {
+  section: 'glossary' | 'guides' | 'concepts' | 'articles';
+  slug: string;
+  title: string;
+  description: string;
+  difficulty: 'beginner' | 'intermediate' | 'advanced';
+  category: string;
+  tags: string[];
+  readingTime?: number;
+};
+
+const sectionBadge: Record<string, { label: string; color: string }> = {
+  glossary: { label: 'Term', color: 'bg-indigo-100 text-indigo-700' },
+  guides: { label: 'Guide', color: 'bg-emerald-100 text-emerald-700' },
+  concepts: { label: 'Concept', color: 'bg-amber-100 text-amber-700' },
+  articles: { label: 'Article', color: 'bg-rose-100 text-rose-700' },
+};
+
+const allItems: TrackItem[] = [
+  ...glossary.map(e => ({
+    section: 'glossary' as const,
+    slug: e.slug.split('/').pop()!,
+    title: e.data.title,
+    description: e.data.description,
+    difficulty: e.data.difficulty,
+    category: e.data.category,
+    tags: e.data.tags,
+  })),
+  ...guides.map(e => ({
+    section: 'guides' as const,
+    slug: e.slug.split('/').pop()!,
+    title: e.data.title,
+    description: e.data.description,
+    difficulty: e.data.difficulty,
+    category: e.data.category,
+    tags: e.data.tags,
+    readingTime: 'readingTime' in e.data ? (e.data.readingTime as number | undefined) : undefined,
+  })),
+  ...concepts.map(e => ({
+    section: 'concepts' as const,
+    slug: e.slug.split('/').pop()!,
+    title: e.data.title,
+    description: e.data.description,
+    difficulty: e.data.difficulty,
+    category: e.data.category,
+    tags: e.data.tags,
+  })),
+  ...articles.map(e => ({
+    section: 'articles' as const,
+    slug: e.slug.split('/').pop()!,
+    title: e.data.title,
+    description: e.data.description,
+    difficulty: e.data.difficulty,
+    category: e.data.category,
+    tags: e.data.tags,
+    readingTime: 'readingTime' in e.data ? (e.data.readingTime as number | undefined) : undefined,
+  })),
+];
+
+// Filter to items belonging to this track
+const trackItems = allItems.filter(
+  (item) => getTrackForContent(item.data?.category ?? item.category, item.data?.tags ?? item.tags) === track.slug
+);
+
+// Group by difficulty
+const difficultyOrder = ['beginner', 'intermediate', 'advanced'] as const;
+const grouped: Record<string, TrackItem[]> = { beginner: [], intermediate: [], advanced: [] };
+for (const item of trackItems) {
+  grouped[item.difficulty]?.push(item);
+}
+
+// Serialize item keys for client-side completion checking
+const itemKeys = trackItems.map(i => `${i.section}/${i.slug}`);
+const trackTotal = trackItems.length;
+
+const colorMap: Record<string, { text: string; bg: string; border: string; progressBg: string; progressFill: string; checkBg: string }> = {
+  indigo: { text: 'text-indigo-600', bg: 'bg-indigo-50', border: 'border-indigo-200', progressBg: 'bg-indigo-100', progressFill: 'bg-indigo-500', checkBg: 'bg-indigo-500' },
+  emerald: { text: 'text-emerald-600', bg: 'bg-emerald-50', border: 'border-emerald-200', progressBg: 'bg-emerald-100', progressFill: 'bg-emerald-500', checkBg: 'bg-emerald-500' },
+  amber: { text: 'text-amber-600', bg: 'bg-amber-50', border: 'border-amber-200', progressBg: 'bg-amber-100', progressFill: 'bg-amber-500', checkBg: 'bg-amber-500' },
+  violet: { text: 'text-violet-600', bg: 'bg-violet-50', border: 'border-violet-200', progressBg: 'bg-violet-100', progressFill: 'bg-violet-500', checkBg: 'bg-violet-500' },
+  sky: { text: 'text-sky-600', bg: 'bg-sky-50', border: 'border-sky-200', progressBg: 'bg-sky-100', progressFill: 'bg-sky-500', checkBg: 'bg-sky-500' },
+  rose: { text: 'text-rose-600', bg: 'bg-rose-50', border: 'border-rose-200', progressBg: 'bg-rose-100', progressFill: 'bg-rose-500', checkBg: 'bg-rose-500' },
+};
+
+const c = colorMap[track.color];
+
+const difficultyLabel: Record<string, string> = {
+  beginner: 'Beginner',
+  intermediate: 'Intermediate',
+  advanced: 'Advanced',
+};
+const difficultyColor: Record<string, string> = {
+  beginner: 'text-emerald-700 bg-emerald-50',
+  intermediate: 'text-amber-700 bg-amber-50',
+  advanced: 'text-red-700 bg-red-50',
+};
+---
+
+<BaseLayout
+  title={track.title}
+  description={`${track.subtitle} — ${trackTotal} items organized by difficulty.`}
+  locale="en"
+>
+  <!-- Breadcrumb -->
+  <div class="border-b border-gray-100 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <nav class="flex items-center gap-2 text-sm text-gray-400">
+        <a href="/" class="hover:text-gray-600 no-underline">Home</a>
+        <span>/</span>
+        <a href="/curriculum" class="hover:text-gray-600 no-underline">Curriculum</a>
+        <span>/</span>
+        <span class="text-gray-700 font-medium">{track.title}</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Track header -->
+  <div class:list={['border-b border-gray-100', c.bg]}>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="flex flex-col sm:flex-row sm:items-start gap-6">
+        <span class:list={['text-5xl leading-none p-4 rounded-2xl bg-white shadow-sm border', c.border, 'shrink-0']}>
+          {track.emoji}
+        </span>
+        <div class="flex-1 min-w-0">
+          <h1 class="text-3xl font-bold text-gray-900 mb-1">{track.title}</h1>
+          <p class:list={['text-base font-medium mb-3', c.text]}>{track.subtitle}</p>
+          <p class="text-gray-600 max-w-2xl leading-relaxed mb-5">{track.description}</p>
+
+          <!-- Stats -->
+          <div class="flex flex-wrap items-center gap-4 text-sm text-gray-500 mb-4">
+            <span class="inline-flex items-center gap-1">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z" /></svg>
+              {trackTotal} items
+            </span>
+            <span id="track-completion-text" class="hidden inline-flex items-center gap-1 font-semibold text-gray-700">
+              <svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span id="track-completed-count">0</span> of {trackTotal} completed
+            </span>
+          </div>
+
+          <!-- Progress bar -->
+          <div id="track-progress-wrap" class="hidden max-w-sm">
+            <div class:list={['h-2 rounded-full overflow-hidden', c.progressBg]}>
+              <div
+                id="track-progress-bar"
+                class:list={['h-full rounded-full transition-all duration-500', c.progressFill]}
+                style="width: 0%"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid lg:grid-cols-[1fr_260px] gap-10">
+
+      <!-- Syllabus -->
+      <div class="space-y-12">
+        {difficultyOrder.map((level) => {
+          const items = grouped[level];
+          if (!items || items.length === 0) return null;
+          return (
+            <section>
+              <!-- Section header -->
+              <div class="flex items-center gap-3 mb-5">
+                <span class:list={['px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wide', difficultyColor[level]]}>
+                  {difficultyLabel[level]}
+                </span>
+                <div class="flex-1 h-px bg-gray-100"></div>
+                <span class="text-xs text-gray-400">{items.length} items</span>
+              </div>
+
+              <!-- Item list -->
+              <div class="divide-y divide-gray-100 rounded-2xl border border-gray-200 overflow-hidden">
+                {items.map((item) => {
+                  const href = `/${item.section}/${item.slug}`;
+                  const badge = sectionBadge[item.section];
+                  const key = `${item.section}/${item.slug}`;
+                  return (
+                    <div class="group flex items-center gap-4 px-5 py-4 bg-white hover:bg-gray-50 transition-colors" data-item-key={key}>
+                      <!-- Completion indicator -->
+                      <div
+                        class:list={[
+                          'shrink-0 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all',
+                          'item-status-indicator border-gray-300',
+                        ]}
+                        data-key={key}
+                      >
+                        <svg class="w-3 h-3 text-white hidden item-check-icon" fill="currentColor" viewBox="0 0 20 20">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                      </div>
+
+                      <!-- Badge + Title + Meta -->
+                      <div class="flex-1 min-w-0">
+                        <div class="flex flex-wrap items-center gap-2 mb-0.5">
+                          <span class:list={['text-xs font-semibold px-2 py-0.5 rounded-full', badge.color]}>{badge.label}</span>
+                        </div>
+                        <a
+                          href={href}
+                          class="font-medium text-gray-900 hover:text-indigo-600 no-underline transition-colors text-sm block leading-snug item-title"
+                          data-key={key}
+                        >
+                          {item.title}
+                        </a>
+                        <p class="text-xs text-gray-400 mt-0.5 line-clamp-1">{item.description}</p>
+                      </div>
+
+                      <!-- Reading time + arrow -->
+                      <div class="shrink-0 flex items-center gap-3 text-xs text-gray-400">
+                        {item.readingTime && <span>{item.readingTime} min</span>}
+                        <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+          );
+        })}
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="space-y-5">
+
+        <!-- Track progress card -->
+        <div class="bg-white rounded-2xl border border-gray-200 p-5">
+          <h3 class="text-sm font-semibold text-gray-900 mb-4">Track progress</h3>
+          <div id="sidebar-progress-logged-out" class="text-center py-2">
+            <p class="text-sm text-gray-500 mb-3">Sign in to track your progress</p>
+            <a href="/register" class:list={['block w-full py-2 text-sm font-semibold text-white rounded-lg transition-colors no-underline', c.checkBg, 'hover:opacity-90']}>
+              Sign up free
+            </a>
+            <a href="/login" class="block text-xs text-gray-400 hover:text-gray-600 no-underline mt-2">Already have an account?</a>
+          </div>
+          <div id="sidebar-progress-logged-in" class="hidden">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-sm text-gray-500">Completed</span>
+              <span id="sidebar-pct" class:list={['text-sm font-bold', c.text]}>0%</span>
+            </div>
+            <div class:list={['h-2 rounded-full overflow-hidden mb-3', c.progressBg]}>
+              <div id="sidebar-bar" class:list={['h-full rounded-full transition-all duration-500', c.progressFill]} style="width: 0%"></div>
+            </div>
+            <p class="text-xs text-gray-400 text-center"><span id="sidebar-count">0</span> of {trackTotal} items</p>
+          </div>
+        </div>
+
+        <!-- All tracks -->
+        <div class="bg-white rounded-2xl border border-gray-200 p-5">
+          <h3 class="text-sm font-semibold text-gray-900 mb-3">All tracks</h3>
+          <div class="space-y-1">
+            {CURRICULUM_TRACKS.map((t) => (
+              <a
+                href={`/curriculum/${t.slug}`}
+                class:list={[
+                  'flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm no-underline transition-colors',
+                  t.slug === track.slug
+                    ? `${c.bg} ${c.text} font-semibold`
+                    : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900',
+                ]}
+              >
+                <span class="text-base leading-none">{t.emoji}</span>
+                {t.title}
+              </a>
+            ))}
+          </div>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+</BaseLayout>
+
+<!-- Embed item keys for client-side completion state -->
+<div id="track-items-data" data-keys={JSON.stringify(itemKeys)} class="hidden"></div>
+
+<script>
+  import { supabase } from '../../lib/supabase';
+
+  const { data: { user } } = await supabase.auth.getUser();
+
+  if (user) {
+  // Show logged-in progress UI
+  document.getElementById('sidebar-progress-logged-out')?.classList.add('hidden');
+  document.getElementById('sidebar-progress-logged-in')?.classList.remove('hidden');
+  document.getElementById('track-completion-text')?.classList.remove('hidden');
+  document.getElementById('track-progress-wrap')?.classList.remove('hidden');
+
+  // Fetch completions for this track
+  const itemKeys: string[] = JSON.parse(
+    document.getElementById('track-items-data')?.dataset.keys ?? '[]'
+  );
+  const total = itemKeys.length;
+
+  const { data: completions } = await supabase
+    .from('completions')
+    .select('section, slug')
+    .eq('user_id', user.id);
+
+  const completedSet = new Set((completions ?? []).map(c => `${c.section}/${c.slug}`));
+  const completedCount = itemKeys.filter(k => completedSet.has(k)).length;
+  const pct = total > 0 ? Math.round((completedCount / total) * 100) : 0;
+
+  // Update progress bars
+  const barEls = [
+    document.getElementById('track-progress-bar'),
+    document.getElementById('sidebar-bar'),
+  ];
+  barEls.forEach(el => { if (el) (el as HTMLElement).style.width = `${pct}%`; });
+
+  const countEl = document.getElementById('track-completed-count');
+  if (countEl) countEl.textContent = String(completedCount);
+
+  const sidebarCount = document.getElementById('sidebar-count');
+  if (sidebarCount) sidebarCount.textContent = String(completedCount);
+
+  const sidebarPct = document.getElementById('sidebar-pct');
+  if (sidebarPct) sidebarPct.textContent = `${pct}%`;
+
+  // Mark completed items with visual indicator
+  itemKeys.forEach(key => {
+    if (!completedSet.has(key)) return;
+    const indicator = document.querySelector<HTMLElement>(`.item-status-indicator[data-key="${key}"]`);
+    if (indicator) {
+      indicator.classList.remove('border-gray-300');
+      indicator.classList.add('bg-emerald-500', 'border-emerald-500');
+      const icon = indicator.querySelector('.item-check-icon');
+      icon?.classList.remove('hidden');
+    }
+    const titleLink = document.querySelector<HTMLElement>(`a.item-title[data-key="${key}"]`);
+    if (titleLink) titleLink.classList.add('line-through', 'text-gray-400');
+  });
+  } // end if (user)
+</script>

@@ -8,6 +8,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "render-video": "node scripts/render-video.mjs",
+    "check-curriculum": "node scripts/check-curriculum.mjs",
     "submit-indexnow": "node scripts/submit-indexnow.mjs",
     "submit-indexnow:all": "node scripts/submit-indexnow.mjs --all"
   },
@@ -16,18 +17,19 @@
     "@astrojs/rss": "^4.0.15",
     "@astrojs/sitemap": "^3.7.0",
     "@astrojs/vercel": "^9.0.4",
-    "@remotion/cli": "^4.0.431",
-    "@remotion/google-fonts": "^4.0.431",
-    "@remotion/renderer": "^4.0.431",
+    "@remotion/cli": "4.0.434",
+    "@remotion/google-fonts": "4.0.434",
+    "@remotion/renderer": "4.0.434",
+    "@supabase/supabase-js": "^2.99.0",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.2.1",
     "@vercel/analytics": "^1.6.1",
     "astro": "^5.17.1",
     "astro-pagefind": "^1.8.5",
-    "remotion": "^4.0.431",
+    "remotion": "4.0.434",
     "tailwindcss": "^4.2.1",
     "unist-util-visit": "^5.1.0",
-    "zod": "^4.3.6"
+    "zod": "4.3.6"
   },
   "devDependencies": {
     "@types/react": "^19.2.14",

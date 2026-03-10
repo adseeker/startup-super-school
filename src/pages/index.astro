@@ -4,6 +4,7 @@ import ContentCard from '../components/ContentCard.astro';
 import { getCollection } from 'astro:content';
 import { getTranslations, localePath } from '../utils/i18n';
 import SearchBar from '../components/SearchBar.astro';
+import { CURRICULUM_TRACKS, getTrackForContent } from '../data/curriculum';
 
 const locale = 'en' as const;
 const t = getTranslations(locale);
@@ -21,6 +22,33 @@ const featured = {
   concepts: conceptsEntries.slice(0, 3),
   articles: articlesEntries.slice(0, 2),
 };
+
+// Curriculum track item counts (for logged-in progress display)
+const allContentForTracks = [
+  ...glossaryEntries.map(e => ({ section: 'glossary', slug: e.slug.split('/').pop()!, category: e.data.category, tags: e.data.tags })),
+  ...guidesEntries.map(e => ({ section: 'guides', slug: e.slug.split('/').pop()!, category: e.data.category, tags: e.data.tags })),
+  ...conceptsEntries.map(e => ({ section: 'concepts', slug: e.slug.split('/').pop()!, category: e.data.category, tags: e.data.tags })),
+  ...articlesEntries.map(e => ({ section: 'articles', slug: e.slug.split('/').pop()!, category: e.data.category, tags: e.data.tags })),
+];
+const trackItemMap: Record<string, Array<{ section: string; slug: string }>> = {};
+for (const track of CURRICULUM_TRACKS) trackItemMap[track.slug] = [];
+for (const item of allContentForTracks) {
+  const trackSlug = getTrackForContent(item.category, item.tags);
+  if (trackSlug) trackItemMap[trackSlug].push({ section: item.section, slug: item.slug });
+}
+const trackCountMap: Record<string, number> = {};
+for (const [slug, items] of Object.entries(trackItemMap)) trackCountMap[slug] = items.length;
+
+const colorMap: Record<string, { text: string; bg: string; border: string; fill: string; barBg: string }> = {
+  indigo: { text: 'text-indigo-600', bg: 'bg-indigo-50', border: 'border-indigo-100', fill: 'bg-indigo-500', barBg: 'bg-indigo-100' },
+  emerald: { text: 'text-emerald-600', bg: 'bg-emerald-50', border: 'border-emerald-100', fill: 'bg-emerald-500', barBg: 'bg-emerald-100' },
+  amber: { text: 'text-amber-600', bg: 'bg-amber-50', border: 'border-amber-100', fill: 'bg-amber-500', barBg: 'bg-amber-100' },
+  violet: { text: 'text-violet-600', bg: 'bg-violet-50', border: 'border-violet-100', fill: 'bg-violet-500', barBg: 'bg-violet-100' },
+  sky: { text: 'text-sky-600', bg: 'bg-sky-50', border: 'border-sky-100', fill: 'bg-sky-500', barBg: 'bg-sky-100' },
+  rose: { text: 'text-rose-600', bg: 'bg-rose-50', border: 'border-rose-100', fill: 'bg-rose-500', barBg: 'bg-rose-100' },
+};
+
+const totalContent = glossaryEntries.length + guidesEntries.length + conceptsEntries.length + articlesEntries.length;
 
 const siteUrl = Astro.site?.href?.replace(/\/$/, '') ?? '';
 const jsonLd = {
@@ -61,39 +89,103 @@ const jsonLd = {
   locale={locale}
   jsonLd={jsonLd}
 >
-  <!-- Hero -->
-  <section class="bg-gradient-to-b from-indigo-50 to-white border-b border-gray-100 py-20 px-4">
-    <div class="max-w-3xl mx-auto text-center">
-      <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-4">
-        {t.home.hero.headline}
-      </h1>
-      <p class="text-xl text-gray-600 leading-relaxed mb-6">
-        {t.home.hero.subheadline}
-      </p>
-      <div class="mb-6 w-full flex justify-center">
-        <SearchBar locale={locale} large={true} />
+  <!-- Hero — track-first -->
+  <section class="bg-gradient-to-b from-indigo-50 to-white border-b border-gray-100 py-14 px-4">
+    <div class="max-w-5xl mx-auto">
+
+      <!-- Logged-in greeting bar (hidden by default, shown via JS) -->
+      <div id="hero-greeting" class="hidden mb-8 flex items-center justify-between gap-4 bg-white border border-gray-200 rounded-xl px-5 py-3 shadow-sm">
+        <div>
+          <p id="greeting-text" class="font-semibold text-gray-900">Welcome back!</p>
+          <p id="today-progress-text" class="text-sm text-gray-500 mt-0.5"></p>
+        </div>
+        <div class="flex items-center gap-2 shrink-0">
+          <a href="/curriculum" class="px-4 py-2 bg-indigo-600 text-white text-sm font-semibold rounded-lg hover:bg-indigo-700 transition-colors no-underline">
+            Continue →
+          </a>
+          <a href="/profile" class="px-4 py-2 text-sm font-medium text-gray-600 border border-gray-200 rounded-lg hover:border-gray-300 transition-colors no-underline">
+            My profile
+          </a>
+        </div>
       </div>
-      <div class="flex items-center gap-4 mb-6 max-w-xl mx-auto">
+
+      <!-- Headline -->
+      <div class="text-center mb-10">
+        <p class="text-sm font-semibold text-indigo-600 uppercase tracking-widest mb-3">
+          6 learning tracks · {totalContent} lessons
+        </p>
+        <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-3">
+          Your startup education,<br class="hidden sm:block" /> structured.
+        </h1>
+        <p class="text-lg text-gray-500 max-w-lg mx-auto leading-relaxed">
+          Pick a track and start building real knowledge — step by step.
+        </p>
+      </div>
+
+      <!-- Track cards grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-8">
+        {CURRICULUM_TRACKS.map((track) => {
+          const c = colorMap[track.color];
+          const count = trackCountMap[track.slug] ?? 0;
+          return (
+            <a
+              href={`/curriculum/${track.slug}`}
+              class:list={[
+                'group flex flex-col gap-3 rounded-2xl border-2 p-5 no-underline transition-all hover:shadow-md hover:-translate-y-0.5',
+                c.border, c.bg,
+              ]}
+            >
+              <span class="text-3xl leading-none">{track.emoji}</span>
+              <div>
+                <h3 class:list={['font-bold text-sm leading-snug', c.text]}>{track.title}</h3>
+                <p class="text-xs text-gray-500 mt-0.5">{track.subtitle}</p>
+              </div>
+              <div class="mt-auto pt-1">
+                <div class="flex items-center justify-between text-xs mb-1.5">
+                  <span class="text-gray-400 tabular-nums track-mini-pct" data-slug={track.slug}>{count} lessons</span>
+                  <span class:list={['font-semibold opacity-0 group-hover:opacity-100 transition-opacity', c.text]}>Start →</span>
+                </div>
+                <div class:list={['h-1.5 rounded-full overflow-hidden', c.barBg]}>
+                  <div
+                    class:list={['h-full rounded-full transition-all duration-500', c.fill, 'track-mini-bar']}
+                    data-slug={track.slug}
+                    style="width: 0%"
+                  ></div>
+                </div>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+
+      <!-- Guest CTA (hidden via JS when logged in) -->
+      <div id="hero-guest-cta" class="text-center mb-8">
+        <p class="text-sm text-gray-500 mb-3">Sign in to track your progress and earn XP as you learn</p>
+        <div class="flex justify-center gap-3">
+          <a href="/register" class="px-5 py-2.5 bg-indigo-600 text-white text-sm font-semibold rounded-lg hover:bg-indigo-700 transition-colors no-underline">
+            Create free account
+          </a>
+          <a href="/login" class="px-5 py-2.5 bg-white text-gray-700 text-sm font-medium rounded-lg border border-gray-300 hover:border-gray-400 transition-colors no-underline">
+            Sign in
+          </a>
+        </div>
+      </div>
+
+      <!-- Search — secondary -->
+      <div class="flex items-center gap-4 mb-4">
         <div class="flex-1 border-t border-gray-200"></div>
-        <span class="text-sm text-gray-400 whitespace-nowrap">or explore by section</span>
+        <span class="text-sm text-gray-400 whitespace-nowrap">or browse freely</span>
         <div class="flex-1 border-t border-gray-200"></div>
       </div>
-      <div class="flex flex-wrap justify-center gap-3">
-        <a
-          href={localePath(locale, 'glossary')}
-          class="inline-flex items-center px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-colors no-underline"
-        >
-          Browse Glossary
-        </a>
-        <a
-          href={localePath(locale, 'guides')}
-          class="inline-flex items-center px-6 py-3 bg-white text-gray-700 font-medium rounded-lg border border-gray-300 hover:border-gray-400 transition-colors no-underline"
-        >
-          Read Guides
-        </a>
+      <div class="flex justify-center">
+        <SearchBar locale={locale} large={false} />
       </div>
+
     </div>
   </section>
+
+  <!-- Embed track item keys for client-side per-track progress -->
+  <div id="track-map-data" data-map={JSON.stringify(trackItemMap)} class="hidden"></div>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
 
@@ -224,4 +316,63 @@ const jsonLd = {
     </section>
 
   </div>
+<script>
+  import { supabase } from '../lib/supabase';
+
+  const { data: { user } } = await supabase.auth.getUser();
+
+  if (!user) {
+    // Guest: leave the guest CTA visible (already shown by default)
+  } else {
+    // Hide guest CTA, show greeting bar
+    document.getElementById('hero-guest-cta')?.classList.add('hidden');
+    document.getElementById('hero-greeting')?.classList.remove('hidden');
+
+    // Load profile + completions in parallel
+    const [profileRes, completionsRes] = await Promise.all([
+      supabase.from('profiles').select('first_name').eq('id', user.id).maybeSingle(),
+      supabase.from('completions').select('section, slug, completed_at').eq('user_id', user.id),
+    ]);
+
+    const name = profileRes.data?.first_name || 'there';
+    const completions = completionsRes.data ?? [];
+    const completedSet = new Set(completions.map(c => `${c.section}/${c.slug}`));
+
+    // Greeting
+    const hour = new Date().getHours();
+    const greeting = hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
+    const greetingEl = document.getElementById('greeting-text');
+    if (greetingEl) greetingEl.textContent = `${greeting}, ${name}!`;
+
+    // Progress text
+    const today = new Date().toISOString().slice(0, 10);
+    const todayXp = completions
+      .filter(c => c.completed_at?.slice(0, 10) === today)
+      .reduce((sum, c) => sum + ({ glossary: 10, concepts: 20, articles: 25, guides: 30 }[c.section] ?? 10), 0);
+
+    const progressText = document.getElementById('today-progress-text');
+    if (progressText) {
+      const total = completedSet.size;
+      progressText.textContent = total === 0
+        ? 'Start a track to begin building your knowledge.'
+        : `${total} lessons completed · ${todayXp > 0 ? `+${todayXp} XP today` : 'keep learning!'}`;
+    }
+
+    // Per-track progress bars
+    const trackMapEl = document.getElementById('track-map-data');
+    const trackMap = trackMapEl ? JSON.parse(trackMapEl.dataset.map ?? '{}') : {};
+
+    Object.entries(trackMap).forEach(([slug, items]) => {
+      const total = items.length;
+      const done = items.filter(i => completedSet.has(`${i.section}/${i.slug}`)).length;
+      const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+
+      const bar = document.querySelector(`.track-mini-bar[data-slug="${slug}"]`);
+      if (bar) bar.style.width = `${pct}%`;
+
+      const pctEl = document.querySelector(`.track-mini-pct[data-slug="${slug}"]`);
+      if (pctEl) pctEl.textContent = pct > 0 ? `${pct}%` : `${total} lessons`;
+    });
+  }
+</script>
 </BaseLayout>

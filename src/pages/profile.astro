@@ -1,0 +1,778 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { CURRICULUM_TRACKS, getTrackForContent } from '../data/curriculum';
+
+const [glossary, guides, concepts, articles] = await Promise.all([
+  getCollection('glossary', ({ data }) => data.published !== false),
+  getCollection('guides',   ({ data }) => data.published !== false),
+  getCollection('concepts', ({ data }) => data.published !== false),
+  getCollection('articles', ({ data }) => data.published !== false),
+]);
+
+// All unique tags for interests autocomplete
+const allTags = [...new Set(
+  [...glossary, ...guides, ...concepts, ...articles].flatMap(e => e.data.tags)
+)].sort();
+
+// title map: "section/slug" → title  (for activity feed)
+const contentTitleMap: Record<string, string> = {};
+const diffOrder: Record<string, number> = { beginner: 0, intermediate: 1, advanced: 2 };
+
+type FlatItem = { section: string; slug: string; title: string; difficulty: string; category: string; tags: string[] };
+const allItems: FlatItem[] = [
+  ...glossary.map(e  => ({ section: 'glossary',  slug: e.slug.split('/').pop()!, title: e.data.title, difficulty: e.data.difficulty, category: e.data.category, tags: e.data.tags })),
+  ...guides.map(e    => ({ section: 'guides',    slug: e.slug.split('/').pop()!, title: e.data.title, difficulty: e.data.difficulty, category: e.data.category, tags: e.data.tags })),
+  ...concepts.map(e  => ({ section: 'concepts',  slug: e.slug.split('/').pop()!, title: e.data.title, difficulty: e.data.difficulty, category: e.data.category, tags: e.data.tags })),
+  ...articles.map(e  => ({ section: 'articles',  slug: e.slug.split('/').pop()!, title: e.data.title, difficulty: e.data.difficulty, category: e.data.category, tags: e.data.tags })),
+];
+for (const item of allItems) {
+  contentTitleMap[`${item.section}/${item.slug}`] = item.title;
+}
+
+// Track ordered items: trackSlug → [{section, slug, title}] sorted by difficulty
+const trackOrderedItems: Record<string, Array<{ section: string; slug: string; title: string }>> = {};
+for (const track of CURRICULUM_TRACKS) trackOrderedItems[track.slug] = [];
+for (const item of allItems) {
+  const ts = getTrackForContent(item.category, item.tags);
+  if (ts) trackOrderedItems[ts].push(item);
+}
+for (const slug of Object.keys(trackOrderedItems)) {
+  trackOrderedItems[slug].sort((a, b) => (diffOrder[a.difficulty] ?? 0) - (diffOrder[b.difficulty] ?? 0));
+}
+
+const BIO_MAX = 200;
+---
+
+<BaseLayout
+  title="My Profile"
+  description="Your learning dashboard — track XP, levels, streaks and curriculum progress."
+  locale="en"
+>
+  <!-- Embedded build-time data for client script -->
+  <div id="site-tags-data"    data-tags={JSON.stringify(allTags)}           class="hidden"></div>
+  <div id="content-title-map" data-map={JSON.stringify(contentTitleMap)}    class="hidden"></div>
+  <div id="track-order-data"  data-tracks={JSON.stringify(trackOrderedItems)} class="hidden"></div>
+
+  <!-- Auth loading state -->
+  <div id="profile-loading" class="min-h-[calc(100vh-64px)] flex items-center justify-center">
+    <div class="text-gray-400 text-sm">Loading…</div>
+  </div>
+
+  <!-- ── Profile shell (hidden until auth resolves) ───────────────────── -->
+  <div id="profile-content" class="hidden">
+
+    <!-- ── HERO: Level card ─────────────────────────────────────────── -->
+    <div id="hero-section" class="border-b border-gray-100" style="background: linear-gradient(135deg, #EEF2FF 0%, #F8FAFC 60%)">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-6">
+
+          <!-- Level badge -->
+          <div id="level-badge"
+            class="shrink-0 w-24 h-24 rounded-2xl flex flex-col items-center justify-center shadow-md text-white select-none"
+            style="background: linear-gradient(135deg, #6366F1, #8B5CF6)"
+          >
+            <span id="level-icon"  class="text-2xl leading-none mb-0.5">🌱</span>
+            <span class="text-xs font-bold uppercase tracking-widest opacity-80">Level</span>
+            <span id="level-number" class="text-2xl font-black leading-none">1</span>
+          </div>
+
+          <!-- Level info -->
+          <div class="flex-1 min-w-0">
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <h1 id="level-title"   class="text-2xl font-bold text-gray-900">Curious Newcomer</h1>
+              <span id="user-name"   class="text-lg text-gray-400 font-normal"></span>
+            </div>
+            <p id="level-next-label" class="text-sm text-gray-500 mb-3"></p>
+
+            <!-- XP bar -->
+            <div class="max-w-sm">
+              <div class="flex items-center justify-between text-xs text-gray-500 mb-1">
+                <span id="xp-total" class="font-semibold text-gray-700">0 XP</span>
+                <span id="xp-to-next"></span>
+              </div>
+              <div class="h-3 bg-gray-200 rounded-full overflow-hidden">
+                <div
+                  id="xp-bar"
+                  class="h-full rounded-full transition-all duration-700"
+                  style="width: 0%; background: #6366F1"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Streak + logout -->
+          <div class="shrink-0 flex sm:flex-col items-center sm:items-end gap-4">
+            <div id="streak-display" class="flex flex-col items-center bg-white rounded-2xl border border-gray-200 px-5 py-3 shadow-sm">
+              <span class="text-3xl leading-none mb-0.5">🔥</span>
+              <span id="streak-count" class="text-2xl font-black text-gray-900">0</span>
+              <span class="text-xs text-gray-400 uppercase tracking-wide">day streak</span>
+            </div>
+            <button id="logout-btn" class="text-xs text-gray-400 hover:text-gray-600 transition-colors">
+              Log out
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── STATS ROW ─────────────────────────────────────────────────── -->
+    <div class="border-b border-gray-100 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 sm:grid-cols-4 divide-x divide-gray-100">
+          <div class="px-4 py-5 text-center">
+            <p id="stat-xp"      class="text-2xl font-bold text-indigo-600">—</p>
+            <p class="text-xs text-gray-400 uppercase tracking-wide mt-0.5">Total XP</p>
+          </div>
+          <div class="px-4 py-5 text-center">
+            <p id="stat-items"   class="text-2xl font-bold text-gray-900">—</p>
+            <p class="text-xs text-gray-400 uppercase tracking-wide mt-0.5">Completed</p>
+          </div>
+          <div class="px-4 py-5 text-center">
+            <p id="stat-today"   class="text-2xl font-bold text-emerald-600">—</p>
+            <p class="text-xs text-gray-400 uppercase tracking-wide mt-0.5">XP Today</p>
+          </div>
+          <div class="px-4 py-5 text-center">
+            <p id="stat-tracks"  class="text-2xl font-bold text-gray-900">—</p>
+            <p class="text-xs text-gray-400 uppercase tracking-wide mt-0.5">Tracks Started</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── TABS ──────────────────────────────────────────────────────── -->
+    <div class="border-b border-gray-200 bg-white sticky top-16 z-30">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav class="flex gap-0 -mb-px" aria-label="Profile tabs">
+          {['overview','progress','activity','account'].map((tab) => (
+            <button
+              data-tab={tab}
+              class:list={[
+                'tab-btn px-5 py-4 text-sm font-medium border-b-2 transition-colors capitalize',
+                tab === 'overview'
+                  ? 'border-indigo-600 text-indigo-600'
+                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300',
+              ]}
+            >
+              {tab === 'overview'  ? '📊 Overview'  : ''}
+              {tab === 'progress'  ? '📈 Progress'  : ''}
+              {tab === 'activity'  ? '⏱ Activity'   : ''}
+              {tab === 'account'   ? '⚙️ Account'   : ''}
+            </button>
+          ))}
+        </nav>
+      </div>
+    </div>
+
+    <!-- ── TAB PANELS ────────────────────────────────────────────────── -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+      <!-- ── OVERVIEW ──────────────────────────────────────────────── -->
+      <div id="tab-overview" class="tab-panel space-y-8">
+        <div>
+          <h2 class="text-lg font-bold text-gray-900 mb-4">Curriculum Progress</h2>
+          <div id="track-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {CURRICULUM_TRACKS.map(track => (
+              <a
+                href={`/curriculum/${track.slug}`}
+                class="group flex flex-col gap-3 bg-white rounded-2xl border border-gray-200 p-5 no-underline hover:shadow-md hover:-translate-y-0.5 transition-all"
+                data-track-card={track.slug}
+              >
+                <div class="flex items-center gap-3">
+                  <span class="text-2xl leading-none">{track.emoji}</span>
+                  <div class="flex-1 min-w-0">
+                    <p class="font-semibold text-gray-900 text-sm leading-snug">{track.title}</p>
+                    <p class="text-xs text-gray-400 mt-0.5 track-count" data-track={track.slug}>0 / 0 items</p>
+                  </div>
+                  <svg class="w-4 h-4 text-gray-300 group-hover:text-indigo-500 transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                    <div class="h-full rounded-full transition-all duration-500 track-bar" data-track={track.slug} style="width: 0%; background: #6366F1"></div>
+                  </div>
+                  <div class="flex items-center justify-between mt-1">
+                    <span class="text-xs text-gray-400 track-pct" data-track={track.slug}>0%</span>
+                    <span class="text-xs font-semibold text-indigo-600 track-next-label" data-track={track.slug}></span>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <!-- Next steps -->
+        <div>
+          <h2 class="text-lg font-bold text-gray-900 mb-4">Continue Learning</h2>
+          <div id="continue-list" class="space-y-2">
+            <p class="text-sm text-gray-400">Loading recommendations…</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PROGRESS ───────────────────────────────────────────────── -->
+      <div id="tab-progress" class="tab-panel hidden space-y-8">
+        <div>
+          <h2 class="text-lg font-bold text-gray-900 mb-4">XP Breakdown</h2>
+          <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+            <table class="w-full text-sm">
+              <thead class="bg-gray-50 border-b border-gray-100">
+                <tr>
+                  <th class="text-left px-5 py-3 font-semibold text-gray-600">Section</th>
+                  <th class="text-right px-5 py-3 font-semibold text-gray-600">Completed</th>
+                  <th class="text-right px-5 py-3 font-semibold text-gray-600">XP / item</th>
+                  <th class="text-right px-5 py-3 font-semibold text-gray-600">XP Earned</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-50" id="xp-table-body">
+                {(['glossary','concepts','articles','guides']).map((section, i) => {
+                  const xpMap = { glossary: 10, concepts: 20, articles: 25, guides: 30 };
+                  const colors = { glossary: 'bg-indigo-100 text-indigo-700', concepts: 'bg-amber-100 text-amber-700', articles: 'bg-rose-100 text-rose-700', guides: 'bg-emerald-100 text-emerald-700' };
+                  return (
+                    <tr class="hover:bg-gray-50 transition-colors">
+                      <td class="px-5 py-4">
+                        <span class:list={['px-2 py-0.5 rounded-full text-xs font-semibold', colors[section]]}>{section.charAt(0).toUpperCase() + section.slice(1)}</span>
+                      </td>
+                      <td class="px-5 py-4 text-right font-medium text-gray-700" id={`progress-count-${section}`}>—</td>
+                      <td class="px-5 py-4 text-right text-gray-500">+{xpMap[section]}</td>
+                      <td class="px-5 py-4 text-right font-bold text-indigo-600" id={`progress-xp-${section}`}>—</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+              <tfoot class="border-t-2 border-gray-200 bg-gray-50">
+                <tr>
+                  <td class="px-5 py-4 font-bold text-gray-900">Total</td>
+                  <td class="px-5 py-4 text-right font-bold text-gray-900" id="progress-total-count">—</td>
+                  <td></td>
+                  <td class="px-5 py-4 text-right font-black text-indigo-600 text-base" id="progress-total-xp">—</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+        <!-- Level roadmap -->
+        <div>
+          <h2 class="text-lg font-bold text-gray-900 mb-4">Level Roadmap</h2>
+          <div class="relative" id="level-roadmap">
+            <!-- rendered by JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ACTIVITY ───────────────────────────────────────────────── -->
+      <div id="tab-activity" class="tab-panel hidden">
+        <h2 class="text-lg font-bold text-gray-900 mb-4">Recent Activity</h2>
+        <div id="activity-feed" class="space-y-1">
+          <p class="text-sm text-gray-400">Loading activity…</p>
+        </div>
+      </div>
+
+      <!-- ── ACCOUNT ────────────────────────────────────────────────── -->
+      <div id="tab-account" class="tab-panel hidden">
+        <div class="grid gap-8 lg:grid-cols-[1fr_220px]">
+
+          <!-- Edit form -->
+          <div class="bg-white rounded-2xl border border-gray-200 p-6 sm:p-8">
+            <h2 class="text-base font-semibold text-gray-900 mb-6">Personal info</h2>
+            <form id="profile-form" class="space-y-5">
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="first_name" class="block text-sm font-medium text-gray-700 mb-1.5">First name</label>
+                  <input type="text" id="first_name" name="first_name" autocomplete="given-name"
+                    class="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    placeholder="Marco" />
+                </div>
+                <div>
+                  <label for="last_name" class="block text-sm font-medium text-gray-700 mb-1.5">Last name</label>
+                  <input type="text" id="last_name" name="last_name" autocomplete="family-name"
+                    class="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    placeholder="Rossi" />
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="job_title" class="block text-sm font-medium text-gray-700 mb-1.5">Job title</label>
+                  <input type="text" id="job_title" name="job_title"
+                    class="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    placeholder="e.g. Founder & CEO" />
+                </div>
+                <div>
+                  <label for="company" class="block text-sm font-medium text-gray-700 mb-1.5">Company</label>
+                  <input type="text" id="company" name="company"
+                    class="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    placeholder="Acme Inc." />
+                </div>
+              </div>
+
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <label for="bio" class="block text-sm font-medium text-gray-700">Bio</label>
+                  <span id="bio-counter" class="text-xs text-gray-400">0 / {BIO_MAX}</span>
+                </div>
+                <textarea id="bio" name="bio" rows="3" maxlength={BIO_MAX}
+                  class="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent resize-none"
+                  placeholder="A short intro about you and what you're building…"></textarea>
+              </div>
+
+              <!-- Interests -->
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <label class="block text-sm font-medium text-gray-700">Interests</label>
+                  <span id="interests-counter" class="text-xs text-gray-400">0 / 5</span>
+                </div>
+                <div id="interests-wrapper"
+                  class="flex flex-wrap gap-2 px-3 py-2 border border-gray-300 rounded-lg min-h-[42px] cursor-text focus-within:ring-2 focus-within:ring-indigo-500 focus-within:border-transparent bg-white">
+                  <input type="text" id="interests-input" autocomplete="off"
+                    class="flex-1 min-w-[120px] text-sm outline-none bg-transparent"
+                    placeholder="e.g. fundraising, SaaS…" />
+                </div>
+                <div id="interests-dropdown"
+                  class="hidden mt-1 border border-gray-200 rounded-lg shadow-sm bg-white max-h-40 overflow-y-auto z-10 relative"></div>
+                <p class="mt-1 text-xs text-gray-400">Press comma, space or Enter to add. Max 5.</p>
+              </div>
+
+              <div>
+                <label for="website_url" class="block text-sm font-medium text-gray-700 mb-1.5">Website</label>
+                <input type="url" id="website_url" name="website_url"
+                  class="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                  placeholder="https://yoursite.com" />
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="twitter_url" class="block text-sm font-medium text-gray-700 mb-1.5">Twitter / X</label>
+                  <div class="flex items-center border border-gray-300 rounded-lg focus-within:ring-2 focus-within:ring-indigo-500 focus-within:border-transparent overflow-hidden">
+                    <span class="px-3 py-2.5 text-sm text-gray-400 bg-gray-50 border-r border-gray-300">@</span>
+                    <input type="text" id="twitter_url" name="twitter_url"
+                      class="flex-1 px-3 py-2.5 text-sm outline-none bg-white" placeholder="yourhandle" />
+                  </div>
+                </div>
+                <div>
+                  <label for="linkedin_url" class="block text-sm font-medium text-gray-700 mb-1.5">LinkedIn</label>
+                  <div class="flex items-center border border-gray-300 rounded-lg focus-within:ring-2 focus-within:ring-indigo-500 focus-within:border-transparent overflow-hidden">
+                    <span class="px-3 py-2.5 text-sm text-gray-400 bg-gray-50 border-r border-gray-300 whitespace-nowrap">in/</span>
+                    <input type="text" id="linkedin_url" name="linkedin_url"
+                      class="flex-1 px-3 py-2.5 text-sm outline-none bg-white" placeholder="yourhandle" />
+                  </div>
+                </div>
+              </div>
+
+              <div id="save-error"   class="hidden text-sm text-red-600 bg-red-50 border border-red-200 rounded-lg px-4 py-3"></div>
+              <div id="save-success" class="hidden text-sm text-green-700 bg-green-50 border border-green-200 rounded-lg px-4 py-3">Profile saved.</div>
+
+              <div class="pt-2">
+                <button type="submit" id="save-btn"
+                  class="px-6 py-2.5 bg-indigo-600 text-white text-sm font-semibold rounded-lg hover:bg-indigo-700 transition-colors">
+                  Save changes
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Account sidebar -->
+          <div class="space-y-4">
+            <div class="bg-white rounded-2xl border border-gray-200 p-5">
+              <p class="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Email</p>
+              <p id="profile-email" class="text-sm text-gray-700 truncate"></p>
+            </div>
+            <div class="bg-white rounded-2xl border border-gray-200 p-5">
+              <p class="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-3">Member since</p>
+              <p id="member-since" class="text-sm text-gray-700">—</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /tab panels -->
+  </div><!-- /profile-content -->
+</BaseLayout>
+
+<script>
+  import { supabase } from '../lib/supabase';
+  import { computeXp, getLevelInfo, computeStreak, LEVELS, XP_PER_SECTION } from '../lib/xp';
+
+  // ── Build-time data ────────────────────────────────────────────────────
+  const contentTitleMap = JSON.parse(
+    document.getElementById('content-title-map')?.dataset.map ?? '{}'
+  );
+  const trackOrderedItems = JSON.parse(
+    document.getElementById('track-order-data')?.dataset.tracks ?? '{}'
+  );
+  const siteTags = JSON.parse(
+    document.getElementById('site-tags-data')?.dataset.tags ?? '[]'
+  );
+
+  // ── Track color map ────────────────────────────────────────────────────
+  const TRACK_COLORS = {
+    foundations: '#6366F1',
+    product:     '#10B981',
+    finance:     '#F59E0B',
+    fundraising: '#8B5CF6',
+    growth:      '#0EA5E9',
+    team:        '#F43F5E',
+  };
+
+  // ── Auth check ─────────────────────────────────────────────────────────
+  const { data: { user } } = await supabase.auth.getUser();
+  document.getElementById('profile-loading')?.classList.add('hidden');
+
+  if (!user) {
+    window.location.href = '/login?next=/profile';
+  } else {
+    document.getElementById('profile-content')?.classList.remove('hidden');
+
+    // ── Fetch all data in parallel ─────────────────────────────────────
+    const [profileRes, completionsRes] = await Promise.all([
+      supabase.from('profiles').select('*').eq('id', user.id).maybeSingle(),
+      supabase.from('completions').select('section, slug, completed_at').eq('user_id', user.id).order('completed_at', { ascending: false }),
+    ]);
+
+    const profile     = profileRes.data;
+    const completions = completionsRes.data ?? [];
+
+    // ── Compute XP / Level ─────────────────────────────────────────────
+    const totalXp = computeXp(completions);
+    const lvInfo  = getLevelInfo(totalXp);
+    const streak  = computeStreak(completions);
+
+    const today     = new Date().toISOString().slice(0, 10);
+    const todayComps = completions.filter(c => c.completed_at?.slice(0, 10) === today);
+    const todayXp    = computeXp(todayComps);
+
+    // ── Hero: level badge ──────────────────────────────────────────────
+    const lv = lvInfo.current;
+    document.getElementById('level-icon').textContent   = lv.icon;
+    document.getElementById('level-number').textContent = String(lv.level);
+    document.getElementById('level-title').textContent  = lv.title;
+
+    const badge = document.getElementById('level-badge');
+    badge.style.background = `linear-gradient(135deg, ${lv.color}dd, ${lv.color})`;
+
+    const firstName = profile?.first_name;
+    if (firstName) {
+      document.getElementById('user-name')!.textContent = `· ${firstName}`;
+    }
+
+    // Next level label
+    const nextLabel = document.getElementById('level-next-label')!;
+    if (lvInfo.next) {
+      nextLabel.textContent = `${lvInfo.xpInLevel} / ${lvInfo.xpToNext} XP toward Level ${lvInfo.next.level} — ${lvInfo.next.title}`;
+    } else {
+      nextLabel.textContent = 'Maximum level reached. You are a Unicorn Hunter. 🦄';
+    }
+
+    // XP bar
+    const xpBar = document.getElementById('xp-bar');
+    xpBar.style.width      = `${lvInfo.progressPct}%`;
+    xpBar.style.background = lv.color;
+    document.getElementById('xp-total')!.textContent   = `${totalXp} XP`;
+    document.getElementById('xp-to-next')!.textContent = lvInfo.next
+      ? `${lvInfo.next.minXp - totalXp} XP to Level ${lvInfo.next.level}`
+      : 'Max level';
+
+    // Streak
+    document.getElementById('streak-count')!.textContent = String(streak);
+
+    // ── Stats row ──────────────────────────────────────────────────────
+    document.getElementById('stat-xp')!.textContent    = `${totalXp}`;
+    document.getElementById('stat-items')!.textContent = String(completions.length);
+    document.getElementById('stat-today')!.textContent = `+${todayXp}`;
+
+    // Tracks started = tracks with at least 1 completion
+    const completedKeys = new Set(completions.map(c => `${c.section}/${c.slug}`));
+    const tracksStarted = Object.keys(trackOrderedItems).filter(trackSlug => {
+      const items = trackOrderedItems[trackSlug] ?? [];
+      return items.some(i => completedKeys.has(`${i.section}/${i.slug}`));
+    }).length;
+    document.getElementById('stat-tracks')!.textContent = String(tracksStarted);
+
+    // ── TAB: Overview — track cards ────────────────────────────────────
+    for (const [trackSlug, items] of Object.entries(trackOrderedItems)) {
+      const total = items.length;
+      const done  = items.filter(i => completedKeys.has(`${i.section}/${i.slug}`)).length;
+      const pct   = total > 0 ? Math.round((done / total) * 100) : 0;
+      const color = TRACK_COLORS[trackSlug] ?? '#6366F1';
+
+      const bar = document.querySelector(`.track-bar[data-track="${trackSlug}"]`);
+      if (bar) { bar.style.width = `${pct}%`; bar.style.background = color; }
+
+      const countEl = document.querySelector(`.track-count[data-track="${trackSlug}"]`);
+      if (countEl) countEl.textContent = `${done} / ${total} items`;
+
+      const pctEl = document.querySelector(`.track-pct[data-track="${trackSlug}"]`);
+      if (pctEl) pctEl.textContent = `${pct}%`;
+
+      const nextEl = document.querySelector(`.track-next-label[data-track="${trackSlug}"]`);
+      if (nextEl && pct < 100) {
+        const nextItem = items.find(i => !completedKeys.has(`${i.section}/${i.slug}`));
+        if (nextItem) nextEl.textContent = 'Continue →';
+      } else if (nextEl && pct === 100 && total > 0) {
+        nextEl.textContent = '✓ Complete';
+      }
+    }
+
+    // "Continue Learning" recommendations
+    const continueList = document.getElementById('continue-list')!;
+    const recs = [];
+    for (const [trackSlug, items] of Object.entries(trackOrderedItems)) {
+      const next = items.find(i => !completedKeys.has(`${i.section}/${i.slug}`));
+      if (next) recs.push({ trackSlug, item: next });
+    }
+    if (recs.length === 0) {
+      continueList.innerHTML = '<p class="text-sm text-emerald-600 font-medium">🎉 You have completed all available content!</p>';
+    } else {
+      const sectionBadge = {
+        glossary: 'bg-indigo-100 text-indigo-700',
+        guides:   'bg-emerald-100 text-emerald-700',
+        concepts: 'bg-amber-100 text-amber-700',
+        articles: 'bg-rose-100 text-rose-700',
+      };
+      continueList.innerHTML = recs.slice(0, 6).map(({ trackSlug, item }) => {
+        const xp    = XP_PER_SECTION[item.section] ?? 10;
+        const color = TRACK_COLORS[trackSlug] ?? '#6366F1';
+        const badge = sectionBadge[item.section] ?? '';
+        return `
+          <a href="/${item.section}/${item.slug}"
+            class="flex items-center gap-3 px-4 py-3 rounded-xl border border-gray-100 bg-white hover:border-indigo-200 hover:bg-indigo-50 transition-all no-underline group">
+            <div class="shrink-0 w-2 h-8 rounded-full" style="background:${color}"></div>
+            <span class="text-xs font-semibold px-2 py-0.5 rounded-full shrink-0 ${badge}">${item.section.charAt(0).toUpperCase() + item.section.slice(1)}</span>
+            <span class="flex-1 text-sm font-medium text-gray-900 truncate">${item.title}</span>
+            <span class="shrink-0 text-xs text-indigo-500 font-semibold">+${xp} XP</span>
+            <svg class="w-4 h-4 text-gray-300 group-hover:text-indigo-500 transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          </a>`;
+      }).join('');
+    }
+
+    // ── TAB: Progress — XP breakdown table ────────────────────────────
+    const sectionCounts = { glossary: 0, concepts: 0, articles: 0, guides: 0 };
+    for (const c of completions) {
+      if (c.section in sectionCounts) sectionCounts[c.section]++;
+    }
+    for (const section of ['glossary','concepts','articles','guides']) {
+      const count = sectionCounts[section];
+      const xp    = count * (XP_PER_SECTION[section] ?? 10);
+      const countEl = document.getElementById(`progress-count-${section}`);
+      const xpEl    = document.getElementById(`progress-xp-${section}`);
+      if (countEl) countEl.textContent = String(count);
+      if (xpEl)    xpEl.textContent    = `${xp} XP`;
+    }
+    const totalCountEl = document.getElementById('progress-total-count');
+    const totalXpEl    = document.getElementById('progress-total-xp');
+    if (totalCountEl) totalCountEl.textContent = String(completions.length);
+    if (totalXpEl)    totalXpEl.textContent    = `${totalXp} XP`;
+
+    // Level roadmap
+    const roadmap = document.getElementById('level-roadmap')!;
+    roadmap.innerHTML = LEVELS.map(l => {
+      const isReached  = totalXp >= l.minXp;
+      const isCurrent  = lv.level === l.level;
+      return `
+        <div class="flex items-center gap-4 py-3 ${l.level < LEVELS.length ? 'border-b border-gray-100' : ''}">
+          <div class="shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-black
+            ${isCurrent ? 'text-white shadow-md' : isReached ? 'text-white opacity-70' : 'bg-gray-100 text-gray-400'}"
+            style="${isReached ? `background:${l.color}` : ''}">
+            ${isReached ? l.icon : l.level}
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="font-semibold text-sm ${isCurrent ? 'text-gray-900' : isReached ? 'text-gray-600' : 'text-gray-400'}">
+                ${l.title}
+              </span>
+              ${isCurrent ? '<span class="text-xs px-2 py-0.5 rounded-full bg-indigo-100 text-indigo-700 font-semibold">Current</span>' : ''}
+              ${isReached && !isCurrent ? '<span class="text-xs text-emerald-500 font-semibold">✓ Reached</span>' : ''}
+            </div>
+            <span class="text-xs text-gray-400">${l.minXp} XP${l.maxXp !== null ? ` – ${l.maxXp} XP` : '+'}</span>
+          </div>
+          ${isCurrent ? `
+            <div class="shrink-0 text-right">
+              <div class="text-xs text-gray-500 mb-1">${lvInfo.progressPct}%</div>
+              <div class="w-24 h-1.5 bg-gray-200 rounded-full overflow-hidden">
+                <div class="h-full rounded-full" style="width:${lvInfo.progressPct}%;background:${l.color}"></div>
+              </div>
+            </div>` : ''}
+        </div>`;
+    }).join('');
+
+    // ── TAB: Activity ──────────────────────────────────────────────────
+    const activityFeed = document.getElementById('activity-feed')!;
+    if (completions.length === 0) {
+      activityFeed.innerHTML = '<p class="text-sm text-gray-400">No activity yet. Start completing items to build your history.</p>';
+    } else {
+      // Group by date
+      const grouped = {};
+      for (const c of completions.slice(0, 50)) {
+        const day = c.completed_at?.slice(0, 10) ?? 'unknown';
+        if (!grouped[day]) grouped[day] = [];
+        grouped[day].push(c);
+      }
+      const sectionBadge = {
+        glossary: 'bg-indigo-100 text-indigo-700',
+        guides:   'bg-emerald-100 text-emerald-700',
+        concepts: 'bg-amber-100 text-amber-700',
+        articles: 'bg-rose-100 text-rose-700',
+      };
+      const fmt = (d) => new Date(d + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+      activityFeed.innerHTML = Object.entries(grouped).map(([day, items]) => {
+        const dayXp = computeXp(items);
+        return `
+          <div class="mb-6">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="text-xs font-semibold text-gray-500">${day === today ? 'Today' : fmt(day)}</span>
+              <div class="flex-1 h-px bg-gray-100"></div>
+              <span class="text-xs font-semibold text-indigo-500">+${dayXp} XP</span>
+            </div>
+            <div class="space-y-1">
+              ${items.map(c => {
+                const title  = contentTitleMap[`${c.section}/${c.slug}`] ?? c.slug;
+                const xp     = XP_PER_SECTION[c.section] ?? 10;
+                const badge  = sectionBadge[c.section] ?? '';
+                return `
+                  <a href="/${c.section}/${c.slug}"
+                    class="flex items-center gap-3 px-4 py-2.5 rounded-lg bg-white border border-gray-100 hover:border-gray-200 no-underline group">
+                    <span class="text-xs font-semibold px-2 py-0.5 rounded-full shrink-0 ${badge}">${c.section.charAt(0).toUpperCase() + c.section.slice(1)}</span>
+                    <span class="flex-1 text-sm text-gray-800 truncate">${title}</span>
+                    <span class="text-xs text-indigo-400 font-semibold shrink-0">+${xp} XP</span>
+                  </a>`;
+              }).join('')}
+            </div>
+          </div>`;
+      }).join('');
+    }
+
+    // ── TAB: Account — populate form ───────────────────────────────────
+    const MAX_INTERESTS = 5;
+    const BIO_MAX = 200;
+    const textFields = ['first_name','last_name','job_title','company','website_url','twitter_url','linkedin_url'];
+    textFields.forEach(field => {
+      const el = document.getElementById(field);
+      if (el && profile?.[field]) el.value = profile[field];
+    });
+
+    // Bio
+    const bioEl      = document.getElementById('bio');
+    const bioCounter = document.getElementById('bio-counter');
+    if (bioEl) {
+      if (profile?.bio) bioEl.value = profile.bio;
+      if (bioCounter) bioCounter.textContent = `${bioEl.value.length} / ${BIO_MAX}`;
+      bioEl.addEventListener('input', () => { if (bioCounter) bioCounter.textContent = `${bioEl.value.length} / ${BIO_MAX}`; });
+    }
+
+    // Email + member since
+    const emailEl = document.getElementById('profile-email');
+    if (emailEl) emailEl.textContent = user.email ?? '';
+    const memberSinceEl = document.getElementById('member-since');
+    if (memberSinceEl && user.created_at) {
+      memberSinceEl.textContent = new Date(user.created_at).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+    }
+
+    // ── Interests tag input ────────────────────────────────────────────
+    let interests = profile?.interests ?? [];
+
+    const wrapper  = document.getElementById('interests-wrapper');
+    const input    = document.getElementById('interests-input');
+    const dropdown = document.getElementById('interests-dropdown');
+    const counter  = document.getElementById('interests-counter');
+
+    function renderChips() {
+      wrapper.querySelectorAll('[data-chip]').forEach(c => c.remove());
+      counter.textContent = `${interests.length} / ${MAX_INTERESTS}`;
+      input.disabled      = interests.length >= MAX_INTERESTS;
+      input.placeholder   = interests.length >= MAX_INTERESTS ? '' : 'e.g. fundraising, SaaS…';
+      interests.forEach(tag => {
+        const chip = document.createElement('span');
+        chip.dataset.chip = tag;
+        chip.className    = 'inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-indigo-50 text-indigo-700';
+        chip.innerHTML    = `${tag}<button type="button" class="ml-0.5 text-indigo-400 hover:text-indigo-600 leading-none" data-remove="${tag}">×</button>`;
+        chip.querySelector('button').addEventListener('click', () => { interests = interests.filter(t => t !== tag); renderChips(); });
+        wrapper.insertBefore(chip, input);
+      });
+    }
+    function addInterest(raw) {
+      const val = raw.trim().toLowerCase().replace(/[,\s]+$/, '');
+      if (!val || interests.includes(val) || interests.length >= MAX_INTERESTS) return;
+      interests.push(val); renderChips(); input.value = ''; hideDropdown();
+    }
+    function showDropdown(query) {
+      if (!query) { hideDropdown(); return; }
+      const matches = siteTags.filter(t => t.toLowerCase().includes(query.toLowerCase()) && !interests.includes(t)).slice(0, 6);
+      if (matches.length === 0) { hideDropdown(); return; }
+      dropdown.innerHTML = matches.map(t => `<button type="button" data-tag="${t}" class="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-700">${t}</button>`).join('');
+      dropdown.querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => addInterest(btn.dataset.tag)));
+      dropdown.classList.remove('hidden');
+    }
+    function hideDropdown() { dropdown.classList.add('hidden'); }
+    wrapper.addEventListener('click', () => input.focus());
+    input.addEventListener('input', () => showDropdown(input.value));
+    input.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ',' || e.key === ' ') { e.preventDefault(); addInterest(input.value); }
+      else if (e.key === 'Backspace' && input.value === '' && interests.length > 0) { interests.pop(); renderChips(); }
+    });
+    document.addEventListener('click', e => {
+      if (!wrapper.contains(e.target) && !dropdown.contains(e.target)) hideDropdown();
+    });
+    renderChips();
+
+    // ── Save form ──────────────────────────────────────────────────────
+    const form       = document.getElementById('profile-form');
+    const saveBtn    = document.getElementById('save-btn');
+    const saveError  = document.getElementById('save-error');
+    const saveSuccess= document.getElementById('save-success');
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      saveError.classList.add('hidden');
+      saveSuccess.classList.add('hidden');
+      saveBtn.textContent = 'Saving…';
+      saveBtn.disabled    = true;
+
+      const updates = { updated_at: new Date().toISOString() };
+      textFields.forEach(field => {
+        const el = document.getElementById(field);
+        if (el) updates[field] = el.value || null;
+      });
+      updates.bio       = bioEl?.value || null;
+      updates.interests = interests.length > 0 ? interests : null;
+
+      const { error } = await supabase.from('profiles').update(updates).eq('id', user.id);
+      if (error) {
+        saveError.textContent = error.message;
+        saveError.classList.remove('hidden');
+      } else {
+        saveSuccess.classList.remove('hidden');
+        setTimeout(() => saveSuccess.classList.add('hidden'), 3000);
+      }
+      saveBtn.textContent = 'Save changes';
+      saveBtn.disabled    = false;
+    });
+
+    // ── Logout ─────────────────────────────────────────────────────────
+    document.getElementById('logout-btn')?.addEventListener('click', async () => {
+      await supabase.auth.signOut();
+      window.location.href = '/';
+    });
+
+    // ── Tab switching ──────────────────────────────────────────────────
+    const tabBtns   = document.querySelectorAll('.tab-btn');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.tab;
+
+        tabPanels.forEach(p  => p.classList.toggle('hidden', p.id !== `tab-${target}`));
+        tabBtns.forEach(b => {
+          const active = b.dataset.tab === target;
+          b.classList.toggle('border-indigo-600', active);
+          b.classList.toggle('text-indigo-600',   active);
+          b.classList.toggle('border-transparent', !active);
+          b.classList.toggle('text-gray-500',      !active);
+        });
+      });
+    });
+  }
+</script>

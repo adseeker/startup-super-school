@@ -1,0 +1,283 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { CURRICULUM_TRACKS, getTrackForContent } from '../../data/curriculum';
+
+// Fetch all content and count items per track
+const [glossary, guides, concepts, articles] = await Promise.all([
+  getCollection('glossary', ({ data }) => data.published !== false),
+  getCollection('guides', ({ data }) => data.published !== false),
+  getCollection('concepts', ({ data }) => data.published !== false),
+  getCollection('articles', ({ data }) => data.published !== false),
+]);
+
+type ContentEntry = { section: string; slug: string; data: { title: string; category: string; tags: string[]; difficulty: string; } };
+
+const allContent: ContentEntry[] = [
+  ...glossary.map(e => ({ section: 'glossary', slug: e.slug.split('/').pop()!, data: e.data })),
+  ...guides.map(e => ({ section: 'guides', slug: e.slug.split('/').pop()!, data: e.data })),
+  ...concepts.map(e => ({ section: 'concepts', slug: e.slug.split('/').pop()!, data: e.data })),
+  ...articles.map(e => ({ section: 'articles', slug: e.slug.split('/').pop()!, data: e.data })),
+];
+
+// Count items per track
+const trackCounts: Record<string, number> = {};
+for (const track of CURRICULUM_TRACKS) trackCounts[track.slug] = 0;
+
+for (const item of allContent) {
+  const trackSlug = getTrackForContent(item.data.category, item.data.tags);
+  if (trackSlug) trackCounts[trackSlug] = (trackCounts[trackSlug] || 0) + 1;
+}
+
+const totalItems = allContent.length;
+
+// Serialize track+count pairs for client-side progress rendering
+const trackMeta = CURRICULUM_TRACKS.map(t => ({ slug: t.slug, count: trackCounts[t.slug] ?? 0 }));
+
+const colorMap: Record<string, { text: string; bg: string; border: string; badge: string; progressBg: string; progressFill: string }> = {
+  indigo: {
+    text: 'text-indigo-600',
+    bg: 'bg-indigo-50',
+    border: 'border-indigo-200',
+    badge: 'bg-indigo-100 text-indigo-700',
+    progressBg: 'bg-indigo-100',
+    progressFill: 'bg-indigo-500',
+  },
+  emerald: {
+    text: 'text-emerald-600',
+    bg: 'bg-emerald-50',
+    border: 'border-emerald-200',
+    badge: 'bg-emerald-100 text-emerald-700',
+    progressBg: 'bg-emerald-100',
+    progressFill: 'bg-emerald-500',
+  },
+  amber: {
+    text: 'text-amber-600',
+    bg: 'bg-amber-50',
+    border: 'border-amber-200',
+    badge: 'bg-amber-100 text-amber-700',
+    progressBg: 'bg-amber-100',
+    progressFill: 'bg-amber-500',
+  },
+  violet: {
+    text: 'text-violet-600',
+    bg: 'bg-violet-50',
+    border: 'border-violet-200',
+    badge: 'bg-violet-100 text-violet-700',
+    progressBg: 'bg-violet-100',
+    progressFill: 'bg-violet-500',
+  },
+  sky: {
+    text: 'text-sky-600',
+    bg: 'bg-sky-50',
+    border: 'border-sky-200',
+    badge: 'bg-sky-100 text-sky-700',
+    progressBg: 'bg-sky-100',
+    progressFill: 'bg-sky-500',
+  },
+  rose: {
+    text: 'text-rose-600',
+    bg: 'bg-rose-50',
+    border: 'border-rose-200',
+    badge: 'bg-rose-100 text-rose-700',
+    progressBg: 'bg-rose-100',
+    progressFill: 'bg-rose-500',
+  },
+};
+---
+
+<BaseLayout
+  title="Curriculum"
+  description="Six structured learning tracks to take you from startup novice to fluent founder — at your own pace."
+  locale="en"
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-gray-50 to-white border-b border-gray-100 py-16 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-indigo-100 text-indigo-700 mb-4 uppercase tracking-wide">Learning Curriculum</span>
+      <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-4">
+        Your path from zero<br class="hidden sm:block" /> to fluent founder
+      </h1>
+      <p class="text-xl text-gray-500 leading-relaxed mb-8 max-w-2xl mx-auto">
+        Six structured tracks covering every dimension of building a startup.
+        Pick a track, follow the path, and track your progress as you learn.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3 text-sm text-gray-500">
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-indigo-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          {totalItems}+ items across 6 tracks
+        </span>
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-indigo-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          Self-paced, free forever
+        </span>
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-indigo-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          Progress saved to your account
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Track grid -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+    <!-- Guest CTA banner (hidden for logged-in users) -->
+    <div id="curriculum-guest-cta" class="hidden mb-10 bg-indigo-50 border border-indigo-200 rounded-2xl px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <p class="font-semibold text-gray-900">Track your progress across all six paths</p>
+        <p class="text-sm text-gray-500 mt-0.5">Create a free account to mark items complete and see how far you've come.</p>
+      </div>
+      <a href="/register" class="shrink-0 px-5 py-2.5 bg-indigo-600 text-white text-sm font-semibold rounded-lg hover:bg-indigo-700 transition-colors no-underline">
+        Sign up free →
+      </a>
+    </div>
+
+    <!-- Overall progress (shown for logged-in users) -->
+    <div id="curriculum-overall-progress" class="hidden mb-10 bg-white border border-gray-200 rounded-2xl px-6 py-5">
+      <div class="flex items-center justify-between mb-3">
+        <div>
+          <p class="font-semibold text-gray-900">Your overall progress</p>
+          <p class="text-sm text-gray-500 mt-0.5"><span id="overall-completed">0</span> of {totalItems} items completed</p>
+        </div>
+        <span id="overall-pct" class="text-2xl font-bold text-indigo-600">0%</span>
+      </div>
+      <div class="h-2.5 bg-gray-100 rounded-full overflow-hidden">
+        <div id="overall-bar" class="h-full bg-indigo-500 rounded-full transition-all duration-500" style="width: 0%"></div>
+      </div>
+    </div>
+
+    <!-- Tracks -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {CURRICULUM_TRACKS.map((track) => {
+        const c = colorMap[track.color];
+        const count = trackCounts[track.slug] ?? 0;
+        return (
+          <a
+            href={`/curriculum/${track.slug}`}
+            class:list={[
+              'group relative flex flex-col rounded-2xl border p-6 no-underline transition-all duration-200',
+              'hover:shadow-md hover:-translate-y-0.5',
+              'bg-white border-gray-200',
+            ]}
+            data-track={track.slug}
+            data-total={count}
+          >
+            <!-- Emoji + title -->
+            <div class="flex items-start gap-3 mb-3">
+              <span class:list={['text-3xl leading-none p-2 rounded-xl', c.bg]}>{track.emoji}</span>
+              <div class="flex-1 min-w-0 pt-1">
+                <h2 class:list={['text-lg font-bold text-gray-900 leading-tight group-hover:transition-colors', `group-hover:${c.text}`]}>
+                  {track.title}
+                </h2>
+                <p class="text-xs text-gray-500 mt-0.5">{track.subtitle}</p>
+              </div>
+            </div>
+
+            <!-- Description -->
+            <p class="text-sm text-gray-600 leading-relaxed flex-1 mb-4">{track.description}</p>
+
+            <!-- Item count + progress -->
+            <div class="mt-auto">
+              <div class="flex items-center justify-between text-xs text-gray-400 mb-2">
+                <span>{count} items</span>
+                <span class:list={['font-semibold', c.text, 'track-progress-text']} data-track={track.slug}>—</span>
+              </div>
+              <div class:list={['h-1.5 rounded-full overflow-hidden', c.progressBg]}>
+                <div
+                  class:list={['h-full rounded-full transition-all duration-500', c.progressFill, 'track-progress-bar']}
+                  data-track={track.slug}
+                  style="width: 0%"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Arrow -->
+            <div class:list={['absolute top-5 right-5 opacity-0 group-hover:opacity-100 transition-opacity', c.text]}>
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+
+    <!-- How it works -->
+    <div class="mt-20 border-t border-gray-100 pt-16">
+      <h2 class="text-2xl font-bold text-gray-900 text-center mb-12">How the curriculum works</h2>
+      <div class="grid sm:grid-cols-3 gap-8 max-w-3xl mx-auto">
+        <div class="text-center">
+          <div class="w-12 h-12 rounded-2xl bg-indigo-50 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
+            </svg>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">Pick a track</h3>
+          <p class="text-sm text-gray-500">Choose the learning path that matches where you are and where you want to go.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 rounded-2xl bg-indigo-50 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+            </svg>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">Read and learn</h3>
+          <p class="text-sm text-gray-500">Work through definitions, guides, frameworks, and articles organized by difficulty.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 rounded-2xl bg-indigo-50 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.042 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.745 3.745 0 0 1 3.296-1.043A3.745 3.745 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.042 3.746 3.746 0 0 1 1.043 3.297A3.745 3.745 0 0 1 21 12Z" />
+            </svg>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">Track your progress</h3>
+          <p class="text-sm text-gray-500">Mark items complete as you go. Your progress is saved and visible across all tracks.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</BaseLayout>
+
+<!-- Embed track meta for client script -->
+<div id="track-meta-data" data-meta={JSON.stringify(trackMeta)} class="hidden"></div>
+
+<script>
+  import { supabase } from '../../lib/supabase';
+
+  const { data: { user } } = await supabase.auth.getUser();
+
+  if (!user) {
+    document.getElementById('curriculum-guest-cta')?.classList.remove('hidden');
+  } else {
+    document.getElementById('curriculum-overall-progress')?.classList.remove('hidden');
+
+    // Fetch all completions for this user
+    const { data: completions } = await supabase
+      .from('completions')
+      .select('section, slug')
+      .eq('user_id', user.id);
+
+    const completedSet = new Set((completions ?? []).map((c: { section: string; slug: string }) => `${c.section}/${c.slug}`));
+
+    const cards = document.querySelectorAll<HTMLElement>('[data-track][data-total]');
+
+    // Overall progress
+    const totalItems = Array.from(cards).reduce((sum, c) => sum + Number(c.dataset.total || 0), 0);
+    const totalCompleted = completedSet.size;
+    const overallPct = totalItems > 0 ? Math.round((totalCompleted / totalItems) * 100) : 0;
+
+    const overallCompletedEl = document.getElementById('overall-completed');
+    const overallPctEl = document.getElementById('overall-pct');
+    const overallBar = document.getElementById('overall-bar') as HTMLElement;
+    if (overallCompletedEl) overallCompletedEl.textContent = String(totalCompleted);
+    if (overallPctEl) overallPctEl.textContent = `${overallPct}%`;
+    if (overallBar) overallBar.style.width = `${overallPct}%`;
+
+    cards.forEach(card => {
+      const textEl = card.querySelector('.track-progress-text') as HTMLElement;
+      if (textEl) textEl.textContent = '';
+    });
+  }
+</script>
