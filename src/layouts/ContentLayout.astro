@@ -296,17 +296,27 @@ const breadcrumbLd = {
         <!-- Completion check (bottom of article) -->
         {slug && (
           <div class="mt-8 pt-6 border-t border-gray-200" data-pagefind-ignore>
-            <button
-              data-completion-btn
-              data-section={sectionSlug}
-              data-slug={slug}
-              class="completion-btn-default inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 border border-gray-300 text-gray-600 hover:border-indigo-400 hover:text-indigo-600"
-            >
-              <span data-completion-icon>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
-              </span>
-              <span data-completion-label>Mark as complete</span>
-            </button>
+            <div class="relative inline-flex">
+              <button
+                data-completion-btn
+                data-section={sectionSlug}
+                data-slug={slug}
+                class="completion-btn-default inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 border border-gray-300 text-gray-600 hover:border-indigo-400 hover:text-indigo-600"
+              >
+                <span data-completion-icon>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+                </span>
+                <span data-completion-label>Mark as complete</span>
+              </button>
+              <a
+                data-guest-overlay
+                href="/register"
+                class="absolute inset-0 flex items-center justify-center gap-1.5 rounded-lg bg-gray-100/80 text-gray-400 hover:bg-gray-200/90 transition-colors"
+                aria-label="Create a free account to track progress"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </a>
+            </div>
             <p id="completion-guest-hint" class="mt-2 text-xs text-gray-400">
               <a href="/register" class="text-indigo-500 hover:text-indigo-700 font-medium">Create an account</a> to track your progress across all lessons.
             </p>
@@ -356,17 +366,27 @@ const breadcrumbLd = {
         {slug && (
           <div class="rounded-xl border border-gray-200 p-4">
             <p class="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-3">Your progress</p>
-            <button
-              data-completion-btn
-              data-section={sectionSlug}
-              data-slug={slug}
-              class="completion-btn-default w-full inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 border border-gray-300 text-gray-600 hover:border-indigo-400 hover:text-indigo-600"
-            >
-              <span data-completion-icon>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
-              </span>
-              <span data-completion-label>Mark as complete</span>
-            </button>
+            <div class="relative">
+              <button
+                data-completion-btn
+                data-section={sectionSlug}
+                data-slug={slug}
+                class="completion-btn-default w-full inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 border border-gray-300 text-gray-600 hover:border-indigo-400 hover:text-indigo-600"
+              >
+                <span data-completion-icon>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+                </span>
+                <span data-completion-label>Mark as complete</span>
+              </button>
+              <a
+                data-guest-overlay
+                href="/register"
+                class="absolute inset-0 flex items-center justify-center gap-1.5 rounded-lg bg-gray-100/80 text-gray-400 hover:bg-gray-200/90 transition-colors"
+                aria-label="Create a free account to track progress"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </a>
+            </div>
             <p id="sidebar-guest-hint" class="mt-2 text-xs text-gray-400 text-center">
               <a href="/register" class="text-indigo-500 hover:text-indigo-700 font-medium">Create an account</a> to track your progress.
             </p>
@@ -437,81 +457,52 @@ const breadcrumbLd = {
     document.getElementById('up-next-panel-sidebar')?.classList[action]('hidden');
   }
 
-  const btns = document.querySelectorAll('[data-completion-btn]');
-
-  if (btns.length > 0) {
-  const section = btns[0].dataset.section;
-  const slug = btns[0].dataset.slug;
-
-  // Attach guest click handler immediately — no await needed
-  btns.forEach(btn => {
-    btn.addEventListener('click', async () => {
-      const { data: { user } } = await supabase.auth.getUser();
-
-      if (!user) {
-        localStorage.setItem('pendingCompletion', JSON.stringify({ section, slug }));
-        window.location.href = '/register?next=' + encodeURIComponent(window.location.pathname);
-        return;
-      }
-
-      // Logged in: toggle completion
-      const { data: existing } = await supabase
-        .from('completions').select('id')
-        .eq('user_id', user.id).eq('section', section).eq('slug', slug)
-        .maybeSingle();
-
-      if (!existing) {
-        await supabase.from('completions').insert({ user_id: user.id, section, slug });
-        syncAll(true);
-        setUpNext(true);
-      } else {
-        await supabase.from('completions').delete()
-          .eq('user_id', user.id).eq('section', section).eq('slug', slug);
-        syncAll(false);
-        setUpNext(false);
-      }
-    });
+  // Set ?next= on all overlays
+  const overlays = document.querySelectorAll('[data-guest-overlay]');
+  overlays.forEach(function(overlay) {
+    overlay.setAttribute('href', '/register?next=' + encodeURIComponent(window.location.pathname));
   });
 
-  // Async init: load saved state + handle pending completion after register/login
   const { data: { user } } = await supabase.auth.getUser();
 
   if (user) {
-    // Hide guest hints
+    // Logged in: remove overlays and guest hints
+    overlays.forEach(function(overlay) { overlay.remove(); });
     const hint1 = document.getElementById('completion-guest-hint');
     const hint2 = document.getElementById('sidebar-guest-hint');
     if (hint1) hint1.classList.add('hidden');
     if (hint2) hint2.classList.add('hidden');
 
-    // Auto-complete pending lesson from before registration
-    const pendingRaw = localStorage.getItem('pendingCompletion');
-    if (pendingRaw) {
-      try {
-        const pending = JSON.parse(pendingRaw);
-        if (pending.section === section && pending.slug === slug) {
-          localStorage.removeItem('pendingCompletion');
-          const { data: alreadyDone } = await supabase
-            .from('completions').select('id')
-            .eq('user_id', user.id).eq('section', section).eq('slug', slug)
-            .maybeSingle();
-          if (!alreadyDone) {
+    // Load and render current completion state
+    const btns = document.querySelectorAll('[data-completion-btn]');
+    if (btns.length > 0) {
+      const section = btns[0].dataset.section;
+      const slug = btns[0].dataset.slug;
+
+      const { data: existing } = await supabase
+        .from('completions').select('id')
+        .eq('user_id', user.id).eq('section', section).eq('slug', slug)
+        .maybeSingle();
+
+      let isDone = !!existing;
+      syncAll(isDone);
+      setUpNext(isDone);
+
+      btns.forEach(function(btn) {
+        btn.addEventListener('click', async function() {
+          if (!isDone) {
             await supabase.from('completions').insert({ user_id: user.id, section, slug });
+            isDone = true;
+          } else {
+            await supabase.from('completions').delete()
+              .eq('user_id', user.id).eq('section', section).eq('slug', slug);
+            isDone = false;
           }
-        }
-      } catch (e) {
-        localStorage.removeItem('pendingCompletion');
-      }
+          syncAll(isDone);
+          setUpNext(isDone);
+        });
+      });
     }
-
-    // Load and render current state
-    const { data: existing } = await supabase
-      .from('completions').select('id')
-      .eq('user_id', user.id).eq('section', section).eq('slug', slug)
-      .maybeSingle();
-
-    syncAll(!!existing);
-    setUpNext(!!existing);
   }
-  } // end if (btns.length > 0)
 </script>
 </BaseLayout>
