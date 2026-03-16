@@ -62,7 +62,7 @@ Skills get you started. Values keep you together. Before going deep on any candi
 
 ### Online Platforms
 
-1. **YC Co-Founder Matching** (cofoundermatch.ycombinator.com) — The highest-signal platform available. Founders are pre-vetted by applying to the tool. Filters for location, stage, and skills. Start here.
+1. **[YC Co-Founder Matching](https://www.ycombinator.com/cofounder-matching)** — The highest-signal platform available. Founders are pre-vetted by applying to the tool. Filters for location, stage, and skills. Start here.
 2. **Indie Hackers** — Good for finding technical builders who already have product instincts. Post in the community or browse the "looking for co-founder" threads.
 3. **AngelList Talent / Wellfound** — Allows filtering by "co-founder" intent. More noise than YC matching, but wide reach.
 4. **LinkedIn** — Search for people with "founder," "CTO," or "CPO" in their history. Cold outreach works if personalized. Template below.
