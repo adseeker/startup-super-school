@@ -71,6 +71,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         submitBtn.textContent = 'Log in';
         submitBtn.disabled = false;
       } else {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'login', method: 'email' });
+
         const redirect = new URLSearchParams(window.location.search).get('next') ?? '/';
         window.location.href = redirect;
       }

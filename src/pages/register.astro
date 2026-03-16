@@ -120,6 +120,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         await supabase.from('profiles').update({ first_name, last_name }).eq('id', data.user.id);
       }
 
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'sign_up', method: 'email' });
+
       const redirect = new URLSearchParams(window.location.search).get('next') ?? '/';
       window.location.href = redirect;
     } catch (err) {
