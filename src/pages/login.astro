@@ -75,7 +75,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         window.location.href = redirect;
       }
     } catch (err) {
-      errorDiv.textContent = 'Something went wrong. Please try again.';
+      errorDiv.textContent = err instanceof Error ? err.message : String(err);
       errorDiv.classList.remove('hidden');
       submitBtn.textContent = 'Log in';
       submitBtn.disabled = false;
