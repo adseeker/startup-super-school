@@ -18,7 +18,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
       <!-- Form card -->
       <div class="bg-white rounded-2xl border border-gray-200 shadow-sm p-8">
-        <form id="register-form" class="space-y-5">
+        <form id="register-form" method="post" class="space-y-5">
 
           <!-- Name row -->
           <div class="grid grid-cols-2 gap-4">
@@ -91,9 +91,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 <script>
   import { supabase } from '../lib/supabase';
 
-  const { data: { user } } = await supabase.auth.getUser();
-  if (user) window.location.href = '/';
-
   const form = document.getElementById('register-form');
   const errorDiv = document.getElementById('form-error');
   const submitBtn = document.getElementById('submit-btn');
@@ -119,7 +116,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       return;
     }
 
-    // Save first_name + last_name to profile
     if (data.user) {
       await supabase.from('profiles').update({ first_name, last_name }).eq('id', data.user.id);
     }
@@ -127,4 +123,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     const redirect = new URLSearchParams(window.location.search).get('next') ?? '/';
     window.location.href = redirect;
   });
+
+  try {
+    const { data: { user } } = await supabase.auth.getUser();
+    if (user) window.location.href = '/';
+  } catch (_) {}
 </script>
