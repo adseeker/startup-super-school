@@ -23,11 +23,13 @@ for (const entry of sorted) {
 
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const activeLetters = new Set(letterMap.keys());
+
+const description = `${entries.length} startup terms defined — from MVP to burn rate, cap table, and venture capital.`;
 ---
 
 <BaseLayout
-  title="Glossary"
-  description={t.content.sectionDescriptions.glossary}
+  title="Startup Glossary"
+  description={description}
   locale={locale}
 >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -35,7 +37,7 @@ const activeLetters = new Set(letterMap.keys());
       <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">
         {t.nav.glossary}
       </h1>
-      <p class="text-xl text-gray-600">{t.content.sectionDescriptions.glossary}</p>
+      <p class="text-xl text-gray-600">{description}</p>
     </header>
 
     <!-- Letter jump nav -->

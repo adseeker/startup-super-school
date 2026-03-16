@@ -12,17 +12,19 @@ const entries = await getCollection('concepts', ({ data }) => {
 });
 
 const sorted = entries.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const description = `${entries.length} startup frameworks explained — lean startup, OKRs, jobs-to-be-done, and more.`;
 ---
 
 <BaseLayout
-  title="Concepts"
-  description={t.content.sectionDescriptions.concepts}
+  title="Startup Frameworks & Concepts"
+  description={description}
   locale={locale}
 >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
     <header class="mb-10">
       <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">{t.nav.concepts}</h1>
-      <p class="text-xl text-gray-600">{t.content.sectionDescriptions.concepts}</p>
+      <p class="text-xl text-gray-600">{description}</p>
     </header>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {sorted.map((entry) => {
