@@ -11,7 +11,8 @@
     "check-curriculum": "node scripts/check-curriculum.mjs",
     "submit-indexnow": "node scripts/submit-indexnow.mjs",
     "submit-indexnow:all": "node scripts/submit-indexnow.mjs --all",
-    "check-links": "node scripts/check-links.mjs"
+    "check-links": "node scripts/check-links.mjs",
+    "render-infographic": "node scripts/render-infographic.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",

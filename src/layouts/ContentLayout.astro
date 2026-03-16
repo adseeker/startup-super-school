@@ -1,5 +1,7 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import { existsSync } from 'fs';
+import { join } from 'path';
 import DifficultyBadge from '../components/DifficultyBadge.astro';
 import TableOfContents from '../components/TableOfContents.astro';
 import RelatedContent from '../components/RelatedContent.astro';
@@ -96,6 +98,11 @@ if (slug) {
     }
   }
 }
+
+// Auto-detect infographic
+const hasInfographic = slug
+  ? existsSync(join(process.cwd(), 'public', 'infographics', sectionSlug, `${slug}.svg`))
+  : false;
 
 // Per-type JSON-LD schema
 const jsonLd = sectionSlug === 'glossary'
@@ -257,6 +264,19 @@ const breadcrumbLd = {
             )}
           </div>
         </header>
+
+        <!-- Infographic (auto-detected when file exists in public/infographics/) -->
+        {hasInfographic && slug && (
+          <div class="mb-8 not-prose" data-pagefind-ignore>
+            <img
+              src={`/infographics/${sectionSlug}/${slug}.svg`}
+              alt={`Visual summary of ${title}`}
+              class="w-full rounded-xl border border-gray-100 shadow-sm"
+              loading="lazy"
+              width="900"
+            />
+          </div>
+        )}
 
         <!-- Article body -->
         <div
