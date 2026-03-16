@@ -124,7 +124,7 @@ The `en/` subfolder in content is for locale organization only — it does NOT a
 | `video` | boolean | — | Set `true` to embed the video player (file must exist at `public/videos/{section}/{slug}.mp4`) |
 | `primaryKeyword` | string | — | SEO focus keyword; used by autolinker (lowercase, unique across all content) |
 | `seoKeywords` | string[] | — | Extra keywords for the page |
-| `faqs` | `{question, answer}[]` | — | Structured FAQ entries for JSON-LD |
+| `faqs` | `{question, answer}[]` | — | FAQ entries: rendered as visual accordion in page AND as `FAQPage` JSON-LD for Google rich results |
 | `image` | `{url, alt}` | — | OG image for the article |
 
 ### Collection-specific extras
@@ -337,7 +337,7 @@ npx remotion studio
 - **Tailwind v4**: No `tailwind.config.js` — use CSS custom properties in `src/styles/global.css`
 - **Typography**: `prose prose-gray prose-lg` for article body
 - **Accent color**: `text-indigo-600` / `bg-indigo-600`
-- **Font**: Inter, loaded from Google Fonts in `BaseLayout.astro`
+- **Font**: Inter Variable, self-hosted via `@fontsource-variable/inter` — imported in `src/styles/global.css`, font-family is `'Inter Variable'`
 - No dark mode — clean white/gray palette
 
 ---
@@ -457,6 +457,24 @@ This site is fully static — auth runs 100% client-side via `@supabase/supabase
 3. Add `PUBLIC_SUPABASE_URL` and `PUBLIC_SUPABASE_ANON_KEY` to `.env` (local) and Vercel env vars (production)
 4. In Supabase Dashboard → Auth → Providers → Email: disable "Confirm email" during dev (re-enable + add custom SMTP for production)
 
+**Key pattern — lazy-load Supabase for pages with many guest visitors**:
+For pages where most visitors are not logged in (content pages, homepage, curriculum), avoid loading the 46KB Supabase SDK unconditionally. Check localStorage first — Supabase stores its session token there:
+```ts
+const hasSession = Object.keys(localStorage).some(k => k.includes('-auth-token'));
+if (hasSession) {
+  const { supabase } = await import('../lib/supabase');
+  const { data: { user } } = await supabase.auth.getUser();
+  if (user) {
+    // logged-in UI
+  } else {
+    // guest UI (expired token)
+  }
+} else {
+  // guest UI — SDK never loaded
+}
+```
+Pages that already use this pattern: `Header.astro`, `ContentLayout.astro`. Pages that load Supabase unconditionally (intentional — always need auth): `index.astro`, `profile.astro`, `curriculum/index.astro`, `curriculum/[track].astro`.
+
 **Key pattern — top-level await in `<script>`**:
 ```ts
 // Astro <script> tags are ESM modules — top-level await is supported
@@ -475,6 +493,33 @@ const redirect = new URLSearchParams(window.location.search).get('next') ?? '/';
 window.location.href = redirect;
 ```
 Link to login as: `href="/login?next=/profile"`.
+
+### SOP: Generate an infographic for a content page
+
+Infographics are static SVG files (900px wide) that summarize the article structure: colored header, numbered sections with H2 heading + first paragraph description, tag footer. They appear automatically in ContentLayout when the file exists — no frontmatter change needed.
+
+```bash
+# Generate the SVG (~instant)
+npm run render-infographic -- --section=guides --slug=my-guide
+# → public/infographics/guides/my-guide.svg
+
+# Verify locally
+npm run dev
+# → /guides/my-guide should show the infographic between header and article body
+
+# Build check
+npm run build
+
+# Commit
+git add public/infographics/guides/my-guide.svg
+git commit -m "feat(infographic): add infographic for my-guide"
+git push
+```
+
+- SVG accent color follows the same section map as videos (glossary=indigo, guides=emerald, concepts=amber, articles=rose)
+- Script skips sections named "Key Takeaway", "Conclusion", "Summary", "FAQ" — max 5 sections
+- If H2 headings change significantly, regenerate by re-running the same command (overwrites)
+- ContentLayout detects the file via `existsSync` at build time — no `infographic: true` frontmatter needed
 
 ### SOP: Regenerate a video after content changes
 
@@ -502,7 +547,7 @@ git push
 - GTM is already installed globally — do not add a second GTM or GA script in code
 - **Do not publish content without `faqs`** — missing FAQs means missing `FAQPage` rich results in Google
 - **Do not publish a guide without `steps`** — missing steps means the `HowTo` schema has no structured step data for Google rich results
-- **`title` in frontmatter must be ≤ 47 chars** — the rendered `<title>` tag is `{title} — Startup Super School` (23-char suffix), reaching exactly 70 chars at 47 frontmatter chars. Bing and Google flag titles over 70. Check with: `echo -n "your title here — Startup Super School" | wc -c`
+- **`title` in frontmatter must be ≤ 47 chars** — the rendered `<title>` tag is `{title} - Startup Super School` (23-char suffix), reaching exactly 70 chars at 47 frontmatter chars. Bing and Google flag titles over 70. Check with: `echo -n "your title here - Startup Super School" | wc -c`
 - **Internal links must never include `/en/` in the path** — content lives under `src/content/glossary/en/` etc. but `en/` is stripped from URLs. Always link as `/guides/slug`, `/glossary/slug`, etc. Periodically grep for `/en/` in content bodies to catch stale links: `grep -r "/en/" src/content/`
 - **`pagefind-ui.js` is an IIFE with no ES module exports** — `const { PagefindUI } = await import('/pagefind/pagefind-ui.js')` always returns `undefined` (the file only sets `window.PagefindUI`). The widget silently never renders. Always import from the npm package in a regular `<script>` tag: `import { PagefindUI } from '@pagefind/default-ui'`
 - **`PagefindUI` has no `defaultValue` option** — to pre-fill the search box from `?q=` and auto-trigger the search, manually set the input value and dispatch an `input` event after `new PagefindUI()`: `input.value = query; input.dispatchEvent(new Event('input', { bubbles: true }))`
@@ -510,4 +555,6 @@ git push
 - **Supabase email rate limit on free tier** — the shared transactional email pool throttles new signups globally. For local development, disable "Confirm email" in Supabase Dashboard → Authentication → Providers → Email. Re-enable before going to production with a custom SMTP.
 - **`PUBLIC_` prefix required for browser-accessible env vars** — in Astro, only `import.meta.env.PUBLIC_*` variables are included in client bundles. Any env var without the `PUBLIC_` prefix is `undefined` in the browser (even if it exists in `.env`). Supabase keys must be `PUBLIC_SUPABASE_URL` and `PUBLIC_SUPABASE_ANON_KEY`.
 - **Build-time data for client scripts**: when a client-side `<script>` needs data computed at build time (e.g. tag lists, track mappings, title lookups), embed it as JSON in a hidden `data-*` attribute on a `<div>` in the Astro template, then read it with `JSON.parse(el.dataset.key)` in the script. This avoids API calls and is safe for static sites.
+- **`@astrojs/rss` adds trailing slashes to relative `link` URLs** — passing `link: '/section/slug'` gets normalized to `/section/slug/`. Fix: always use absolute URLs: `link: \`${siteBase}/${section}/${slug}\`` where `siteBase = context.site!.href.replace(/\/$/, '')`.
+- **WCAG AA contrast failures** — `text-gray-400` on white is 2.85:1 (fails). `text-gray-500` on `text-xs` (12px) is 4.48:1 (fails, needs 4.5:1). Colored text `-600` on same-color `-50` tinted backgrounds also fails (e.g. `text-emerald-600` on `bg-emerald-50`). Use `text-gray-500` for secondary text, `text-gray-600` for extra-small text, `-700` variants for colored text on tinted backgrounds.
 - **esbuild fails on TypeScript generics in `<script>` blocks AND in Astro template expressions** — esbuild processes `<script>` blocks in transpile-only mode and chokes on TypeScript generics. Remove all of the following from `<script>` tags: `Record<string, X>`, `Array<{...}>`, `as const`, `as HTMLElement`, `: TypeAnnotation` on function params, `!` non-null assertions. The same restriction applies to JSX template expression contexts (inside `{...}` in the template section) — e.g., `(['a', 'b'] as const).map(...)` or a `.map((x: string) => ...)` callback inside the template will also fail. The error location reported by esbuild is often misleading; when debugging, scan both the `<script>` block and all `{...}` template expressions.
