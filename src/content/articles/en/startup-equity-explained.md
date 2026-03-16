@@ -10,6 +10,15 @@ primaryKeyword: "startup equity"
 readingTime: 13
 author: "Startup Super School"
 seoKeywords: ["startup equity explained", "what is startup equity", "how startup equity works", "startup equity for employees"]
+faqs:
+  - question: "How does startup equity actually work for employees?"
+    answer: "Employees typically receive stock options rather than actual shares. Options give the holder the right to purchase shares at a predetermined strike price at a future point. The employee's economic gain is the difference between the strike price and the share value at the time of exercise or sale. Options usually vest over 4 years with a 1-year cliff — meaning nothing vests in the first year, 25% vests at the 1-year mark, then the remainder vests monthly over three more years. Options only become valuable if the company achieves a liquidity event at a valuation above the strike price."
+  - question: "What is the 83(b) election and why does it matter for startup founders?"
+    answer: "The 83(b) election is a US tax filing that allows founders receiving restricted stock to pay taxes on the grant at the time of issuance — when shares are worth almost nothing — rather than at each future vesting event when the company may be worth substantially more. Missing this election can generate large ordinary income tax bills as shares vest at rising valuations, sometimes without liquid funds to pay them. The deadline is exactly 30 days from the grant date, with no exceptions. Missing this window is an unrecoverable error for founders."
+  - question: "What is dilution and does it always hurt equity holders?"
+    answer: "Dilution occurs when a company issues new shares, decreasing existing holders' percentage ownership. But dilution does not necessarily decrease the value of your stake. If a company raises $10M at a $40M post-money valuation and uses that capital to grow from $40M to $200M in value, the diluted shareholders are worth far more than before the round despite owning a smaller percentage. Dilution hurts when the raised capital does not create proportional value — when it funds spending that doesn't produce growth."
+  - question: "What happens to startup equity when the company is acquired?"
+    answer: "In an acquisition, investors' preferred stock liquidation preferences are paid first before common stockholders — founders and employees — receive anything. If a company raised $50M in venture capital and is acquired for $60M, investors may receive most or all of the proceeds depending on preference terms, leaving common holders with little. Employees should model at least three exit scenarios — modest (1–2x last valuation), mid-tier (5–10x), and outlier (20x+) — to understand the realistic range of outcomes after preferences and taxes are applied."
 ---
 
 ## Equity Is Ownership — Nothing More, Nothing Less

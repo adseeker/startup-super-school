@@ -10,6 +10,15 @@ primaryKeyword: "startup vs small business"
 readingTime: 10
 author: "Startup Super School"
 seoKeywords: ["startup vs small business", "difference between startup and small business", "what is a startup vs business", "startup definition vs small business"]
+faqs:
+  - question: "What is the key difference between a startup and a small business?"
+    answer: "Steve Blank defines a startup as a temporary organization designed to search for a repeatable and scalable business model under extreme uncertainty. A small business is a permanent organization executing a known business model from day one. The crux: a startup that stops growing is probably a small business. The business model in a startup is the subject of the experiment; in a small business, it is already established. This difference cascades into funding, hiring, growth expectations, and exit intentions."
+  - question: "What growth rates do investors expect from a startup versus a small business?"
+    answer: "A healthy small business grows 5–20% annually. A venture-backed startup is expected to grow 10–20% per month in early stages — roughly 3–7x annually — the benchmark that Y Combinator's Paul Graham defined for the program. These are not points on the same continuum. A small business optimizing for 15% monthly growth will likely burn through cash before finding that market trajectory. A startup growing 20% per year will miss its venture milestones and fail to raise its next round."
+  - question: "Can a startup be profitable without raising venture capital?"
+    answer: "Yes. Micro-SaaS is a well-established middle path: software products built by 1–3 people serving niche markets, generating $5K–$100K MRR with no outside capital and no intention to raise. These businesses differ from traditional small businesses in that software can scale without linear cost increases — a product serving 500 customers doesn't require 500x the effort of serving 1 customer. Micro-SaaS combines the stability and ownership retention of a small business with software's margin structure, no investor permission required."
+  - question: "Why is it a mistake to apply startup advice to a small business?"
+    answer: "Startup advice is optimized for a specific organizational form: one searching for a scalable model under conditions of extreme uncertainty, with outside capital that demands a large exit. Applying that framework to a small business means optimizing for growth metrics that can destroy the unit economics you actually need to survive, hiring ahead of revenue in ways that burn cash reserves, and chasing an exit that the business model and market cannot support. The result is typically a business that neither works as a startup nor survives as a small business."
 ---
 
 ## The Confusion Is Costing Founders

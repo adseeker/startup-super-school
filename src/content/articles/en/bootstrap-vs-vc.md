@@ -10,6 +10,15 @@ primaryKeyword: "bootstrapping vs VC"
 readingTime: 13
 author: "Startup Super School"
 seoKeywords: ["bootstrapping vs VC funding", "bootstrap or raise VC", "venture capital vs bootstrapping", "self-funded startup vs VC"]
+faqs:
+  - question: "What are the main downsides of taking venture capital funding?"
+    answer: "When you take venture capital, you trade equity for capital and accept several lasting obligations. A typical seed-to-Series B funding path can leave founders owning 30–40% of their own company. Investors receive board seats with legal authority over major decisions. VCs have a return mandate requiring a large exit — acquisition or IPO — which closes the path to operating a profitable small business indefinitely. The capital creates pressure to grow at a pace that may not be right for the business."
+  - question: "When does it make sense to bootstrap instead of raising VC?"
+    answer: "Bootstrapping makes sense when your total addressable market is too small for venture returns (under $50M), when your business generates cash early through services or low-overhead software, when you prioritize control and ownership over scale, or when you have not yet validated your business thesis with real customers. Bootstrapping is also correct when you are not yet in a winner-take-most market where speed and capital are decisive competitive advantages."
+  - question: "What is the dilution math for a startup that raises multiple VC rounds?"
+    answer: "Dilution compounds across every round. Starting at 100% ownership, a founder who raises a pre-seed (5–10% dilution), then a seed (15–20%), then a Series A (20–25%), then a Series B (15–20%) may own 43–54% before employee stock options further dilute by another 10–20%. After a full Series B financing, a founder typically owns 30–40% of the company. This is worth accepting only if the capital meaningfully increases the value of the remaining stake."
+  - question: "What are the alternatives to traditional VC or full bootstrapping?"
+    answer: "Several middle paths exist. Revenue-based financing (through companies like Clearco or Pipe) lets you borrow against future recurring revenue without giving up equity. Angel-only rounds ($500K–$1.5M from angels) provide early capital without the governance implications of institutional VCs, who rarely take board seats. Micro-VC funds ($20–100M AUM) offer institutional capital with more founder-friendly terms and more realistic expectations for smaller outcomes than large VC funds require."
 ---
 
 ## The False Dichotomy

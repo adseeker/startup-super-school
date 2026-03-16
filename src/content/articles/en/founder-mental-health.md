@@ -10,6 +10,15 @@ primaryKeyword: "founder burnout"
 readingTime: 11
 author: "Startup Super School"
 seoKeywords: ["founder burnout", "founder mental health startup", "startup founder stress", "founder depression startup"]
+faqs:
+  - question: "How common is mental health problems among startup founders?"
+    answer: "Research shows founders are significantly more at risk than the general population. A UC San Francisco study found founders are 50% more likely to report a mental health condition, twice as likely to experience depression, and six times more likely to experience ADHD than non-founders. A 2023 survey of over 300 founders found 72% had experienced significant mental health challenges — anxiety, depression, or burnout — during their time running a company, while only 37% had sought professional help."
+  - question: "Why do startup founders experience burnout more than other professionals?"
+    answer: "Founder burnout is structural, not personal. Three forces compound it: identity fusion with the company means every business failure becomes a personal failure; information asymmetry forces founders to perform certainty for investors, employees, and co-founders simultaneously while privately living with full uncertainty; and the 24/7 ownership problem means the company is always one notification away with no natural stopping point. These are not discipline failures — they are predictable outcomes of the founder role."
+  - question: "What actually helps with founder burnout — not just generic wellness advice?"
+    answer: "Evidence consistently points to four specific interventions: therapy with a therapist who understands founder dynamics (not generic therapy); peer groups like Entrepreneurs' Organization or YPO where founders can be honest with people who understand their context and have no stake in the outcome; structured decision-log journaling that externalizes late-night rumination; and non-negotiable exercise, which has robust research support for reducing depression and is one of the few activities that cannot be interrupted by a Slack message."
+  - question: "What is post-funding depression and why does it happen to founders?"
+    answer: "Post-funding depression is a depressive episode that many founders report in the weeks or months immediately following a major funding round. The emotional logic is straightforward: founders run on adrenaline throughout the fundraising process, which is all-consuming. When the round closes and the announcement goes out, the dopamine drops and the real work of building the company begins. Many founders describe it as the most disorienting period of their career because the world expects celebration while they feel deflated."
 ---
 
 ## The Data Nobody Wants to Talk About

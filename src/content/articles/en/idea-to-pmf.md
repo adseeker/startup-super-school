@@ -10,6 +10,15 @@ primaryKeyword: "product-market fit roadmap"
 readingTime: 15
 author: "Startup Super School"
 seoKeywords: ["product-market fit roadmap", "how to achieve product market fit", "path to PMF", "startup PMF guide"]
+faqs:
+  - question: "What are the stages of reaching product-market fit?"
+    answer: "The path from idea to product-market fit has five distinct stages: hypothesis formation (writing a specific, falsifiable statement about customer, problem, and solution), discovery (20–30 customer interviews to test the hypothesis), problem-solution fit (testing a minimal version with 10–15 target users to see if it delivers value), early PMF signal (observing retention patterns and using the Sean Ellis test where 40%+ say they'd be 'very disappointed' if the product disappeared), and scalable PMF (verifying that retention and NRR hold as the customer base expands beyond the founding network)."
+  - question: "How do you know you have product-market fit?"
+    answer: "The leading indicators of early PMF are: retention curves that flatten above 0% in cohort analysis (some percentage of users remains active 90 days later), spontaneous referrals from users who mention the product to colleagues without incentive, complaints when features break (indicating deep dependency), and expansion signals like inviting teammates or requesting additional integrations. The Sean Ellis test — where 40%+ of users say they'd be 'very disappointed' if the product disappeared — is the most cited benchmark."
+  - question: "How long does it take to find product-market fit?"
+    answer: "Analysis of Y Combinator and First Round Capital portfolio data consistently shows median time to PMF of 12–24 months for consumer products and 18–36 months for B2B enterprise. Outliers like Figma and Slack had stronger early signals, but they are genuinely exceptional cases. Founders who talk to users weekly, prioritize retention data over acquisition data from day one, conduct churn interviews rigorously, and narrow their customer definition when data points to a specific segment reach PMF significantly faster."
+  - question: "What is a common false signal that founders mistake for product-market fit?"
+    answer: "Early users who are friends, colleagues, or members of your existing professional network are not reliable PMF signals. They will use your product out of loyalty and relationship, not because it solves their problem better than alternatives. Real PMF signal comes from users who found the product through organic channels and have no personal relationship with the founders — and who still stay. If your entire retained user base is people you know personally, you have social capital, not product-market fit."
 ---
 
 ## The Problem With "Find Product-Market Fit"

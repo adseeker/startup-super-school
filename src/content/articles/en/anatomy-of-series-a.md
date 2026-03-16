@@ -10,6 +10,15 @@ primaryKeyword: "Series A funding"
 readingTime: 14
 author: "Startup Super School"
 seoKeywords: ["Series A funding", "what is Series A", "Series A startup guide", "how to raise Series A"]
+faqs:
+  - question: "How much ARR do you need to raise a Series A in 2024–2025?"
+    answer: "The current market floor is approximately $1M ARR, with the median for funded companies closer to $2–3M ARR. However, ARR alone is not sufficient — investors expect 2–3x year-over-year growth, net revenue retention above 100%, and clear evidence of repeatable customer acquisition. The bar has reset significantly from the 2020–2021 era when $500K ARR was sometimes enough."
+  - question: "What is the most important metric Series A investors look at?"
+    answer: "Net Revenue Retention (NRR) is widely considered the single most important metric at the Series A stage. NRR above 100% means existing customers are spending more over time through expansion and upsells, which signals genuine product value. Elite Series A candidates have NRR of 110–130%. NRR below 100% means revenue from existing customers is shrinking, which no amount of new customer acquisition can permanently overcome."
+  - question: "How long does it take to raise a Series A round?"
+    answer: "A realistic Series A process takes 6–12 months from when you start preparing to when money is in the bank. This includes 1–2 months of preparation, 1–2 months of first meetings, another month for partner presentations, and 1–2 months for term sheet, diligence, and closing. Founders who do not plan for this timeline often run out of runway mid-process."
+  - question: "What is the difference between a seed round and a Series A?"
+    answer: "Seed rounds fund ideas and teams — investors are betting on people and a thesis with limited evidence required. Series A rounds fund proven traction. By Series A, investors expect the experiment to be over: the product works, customers are paying and staying, and the question shifts from whether it can work to how big it can get. Founders who approach Series A investors without that evidence typically receive a pass or raise on terms that badly damage their cap table."
 ---
 
 ## The Round That Changed

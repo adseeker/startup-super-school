@@ -10,6 +10,15 @@ primaryKeyword: "startup pricing"
 readingTime: 13
 author: "Startup Super School"
 seoKeywords: ["startup pricing strategy", "how to price startup product", "startup pricing mistakes", "SaaS pricing founder"]
+faqs:
+  - question: "How should a startup research willingness to pay before setting prices?"
+    answer: "Asking customers 'would you pay $X?' is useless because the hypothetical involves no real stakes and consistently overestimates willingness to pay by 2–3x. Instead, use the Van Westendorp Price Sensitivity Meter — four questions about when the price would be too cheap, a bargain, expensive-but-acceptable, and too expensive — to identify a defensible acceptable price range. A/B test two price points with real users converting (or not) on your pricing page. And research what customers currently spend on the combination of tools and workarounds your product replaces, since that defines what value-based pricing can support."
+  - question: "Why do most early-stage startups price their products too low?"
+    answer: "Under-pricing is driven by fear — fear of scaring customers away, fear of appearing greedy, fear of losing deals. In reality, under-pricing creates three compounding problems: low prices signal low value to B2B buyers and erode perceived quality; low prices destroy unit economics, making payback periods too long and leaving no budget for customer success; and customers acquired at low prices are difficult to migrate to higher prices without churn. Every customer at a price that's too low is a future negotiation problem."
+  - question: "What is value-based pricing and how do you implement it for a SaaS startup?"
+    answer: "Value-based pricing anchors the price to customer ROI rather than cost structure. For each customer segment, estimate the specific economic outcome your product enables — time saved multiplied by hourly rate, revenue generated, errors avoided multiplied by cost per error. Your price should then be 10–30% of that value: high enough to reflect genuine worth, low enough that the ROI is obvious without argument. A cold email tool that generates $2,500 per month in pipeline value supports a $200/month price easily; framing that makes the conversation entirely different from competing on feature lists."
+  - question: "When is the right time to raise prices for a startup?"
+    answer: "The three best windows for price increases are: after a funding round (you have more credibility and a natural narrative for the change), after documented customer ROI (a case study showing $150K saved by a $200/month product is the strongest justification for moving to $400/month), and when raising for new customers 90 days before applying changes to existing ones. Grandfathering loyal customers at their current rate for 12 months is the most equitable approach — it rewards loyalty and converts a potential dispute into a relationship-building moment."
 ---
 
 ## The Most Neglected Lever in Early-Stage Startups

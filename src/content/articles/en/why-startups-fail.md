@@ -10,6 +10,15 @@ primaryKeyword: "why startups fail"
 readingTime: 11
 author: "Startup Super School"
 seoKeywords: ["why startups fail", "startup failure reasons", "most common startup mistakes", "startup failure statistics"]
+faqs:
+  - question: "What are the most common reasons startups fail?"
+    answer: "CB Insights analysis of over 350 startup post-mortems identified the top reasons founders gave for failure: ran out of cash (38%), no market need (35%), got outcompeted (20%), pricing or cost issues (19%), and wrong team (14%). Product was mistimed for 13% of companies. Notably, almost none of these reasons is bad luck. They are decisions — most made in the first 12–18 months — about what to build, when to scale, how to price, and who to build with."
+  - question: "Why do so many startups fail due to 'no market need' when founders believed in their product?"
+    answer: "The 'no market need' failure almost always means founders did not talk to enough customers before building to understand what the market actually needed. There is a large difference between building for the problem you think people have and building for the problem people have repeatedly and specifically told you they urgently need solved. Quibi raised $1.75 billion on the assumption that people wanted short-form premium mobile video but never validated the assumption with real-world user behavior. Conducting 30 structured customer interviews before building is the corrective."
+  - question: "What is premature scaling and why does it kill startups?"
+    answer: "Premature scaling means investing in growth infrastructure — paid acquisition, sales headcount, marketing budgets — before unit economics are proven. If your LTV:CAC ratio is below 3:1 when you begin scaling, you are accelerating the rate at which you lose money per customer, not accelerating growth. Webvan built warehouses across the country before proving delivery economics in a single city and lost $375 million. The rule: prove you can acquire a customer profitably in one channel, in one geography, before investing in a second."
+  - question: "How does co-founder conflict cause startup failure?"
+    answer: "Co-founder dysfunction rarely announces itself as a cause of death. It shows up as slow decision-making, missed hires, bad product calls, and cultural deterioration over months or years. Two founders who seem aligned initially may gradually reveal incompatible risk tolerances, different visions for the company, or conflicting views on whether to raise VC or stay lean. Y Combinator partners have noted that co-founder breakups are among the most common reasons early-stage companies die. The prevention is having explicit conversations about equity, decision authority, and five-year goals before incorporating — not after conflict has emerged."
 ---
 
 ## The 90% Number Is Real — But Misleading

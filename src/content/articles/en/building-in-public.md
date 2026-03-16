@@ -10,6 +10,15 @@ primaryKeyword: "building in public"
 readingTime: 11
 author: "Startup Super School"
 seoKeywords: ["building in public startup", "what is building in public", "build in public strategy", "founder building in public"]
+faqs:
+  - question: "What does building in public mean for a startup founder?"
+    answer: "Building in public (BIP) is the practice of sharing your startup's journey openly and in real time — metrics, product decisions, failures, and milestones — usually through social media or newsletters. Done correctly, it is a commitment to radical transparency, including publishing numbers that make you vulnerable. The watered-down version, sharing only positive updates, captures none of the value. Real BIP requires honest documentation of what is working and what is not."
+  - question: "What are the real benefits of building in public?"
+    answer: "Building in public creates four compounding effects: it builds an audience before your product is ready, so launches receive warm attention rather than cold indifference; it creates genuine trust because showing replaces selling; it attracts followers who convert to customers because of the relationship itself; and it generates inbound press, partnerships, and hiring interest that paid acquisition cannot replicate. Pieter Levels reached $500K in revenue in Nomad List's first year largely without paid marketing."
+  - question: "What should you never share when building in public?"
+    answer: "Several categories of information should remain private: your fundraising strategy, including valuation targets and investor names you are approaching; team conflicts or personnel decisions, which follow you permanently; customer specifics without explicit permission; detailed roadmaps or infrastructure choices that create competitive intelligence; and any information that could undermine credibility with your target buyers. For example, a compliance product founder tweeting about internal regulatory shortcuts could destroy customer relationships."
+  - question: "Is building in public right for every type of startup?"
+    answer: "No. Building in public is poorly suited for products that require stealth before launch, for enterprise sales where credibility is fragile and a Twitter thread about a product failure could surface during a $500K contract diligence process, and for founders who cannot maintain authentic public documentation under pressure. It works best for developer tools, productivity software, creator economy products, and B2B tools with developer-adjacent buyers where the target audience is active online."
 ---
 
 ## What Building in Public Actually Means

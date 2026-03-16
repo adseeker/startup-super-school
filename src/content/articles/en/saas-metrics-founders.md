@@ -10,6 +10,15 @@ primaryKeyword: "SaaS metrics for founders"
 readingTime: 14
 author: "Startup Super School"
 seoKeywords: ["SaaS metrics for founders", "SaaS KPIs", "startup metrics to track", "SaaS dashboard metrics"]
+faqs:
+  - question: "What is net revenue retention (NRR) and why do SaaS investors care about it so much?"
+    answer: "Net Revenue Retention (NRR) measures how much revenue you retain from your existing customer base after accounting for expansions, contractions, and cancellations. The formula is: (Starting MRR + Expansion MRR - Contraction MRR - Churned MRR) / Starting MRR × 100. NRR above 100% means your existing customers are growing as a revenue base without any new customer acquisition. Elite SaaS companies like Snowflake have reported NRR above 130%. NRR below 100% is a structural problem — no amount of new customer acquisition can permanently overcome a shrinking existing base."
+  - question: "What is a healthy LTV to CAC ratio for a SaaS startup?"
+    answer: "A healthy SaaS business targets an LTV:CAC ratio of 3:1 or higher, meaning for every $1 spent acquiring a customer, the business earns $3 in gross profit over that customer's lifetime. Below 1:1, you are destroying value with every new customer acquired. Above 5:1 may indicate underinvestment in growth. Founders frequently make the mistake of calculating blended CAC rather than separating organic from paid channel economics, which can hide a very expensive paid acquisition cost behind a low organic CAC."
+  - question: "What is the payback period metric and what is a good benchmark for SaaS?"
+    answer: "Payback period measures how many months it takes to recover the cost of acquiring a customer through their gross profit contribution. The formula is CAC divided by (ARPA × Gross Margin). Best-in-class B2B SaaS achieves payback under 12 months. 12–18 months is acceptable. Above 24 months requires significant capital to fund growth because you are waiting two years before each customer becomes profitable. Even a healthy LTV:CAC ratio can be problematic if the payback period is 36 months, since the cash flow burden is severe."
+  - question: "Which SaaS metrics matter most at each stage of growth?"
+    answer: "Before $100K ARR, focus on activation rate and qualitative engagement — the signal-to-noise ratio on financial metrics is too low. From $100K to $1M ARR, add gross revenue churn, NRR, and CAC by channel; you now have enough data to see retention patterns. From $1M to $10M ARR, all 10 metrics matter. Add formal payback period tracking as you begin scaling paid acquisition, and prioritize gross margin analysis before a Series A, since investors will build their entire model on NRR, CAC, and payback period."
 ---
 
 ## Why Most Founders Track the Wrong Things

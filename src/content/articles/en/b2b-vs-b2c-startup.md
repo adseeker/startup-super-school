@@ -10,6 +10,15 @@ primaryKeyword: "B2B vs B2C startup"
 readingTime: 12
 author: "Startup Super School"
 seoKeywords: ["B2B vs B2C startup", "should I build B2B or B2C startup", "B2B vs consumer startup", "difference B2B B2C startup"]
+faqs:
+  - question: "What is the main difference between B2B and B2C startups?"
+    answer: "B2B startups sell to businesses making rational purchasing decisions, typically with average contract values of $5K–$500K per year, long sales cycles, and low annual churn of 5–15%. B2C startups sell to individual consumers driven by personal desire or habit, with much lower price points ($5–$500 per year), very short sales cycles, but high monthly churn of 3–10%. The unit economics, go-to-market motions, and required founder skills are fundamentally different."
+  - question: "Which is easier to start — a B2B or B2C startup?"
+    answer: "B2B is generally more accessible for first-time founders with domain expertise in a specific industry. You can reach profitability with a relatively small customer base because average contract values are high, and early customers come from direct outreach rather than requiring large marketing budgets. B2C requires scale to be economically viable — you often need tens of thousands of paying users before the business model works — and relies heavily on viral growth or efficient paid acquisition that is difficult to achieve without capital."
+  - question: "What is B2B2C and when does it make sense?"
+    answer: "B2B2C means you sell to businesses who then deliver value to their own end consumers. Examples include Stripe (sells to businesses, who use it to accept consumer payments) and Plaid (sells to fintech companies, who connect their users' bank accounts). It combines B2B's sales-led distribution with B2C-scale reach. The complexity is that you serve two customers simultaneously — the business buyer and the end consumer — whose incentives are not always aligned."
+  - question: "Why do founders confuse SMB businesses with B2B enterprise?"
+    answer: "Small and medium businesses are technically businesses but behave like consumers in their buying habits. SMB decision cycles are short (days not months), ACVs are low ($500–$5K per year), and churn is high because SMBs fail at elevated rates. Enterprise B2B playbooks — long relationship-driven sales, complex procurement, high-touch implementation — do not work for SMBs. Successful SMB companies like Mailchimp and Canva built self-serve products with very low friction and credit-card pricing, not enterprise sales teams."
 ---
 
 ## Two Completely Different Games

@@ -10,6 +10,15 @@ primaryKeyword: "micro-SaaS"
 readingTime: 12
 author: "Startup Super School"
 seoKeywords: ["micro-SaaS", "what is micro-SaaS", "micro-SaaS examples", "build micro-SaaS startup"]
+faqs:
+  - question: "What is micro-SaaS and how is it different from a regular startup?"
+    answer: "Micro-SaaS is a software product built and operated by a small team — typically 1–3 people — serving a focused niche market with no institutional venture capital. Unlike traditional VC-backed startups that target venture-scale outcomes of $100M+ ARR, micro-SaaS defines success at $5K–$50K MRR. The defining philosophy is to build something specific, serve a defined audience extremely well, keep the team small, and optimize for profit and sustainability rather than growth for growth's sake."
+  - question: "How do you find a good micro-SaaS idea?"
+    answer: "The formula that works repeatedly is: niche you know deeply plus a painful daily workflow plus a platform to distribute on. G2 and Capterra reviews of established software in a niche are a goldmine of specific complaints about missing features and unmet needs. Reddit communities and industry Slack groups reveal what practitioners wish their tools could do. Zapier's most popular templates reveal workflows that lack a native solution. The key is looking for problems that are specific, frequent, and costly enough that someone will pay to have them solved."
+  - question: "Is micro-SaaS still viable in 2025 with so much competition?"
+    answer: "The micro-SaaS model is more viable in 2025 than it has ever been. AI coding assistants have compressed solo developer output by 3–5x, making it possible for a single founder to ship in hours what previously took weeks. Modern infrastructure (Stripe, Supabase, Resend, Lemon Squeezy) eliminates the need for a DevOps specialist. Platform ecosystems like Shopify, Slack, and the Chrome Web Store provide distribution channels that did not require building a marketing engine. The total monthly infrastructure cost at early stage is typically $200–$500."
+  - question: "What are the limitations of the micro-SaaS model?"
+    answer: "Micro-SaaS is the wrong path for products that require network effects to deliver value — you need mass adoption before the product works, which requires capital that bootstrapping cannot supply. It does not work for products requiring proprietary data at scale, like recommendation engines. It is also wrong for founders who want to build a team, a culture, and an organization — micro-SaaS explicitly optimizes for minimal team overhead. And it is not a path to building a $1 billion company; the philosophy is a deliberate rejection of that ambition."
 ---
 
 ## A Different Kind of Success Story

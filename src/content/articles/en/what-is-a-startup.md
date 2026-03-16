@@ -9,6 +9,15 @@ publishedDate: 2025-01-16
 readingTime: 8
 author: "Startup Super School"
 seoKeywords: ["what is a startup", "startup definition", "startup vs small business", "what makes a startup"]
+faqs:
+  - question: "What is the definition of a startup?"
+    answer: "Steve Blank, widely regarded as the father of modern startup methodology, defines a startup as 'a temporary organization designed to search for a repeatable and scalable business model.' Three words carry all the weight: temporary (the goal is to graduate into an executing company), search (the business model is unproven and actively being tested), and scalable (the outcome must be a model that works at scale, not a local or bespoke business). This distinguishes startups from all other businesses, regardless of size."
+  - question: "What is the difference between a startup and a small business?"
+    answer: "A startup searches for a business model under extreme uncertainty and is designed for rapid, non-linear scale. A small business executes a known model from day one and grows proportionally to effort. Startups raise venture capital, accept dilution, and operate toward a specific exit event. Small businesses typically use debt or personal savings, retain full ownership, and are designed to operate indefinitely. Mixing up the two leads to applying the wrong advice — startup growth pressure destroys small business unit economics, while small business capital discipline starves a startup of the speed it needs."
+  - question: "Why do most startups fail?"
+    answer: "The most common reasons documented in startup post-mortems are: no market need (35% of failures), running out of cash (38%), wrong team (14%), getting outcompeted (20%), and pricing or cost issues (19%). Most of these trace back to a common root: not validating assumptions early enough. Founders build products before confirming that real, urgent demand exists, then spend engineering budget and runway on the wrong solution before the market tells them."
+  - question: "What are the stages of a startup's lifecycle?"
+    answer: "Most startups progress through six recognizable phases: ideation (the problem and hypothesis exist but nothing is built), validation (customer discovery and MVP testing to confirm demand before committing), MVP and early traction (a working product goes to early users and iterates on feedback), product-market fit (retention improves and organic growth begins), scaling (sales and marketing infrastructure is built for repeatability), and growth and expansion into adjacent markets. At some point the company stops being a startup and becomes an executing company."
 ---
 
 ## Defining a Startup

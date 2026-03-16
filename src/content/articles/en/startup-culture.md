@@ -10,6 +10,15 @@ primaryKeyword: "startup culture"
 readingTime: 12
 author: "Startup Super School"
 seoKeywords: ["startup culture", "how to build startup culture", "startup company culture", "founder culture startup"]
+faqs:
+  - question: "What actually defines startup culture — and what doesn't?"
+    answer: "Culture is the set of behaviors that get rewarded and punished inside your company — not the perks, the office design, or the values statement on the wall. What happens when someone ships a production bug at 2am? When someone misses a deadline? When someone is brilliant but toxic to teammates? The answers to those questions are the real culture. Peter Drucker's 'culture eats strategy for breakfast' means that no strategy survives if the culture doesn't support the behaviors required to execute it."
+  - question: "How does a startup founder set culture in the early stage?"
+    answer: "Culture in an early startup is set by three observable forces: what the founder visibly rewards (celebrating weekend heroics signals that behavior is expected); what the founder visibly tolerates (staying silent when a senior engineer regularly interrupts teammates signals that seniority buys impunity); and what the founder visibly punishes (making people feel sidelined for being wrong stops honest reporting of what isn't working). Most culture problems trace back to a gap between stated values and which of these three forces actually governs day-to-day behavior."
+  - question: "What is the difference between hiring for cultural fit versus cultural contribution?"
+    answer: "Hiring for cultural fit typically means hiring people who are similar to the existing team, which leads to homogeneity and groupthink. The better frame, credited to Adam Grant, is to hire for cultural contribution — what does this person bring that makes the culture stronger, not just more familiar? This requires defining non-negotiables precisely enough to screen for. Not 'we value respect' (which means nothing), but something like 'we disagree directly in the room, not through back channels' — specific enough to test and actionable enough to enforce."
+  - question: "At what company sizes does startup culture typically break down?"
+    answer: "Culture breaks at predictable headcount milestones. At around 10 people, culture transmits through direct observation of the founders. Around 30 people, that is no longer possible — culture must transmit through managers, and if those managers haven't internalized it, it dilutes. Around 100 people, culture must be systematized: written, trained, and actively reinforced through performance systems. Each milestone requires a deliberate reinvention of how culture is transmitted, and founders who don't plan for each transition often discover the culture they built is gone by the time they notice."
 ---
 
 ## The Culture Misconception

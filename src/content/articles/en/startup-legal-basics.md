@@ -10,6 +10,15 @@ primaryKeyword: "startup legal checklist"
 readingTime: 14
 author: "Startup Super School"
 seoKeywords: ["startup legal checklist", "startup legal basics", "startup incorporation advice", "legal checklist for founders"]
+faqs:
+  - question: "Should I incorporate my startup as an LLC or a C-Corporation?"
+    answer: "If you plan to raise venture capital, accept employee stock options, or pursue an acquisition, incorporate as a Delaware C-Corporation. Every institutional investor, startup lawyer, and stock option plan is optimized for this structure. LLCs cannot issue options through standard plans and venture investors generally will not invest without a conversion. LLCs are appropriate for bootstrapped businesses without equity fundraising plans — they offer simpler governance, pass-through taxation, and fewer ongoing filing requirements."
+  - question: "What is an IP Assignment Agreement and why does every startup need one?"
+    answer: "An IP Assignment Agreement (also called a PIIA or CIIAA) transfers ownership of all work product created by founders, employees, and contractors to the company. By default, the person who creates something owns it. If a co-founder writes core code before signing an IP assignment, they personally own that code. If a contractor builds your MVP without signing, they can argue they retain rights. These gaps surface routinely in Series A diligence and have delayed or killed funding rounds. Every person who touches your product must sign one before they start work."
+  - question: "What is co-founder vesting and why do investors require it?"
+    answer: "Co-founder vesting is a schedule under which founder equity is earned over time — typically 4 years with a 1-year cliff. If a co-founder leaves in month 6, they receive no shares. At month 12, they receive 25%, then the remainder monthly over 3 more years. Investors require this to prevent a departed co-founder from retaining a large ownership stake without contributing to building the company. Without vesting, a co-founder who leaves after 6 months might hold 30–40% of the cap table, making the company effectively unfundable."
+  - question: "What legal work can startup founders do themselves versus what requires a lawyer?"
+    answer: "DIY is acceptable for entity formation through services like Stripe Atlas or Clerky, signing standard YC SAFE notes (which are publicly available and legally sound), and routine NDAs with contractors using standard templates. Always use a lawyer for co-founder equity agreements, employee stock option plans (which require 409A valuations and plan documents), any priced funding round where term sheet terms have long-term consequences, and any acquisition. The rule of thumb: if the document governs a relationship lasting more than 12 months or involves equity, use a lawyer."
 ---
 
 ## Why Legal Gets Ignored Until It Explodes

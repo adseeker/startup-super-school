@@ -9,6 +9,15 @@ publishedDate: 2025-01-18
 readingTime: 10
 author: "Startup Super School"
 seoKeywords: ["why product market fit matters", "product market fit importance", "finding PMF startup", "PMF before scaling"]
+faqs:
+  - question: "What is product-market fit and why does it matter so much?"
+    answer: "Product-market fit (PMF) is the condition where a product reliably helps a specific customer segment make progress on something that matters enough to keep coming back. Marc Andreessen argued it is the single most important factor in startup success — more than team, market timing, or business model. Without it, every additional resource applied — more engineers, more salespeople, more marketing — cannot fix the fundamental absence of genuine customer value. With it, growth becomes a multiplier instead of an expensive trap."
+  - question: "How do you know when a startup has product-market fit?"
+    answer: "The clearest signal is retention — users returning without being nudged, begged, or incentivized. Supporting signals include inbound growth from existing customers referring others, users actively requesting features because they're deeply embedded, users complaining loudly when the product is down (which indicates dependency), and expansion behavior like adding seats or upgrading without prompting. The Sean Ellis test — where 40% or more of active users say they would be 'very disappointed' if they could no longer use the product — is the most commonly cited benchmark."
+  - question: "What are the most common mistakes founders make before finding PMF?"
+    answer: "The three most common substitutes for PMF that founders mistake for progress are: engagement theater (high sign-ups and press coverage that prove nothing about whether the core product retains users); feature accumulation (adding features to feel productive while avoiding the harder question of whether the core value proposition works); and premature scaling (hiring salespeople or running paid acquisition before the retention engine is proven, which converts capital into temporary growth that disappears when spending stops)."
+  - question: "Can a startup lose product-market fit after finding it?"
+    answer: "Yes. PMF is not permanent. Markets change, competitors improve, customer needs evolve, and technology shifts. BlackBerry had exceptional PMF until it lost it to smartphones with better interfaces. The discipline of monitoring retention, listening to customers, and validating assumptions does not end once PMF is found. Companies that assumed their 2020 PMF was durable and stopped the discovery process have discovered the hard way that markets continue moving even after you have found your footing."
 ---
 
 ## The One Thing

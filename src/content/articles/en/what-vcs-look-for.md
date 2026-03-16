@@ -10,6 +10,15 @@ primaryKeyword: "what VCs look for"
 readingTime: 12
 author: "Startup Super School"
 seoKeywords: ["what VCs look for", "VC investment criteria", "how VCs evaluate startups", "seed stage VC investment"]
+faqs:
+  - question: "What do VCs actually look for when evaluating a seed-stage startup?"
+    answer: "VCs evaluate four variables in a specific sequence. First, portfolio fit — does this company have a realistic path to returning the fund (often requiring $1.5B–$3B in value for a $150M fund)? Second, market size — is there a bottom-up path to a $1B+ serviceable market? Third, team — does this founding team have an unfair advantage to win this specific market, through domain expertise, unique insight, or relevant network? Fourth, traction — what has been proven, even at small scale, that eliminates specific risks? Most pitches fail at one of the first two filters."
+  - question: "Why does warm introduction matter so much when pitching VCs?"
+    answer: "The sequential elimination process VCs use filters deals heavily on the intro source before content quality. An investor who receives a cold email from an unknown founder rarely engages seriously. An investor introduced by a portfolio founder, trusted industry contact, or respected mutual has social proof attached before the pitch starts. At seed stage especially, investor conviction in the team is a primary decision variable, and the quality of who vouches for you is early evidence about the quality of your network and judgment."
+  - question: "What does 'we want to see more traction' really mean when a VC says it?"
+    answer: "In most cases, 'we want to see more traction' is a polite no, not a roadmap. If an investor is genuinely interested in a deal, they close. Using traction as a reason to defer is a common exit from the conversation that keeps optionality open. The practical response is to treat it as a pass, continue your process with other investors, and return to this investor only when you have a specific, meaningful milestone to report — not with a monthly check-in that contains no new information."
+  - question: "How has the bar for seed-stage investment changed in 2024–2025?"
+    answer: "The seed investment bar has materially shifted from the 2020–2021 era. Higher interest rates have compressed VC risk appetite, and the volume of AI-labeled pitches has saturated the market. The median seed-stage company in 2024 has at least some revenue — often $10K–$50K MRR — before closing a seed round. The AI premium that companies received simply for mentioning AI in their description has compressed; investors now expect demonstrable technical differentiation, such as proprietary data, fine-tuned models, or deep workflow integration rather than OpenAI API wrappers."
 ---
 
 ## What VCs Say vs. What They Actually Care About
