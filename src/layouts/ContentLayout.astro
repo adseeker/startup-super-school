@@ -297,6 +297,28 @@ const breadcrumbLd = {
           <slot />
         </div>
 
+        <!-- FAQ section -->
+        {faqs && faqs.length > 0 && (
+          <div class="mt-12 pt-8 border-t border-gray-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+            <dl class="space-y-4">
+              {faqs.map((faq) => (
+                <details class="group border border-gray-200 rounded-xl overflow-hidden">
+                  <summary class="flex items-center justify-between gap-4 px-5 py-4 cursor-pointer list-none font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
+                    {faq.question}
+                    <svg class="w-5 h-5 text-gray-400 shrink-0 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                  </summary>
+                  <div class="px-5 pb-5 pt-1 text-gray-600 leading-relaxed text-[15px]">
+                    {faq.answer}
+                  </div>
+                </details>
+              ))}
+            </dl>
+          </div>
+        )}
+
         <!-- Tags -->
         {tags.length > 0 && (
           <div class="mt-10 pt-6 border-t border-gray-200">
