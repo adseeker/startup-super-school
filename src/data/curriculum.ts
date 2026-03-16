@@ -72,7 +72,7 @@ export const CURRICULUM_TRACKS: CurriculumTrack[] = [
       'From your first angel check to a Series A: understand how venture capital works, how to pitch, read a term sheet, build your data room, and close a round without getting diluted.',
     emoji: '💰',
     color: 'violet',
-    categories: ['fundraising', 'venture capital', 'investment'],
+    categories: ['fundraising', 'venture capital', 'investment', 'equity'],
     tags: ['fundraising', 'investors', 'venture capital', 'pitch', 'seed stage', 'cap table', 'equity', 'term sheet'],
     order: 4,
   },

@@ -2,7 +2,7 @@
 title: "ESOP — Employee Stock Option Pool"
 description: "An ESOP is a reserved pool of equity set aside to grant stock options to employees, advisors, and early hires as non-cash compensation."
 locale: "en"
-category: "team"
+category: "equity"
 tags: ["team", "equity", "compensation", "hiring", "stock options", "founders"]
 difficulty: "intermediate"
 publishedDate: 2026-03-10

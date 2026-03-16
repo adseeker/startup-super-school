@@ -2,7 +2,7 @@
 title: "Equity for Early Employees Explained"
 description: "How to structure stock option grants for early hires — covering grant sizes, vesting, strike prices, and how to communicate equity fairly."
 locale: "en"
-category: "team"
+category: "equity"
 tags: ["team", "equity", "hiring", "compensation", "founders", "culture", "stock options"]
 difficulty: "intermediate"
 publishedDate: 2026-03-10

@@ -2,7 +2,7 @@
 title: "Good Leaver / Bad Leaver"
 description: "Good leaver and bad leaver clauses define how a departing employee's unvested and vested equity is treated based on why they left."
 locale: "en"
-category: "team"
+category: "equity"
 tags: ["team", "equity", "vesting", "legal", "employment", "founders"]
 difficulty: "intermediate"
 publishedDate: 2026-03-10
