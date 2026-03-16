@@ -49,8 +49,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </BaseLayout>
 
 <script>
-  import { supabase } from '../lib/supabase';
-
   const form = document.getElementById('login-form');
   const errorDiv = document.getElementById('form-error');
   const submitBtn = document.getElementById('submit-btn');
@@ -64,20 +62,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
-
-    if (error) {
-      errorDiv.textContent = error.message;
+    try {
+      const { supabase } = await import('../lib/supabase');
+      const { error } = await supabase.auth.signInWithPassword({ email, password });
+      if (error) {
+        errorDiv.textContent = error.message;
+        errorDiv.classList.remove('hidden');
+        submitBtn.textContent = 'Log in';
+        submitBtn.disabled = false;
+      } else {
+        const redirect = new URLSearchParams(window.location.search).get('next') ?? '/';
+        window.location.href = redirect;
+      }
+    } catch (err) {
+      errorDiv.textContent = 'Something went wrong. Please try again.';
       errorDiv.classList.remove('hidden');
       submitBtn.textContent = 'Log in';
       submitBtn.disabled = false;
-    } else {
-      const redirect = new URLSearchParams(window.location.search).get('next') ?? '/';
-      window.location.href = redirect;
     }
   });
 
   try {
+    const { supabase } = await import('../lib/supabase');
     const { data: { user } } = await supabase.auth.getUser();
     if (user) window.location.href = '/';
   } catch (_) {}
