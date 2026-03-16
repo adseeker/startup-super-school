@@ -59,6 +59,7 @@ const keywordMap = buildKeywordMap();
 export default defineConfig({
   site: 'https://www.startupsuperschool.com/',
   output: 'static',
+  trailingSlash: 'never',
   adapter: vercel(),
 
   i18n: {
