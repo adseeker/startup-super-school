@@ -6,7 +6,7 @@ category: "strategy"
 tags: ["fundraising", "strategy", "market", "pitch"]
 difficulty: "beginner"
 publishedDate: 2025-03-15
-relatedTerms: ["seed-round", "series-a", "pitch", "mvp", "product-market-fit"]
+relatedTerms: ["seed-round", "series-a", "mvp", "product-market-fit"]
 primaryKeyword: "TAM SAM SOM"
 seoKeywords: ["TAM SAM SOM", "total addressable market startup", "market sizing startup", "TAM SAM SOM explained", "how to calculate TAM startup"]
 faqs:

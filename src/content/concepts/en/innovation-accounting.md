@@ -8,7 +8,7 @@ difficulty: "intermediate"
 publishedDate: 2024-09-03
 primaryKeyword: "innovation accounting"
 origin: "Eric Ries, The Lean Startup, 2011"
-relatedConcepts: ["lean-startup", "okrs", "north-star-metric"]
+relatedConcepts: ["lean-startup", "okrs"]
 seoKeywords: ["innovation accounting startup", "what is innovation accounting", "lean startup innovation accounting", "startup progress measurement"]
 ---
 

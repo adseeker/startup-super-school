@@ -8,7 +8,7 @@ difficulty: "beginner"
 publishedDate: 2024-12-11
 primaryKeyword: "product-market fit"
 acronym: "PMF"
-relatedTerms: ["mvp", "churn-rate", "retention"]
+relatedTerms: ["mvp", "churn-rate", "traction"]
 seoKeywords: ["product market fit", "PMF startup", "how to find product market fit", "signs of PMF"]
 faqs:
   - question: "How do you know when you have product-market fit?"

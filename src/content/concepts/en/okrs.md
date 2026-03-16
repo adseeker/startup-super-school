@@ -9,7 +9,7 @@ publishedDate: 2024-10-09
 primaryKeyword: "OKRs"
 acronym: "OKRs"
 origin: "Andy Grove (Intel), popularized by John Doerr (Kleiner Perkins) at Google in 1999"
-relatedConcepts: ["lean-startup", "north-star-metric"]
+relatedConcepts: ["lean-startup", "okrs"]
 seoKeywords: ["OKRs startup", "objectives and key results", "how to write OKRs", "OKR examples startup"]
 faqs:
   - question: "What is the difference between OKRs and KPIs?"

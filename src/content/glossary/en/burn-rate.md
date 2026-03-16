@@ -7,7 +7,7 @@ tags: ["finance", "metrics", "fundraising", "cash flow"]
 difficulty: "beginner"
 publishedDate: 2024-06-11
 primaryKeyword: "burn rate"
-relatedTerms: ["runway", "seed-round", "profitability"]
+relatedTerms: ["runway", "seed-round", "gross-margin"]
 seoKeywords: ["burn rate startup", "what is burn rate", "monthly burn rate", "gross vs net burn rate"]
 faqs:
   - question: "What is the difference between gross burn rate and net burn rate?"

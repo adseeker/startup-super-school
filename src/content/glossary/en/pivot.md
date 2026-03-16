@@ -7,7 +7,7 @@ tags: ["strategy", "product", "iteration", "lean startup"]
 difficulty: "beginner"
 publishedDate: 2024-12-04
 primaryKeyword: "startup pivot"
-relatedTerms: ["lean-startup", "product-market-fit", "mvp"]
+relatedTerms: ["product-market-fit", "mvp", "traction"]
 seoKeywords: ["startup pivot", "what is a pivot startup", "pivot vs persevere", "famous startup pivots"]
 ---
 

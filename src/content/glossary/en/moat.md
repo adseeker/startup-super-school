@@ -7,7 +7,7 @@ tags: ["strategy", "competition", "defensibility", "product", "business model"]
 difficulty: "intermediate"
 publishedDate: 2024-09-23
 primaryKeyword: "competitive moat"
-relatedTerms: ["product-market-fit", "network-effects", "product-led-growth"]
+relatedTerms: ["product-market-fit", "product-led-growth"]
 seoKeywords: ["competitive moat startup", "what is a moat startup", "startup defensibility", "building a moat startup"]
 ---
 

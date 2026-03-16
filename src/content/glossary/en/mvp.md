@@ -8,7 +8,7 @@ difficulty: "beginner"
 publishedDate: 2024-09-27
 primaryKeyword: "minimum viable product"
 acronym: "MVP"
-relatedTerms: ["product-market-fit", "lean-startup", "pivot"]
+relatedTerms: ["product-market-fit", "pivot", "traction"]
 seoKeywords: ["minimum viable product", "MVP startup", "what is an MVP", "build MVP"]
 faqs:
   - question: "What is the difference between an MVP and a prototype?"

@@ -8,7 +8,7 @@ difficulty: "beginner"
 publishedDate: 2024-09-11
 primaryKeyword: "Lean Startup"
 origin: "Eric Ries, 2011"
-relatedConcepts: ["jobs-to-be-done", "customer-development", "agile"]
+relatedConcepts: ["jobs-to-be-done", "customer-development", "agile-for-startups"]
 seoKeywords: ["lean startup methodology", "what is lean startup", "build measure learn", "validated learning startup"]
 faqs:
   - question: "What is the Build-Measure-Learn loop in the Lean Startup?"

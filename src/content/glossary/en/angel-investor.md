@@ -7,7 +7,7 @@ tags: ["fundraising", "investors", "early stage", "angel"]
 difficulty: "beginner"
 publishedDate: 2024-02-24
 primaryKeyword: "angel investor"
-relatedTerms: ["seed-round", "venture-capital", "safe-note"]
+relatedTerms: ["seed-round", "convertible-note", "safe"]
 seoKeywords: ["angel investor startup", "what is an angel investor", "angel vs VC", "how to find angel investors"]
 ---
 

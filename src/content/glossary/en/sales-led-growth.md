@@ -8,7 +8,7 @@ difficulty: "intermediate"
 publishedDate: 2024-12-23
 primaryKeyword: "sales-led growth"
 acronym: "SLG"
-relatedTerms: ["product-led-growth", "cac", "ltv", "go-to-market-strategy"]
+relatedTerms: ["product-led-growth", "cac", "ltv"]
 seoKeywords: ["sales-led growth startup", "what is sales-led growth", "SLG vs PLG", "sales-led growth B2B"]
 ---
 

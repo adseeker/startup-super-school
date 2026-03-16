@@ -8,7 +8,7 @@ difficulty: "beginner"
 publishedDate: 2024-12-03
 primaryKeyword: "AARRR framework"
 origin: "Dave McClure, 500 Startups, 2007"
-relatedConcepts: ["growth-loops", "north-star-metric", "customer-development"]
+relatedConcepts: ["growth-loops", "customer-development"]
 seoKeywords: ["AARRR framework startup", "pirate metrics startup", "Dave McClure AARRR", "startup growth funnel metrics"]
 ---
 
