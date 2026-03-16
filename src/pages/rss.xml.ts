@@ -21,11 +21,12 @@ export async function GET(context: APIContext) {
     items: allItems.map((item) => {
       const section = 'author' in item.data ? 'articles' : 'guides';
       const slug = item.slug.split('/').pop();
+      const siteBase = context.site!.href.replace(/\/$/, '');
       return {
         title: item.data.title,
         pubDate: item.data.publishedDate,
         description: item.data.description,
-        link: `/${section}/${slug}`,
+        link: `${siteBase}/${section}/${slug}`,
       };
     }),
     customData: `<language>en-us</language>`,
