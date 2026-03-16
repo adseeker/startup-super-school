@@ -11,6 +11,7 @@ interface Props {
   title: string;
   description: string;
   locale: Locale;
+  fullTitle?: string;
   canonicalUrl?: string;
   ogImage?: string;
   type?: 'website' | 'article';
@@ -24,6 +25,7 @@ const {
   title,
   description,
   locale,
+  fullTitle,
   canonicalUrl,
   ogImage,
   type = 'website',
@@ -34,7 +36,7 @@ const {
 } = Astro.props;
 
 const t = getTranslations(locale);
-const siteTitle = `${title} — ${t.site.name}`;
+const siteTitle = fullTitle ?? `${title} - ${t.site.name}`;
 ---
 
 <!doctype html>
