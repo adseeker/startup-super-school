@@ -41,11 +41,11 @@ for (const [slug, items] of Object.entries(trackItemMap)) trackCountMap[slug] = 
 
 const colorMap: Record<string, { text: string; bg: string; border: string; fill: string; barBg: string }> = {
   indigo: { text: 'text-indigo-600', bg: 'bg-indigo-50', border: 'border-indigo-100', fill: 'bg-indigo-500', barBg: 'bg-indigo-100' },
-  emerald: { text: 'text-emerald-600', bg: 'bg-emerald-50', border: 'border-emerald-100', fill: 'bg-emerald-500', barBg: 'bg-emerald-100' },
-  amber: { text: 'text-amber-600', bg: 'bg-amber-50', border: 'border-amber-100', fill: 'bg-amber-500', barBg: 'bg-amber-100' },
-  violet: { text: 'text-violet-600', bg: 'bg-violet-50', border: 'border-violet-100', fill: 'bg-violet-500', barBg: 'bg-violet-100' },
-  sky: { text: 'text-sky-600', bg: 'bg-sky-50', border: 'border-sky-100', fill: 'bg-sky-500', barBg: 'bg-sky-100' },
-  rose: { text: 'text-rose-600', bg: 'bg-rose-50', border: 'border-rose-100', fill: 'bg-rose-500', barBg: 'bg-rose-100' },
+  emerald: { text: 'text-emerald-700', bg: 'bg-emerald-50', border: 'border-emerald-100', fill: 'bg-emerald-500', barBg: 'bg-emerald-100' },
+  amber: { text: 'text-amber-700', bg: 'bg-amber-50', border: 'border-amber-100', fill: 'bg-amber-500', barBg: 'bg-amber-100' },
+  violet: { text: 'text-violet-700', bg: 'bg-violet-50', border: 'border-violet-100', fill: 'bg-violet-500', barBg: 'bg-violet-100' },
+  sky: { text: 'text-sky-700', bg: 'bg-sky-50', border: 'border-sky-100', fill: 'bg-sky-500', barBg: 'bg-sky-100' },
+  rose: { text: 'text-rose-700', bg: 'bg-rose-50', border: 'border-rose-100', fill: 'bg-rose-500', barBg: 'bg-rose-100' },
 };
 
 const totalContent = glossaryEntries.length + guidesEntries.length + conceptsEntries.length + articlesEntries.length;
@@ -137,12 +137,12 @@ const jsonLd = {
             >
               <span class="text-3xl leading-none">{track.emoji}</span>
               <div>
-                <h3 class:list={['font-bold text-sm leading-snug', c.text]}>{track.title}</h3>
-                <p class="text-xs text-gray-500 mt-0.5">{track.subtitle}</p>
+                <h2 class:list={['font-bold text-sm leading-snug', c.text]}>{track.title}</h2>
+                <p class="text-xs text-gray-600 mt-0.5">{track.subtitle}</p>
               </div>
               <div class="mt-auto pt-1">
                 <div class="flex items-center justify-between text-xs mb-1.5">
-                  <span class="text-gray-400 tabular-nums track-mini-pct" data-slug={track.slug}>{count} lessons</span>
+                  <span class="text-gray-500 tabular-nums track-mini-pct" data-slug={track.slug}>{count} lessons</span>
                   <span class:list={['font-semibold opacity-0 group-hover:opacity-100 transition-opacity', c.text]}>Start →</span>
                 </div>
                 <div class:list={['h-1.5 rounded-full overflow-hidden', c.barBg]}>
@@ -174,7 +174,7 @@ const jsonLd = {
       <!-- Search — secondary -->
       <div class="flex items-center gap-4 mb-4">
         <div class="flex-1 border-t border-gray-200"></div>
-        <span class="text-sm text-gray-400 whitespace-nowrap">or browse freely</span>
+        <span class="text-sm text-gray-500 whitespace-nowrap">or browse freely</span>
         <div class="flex-1 border-t border-gray-200"></div>
       </div>
       <div class="flex justify-center">

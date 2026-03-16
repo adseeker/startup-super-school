@@ -115,34 +115,41 @@ const currentPath = Astro.url.pathname;
 </script>
 
 <script>
-  import { supabase } from '../lib/supabase';
+  // Fast path: if no Supabase session token in localStorage, skip loading the SDK entirely
+  const hasSession = Object.keys(localStorage).some(k => k.includes('-auth-token'));
 
-  const { data: { user } } = await supabase.auth.getUser();
-
-  if (user) {
-    const { data: profile } = await supabase.from('profiles').select('first_name').eq('id', user.id).maybeSingle();
-    const displayName = profile?.first_name || user.email?.split('@')[0] || 'My account';
-
-    const profileLink = document.getElementById('auth-profile-link') as HTMLAnchorElement;
-    profileLink.textContent = displayName;
-    profileLink.classList.remove('hidden');
-    document.getElementById('auth-logout-btn')?.classList.remove('hidden');
-
-    const mobileProfile = document.getElementById('mobile-auth-profile') as HTMLAnchorElement;
-    mobileProfile.textContent = displayName;
-    mobileProfile.classList.remove('hidden');
-    document.getElementById('mobile-auth-logout')?.classList.remove('hidden');
-  } else {
+  if (!hasSession) {
     document.getElementById('auth-login-link')?.classList.remove('hidden');
     document.getElementById('auth-register-link')?.classList.remove('hidden');
     document.getElementById('mobile-auth-login')?.classList.remove('hidden');
     document.getElementById('mobile-auth-register')?.classList.remove('hidden');
-  }
+  } else {
+    const { supabase } = await import('../lib/supabase');
+    const { data: { user } } = await supabase.auth.getUser();
 
-  async function logout() {
-    await supabase.auth.signOut();
-    window.location.href = '/';
+    if (user) {
+      const { data: profile } = await supabase.from('profiles').select('first_name').eq('id', user.id).maybeSingle();
+      const displayName = profile?.first_name || user.email?.split('@')[0] || 'My account';
+
+      const profileLink = document.getElementById('auth-profile-link');
+      if (profileLink) { profileLink.textContent = displayName; profileLink.classList.remove('hidden'); }
+      document.getElementById('auth-logout-btn')?.classList.remove('hidden');
+
+      const mobileProfile = document.getElementById('mobile-auth-profile');
+      if (mobileProfile) { mobileProfile.textContent = displayName; mobileProfile.classList.remove('hidden'); }
+      document.getElementById('mobile-auth-logout')?.classList.remove('hidden');
+    } else {
+      document.getElementById('auth-login-link')?.classList.remove('hidden');
+      document.getElementById('auth-register-link')?.classList.remove('hidden');
+      document.getElementById('mobile-auth-login')?.classList.remove('hidden');
+      document.getElementById('mobile-auth-register')?.classList.remove('hidden');
+    }
+
+    async function logout() {
+      await supabase.auth.signOut();
+      window.location.href = '/';
+    }
+    document.getElementById('auth-logout-btn')?.addEventListener('click', logout);
+    document.getElementById('mobile-auth-logout')?.addEventListener('click', logout);
   }
-  document.getElementById('auth-logout-btn')?.addEventListener('click', logout);
-  document.getElementById('mobile-auth-logout')?.addEventListener('click', logout);
 </script>
