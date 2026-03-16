@@ -12,6 +12,7 @@ interface Props {
   publishedDate?: Date;
   lastUpdated?: Date;
   jsonLd?: Record<string, unknown>;
+  noindex?: boolean;
 }
 
 const {
@@ -25,6 +26,7 @@ const {
   publishedDate,
   lastUpdated,
   jsonLd,
+  noindex = false,
 } = Astro.props;
 
 const ogImageUrl = ogImage ?? `${Astro.site}og-default.png`;
@@ -34,6 +36,7 @@ const ogImageUrl = ogImage ?? `${Astro.site}og-default.png`;
 <title>{title}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={canonicalUrl} />
+{noindex && <meta name="robots" content="noindex, follow" />}
 
 <!-- Open Graph -->
 <meta property="og:type" content={type} />

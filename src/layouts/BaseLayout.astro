@@ -17,6 +17,7 @@ interface Props {
   publishedDate?: Date;
   lastUpdated?: Date;
   jsonLd?: Record<string, unknown>;
+  noindex?: boolean;
 }
 
 const {
@@ -29,6 +30,7 @@ const {
   publishedDate,
   lastUpdated,
   jsonLd,
+  noindex = false,
 } = Astro.props;
 
 const t = getTranslations(locale);
@@ -68,6 +70,7 @@ const siteTitle = `${title} — ${t.site.name}`;
       lastUpdated={lastUpdated}
       siteName={t.site.name}
       jsonLd={jsonLd}
+      noindex={noindex}
     />
     <Analytics />
     <slot name="head" />
