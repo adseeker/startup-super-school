@@ -48,7 +48,7 @@ serve(async (req) => {
           ...(stage             ? { STAGE: stage }                      : {}),
           MARKETING_CONSENT: marketingConsent === true,
         },
-        listIds: [3],
+        ...(marketingConsent === true ? { listIds: [3] } : {}),
         updateEnabled: true,
       }),
     })
