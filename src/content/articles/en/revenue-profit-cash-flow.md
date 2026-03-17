@@ -12,13 +12,13 @@ primaryKeyword: "revenue profit cash flow startup"
 seoKeywords: ["revenue vs profit vs cash flow", "startup finance basics", "difference revenue profit cash flow", "financial literacy founders"]
 faqs:
   - question: "What is the difference between revenue and profit?"
-    answer: "Revenue is the total amount of money a company earns from selling its products or services before any costs are deducted. Profit is what remains after subtracting all costs — including cost of goods sold, salaries, rent, and other operating expenses — from revenue. A company with $2M in revenue and $2.5M in costs has a net loss of $500K, meaning high revenue does not guarantee profit."
+    answer: "Revenue is the total amount of money a company earns from selling its products or services before any costs are deducted. Profit is what remains after subtracting all costs - including cost of goods sold, salaries, rent, and other operating expenses - from revenue. A company with $2M in revenue and $2.5M in costs has a net loss of $500K, meaning high revenue does not guarantee profit."
   - question: "Can a profitable company run out of cash?"
     answer: "Yes, and it happens more often than most founders expect. Profit is an accounting concept measured by when revenue is earned and costs are incurred, not when cash actually moves. A profitable company can run out of cash if customers take 90 days to pay (high accounts receivable), if the company paid large expenses upfront, or if debt repayments consume cash faster than operations generate it. This is why cash flow management is separate from profit management."
   - question: "What is the most important financial metric for an early-stage startup?"
-    answer: "For pre-revenue startups, the most critical metric is cash runway — how many months of operation remain at the current burn rate. For post-revenue startups, gross margin and monthly recurring revenue (MRR) growth are essential, since they predict the long-term viability of the business model. Net income and profit are less relevant until a startup is approaching profitability, typically at Series B or later."
+    answer: "For pre-revenue startups, the most critical metric is cash runway - how many months of operation remain at the current burn rate. For post-revenue startups, gross margin and monthly recurring revenue (MRR) growth are essential, since they predict the long-term viability of the business model. Net income and profit are less relevant until a startup is approaching profitability, typically at Series B or later."
   - question: "What is operating cash flow and why does it matter?"
-    answer: "Operating cash flow measures the actual cash generated or consumed by a company's core business operations — unlike profit, it accounts for the timing of receipts and payments. Positive operating cash flow means the business generates more cash than it spends running itself, a sign of sustainable operations. Negative operating cash flow means the company must rely on external funding (equity or debt) to keep operating, which is normal for growth-stage startups but must be carefully managed."
+    answer: "Operating cash flow measures the actual cash generated or consumed by a company's core business operations - unlike profit, it accounts for the timing of receipts and payments. Positive operating cash flow means the business generates more cash than it spends running itself, a sign of sustainable operations. Negative operating cash flow means the company must rely on external funding (equity or debt) to keep operating, which is normal for growth-stage startups but must be carefully managed."
 ---
 
 ## Three Numbers Every Founder Confuses
@@ -35,7 +35,7 @@ All three matter. All three are different. And confusing them is one of the most
 - E-commerce: Product sales
 - Services: Fees for work performed
 
-**Revenue is recognized when earned, not when cash is received.** If you sign a $120,000 annual contract in January, your accounting might recognize $10,000 of revenue per month — even if the customer paid the full amount upfront, or if they're paying quarterly and haven't paid yet.
+**Revenue is recognized when earned, not when cash is received.** If you sign a $120,000 annual contract in January, your accounting might recognize $10,000 of revenue per month - even if the customer paid the full amount upfront, or if they're paying quarterly and haven't paid yet.
 
 ### What Revenue Doesn't Tell You
 - How much of it you keep (profit)
@@ -68,7 +68,7 @@ A startup can show accounting profit while burning cash. A startup can also show
 
 ## Cash Flow: What's Actually in the Bank
 
-**Cash flow** tracks the actual movement of cash in and out of your business. It doesn't care about when revenue is earned or when expenses are incurred — it cares about when money actually transfers.
+**Cash flow** tracks the actual movement of cash in and out of your business. It doesn't care about when revenue is earned or when expenses are incurred - it cares about when money actually transfers.
 
 Three types of cash flow:
 
@@ -103,7 +103,7 @@ Your P&L shows $10K of revenue in January. Your bank account received $30K in Ja
 
 ## The Metric That Ties It All Together: Burn Rate
 
-For early-stage startups, **burn rate** — how much cash you spend per month — is the most operationally relevant number. It's independent of whether you're profitable or what your revenue recognition policy says.
+For early-stage startups, **burn rate** - how much cash you spend per month - is the most operationally relevant number. It's independent of whether you're profitable or what your revenue recognition policy says.
 
 ```
 Net burn = Cash out − Cash in (per month)
@@ -114,4 +114,4 @@ If your net burn is $150K/month and you have $1.8M in the bank, you have 12 mont
 
 ## Key Takeaway
 
-Revenue shows how much you've earned. Profit shows how much you keep. Cash shows how much you have. All three matter, and all three tell different stories. Early-stage founders should obsess over cash — specifically burn rate and runway — while building a solid understanding of what's driving revenue and gross margin. Profit becomes the priority once you've achieved meaningful scale and a proven business model.
+Revenue shows how much you've earned. Profit shows how much you keep. Cash shows how much you have. All three matter, and all three tell different stories. Early-stage founders should obsess over cash - specifically burn rate and runway - while building a solid understanding of what's driving revenue and gross margin. Profit becomes the priority once you've achieved meaningful scale and a proven business model.

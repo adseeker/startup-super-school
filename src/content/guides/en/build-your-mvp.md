@@ -1,6 +1,6 @@
 ---
 title: "How to Build Your First MVP"
-description: "A practical guide to building your first MVP — how to scope it correctly, what to cut, and how to launch in a way that generates real, actionable learning."
+description: "A practical guide to building your first MVP - how to scope it correctly, what to cut, and how to launch in a way that generates real, actionable learning."
 locale: "en"
 category: "product"
 tags: ["product", "mvp", "building", "lean startup", "launch"]
@@ -11,24 +11,24 @@ readingTime: 14
 seoKeywords: ["how to build MVP", "build minimum viable product", "MVP development guide", "launch startup MVP"]
 steps:
   - name: "Define What You Need to Validate"
-    text: "Before writing a line of code, answer: What is the single most important assumption I need to validate? What is the minimum test I need to run? What would 'validated' look like specifically? If your core assumption is 'people will pay for this,' a landing page with a payment CTA might be your MVP — no product needed."
+    text: "Before writing a line of code, answer: What is the single most important assumption I need to validate? What is the minimum test I need to run? What would 'validated' look like specifically? If your core assumption is 'people will pay for this,' a landing page with a payment CTA might be your MVP - no product needed."
   - name: "Distill Your Core Value Hypothesis"
     text: "Write one sentence: '[User type] who wants to [desired outcome] can use [your product] to [how you deliver that outcome].' Everything in your MVP should serve this sentence. If a feature does not help users achieve the core outcome, it does not belong in the MVP."
-  - name: "Scope Ruthlessly — Cut Everything Non-Essential"
+  - name: "Scope Ruthlessly - Cut Everything Non-Essential"
     text: "List every feature you could build. For each one, ask: is it essential (core value cannot be delivered without it), nice-to-have (improves experience but not required), or not now? Build only the essential features. Move everything else to a V2 list. Common cuts: user roles, mobile app, API integrations, admin dashboard, multi-language support."
   - name: "Choose the Right MVP Type"
     text: "Match the MVP format to the assumption you are testing. Use a landing page to test demand. Use a Figma prototype to test UX. Use a concierge MVP (manual service delivery) to test whether customers value the outcome before automating it. Use a Wizard of Oz MVP to fake automation while validating the experience. Only build software if a simpler test cannot answer your question."
   - name: "Build and Launch to Early Adopters"
-    text: "Build the essential features only. When you are embarrassed by the product — but it delivers the core value — it is ready to launch. Recruit 10–20 early adopters manually, not through paid ads. These users should be your ideal customer profile, not everyone. Give them direct access to you for feedback."
+    text: "Build the essential features only. When you are embarrassed by the product - but it delivers the core value - it is ready to launch. Recruit 10–20 early adopters manually, not through paid ads. These users should be your ideal customer profile, not everyone. Give them direct access to you for feedback."
   - name: "Run the Learning Loop"
-    text: "After launch, talk to every user. Track the one metric that proves your core value hypothesis — activation rate, retention after day 7, or willingness to pay. Distinguish between 'they used it' and 'they got value from it.' Use what you learn to decide whether to iterate on the same hypothesis or pivot to a new one."
+    text: "After launch, talk to every user. Track the one metric that proves your core value hypothesis - activation rate, retention after day 7, or willingness to pay. Distinguish between 'they used it' and 'they got value from it.' Use what you learn to decide whether to iterate on the same hypothesis or pivot to a new one."
 faqs:
   - question: "How do you decide what to include in an MVP?"
-    answer: "Apply one test to every potential feature: without this, can the core value still be delivered? If yes, cut it. The MVP should include only features that are essential to demonstrating value — everything else is scope creep. Common mistakes include adding user roles, mobile support, integrations, and analytics dashboards to a product that has not yet proven its core value."
+    answer: "Apply one test to every potential feature: without this, can the core value still be delivered? If yes, cut it. The MVP should include only features that are essential to demonstrating value - everything else is scope creep. Common mistakes include adding user roles, mobile support, integrations, and analytics dashboards to a product that has not yet proven its core value."
   - question: "What are the different types of MVPs a startup can build?"
     answer: "The main types are: Landing Page (test demand via sign-ups or payment), Concierge (manually deliver the service before automating it), Wizard of Oz (simulate automation while humans do the work behind the scenes), Piecemeal (assemble from existing tools like Zapier and Airtable), and Single Feature (ship only the core differentiator). The right type depends on what assumption you are testing."
   - question: "When is an MVP ready to launch?"
-    answer: "Your MVP is ready when it delivers enough value for your specific early adopter to choose it over doing nothing — and you have a mechanism to collect behavioral feedback. The rule of thumb: launch when you are embarrassed by it. If every feature feels polished and complete, you have built too much and delayed learning by weeks or months."
+    answer: "Your MVP is ready when it delivers enough value for your specific early adopter to choose it over doing nothing - and you have a mechanism to collect behavioral feedback. The rule of thumb: launch when you are embarrassed by it. If every feature feels polished and complete, you have built too much and delayed learning by weeks or months."
   - question: "How do you know if your MVP is working?"
     answer: "Look for behavioral signals, not vanity metrics. Signs it is working: users return without being prompted, they find workarounds when features are missing (indicating high motivation), they refer others unprompted, and at least some are willing to pay before the product is complete. Signs it is not working: users try it once and do not return, engagement requires constant manual prompting, and no one complains when you turn it off."
 ---
@@ -45,7 +45,7 @@ Before writing a line of code, answer these questions:
 2. **What is the minimum test I need to run to validate it?**
 3. **What would "validated" look like, specifically?**
 
-If your most important assumption is "people will pay for this," a landing page with a payment CTA might be your MVP — no product needed. If it's "people can successfully complete this workflow," you need a working prototype.
+If your most important assumption is "people will pay for this," a landing page with a payment CTA might be your MVP - no product needed. If it's "people can successfully complete this workflow," you need a working prototype.
 
 ## Define Your Core Value Hypothesis
 
@@ -75,7 +75,7 @@ Only build the "essential" features. Ship everything else later.
 
 ### The "Version 2" Rule
 
-Every feature that isn't strictly essential gets moved to a V2 list. This list will grow. That's fine — it means you have ideas for after you launch. But it also means your V1 stays lean.
+Every feature that isn't strictly essential gets moved to a V2 list. This list will grow. That's fine - it means you have ideas for after you launch. But it also means your V1 stays lean.
 
 ### Common Features to Cut from an MVP
 
@@ -113,13 +113,13 @@ Sometimes the best MVP is not a software product at all.
 
 ## The Build Phase
 
-Once scope is locked, build with speed over polish as the priority — but not at the cost of stability.
+Once scope is locked, build with speed over polish as the priority - but not at the cost of stability.
 
 ### Principles for MVP Engineering
 
-**Hardcode everything you can.** Don't build a configuration system — hardcode the one value. Don't build a permission system — hardcode one role. Generalize later.
+**Hardcode everything you can.** Don't build a configuration system - hardcode the one value. Don't build a permission system - hardcode one role. Generalize later.
 
-**Use third-party services for non-core functionality.** Auth (Auth0, Clerk), payments (Stripe), email (Resend, Postmark), analytics (Mixpanel), support (Intercom) — these are solved problems. Don't rebuild them.
+**Use third-party services for non-core functionality.** Auth (Auth0, Clerk), payments (Stripe), email (Resend, Postmark), analytics (Mixpanel), support (Intercom) - these are solved problems. Don't rebuild them.
 
 **Choose boring technology.** The MVP is not the place to experiment with a new framework. Use what your team builds fastest in.
 
@@ -137,7 +137,7 @@ Before you launch, set up the measurement infrastructure:
 - **Retention metric**: what does "came back" look like? (logged in again? used core feature again?)
 - **Primary success metric**: what number, if it moves, tells you the MVP is working?
 
-Don't launch without knowing these numbers — otherwise you'll launch and not know what you learned.
+Don't launch without knowing these numbers - otherwise you'll launch and not know what you learned.
 
 ## The Soft Launch
 
@@ -148,7 +148,7 @@ Don't announce publicly on day one. Start with 10–20 users you can have direct
 - People who told you "let me know when it's ready"
 - Relevant communities where your target users congregate (Reddit, Slack, forums)
 
-Get on calls with your first users. Watch them use the product over video — don't just send a link and wait. Watching someone get confused is worth more than 10 survey responses.
+Get on calls with your first users. Watch them use the product over video - don't just send a link and wait. Watching someone get confused is worth more than 10 survey responses.
 
 ## After Launch: The Learning Loop
 

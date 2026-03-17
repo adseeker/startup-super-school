@@ -1,5 +1,5 @@
 ---
-title: "MVP — Minimum Viable Product"
+title: "MVP - Minimum Viable Product"
 description: "An MVP is the simplest version of a product that allows a startup to test its core value hypothesis with real users and gather validated learning."
 locale: "en"
 category: "product"
@@ -12,24 +12,24 @@ relatedTerms: ["product-market-fit", "pivot", "traction"]
 seoKeywords: ["minimum viable product", "MVP startup", "what is an MVP", "build MVP"]
 faqs:
   - question: "What is the difference between an MVP and a prototype?"
-    answer: "A prototype tests feasibility and design — it is typically non-functional or clickable only. An MVP is a working product that delivers real value to early adopters and is instrumented to capture behavioral data. The prototype answers 'Can it be built?' while the MVP answers 'Will they actually use it?'"
+    answer: "A prototype tests feasibility and design - it is typically non-functional or clickable only. An MVP is a working product that delivers real value to early adopters and is instrumented to capture behavioral data. The prototype answers 'Can it be built?' while the MVP answers 'Will they actually use it?'"
   - question: "How long should it take to build an MVP?"
-    answer: "Most MVPs should take 4–12 weeks to build. If it is taking longer, the scope is almost certainly too large. The goal is to test your most critical assumption as quickly as possible — every extra week of building is a week without real user feedback."
+    answer: "Most MVPs should take 4–12 weeks to build. If it is taking longer, the scope is almost certainly too large. The goal is to test your most critical assumption as quickly as possible - every extra week of building is a week without real user feedback."
   - question: "Does an MVP have to be a software product?"
     answer: "No. An MVP can be a landing page, a manual concierge service, a Wizard of Oz simulation, or even a spreadsheet. The right form depends on what assumption you need to validate. If you need to test demand, a landing page with a payment CTA may be your MVP."
   - question: "What is the most common MVP mistake founders make?"
-    answer: "Building too much. Most founders treat MVP as version 1.0 rather than the minimum test of a single assumption. The result is months of development before getting any real user feedback. The famous rule: ship when you are embarrassed by it — if every feature feels polished, you have built too much."
+    answer: "Building too much. Most founders treat MVP as version 1.0 rather than the minimum test of a single assumption. The result is months of development before getting any real user feedback. The famous rule: ship when you are embarrassed by it - if every feature feels polished, you have built too much."
 ---
 
 ## What Is an MVP?
 
-A **Minimum Viable Product (MVP)** is the most stripped-down version of a product that still delivers enough value for early adopters to use it — and enough instrumentation for the team to learn from that usage.
+A **Minimum Viable Product (MVP)** is the most stripped-down version of a product that still delivers enough value for early adopters to use it - and enough instrumentation for the team to learn from that usage.
 
 The concept was popularized by Eric Ries in *The Lean Startup* and builds on Steve Blank's customer development methodology. The central insight is simple: **you don't know what customers want until they tell you with their behavior**, not just their words.
 
 ## Why It Matters
 
-Building a full-featured product before validating demand is one of the most common — and costly — startup mistakes. An MVP lets you:
+Building a full-featured product before validating demand is one of the most common - and costly - startup mistakes. An MVP lets you:
 
 - **Test your core assumption** cheaply and quickly
 - **Collect real behavioral data** instead of relying on surveys
@@ -70,11 +70,11 @@ Smoke Test → Prototype → MVP → MMP → Full Product
 
 ## Common Mistakes
 
-1. **Building too much** — perfectionism kills MVPs. Ship when you're embarrassed.
-2. **Wrong success metric** — define what "validated" means *before* you build.
-3. **Wrong audience** — launch to your ideal early adopter, not everyone.
-4. **No feedback loop** — an MVP without a mechanism to learn from users is just a bad product.
+1. **Building too much** - perfectionism kills MVPs. Ship when you're embarrassed.
+2. **Wrong success metric** - define what "validated" means *before* you build.
+3. **Wrong audience** - launch to your ideal early adopter, not everyone.
+4. **No feedback loop** - an MVP without a mechanism to learn from users is just a bad product.
 
 ## Key Takeaway
 
-The goal of an MVP is not to build a product — it's to **learn as fast as possible** whether you're solving a real problem for real people. Speed of learning beats speed of building.
+The goal of an MVP is not to build a product - it's to **learn as fast as possible** whether you're solving a real problem for real people. Speed of learning beats speed of building.

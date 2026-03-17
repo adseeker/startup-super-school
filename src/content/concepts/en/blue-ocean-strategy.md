@@ -33,11 +33,11 @@ The central metaphor is the color of the ocean:
 
 A **red ocean** is any market where companies compete head-to-head on the same dimensions of value, eroding margins for everyone. The metaphor is apt: rivals fight for the same fish until the water runs red.
 
-A **blue ocean** is a new market or market segment created by offering a leap in value that attracts buyers who were previously non-customers — or by redefining what buyers in an existing market actually want.
+A **blue ocean** is a new market or market segment created by offering a leap in value that attracts buyers who were previously non-customers - or by redefining what buyers in an existing market actually want.
 
 ## The Four Actions Framework (ERRC Grid)
 
-The primary analytical tool of Blue Ocean Strategy is the **ERRC Grid** — a matrix that forces strategists to question every assumption embedded in an industry's current value proposition:
+The primary analytical tool of Blue Ocean Strategy is the **ERRC Grid** - a matrix that forces strategists to question every assumption embedded in an industry's current value proposition:
 
 | Action | Question | Purpose |
 |--------|----------|---------|
@@ -46,7 +46,7 @@ The primary analytical tool of Blue Ocean Strategy is the **ERRC Grid** — a ma
 | **Raise** | Which factors should be raised well above industry standard? | Invest in the dimensions that matter most to underserved buyers |
 | **Create** | Which factors should be created that the industry has never offered? | Introduce entirely new sources of value |
 
-The power of ERRC is that it simultaneously reduces costs (Eliminate + Reduce) and increases buyer value (Raise + Create) — breaking the conventional assumption that differentiation always costs more.
+The power of ERRC is that it simultaneously reduces costs (Eliminate + Reduce) and increases buyer value (Raise + Create) - breaking the conventional assumption that differentiation always costs more.
 
 ### Cirque du Soleil ERRC Example
 
@@ -57,7 +57,7 @@ The power of ERRC is that it simultaneously reduces costs (Eliminate + Reduce) a
 | Multiple show arenas | | | Multiple productions |
 | Aisle concession sales | | | Artistic concept |
 
-Cirque du Soleil eliminated the most expensive elements of traditional circus (animal trainers, star acts, multiple arenas) while creating elements borrowed from theater (narrative, music, staging). The result: a product that costs more per ticket than a circus but far less than Broadway — and serves a completely different (and larger) audience than either.
+Cirque du Soleil eliminated the most expensive elements of traditional circus (animal trainers, star acts, multiple arenas) while creating elements borrowed from theater (narrative, music, staging). The result: a product that costs more per ticket than a circus but far less than Broadway - and serves a completely different (and larger) audience than either.
 
 ## The Strategy Canvas
 
@@ -78,19 +78,19 @@ Level
           Price  Features  Ease  Support  Community
 ```
 
-A blue ocean strategy produces a **divergent** value curve — one that looks meaningfully different from competitors, not just marginally better on the same dimensions.
+A blue ocean strategy produces a **divergent** value curve - one that looks meaningfully different from competitors, not just marginally better on the same dimensions.
 
 ## Finding Your Blue Ocean: The Non-Customer Framework
 
 One of Kim and Mauborgne's most practical tools is the **three tiers of non-customers**:
 
-- **Tier 1 — Soon-to-be non-customers**: People who minimally use your current industry's offerings but are ready to jump ship. Understanding why they are dissatisfied reveals unmet needs.
-- **Tier 2 — Refusing non-customers**: People who have consciously chosen not to use the industry's offerings. Their objections define the barriers to creating new demand.
-- **Tier 3 — Unexplored non-customers**: People who have never considered the industry as an option. They may represent the largest untapped demand.
+- **Tier 1 - Soon-to-be non-customers**: People who minimally use your current industry's offerings but are ready to jump ship. Understanding why they are dissatisfied reveals unmet needs.
+- **Tier 2 - Refusing non-customers**: People who have consciously chosen not to use the industry's offerings. Their objections define the barriers to creating new demand.
+- **Tier 3 - Unexplored non-customers**: People who have never considered the industry as an option. They may represent the largest untapped demand.
 
-Blue oceans are often found at the **intersection of non-customer insights** — by identifying why all three tiers avoid your market and designing a solution that eliminates those barriers.
+Blue oceans are often found at the **intersection of non-customer insights** - by identifying why all three tiers avoid your market and designing a solution that eliminates those barriers.
 
-Nintendo Wii is the canonical example: the gaming industry spent two decades competing on processing power and graphical fidelity to satisfy hardcore gamers. Nintendo studied the non-gamers — the refusing non-customers — and found that the complexity of controllers and the time investment required were the primary barriers. The Wii eliminated graphical fidelity as a competitive factor and created motion-controlled simplicity, unlocking an enormous market of casual players that the rest of the industry had ignored.
+Nintendo Wii is the canonical example: the gaming industry spent two decades competing on processing power and graphical fidelity to satisfy hardcore gamers. Nintendo studied the non-gamers - the refusing non-customers - and found that the complexity of controllers and the time investment required were the primary barriers. The Wii eliminated graphical fidelity as a competitive factor and created motion-controlled simplicity, unlocking an enormous market of casual players that the rest of the industry had ignored.
 
 ## Blue Ocean Strategy for Startups
 
@@ -120,4 +120,4 @@ Practical application for early-stage founders:
 
 ## Key Takeaway
 
-Blue Ocean Strategy challenges the most deeply held assumption in competitive strategy — that markets are fixed and winning means outcompeting rivals within them. The research behind the framework shows that the most profitable growth has historically come from creating new market spaces, not from fighting harder for existing ones. For founders, the practical implication is to spend as much time analyzing non-customers and industry assumptions as analyzing competitors. The ERRC Grid and strategy canvas are the tools; the discipline is asking "why doesn't this exist?" before asking "how do we beat what does."
+Blue Ocean Strategy challenges the most deeply held assumption in competitive strategy - that markets are fixed and winning means outcompeting rivals within them. The research behind the framework shows that the most profitable growth has historically come from creating new market spaces, not from fighting harder for existing ones. For founders, the practical implication is to spend as much time analyzing non-customers and industry assumptions as analyzing competitors. The ERRC Grid and strategy canvas are the tools; the discipline is asking "why doesn't this exist?" before asking "how do we beat what does."

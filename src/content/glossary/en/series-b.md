@@ -13,9 +13,9 @@ seoKeywords: ["Series B round startup", "what is Series B funding", "Series B re
 
 ## What Is a Series B Round?
 
-A **Series B round** is an institutional venture capital financing round raised after a startup has already demonstrated repeatable, scalable growth. Where a Series A proves that a go-to-market motion exists, a Series B funds the systematic scaling of that motion — expanding the sales team, entering new markets, and building the organizational infrastructure needed to support rapid growth.
+A **Series B round** is an institutional venture capital financing round raised after a startup has already demonstrated repeatable, scalable growth. Where a Series A proves that a go-to-market motion exists, a Series B funds the systematic scaling of that motion - expanding the sales team, entering new markets, and building the organizational infrastructure needed to support rapid growth.
 
-Series B rounds in the US typically range from **$20M to $50M**. In Europe, the range is somewhat compressed at **$10M to $25M**. The investors are larger VC funds and growth equity firms — often names like Insight Partners, General Atlantic, Tiger Global, or the growth arms of top-tier firms — some of which cross over from public market investing.
+Series B rounds in the US typically range from **$20M to $50M**. In Europe, the range is somewhat compressed at **$10M to $25M**. The investors are larger VC funds and growth equity firms - often names like Insight Partners, General Atlantic, Tiger Global, or the growth arms of top-tier firms - some of which cross over from public market investing.
 
 ## Series B vs. Series A: Key Differences
 
@@ -62,9 +62,9 @@ Unlike a seed round (which funds product discovery) or a Series A (which funds e
 At Series A, a strong deck and a credible founding team with early traction can often get a deal done. At Series B, the process is significantly more rigorous:
 
 1. **Data room depth**: Investors expect a complete set of cohort analyses, a detailed financial model with 3–5 year projections, an org chart, and a competitive landscape document
-2. **Financial modeling expectations**: CFO-level scrutiny of assumptions — headcount plans, sales capacity models, and NRR projections all get pressure-tested
+2. **Financial modeling expectations**: CFO-level scrutiny of assumptions - headcount plans, sales capacity models, and NRR projections all get pressure-tested
 3. **Reference checks**: Not just founder references but customer references, early employee references, and checks on the management team
-4. **Cohort analysis**: Investors want to see retention curves across multiple cohorts to confirm that retention is stable (or improving) as the customer base scales — not just solid in the first small cohort
+4. **Cohort analysis**: Investors want to see retention curves across multiple cohorts to confirm that retention is stable (or improving) as the customer base scales - not just solid in the first small cohort
 
 The typical timeline is **3–5 months** from first meetings to close, slightly longer than Series A.
 
@@ -85,4 +85,4 @@ What Series B investors lose sleep over:
 
 ## Key Takeaway
 
-A Series B is not just a bigger Series A — it is a fundamentally different type of financing event that requires demonstrating that growth is durable, unit economics hold at scale, and the team is capable of running a much larger, more complex organization. Founders who raise Series B successfully treat it as a proof of operational maturity, not just revenue growth.
+A Series B is not just a bigger Series A - it is a fundamentally different type of financing event that requires demonstrating that growth is durable, unit economics hold at scale, and the team is capable of running a much larger, more complex organization. Founders who raise Series B successfully treat it as a proof of operational maturity, not just revenue growth.

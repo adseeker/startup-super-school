@@ -11,11 +11,11 @@ primaryKeyword: "working capital startup"
 seoKeywords: ["working capital", "working capital formula", "positive vs negative working capital", "working capital for startups"]
 faqs:
   - question: "What is working capital?"
-    answer: "Working capital is current assets minus current liabilities. Current assets include cash, accounts receivable, and inventory — things that will convert to cash within 12 months. Current liabilities include accounts payable, accrued expenses, and short-term debt due within 12 months. A positive result means the business can cover its near-term obligations from existing assets. A negative result means short-term obligations exceed short-term assets."
+    answer: "Working capital is current assets minus current liabilities. Current assets include cash, accounts receivable, and inventory - things that will convert to cash within 12 months. Current liabilities include accounts payable, accrued expenses, and short-term debt due within 12 months. A positive result means the business can cover its near-term obligations from existing assets. A negative result means short-term obligations exceed short-term assets."
   - question: "Is negative working capital always bad for a startup?"
-    answer: "No — negative working capital is structurally normal and healthy for SaaS companies and subscription businesses. When customers prepay annual subscriptions, that cash lands on the balance sheet as a liability (deferred revenue) before the service is delivered. This creates negative working capital without any financial stress. The key distinction is whether the negative position is caused by customer prepayments (good) or unpaid supplier invoices and overdue debt (bad)."
+    answer: "No - negative working capital is structurally normal and healthy for SaaS companies and subscription businesses. When customers prepay annual subscriptions, that cash lands on the balance sheet as a liability (deferred revenue) before the service is delivered. This creates negative working capital without any financial stress. The key distinction is whether the negative position is caused by customer prepayments (good) or unpaid supplier invoices and overdue debt (bad)."
   - question: "How is working capital different from cash flow?"
-    answer: "Working capital is a balance sheet snapshot: the difference between current assets and current liabilities at a specific point in time. Cash flow is a statement of movement: how much cash came in and went out during a period. A business can have strong working capital but negative cash flow in a given month, or vice versa. Both metrics are necessary — working capital tells you about solvency, cash flow tells you about survival."
+    answer: "Working capital is a balance sheet snapshot: the difference between current assets and current liabilities at a specific point in time. Cash flow is a statement of movement: how much cash came in and went out during a period. A business can have strong working capital but negative cash flow in a given month, or vice versa. Both metrics are necessary - working capital tells you about solvency, cash flow tells you about survival."
   - question: "What is a good working capital ratio for a startup?"
     answer: "The working capital ratio (current assets ÷ current liabilities) between 1.2 and 2.0 is generally considered healthy for asset-heavy businesses. For software and SaaS companies, a ratio below 1.0 is common and acceptable as long as the liabilities are primarily deferred revenue rather than debt or overdue payables. What matters most is the composition of the liabilities, not the ratio in isolation."
   - question: "How does working capital relate to runway?"
@@ -28,7 +28,7 @@ faqs:
 Working Capital = Current Assets − Current Liabilities
 ```
 
-It is one of the most fundamental measures of short-term financial health. A positive number means the business can meet all obligations due within the next 12 months using assets it already controls. A negative number means it cannot — at least not on paper.
+It is one of the most fundamental measures of short-term financial health. A positive number means the business can meet all obligations due within the next 12 months using assets it already controls. A negative number means it cannot - at least not on paper.
 
 ## The Formula Explained
 
@@ -75,7 +75,7 @@ Consider a SaaS startup with 500 customers each paying €2,400/year upfront in 
 - **Cash**: +€1,200,000 (received)
 - **Deferred revenue** (current liability): -€1,200,000 (earned over the next 12 months)
 
-Working capital = €0 (or slightly negative after other liabilities). Yet the business has €1.2M cash in the bank and a year of contracted revenue. This is healthy — the negative working capital reflects customer trust, not financial weakness.
+Working capital = €0 (or slightly negative after other liabilities). Yet the business has €1.2M cash in the bank and a year of contracted revenue. This is healthy - the negative working capital reflects customer trust, not financial weakness.
 
 By contrast, a manufacturing startup with €200,000 in unpaid supplier invoices and only €80,000 in receivables has negative working capital driven by real financial pressure.
 
@@ -106,7 +106,7 @@ Working capital and cash flow are related but measure different things:
 | Cash flow | Flow statement (over a period) | Is cash increasing or decreasing? |
 | Runway | Derived metric | How many months until cash hits zero? |
 
-A business can burn €80,000/month (negative cash flow) while maintaining positive working capital — if it started with a large cash reserve. It can also show positive monthly cash flow while having negative working capital, if it collects cash before delivering services (the SaaS prepayment pattern).
+A business can burn €80,000/month (negative cash flow) while maintaining positive working capital - if it started with a large cash reserve. It can also show positive monthly cash flow while having negative working capital, if it collects cash before delivering services (the SaaS prepayment pattern).
 
 **For startup founders**, the most useful mental model is:
 
@@ -126,4 +126,4 @@ If working capital is uncomfortably low and not for good structural reasons, com
 
 ## Key Takeaway
 
-Working capital is current assets minus current liabilities. A positive figure is generally healthy; a negative figure requires context — for SaaS companies with customer prepayments it is often a sign of strength, while for businesses with mounting unpaid bills it signals financial stress. Track both the absolute number and its composition. Combined with a current cash flow forecast and a clear runway calculation, working capital gives you a complete picture of whether your startup can meet its obligations today, next month, and through the year.
+Working capital is current assets minus current liabilities. A positive figure is generally healthy; a negative figure requires context - for SaaS companies with customer prepayments it is often a sign of strength, while for businesses with mounting unpaid bills it signals financial stress. Track both the absolute number and its composition. Combined with a current cash flow forecast and a clear runway calculation, working capital gives you a complete picture of whether your startup can meet its obligations today, next month, and through the year.

@@ -14,7 +14,7 @@ acronym: "N/A"
 
 ## What Is a Convertible Note?
 
-A **convertible note** is a short-term debt instrument used by early-stage startups to raise capital before conducting a priced equity round. The investor loans money to the company, which carries an interest rate and a maturity date. Rather than being repaid in cash, the principal (and any accrued interest) converts into equity shares when a qualifying financing event occurs — typically a Series A or larger priced seed round.
+A **convertible note** is a short-term debt instrument used by early-stage startups to raise capital before conducting a priced equity round. The investor loans money to the company, which carries an interest rate and a maturity date. Rather than being repaid in cash, the principal (and any accrued interest) converts into equity shares when a qualifying financing event occurs - typically a Series A or larger priced seed round.
 
 Convertible notes were the standard early-stage financing instrument for decades before Y Combinator introduced the SAFE in 2013. They remain widely used, particularly when investors want the legal protections that come with holding a debt instrument, or when a startup is raising a bridge round between priced financings.
 
@@ -22,7 +22,7 @@ Convertible notes were the standard early-stage financing instrument for decades
 
 ## Why Convertible Notes Exist
 
-Early-stage startups often cannot agree on a valuation with investors. Attempting to set a price too early can be contentious and lead to deals falling apart. Convertible notes sidestep this problem: the investor provides capital now, and the valuation is effectively determined later — at the priced round — with the note investor receiving a better price as compensation for their earlier risk.
+Early-stage startups often cannot agree on a valuation with investors. Attempting to set a price too early can be contentious and lead to deals falling apart. Convertible notes sidestep this problem: the investor provides capital now, and the valuation is effectively determined later - at the priced round - with the note investor receiving a better price as compensation for their earlier risk.
 
 ---
 
@@ -30,13 +30,13 @@ Early-stage startups often cannot agree on a valuation with investors. Attemptin
 
 ### Interest Rate
 
-Convertible notes are legally structured as debt, so they accrue interest. Most early-stage notes carry an interest rate of **5–8% per year**, though rates vary by deal. The interest typically does not get paid in cash — it accrues and converts into additional equity at the conversion event alongside the principal.
+Convertible notes are legally structured as debt, so they accrue interest. Most early-stage notes carry an interest rate of **5–8% per year**, though rates vary by deal. The interest typically does not get paid in cash - it accrues and converts into additional equity at the conversion event alongside the principal.
 
 **Example:** A $500,000 note at 6% annual interest held for 18 months accrues $45,000 in interest. At conversion, the investor converts $545,000 (not just $500,000) into equity.
 
 ### Maturity Date
 
-The maturity date is the deadline by which the note must either convert into equity or be repaid. Common terms range from **18 to 24 months**. If a qualifying financing has not occurred by the maturity date, the investor has the legal right to demand repayment of principal plus accrued interest — a situation most startups cannot handle.
+The maturity date is the deadline by which the note must either convert into equity or be repaid. Common terms range from **18 to 24 months**. If a qualifying financing has not occurred by the maturity date, the investor has the legal right to demand repayment of principal plus accrued interest - a situation most startups cannot handle.
 
 In practice, if a startup has not closed a qualifying round by maturity, founders typically negotiate an extension with note holders. Sophisticated investors generally prefer to extend rather than force repayment on a company that is still operating.
 
@@ -44,7 +44,7 @@ In practice, if a startup has not closed a qualifying round by maturity, founder
 
 The valuation cap is the maximum company valuation at which the note will convert. It protects the note investor from excessive dilution if the company's value has risen significantly since the note was issued.
 
-**Example:** An investor holds a $250,000 note with a $4M valuation cap. The company raises a Series A at an $18M pre-money valuation. The investor converts as if the company were valued at $4M — receiving more than 4x the shares per dollar compared to Series A investors.
+**Example:** An investor holds a $250,000 note with a $4M valuation cap. The company raises a Series A at an $18M pre-money valuation. The investor converts as if the company were valued at $4M - receiving more than 4x the shares per dollar compared to Series A investors.
 
 ### Discount Rate
 
@@ -124,4 +124,4 @@ To avoid this, founders should build maturity date extensions into the note from
 
 ## Key Takeaway
 
-A convertible note is a time-tested early-stage financing instrument that bridges the gap between a startup's founding and its first priced equity round. Its debt structure gives investors meaningful legal protections while giving founders the flexibility to delay setting a valuation. Compared to a SAFE, a convertible note is slightly more complex and carries more risk for founders at the maturity date — but it remains the preferred instrument for many experienced seed investors. Always model out the dilutive impact of accrued interest and cap-based conversion before issuing notes, and negotiate reasonable maturity dates with extension provisions built in.
+A convertible note is a time-tested early-stage financing instrument that bridges the gap between a startup's founding and its first priced equity round. Its debt structure gives investors meaningful legal protections while giving founders the flexibility to delay setting a valuation. Compared to a SAFE, a convertible note is slightly more complex and carries more risk for founders at the maturity date - but it remains the preferred instrument for many experienced seed investors. Always model out the dilutive impact of accrued interest and cap-based conversion before issuing notes, and negotiate reasonable maturity dates with extension provisions built in.

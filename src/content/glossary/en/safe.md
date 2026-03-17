@@ -1,5 +1,5 @@
 ---
-title: "SAFE — Simple Agreement for Future Equity"
+title: "SAFE - Simple Agreement for Future Equity"
 description: "A SAFE lets investors fund startups in exchange for future equity, with no interest rate or maturity date. Created by Y Combinator in 2013."
 locale: "en"
 category: "fundraising"
@@ -15,7 +15,7 @@ origin: "Y Combinator, 2013"
 
 ## What Is a SAFE?
 
-A **SAFE** (Simple Agreement for Future Equity) is an investment instrument that gives an investor the right to receive equity in a startup at a future date, in exchange for money provided today. Unlike a traditional equity investment, no shares are issued immediately. Unlike a convertible note, a SAFE is not a loan — it accrues no interest and has no maturity date.
+A **SAFE** (Simple Agreement for Future Equity) is an investment instrument that gives an investor the right to receive equity in a startup at a future date, in exchange for money provided today. Unlike a traditional equity investment, no shares are issued immediately. Unlike a convertible note, a SAFE is not a loan - it accrues no interest and has no maturity date.
 
 Y Combinator introduced the SAFE in 2013 as a simpler, faster, and cheaper alternative to convertible notes for early-stage investing. It has since become the dominant instrument for pre-seed and seed fundraising in the US startup ecosystem. The original SAFE documents are open-source and freely available on the YC website, which has driven widespread adoption and standardization.
 
@@ -23,9 +23,9 @@ Y Combinator introduced the SAFE in 2013 as a simpler, faster, and cheaper alter
 
 ## How a SAFE Works
 
-When an investor signs a SAFE and wires money, the startup receives the capital immediately and can deploy it. The investor does not yet own shares. Instead, the SAFE grants the investor the right to convert their investment into equity — at a discount or favorable price — when the company raises a priced equity round (typically a Series A or a priced seed round).
+When an investor signs a SAFE and wires money, the startup receives the capital immediately and can deploy it. The investor does not yet own shares. Instead, the SAFE grants the investor the right to convert their investment into equity - at a discount or favorable price - when the company raises a priced equity round (typically a Series A or a priced seed round).
 
-The conversion is triggered by a **qualified financing event**, which the SAFE document defines — usually a round above a minimum threshold (e.g., $1M or more). At that point, the SAFE converts into preferred shares, typically at a lower price than what new investors pay in the priced round.
+The conversion is triggered by a **qualified financing event**, which the SAFE document defines - usually a round above a minimum threshold (e.g., $1M or more). At that point, the SAFE converts into preferred shares, typically at a lower price than what new investors pay in the priced round.
 
 If the company is acquired or winds down before a qualifying financing, most SAFEs include a provision for investors to receive their money back (or equity equivalent) before common shareholders.
 
@@ -37,7 +37,7 @@ If the company is acquired or winds down before a qualifying financing, most SAF
 
 The valuation cap is the maximum company valuation at which the SAFE will convert. It protects the investor from being diluted if the company's valuation skyrockets before a priced round.
 
-**Example:** An investor puts in $500,000 on a SAFE with a $5M valuation cap. The company later raises a Series A at a $20M pre-money valuation. The SAFE converts as if the company were worth $5M — giving the investor 4x more shares than new Series A investors per dollar invested.
+**Example:** An investor puts in $500,000 on a SAFE with a $5M valuation cap. The company later raises a Series A at a $20M pre-money valuation. The SAFE converts as if the company were worth $5M - giving the investor 4x more shares than new Series A investors per dollar invested.
 
 ### Discount Rate
 
@@ -47,7 +47,7 @@ When both a cap and a discount apply, the investor typically receives whichever 
 
 ### MFN (Most Favored Nation) Clause
 
-Some SAFEs — particularly those with no cap and no discount — include an MFN clause. This gives the investor the right to adopt the terms of any subsequent SAFE issued on more favorable terms. It protects early investors in uncapped/undiscounted instruments.
+Some SAFEs - particularly those with no cap and no discount - include an MFN clause. This gives the investor the right to adopt the terms of any subsequent SAFE issued on more favorable terms. It protects early investors in uncapped/undiscounted instruments.
 
 ---
 
@@ -62,7 +62,7 @@ In 2018, Y Combinator updated its standard SAFE from a **pre-money** to a **post
 | Dilution from option pool | Borne by investors | Borne by founders |
 | Preferred by | Earlier-era startups | Most startups post-2018 |
 
-With a **post-money SAFE**, the investor's ownership percentage is fixed at the time the SAFE is signed — calculated as investment amount ÷ valuation cap. This provides clarity for investors but means founders absorb the full dilutive impact of any option pool increases before conversion.
+With a **post-money SAFE**, the investor's ownership percentage is fixed at the time the SAFE is signed - calculated as investment amount ÷ valuation cap. This provides clarity for investors but means founders absorb the full dilutive impact of any option pool increases before conversion.
 
 **Example:** A $500K SAFE on a $5M post-money cap means the investor will own approximately 10% on a fully diluted basis at conversion, regardless of how many other SAFEs are issued after.
 
@@ -107,4 +107,4 @@ SAFEs are less appropriate when investors insist on debt protection (e.g., insti
 
 ## Key Takeaway
 
-The SAFE is the fastest, simplest way to raise early-stage capital in the US startup ecosystem. Its lack of interest, maturity dates, and complex debt mechanics makes it founder-friendly in most scenarios. However, founders must model SAFE conversion carefully — particularly when issuing multiple SAFEs at different caps — to avoid unexpected dilution when a priced round finally closes. Always use the current YC post-money SAFE template unless you have a specific reason to deviate, and consider having a startup attorney review your cap table modeling before closing a SAFE round.
+The SAFE is the fastest, simplest way to raise early-stage capital in the US startup ecosystem. Its lack of interest, maturity dates, and complex debt mechanics makes it founder-friendly in most scenarios. However, founders must model SAFE conversion carefully - particularly when issuing multiple SAFEs at different caps - to avoid unexpected dilution when a priced round finally closes. Always use the current YC post-money SAFE template unless you have a specific reason to deviate, and consider having a startup attorney review your cap table modeling before closing a SAFE round.

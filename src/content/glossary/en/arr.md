@@ -1,5 +1,5 @@
 ---
-title: "ARR — Annual Recurring Revenue"
+title: "ARR - Annual Recurring Revenue"
 description: "ARR is the annualized value of all active subscriptions. It is the primary top-line metric for SaaS companies and a key signal for fundraising readiness."
 locale: "en"
 category: "metrics"
@@ -11,7 +11,7 @@ relatedTerms: ["mrr", "churn-rate", "ltv", "burn-rate"]
 seoKeywords: ["annual recurring revenue", "ARR startup", "what is ARR", "ARR vs MRR"]
 faqs:
   - question: "What is the difference between ARR and MRR?"
-    answer: "ARR (Annual Recurring Revenue) and MRR (Monthly Recurring Revenue) measure the same thing at different time scales — ARR = MRR × 12. MRR is better for day-to-day operational tracking at early stages where the business moves fast. ARR is preferred for fundraising, investor reporting, and valuation once a company reaches $1M ARR or begins signing annual contracts."
+    answer: "ARR (Annual Recurring Revenue) and MRR (Monthly Recurring Revenue) measure the same thing at different time scales - ARR = MRR × 12. MRR is better for day-to-day operational tracking at early stages where the business moves fast. ARR is preferred for fundraising, investor reporting, and valuation once a company reaches $1M ARR or begins signing annual contracts."
   - question: "Does one-time revenue count toward ARR?"
     answer: "No. ARR counts only recurring, predictable subscription revenue. One-time setup fees, professional services, consulting revenue, and non-recurring training fees are explicitly excluded. Mixing non-recurring revenue into ARR overstates the business's durability and misleads investors about true recurring revenue."
   - question: "What ARR do you need to raise a Series A?"
@@ -22,7 +22,7 @@ faqs:
 
 ## What Is ARR (Annual Recurring Revenue)?
 
-Annual Recurring Revenue (ARR) is the total annualized value of all active, recurring subscription contracts a SaaS company holds at a given point in time. It answers the question: "If nothing changes — no new customers, no churned customers, no expansions or contractions — how much subscription revenue will this company generate in the next 12 months?"
+Annual Recurring Revenue (ARR) is the total annualized value of all active, recurring subscription contracts a SaaS company holds at a given point in time. It answers the question: "If nothing changes - no new customers, no churned customers, no expansions or contractions - how much subscription revenue will this company generate in the next 12 months?"
 
 ARR is the single most important top-line metric for subscription-based software businesses. It is the number investors use to value SaaS companies, the number boards track at every meeting, and the north star that sales teams are typically compensated to grow.
 
@@ -87,7 +87,7 @@ Certain ARR thresholds carry specific strategic significance in the venture-back
 
 ## The T2D3 Growth Benchmark
 
-One of the most referenced ARR growth benchmarks in SaaS is **T2D3** — coined by Neeraj Agarwal of Battery Ventures. It describes the growth path of a typical high-growth SaaS company from $2M to $100M ARR:
+One of the most referenced ARR growth benchmarks in SaaS is **T2D3** - coined by Neeraj Agarwal of Battery Ventures. It describes the growth path of a typical high-growth SaaS company from $2M to $100M ARR:
 
 - **Year 1**: Triple from ~$2M to ~$6M ARR
 - **Year 2**: Triple from ~$6M to ~$18M ARR
@@ -101,13 +101,13 @@ Not every SaaS company needs to hit T2D3 to be considered healthy, but it repres
 
 Understanding what drives ARR growth and contraction requires breaking it into its component parts:
 
-**New ARR**: Revenue from customers who did not exist in the prior period. This is the growth engine — the result of marketing and sales efforts converting new logos.
+**New ARR**: Revenue from customers who did not exist in the prior period. This is the growth engine - the result of marketing and sales efforts converting new logos.
 
-**Expansion ARR**: Additional recurring revenue from existing customers — through seat additions, plan upgrades, or usage growth. Companies with strong expansion ARR are especially attractive to investors because it signals deep product value and pricing power. Top SaaS companies generate 30–50% of their ARR growth from expansion.
+**Expansion ARR**: Additional recurring revenue from existing customers - through seat additions, plan upgrades, or usage growth. Companies with strong expansion ARR are especially attractive to investors because it signals deep product value and pricing power. Top SaaS companies generate 30–50% of their ARR growth from expansion.
 
 **Churned ARR**: Revenue lost from customers who cancel their subscription entirely. Churned ARR is the primary negative force on ARR. Even a low annual churn rate (5%) compounds painfully: at 5% annual churn, a company must grow new ARR by at least 5% just to stay flat.
 
-**Contraction ARR**: Revenue lost from existing customers who downgrade to a smaller plan. Contraction ARR is distinct from churn — the customer stays but pays less.
+**Contraction ARR**: Revenue lost from existing customers who downgrade to a smaller plan. Contraction ARR is distinct from churn - the customer stays but pays less.
 
 **Net New ARR**: The net change in ARR from period to period.
 ```
@@ -135,4 +135,4 @@ Net New ARR in Q1: +$6,000 (expansion from Beta) - $6,000 (churn from Delta) = *
 
 ## Key Takeaway
 
-Annual Recurring Revenue is the foundational health metric for SaaS businesses — the annualized value of all active subscriptions, counting only recurring fees. Key milestones ($1M, $5M, $10M ARR) signal fundraising readiness and product-market fit. The T2D3 framework (triple, triple, double, double, double) sets the growth benchmark for venture-scale outcomes. Understanding ARR requires tracking its four components — new, expansion, churned, and contraction ARR — because growth in the headline number can mask dangerous churn dynamics that only the component breakdown reveals.
+Annual Recurring Revenue is the foundational health metric for SaaS businesses - the annualized value of all active subscriptions, counting only recurring fees. Key milestones ($1M, $5M, $10M ARR) signal fundraising readiness and product-market fit. The T2D3 framework (triple, triple, double, double, double) sets the growth benchmark for venture-scale outcomes. Understanding ARR requires tracking its four components - new, expansion, churned, and contraction ARR - because growth in the headline number can mask dangerous churn dynamics that only the component breakdown reveals.

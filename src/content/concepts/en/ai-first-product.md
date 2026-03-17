@@ -1,6 +1,6 @@
 ---
 title: "AI-First Product Design"
-description: "A design philosophy that puts AI at the center of the product experience — and the principles that make AI-first products trustworthy and reliable."
+description: "A design philosophy that puts AI at the center of the product experience - and the principles that make AI-first products trustworthy and reliable."
 locale: "en"
 category: "ai"
 tags: ["ai", "product", "design", "ux", "strategy"]
@@ -15,7 +15,7 @@ faqs:
   - question: "What are the most common UX mistakes in AI products?"
     answer: "The most common mistakes are: presenting AI outputs without sources or confidence levels (eroding trust when errors occur), no fallback path when AI fails or gives unhelpful answers, making the AI mandatory rather than optional for core workflows, UI that hides AI uncertainty to appear more confident, and not designing for error recovery when the AI misunderstands the user's intent."
   - question: "How do you build trust in an AI product?"
-    answer: "Trust in AI products is built through demonstrated accuracy over time, transparent sourcing (showing where information comes from), honest uncertainty communication (when the AI doesn't know, it should say so), consistent behavior that matches user expectations, and graceful failure handling. Trust is lost instantly when AI confidently provides wrong information — accuracy beats impressiveness every time."
+    answer: "Trust in AI products is built through demonstrated accuracy over time, transparent sourcing (showing where information comes from), honest uncertainty communication (when the AI doesn't know, it should say so), consistent behavior that matches user expectations, and graceful failure handling. Trust is lost instantly when AI confidently provides wrong information - accuracy beats impressiveness every time."
   - question: "Should AI replace or augment the existing UI in a product?"
     answer: "For most products, augmentation is safer than replacement. Adding AI to an existing workflow (AI-assisted drafting, AI-suggested actions) is lower risk than requiring users to interact entirely through AI. Full AI-first interfaces work best for new products where there's no existing habit to compete with, or for power users who have established enough trust with the AI to navigate through conversation."
 ---
@@ -28,7 +28,7 @@ There's a meaningful distinction between a product that has AI features and a pr
 
 **AI-first**: The primary interaction model is AI. Users describe what they want; the AI interprets and acts. The interface is designed to make that conversation efficient and trustworthy. Examples: Perplexity (search through conversation), Cursor (coding through intent), Harvey (legal research through Q&A).
 
-Neither is inherently better — the choice depends on user familiarity, task complexity, and the degree to which AI genuinely accelerates the core workflow.
+Neither is inherently better - the choice depends on user familiarity, task complexity, and the degree to which AI genuinely accelerates the core workflow.
 
 ## Core Design Principles for AI Products
 
@@ -53,7 +53,7 @@ Don't show all AI capabilities at once. Let users discover AI depth as their tru
 
 ### 4. Design for Error Recovery
 When AI misunderstands intent, the recovery experience defines whether the user tries again or churns:
-- Acknowledge misunderstanding explicitly ("I interpreted your request as X — was that right?")
+- Acknowledge misunderstanding explicitly ("I interpreted your request as X - was that right?")
 - Provide easy correction mechanisms (edit the interpreted intent, not just rephrase)
 - Track misunderstood requests to improve the interpretation layer
 
@@ -69,4 +69,4 @@ When AI misunderstands intent, the recovery experience defines whether the user 
 
 ## Key Takeaway
 
-AI-first product design is less about visual design and more about trust architecture. The products that succeed long-term are the ones that earn user trust through consistent accuracy, transparent sourcing, and graceful failure — not the ones that impress in demos. Design for the 100th interaction, not the first.
+AI-first product design is less about visual design and more about trust architecture. The products that succeed long-term are the ones that earn user trust through consistent accuracy, transparent sourcing, and graceful failure - not the ones that impress in demos. Design for the 100th interaction, not the first.

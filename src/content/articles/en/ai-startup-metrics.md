@@ -1,6 +1,6 @@
 ---
 title: "AI Startup Metrics"
-description: "The key metrics founders should track for AI products — from AI-specific signals to standard SaaS metrics adapted for AI economics."
+description: "The key metrics founders should track for AI products - from AI-specific signals to standard SaaS metrics adapted for AI economics."
 locale: "en"
 category: "ai"
 tags: ["ai", "metrics", "product", "startup", "analytics"]
@@ -14,7 +14,7 @@ faqs:
   - question: "What metrics are unique to AI products vs traditional SaaS?"
     answer: "AI products require tracking several additional metrics: AI feature adoption rate (what % of users actively use AI features), AI acceptance rate (what % of AI outputs users accept without editing), hallucination/error rate, AI inference cost per user, and confidence score distributions. These complement standard SaaS metrics (MRR, churn, NRR) and are essential for understanding whether your AI is actually creating value."
   - question: "What is a good AI feature adoption rate?"
-    answer: "A healthy AI feature adoption rate is 40%+ of monthly active users actively using AI features at least weekly. Below 20% suggests the AI feature isn't integrated into users' workflows. Above 70% in a product where AI is core (not just a feature) indicates strong product-market fit. Track this metric separately from overall product usage — AI adoption can diverge significantly from general product engagement."
+    answer: "A healthy AI feature adoption rate is 40%+ of monthly active users actively using AI features at least weekly. Below 20% suggests the AI feature isn't integrated into users' workflows. Above 70% in a product where AI is core (not just a feature) indicates strong product-market fit. Track this metric separately from overall product usage - AI adoption can diverge significantly from general product engagement."
   - question: "How do you measure the quality of an AI product's outputs?"
     answer: "Track AI acceptance rate (users who accept AI output without significant editing), output discard rate (users who regenerate or delete AI output), and explicit feedback signals (thumbs up/down or satisfaction ratings). For factual tasks, track error rate measured by human reviewers or automated validation. A high discard rate (>40%) indicates outputs are not meeting user expectations and require model improvement."
   - question: "What metrics do AI investors want to see at Series A?"
@@ -23,7 +23,7 @@ faqs:
 
 ## Why AI Metrics Are Different
 
-Standard SaaS metrics — MRR, churn, NRR, CAC/LTV — still matter for AI products. But they're insufficient. A product that has great subscription retention but whose AI features are barely used hasn't proven that the AI is actually creating value. A product with growing users but rising AI inference costs that don't improve may be building a margin problem.
+Standard SaaS metrics - MRR, churn, NRR, CAC/LTV - still matter for AI products. But they're insufficient. A product that has great subscription retention but whose AI features are barely used hasn't proven that the AI is actually creating value. A product with growing users but rising AI inference costs that don't improve may be building a margin problem.
 
 AI products need a second layer of metrics that measure the health of the AI system itself.
 
@@ -36,7 +36,7 @@ Are users actually using the AI features?
 - Target: 40%+ for AI-augmented products; 70%+ for AI-native products
 
 **AI Feature Frequency**: How many times per session / per week does the average active user engage with AI?
-- Trend matters more than absolute number — frequency should grow over time
+- Trend matters more than absolute number - frequency should grow over time
 
 **AI-to-Manual Ratio**: For tasks the AI could perform, what % do users perform with AI vs manually?
 - A declining ratio (users skipping AI) is a product problem
@@ -89,4 +89,4 @@ Is the AI driving business outcomes?
 
 ## Key Takeaway
 
-Measuring AI products requires instrumentation from day one — user interaction events, output acceptance signals, cost attribution per feature. The startups that build this measurement infrastructure early can prove their AI is creating value (essential for fundraising), identify quality problems before they cause churn, and optimize inference costs before they erode margins. Set up your AI metrics dashboard in the first 90 days.
+Measuring AI products requires instrumentation from day one - user interaction events, output acceptance signals, cost attribution per feature. The startups that build this measurement infrastructure early can prove their AI is creating value (essential for fundraising), identify quality problems before they cause churn, and optimize inference costs before they erode margins. Set up your AI metrics dashboard in the first 90 days.

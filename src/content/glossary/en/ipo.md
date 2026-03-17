@@ -1,5 +1,5 @@
 ---
-title: "IPO — Initial Public Offering"
+title: "IPO - Initial Public Offering"
 description: "An IPO is when a private company first sells shares to the public on a stock exchange, providing liquidity and access to large capital pools."
 locale: "en"
 category: "exits"
@@ -14,7 +14,7 @@ seoKeywords: ["IPO startup", "initial public offering startup", "what is an IPO"
 
 ## What Is an IPO?
 
-An **Initial Public Offering (IPO)** is the process by which a privately held company offers its shares to the general public on a regulated stock exchange — such as the NYSE or NASDAQ — for the first time. From that moment, the company's stock can be bought and sold by any investor in the open market, and the company becomes subject to public reporting requirements enforced by the SEC.
+An **Initial Public Offering (IPO)** is the process by which a privately held company offers its shares to the general public on a regulated stock exchange - such as the NYSE or NASDAQ - for the first time. From that moment, the company's stock can be bought and sold by any investor in the open market, and the company becomes subject to public reporting requirements enforced by the SEC.
 
 An IPO is often described as "going public." It is one of the most significant events in a company's lifecycle, but it is frequently misunderstood: an IPO is a **liquidity event**, not an exit. The company continues operating under significantly more scrutiny than it faced as a private entity.
 
@@ -22,10 +22,10 @@ An IPO is often described as "going public." It is one of the most significant e
 
 Founders and boards pursue an IPO for several interconnected reasons:
 
-- **Access to large capital pools**: Public markets can absorb hundreds of millions — or billions — of dollars that no private funding round can match
+- **Access to large capital pools**: Public markets can absorb hundreds of millions - or billions - of dollars that no private funding round can match
 - **Liquidity for early shareholders**: Employees, angels, and early VCs who have waited years can finally convert their shares to cash (subject to lockup restrictions)
 - **Brand credibility and awareness**: A public listing signals legitimacy and scale to customers, partners, and talent
-- **Public currency for acquisitions**: A publicly traded stock can be used as acquisition currency — many post-IPO companies grow via stock-for-stock M&A
+- **Public currency for acquisitions**: A publicly traded stock can be used as acquisition currency - many post-IPO companies grow via stock-for-stock M&A
 - **Benchmarking and accountability**: Public reporting requirements, while burdensome, impose discipline on financial planning and execution
 
 ## IPO Requirements
@@ -48,7 +48,7 @@ Beyond financials, companies need a "Big 4" audit firm, a board with independent
 Going public is a structured, multi-stage process:
 
 1. **Select underwriters (banks)**: The company hires lead banks (Goldman Sachs, Morgan Stanley, JPMorgan, etc.) who manage the process and book investor orders
-2. **Prepare and file the S-1**: A detailed registration statement filed with the SEC — includes financial statements, risk factors, business description, and use of proceeds
+2. **Prepare and file the S-1**: A detailed registration statement filed with the SEC - includes financial statements, risk factors, business description, and use of proceeds
 3. **SEC review period**: The SEC issues comment letters; the company responds and amends the S-1 (typically 1–3 rounds over 6–8 weeks)
 4. **Roadshow**: The CEO and CFO spend 2 weeks presenting to institutional investors (mutual funds, hedge funds, pension funds) across major cities and virtually
 5. **Pricing**: The night before the first trading day, the final IPO price is set based on the order book built during the roadshow
@@ -66,7 +66,7 @@ Direct listings have become a credible alternative for cash-rich, well-known com
 
 ## The Lockup Period
 
-When a company IPOs, insiders — founders, employees, and early investors — cannot immediately sell their shares. The standard **lockup period is 180 days** post-IPO. After lockup expiry, there is often significant selling pressure as early holders liquidate, which can depress the stock price. Founders should anticipate this and plan communications accordingly.
+When a company IPOs, insiders - founders, employees, and early investors - cannot immediately sell their shares. The standard **lockup period is 180 days** post-IPO. After lockup expiry, there is often significant selling pressure as early holders liquidate, which can depress the stock price. Founders should anticipate this and plan communications accordingly.
 
 Secondary sales and tender offers pre-IPO are often structured precisely to give liquidity before the lockup constraint kicks in.
 
@@ -86,13 +86,13 @@ Companies that IPO'd at peak 2021 multiples (like UiPath at 44× or HashiCorp at
 
 Founders who have only operated in the private market are often unprepared for what comes after the opening bell:
 
-- **Quarterly earnings pressure**: Every 90 days, the company must report results publicly and guide for the next quarter. Missing guidance — even by a small amount — can cause a 20–30% single-day stock decline
+- **Quarterly earnings pressure**: Every 90 days, the company must report results publicly and guide for the next quarter. Missing guidance - even by a small amount - can cause a 20–30% single-day stock decline
 - **Restricted trading windows**: Insiders can only buy or sell stock during open trading windows (typically 2–3 weeks after each earnings release) and must pre-clear trades with legal
 - **Public scrutiny**: Competitors, journalists, and short sellers have access to your financial data, customer metrics, and strategic commentary
 - **Analyst coverage**: Equity research analysts publish ratings and price targets that influence institutional investor behavior
 
-The discipline required to operate as a public company is genuinely different from private operations — it rewards consistency and predictability over aggressive bets.
+The discipline required to operate as a public company is genuinely different from private operations - it rewards consistency and predictability over aggressive bets.
 
 ## Key Takeaway
 
-An IPO is not a finish line — it is a transition into a permanent state of accountability to public shareholders, quarterly reporting cycles, and open-market scrutiny. Companies that IPO successfully treat the public markets as a new financing partner with their own demands, not as a reward for years of private-market work.
+An IPO is not a finish line - it is a transition into a permanent state of accountability to public shareholders, quarterly reporting cycles, and open-market scrutiny. Companies that IPO successfully treat the public markets as a new financing partner with their own demands, not as a reward for years of private-market work.

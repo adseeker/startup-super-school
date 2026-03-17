@@ -1,6 +1,6 @@
 ---
 title: "How to Reduce AI API Costs"
-description: "Six proven strategies to cut LLM API spending without sacrificing product quality — from caching to model tiering to open-source alternatives."
+description: "Six proven strategies to cut LLM API spending without sacrificing product quality - from caching to model tiering to open-source alternatives."
 locale: "en"
 category: "ai"
 tags: ["ai", "infrastructure", "costs", "saas", "optimization"]
@@ -15,13 +15,13 @@ steps:
   - name: "Cache responses for repeated queries"
     text: "Implement semantic caching: store LLM responses and return cached results when a new query is semantically similar (cosine similarity > 0.95). Tools like GPTCache or a Redis + embedding lookup can reduce API calls by 30-60% for products with repetitive queries."
   - name: "Use smaller models for simple tasks"
-    text: "Audit each feature for actual complexity requirements. Classification, summarization of short texts, and simple Q&A rarely need GPT-4o — GPT-4o-mini or Claude Haiku cost 10-20x less and handle most simple tasks adequately. Route by complexity."
+    text: "Audit each feature for actual complexity requirements. Classification, summarization of short texts, and simple Q&A rarely need GPT-4o - GPT-4o-mini or Claude Haiku cost 10-20x less and handle most simple tasks adequately. Route by complexity."
   - name: "Optimize your prompts"
     text: "Remove redundant context, compress system prompts, and use shorter examples in few-shot prompts. Every 100 tokens you remove from a system prompt saves on every API call. Test compressed prompts against a quality benchmark before deploying."
   - name: "Implement request batching"
-    text: "For async workflows (reports, background processing, content generation), batch multiple requests together. Batch APIs from OpenAI and Anthropic offer 50% cost reduction with up to 24-hour processing windows — ideal for non-real-time features."
+    text: "For async workflows (reports, background processing, content generation), batch multiple requests together. Batch APIs from OpenAI and Anthropic offer 50% cost reduction with up to 24-hour processing windows - ideal for non-real-time features."
   - name: "Evaluate open-source alternatives"
-    text: "For your highest-volume features, benchmark open-source models (Llama 3.3 70B, Qwen2.5, Mistral) against your quality requirements. Self-hosting on a $1,500/month GPU server can serve tens of millions of tokens per month — dramatically cheaper than API pricing at scale."
+    text: "For your highest-volume features, benchmark open-source models (Llama 3.3 70B, Qwen2.5, Mistral) against your quality requirements. Self-hosting on a $1,500/month GPU server can serve tens of millions of tokens per month - dramatically cheaper than API pricing at scale."
 faqs:
   - question: "How much can I realistically reduce my AI API costs?"
     answer: "Most startups can reduce API costs by 40-70% without significant quality loss through a combination of caching (30-60% reduction on repeat queries), model tiering (using cheaper models for simple tasks), and prompt optimization (10-20% token reduction). The highest-impact change is usually moving high-volume simple tasks from frontier models to smaller, cheaper ones."
@@ -78,7 +78,7 @@ A 200-token reduction in a system prompt at 1M requests/month = 200M fewer token
 
 ## Implement Batch Processing
 
-For non-real-time features — reports, content generation, background analysis — use batch APIs:
+For non-real-time features - reports, content generation, background analysis - use batch APIs:
 - **OpenAI Batch API**: 50% cost reduction, up to 24-hour processing
 - **Anthropic Message Batches**: Similar pricing benefit for async workloads
 
@@ -87,9 +87,9 @@ Ideal for: nightly reports, weekly digests, bulk content generation, training da
 ## Evaluate Open-Source Alternatives
 
 For your highest-volume features, run a quality benchmark comparing your current model against:
-- **Llama 3.3 70B** — comparable to GPT-4o-mini on most tasks
-- **Qwen2.5 32B** — strong coding and multilingual performance
-- **Mistral 7B** — extremely efficient, good for high-volume simple tasks
+- **Llama 3.3 70B** - comparable to GPT-4o-mini on most tasks
+- **Qwen2.5 32B** - strong coding and multilingual performance
+- **Mistral 7B** - extremely efficient, good for high-volume simple tasks
 
 Self-hosting economics at scale (example: 100M tokens/day):
 - **OpenAI API cost**: ~$10,000–$25,000/month

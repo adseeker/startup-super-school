@@ -1,6 +1,6 @@
 ---
 title: "Human-in-the-Loop"
-description: "A design pattern where humans review or approve AI decisions at critical points — balancing automation benefits with accuracy and accountability."
+description: "A design pattern where humans review or approve AI decisions at critical points - balancing automation benefits with accuracy and accountability."
 locale: "en"
 category: "ai"
 tags: ["ai", "product", "design", "automation", "safety"]
@@ -16,9 +16,9 @@ faqs:
   - question: "When is human-in-the-loop required in AI products?"
     answer: "HITL is typically required when mistakes are costly or irreversible (financial transactions, medical decisions, legal documents), when the AI's accuracy in a domain is below user trust threshold, when regulatory frameworks mandate human oversight (EU AI Act high-risk categories), or when the task involves ethical judgment that current AI systems cannot reliably make."
   - question: "Does human-in-the-loop hurt automation efficiency?"
-    answer: "It depends on how it's designed. A poorly designed HITL process creates a bottleneck where humans review every action — offering little advantage over manual processes. Well-designed HITL is exception-based: the AI handles the 80-90% of cases it can process confidently autonomously, and flags only the edge cases, ambiguous situations, or high-stakes decisions for human review."
+    answer: "It depends on how it's designed. A poorly designed HITL process creates a bottleneck where humans review every action - offering little advantage over manual processes. Well-designed HITL is exception-based: the AI handles the 80-90% of cases it can process confidently autonomously, and flags only the edge cases, ambiguous situations, or high-stakes decisions for human review."
   - question: "What is the difference between human-in-the-loop and human-on-the-loop?"
-    answer: "Human-in-the-loop means a human actively participates in each decision cycle — reviewing and approving before action. Human-on-the-loop means the AI acts autonomously but a human monitors the overall system and can intervene. On-the-loop is appropriate for lower-risk, high-volume tasks where real-time human review isn't feasible; in-the-loop is for high-stakes or irreversible actions."
+    answer: "Human-in-the-loop means a human actively participates in each decision cycle - reviewing and approving before action. Human-on-the-loop means the AI acts autonomously but a human monitors the overall system and can intervene. On-the-loop is appropriate for lower-risk, high-volume tasks where real-time human review isn't feasible; in-the-loop is for high-stakes or irreversible actions."
 ---
 
 ## The HITL Design Pattern
@@ -37,7 +37,7 @@ In practice, well-designed HITL systems are exception-based rather than approval
 
 **Low AI confidence**: When a model's confidence score falls below a threshold, route to human review rather than guessing.
 
-**Irreversible actions**: Sending emails, making purchases, deleting data, publishing content. Once done, these can't be undone — human confirmation is a low-cost insurance policy.
+**Irreversible actions**: Sending emails, making purchases, deleting data, publishing content. Once done, these can't be undone - human confirmation is a low-cost insurance policy.
 
 **Novel situations**: AI models trained on historical data may not handle genuinely new patterns well. Anomaly detection that flags unusual cases for human review prevents systematic errors.
 
@@ -51,11 +51,11 @@ In practice, well-designed HITL systems are exception-based rather than approval
 
 ## Designing HITL UX That Works
 
-Bad HITL design creates approval fatigue — humans rubber-stamp everything because the review queue is too long. Good HITL design:
+Bad HITL design creates approval fatigue - humans rubber-stamp everything because the review queue is too long. Good HITL design:
 
 - **Shows high-confidence decisions as completed** (no review needed) and only surfaces edge cases
-- **Provides clear context** for each review decision — why was this flagged? What did the AI think?
-- **Makes approval/rejection fast** — one-click actions, keyboard shortcuts
+- **Provides clear context** for each review decision - why was this flagged? What did the AI think?
+- **Makes approval/rejection fast** - one-click actions, keyboard shortcuts
 - **Tracks human decisions** to continuously improve the AI's confidence calibration
 
 ## When to Remove the Human
@@ -69,4 +69,4 @@ If error rates are below 0.1% and errors are recoverable, full automation is usu
 
 ## Key Takeaway
 
-Human-in-the-loop is not a fallback for AI that isn't good enough — it's a deliberate architecture for AI systems that operate in contexts where the cost of error exceeds the cost of human review. Design it as an exception handler, not a review queue, and build in the measurement to know when you've earned the right to remove it.
+Human-in-the-loop is not a fallback for AI that isn't good enough - it's a deliberate architecture for AI systems that operate in contexts where the cost of error exceeds the cost of human review. Design it as an exception handler, not a review queue, and build in the measurement to know when you've earned the right to remove it.

@@ -15,16 +15,16 @@ faqs:
   - question: "How much does it cost to use an LLM via API?"
     answer: "Pricing is measured per million tokens (roughly 750,000 words). As of early 2026, frontier models like GPT-4o cost around $2–$10 per million input tokens, while smaller models like GPT-4o mini run below $0.20. For a startup processing 10,000 customer queries per day, monthly LLM costs typically range from $50 to $2,000 depending on model choice and query length."
   - question: "What is the difference between an LLM and a chatbot?"
-    answer: "An LLM is the underlying AI model — a large neural network. A chatbot is an application built on top of an LLM that adds a conversation interface, memory management, and often tool integrations. ChatGPT, for example, is a chatbot product; GPT-4 is the LLM powering it."
+    answer: "An LLM is the underlying AI model - a large neural network. A chatbot is an application built on top of an LLM that adds a conversation interface, memory management, and often tool integrations. ChatGPT, for example, is a chatbot product; GPT-4 is the LLM powering it."
   - question: "Do I need to train my own LLM to build an AI product?"
-    answer: "No — almost all AI startups use pre-built LLMs via API (OpenAI, Anthropic, Google, or open-source models like Llama). Training a frontier LLM from scratch costs tens to hundreds of millions of dollars in compute. Instead, startups differentiate through prompt engineering, fine-tuning, RAG, and product design on top of existing models."
+    answer: "No - almost all AI startups use pre-built LLMs via API (OpenAI, Anthropic, Google, or open-source models like Llama). Training a frontier LLM from scratch costs tens to hundreds of millions of dollars in compute. Instead, startups differentiate through prompt engineering, fine-tuning, RAG, and product design on top of existing models."
   - question: "What are the main limitations of LLMs?"
     answer: "LLMs can hallucinate (produce confident but incorrect facts), have a fixed context window (memory limit per conversation), lack real-time data unless given retrieval tools, and may reflect biases from training data. They also have no persistent memory between sessions by default, which requires explicit engineering to address."
 ---
 
 ## What Is a Large Language Model (LLM)?
 
-A large language model (LLM) is a deep learning system trained on massive datasets of text — often hundreds of billions to trillions of words — to understand and generate human language. By learning statistical patterns across enormous corpora, LLMs can answer questions, write code, summarize documents, translate languages, and reason through complex problems. GPT-4, Claude 3, and Gemini Ultra are the best-known commercial examples; Meta's Llama series represents the leading open-source alternatives.
+A large language model (LLM) is a deep learning system trained on massive datasets of text - often hundreds of billions to trillions of words - to understand and generate human language. By learning statistical patterns across enormous corpora, LLMs can answer questions, write code, summarize documents, translate languages, and reason through complex problems. GPT-4, Claude 3, and Gemini Ultra are the best-known commercial examples; Meta's Llama series represents the leading open-source alternatives.
 
 ## How LLMs Work
 
@@ -32,11 +32,11 @@ LLMs are built on the **transformer architecture**, introduced by Google researc
 
 ### Scale is the differentiator
 
-The "large" in LLM matters: GPT-3 had 175 billion parameters; GPT-4 is estimated at over 1 trillion. More parameters — combined with more training data and compute — consistently produce more capable, nuanced models. This is sometimes called **scaling laws**: performance improves predictably as model size, data, and compute increase.
+The "large" in LLM matters: GPT-3 had 175 billion parameters; GPT-4 is estimated at over 1 trillion. More parameters - combined with more training data and compute - consistently produce more capable, nuanced models. This is sometimes called **scaling laws**: performance improves predictably as model size, data, and compute increase.
 
 ### Tokens, not words
 
-LLMs don't process raw characters or words — they operate on **tokens**, which are subword units roughly 3–4 characters long. "startup" is one token; "fundraising" might be two. Understanding tokens matters because API pricing is per token, and every model has a maximum **context window** (the amount of text it can process at once), measured in tokens.
+LLMs don't process raw characters or words - they operate on **tokens**, which are subword units roughly 3–4 characters long. "startup" is one token; "fundraising" might be two. Understanding tokens matters because API pricing is per token, and every model has a maximum **context window** (the amount of text it can process at once), measured in tokens.
 
 ## Key LLMs for Startup Builders
 
@@ -52,19 +52,19 @@ The right model depends on your latency requirements, budget, context length nee
 
 ## Why LLMs Matter for Startups
 
-Before LLMs, building a product that could read a contract, answer a customer question in natural language, or generate a personalized email required significant NLP engineering and extensive labeled training data. LLMs compress that effort dramatically — a single API call can replace months of custom model development.
+Before LLMs, building a product that could read a contract, answer a customer question in natural language, or generate a personalized email required significant NLP engineering and extensive labeled training data. LLMs compress that effort dramatically - a single API call can replace months of custom model development.
 
 Practical applications startup teams shipped in 2024–2025:
 
-- **Customer support automation** — deflecting 40–70% of tickets without human intervention
-- **Document processing** — extracting structured data from PDFs, invoices, and contracts
-- **Code generation** — GitHub Copilot-style autocomplete inside proprietary developer tools
-- **Sales intelligence** — summarizing CRM notes and drafting outbound sequences
-- **Search and Q&A** — letting users query internal knowledge bases in natural language
+- **Customer support automation** - deflecting 40–70% of tickets without human intervention
+- **Document processing** - extracting structured data from PDFs, invoices, and contracts
+- **Code generation** - GitHub Copilot-style autocomplete inside proprietary developer tools
+- **Sales intelligence** - summarizing CRM notes and drafting outbound sequences
+- **Search and Q&A** - letting users query internal knowledge bases in natural language
 
 ## Costs and Tradeoffs
 
-LLM inference is cheap for experimentation but scales non-linearly. A product making 1 million API calls per day at $0.002 per call spends $2,000/day — roughly $730,000/year — before any other infrastructure costs. Strategies to manage this:
+LLM inference is cheap for experimentation but scales non-linearly. A product making 1 million API calls per day at $0.002 per call spends $2,000/day - roughly $730,000/year - before any other infrastructure costs. Strategies to manage this:
 
 1. **Route by complexity**: Use a cheap model (e.g., GPT-4o mini) for simple tasks; escalate to a frontier model only when needed.
 2. **Cache responses**: Identical or near-identical prompts can return cached outputs.
@@ -73,4 +73,4 @@ LLM inference is cheap for experimentation but scales non-linearly. A product ma
 
 ## Key Takeaway
 
-LLMs are the foundational infrastructure layer of the current AI wave — the way cloud compute was foundational in 2008. For startup builders, the question is rarely "should we use an LLM?" and more often "which model, at what cost, for which task?" Start with a frontier model via API to validate ideas quickly, measure real usage costs, then optimize toward cheaper models or self-hosting once you have production traffic data.
+LLMs are the foundational infrastructure layer of the current AI wave - the way cloud compute was foundational in 2008. For startup builders, the question is rarely "should we use an LLM?" and more often "which model, at what cost, for which task?" Start with a frontier model via API to validate ideas quickly, measure real usage costs, then optimize toward cheaper models or self-hosting once you have production traffic data.

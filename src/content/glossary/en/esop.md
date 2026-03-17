@@ -1,5 +1,5 @@
 ---
-title: "ESOP — Employee Stock Option Pool"
+title: "ESOP - Employee Stock Option Pool"
 description: "An ESOP is a reserved pool of equity set aside to grant stock options to employees, advisors, and early hires as non-cash compensation."
 locale: "en"
 category: "equity"
@@ -12,16 +12,16 @@ faqs:
   - question: "What is an ESOP in a startup?"
     answer: "An ESOP (Employee Stock Option Pool) is a block of equity set aside by a company to grant stock options to employees, advisors, and early hires. It typically ranges from 10% to 20% of the fully diluted share count and is created before or during a funding round to attract and retain talent without paying higher cash salaries."
   - question: "How big should an option pool be?"
-    answer: "Most early-stage startups create an option pool of 10–15% of fully diluted shares. Investors often require a larger pool (15–20%) before a funding round, since pool creation dilutes existing shareholders — including founders — before new money comes in. The right size depends on your hiring plan for the next 12–18 months."
+    answer: "Most early-stage startups create an option pool of 10–15% of fully diluted shares. Investors often require a larger pool (15–20%) before a funding round, since pool creation dilutes existing shareholders - including founders - before new money comes in. The right size depends on your hiring plan for the next 12–18 months."
   - question: "How does an ESOP dilute founders?"
-    answer: "When you create or expand an option pool, the new shares come from existing shareholders — primarily founders — before new investors contribute capital. This means the option pool expansion is effectively priced into your pre-money valuation, reducing the founders' ownership percentage. Founders should negotiate the pool size carefully to avoid unnecessary dilution."
+    answer: "When you create or expand an option pool, the new shares come from existing shareholders - primarily founders - before new investors contribute capital. This means the option pool expansion is effectively priced into your pre-money valuation, reducing the founders' ownership percentage. Founders should negotiate the pool size carefully to avoid unnecessary dilution."
   - question: "Do employees actually own shares through an ESOP?"
-    answer: "Not immediately. Employees receive options — the right to buy shares at a fixed price (the strike price) in the future. They only own actual shares after exercising their options, which typically requires either a liquidity event (acquisition or IPO) or paying the exercise price out of pocket. Options also vest over time, usually over 4 years with a 1-year cliff."
+    answer: "Not immediately. Employees receive options - the right to buy shares at a fixed price (the strike price) in the future. They only own actual shares after exercising their options, which typically requires either a liquidity event (acquisition or IPO) or paying the exercise price out of pocket. Options also vest over time, usually over 4 years with a 1-year cliff."
 ---
 
 ## What Is an ESOP?
 
-An **Employee Stock Option Pool (ESOP)** is a block of equity that a company reserves specifically to compensate employees, advisors, and key contractors with stock options rather than — or in addition to — cash.
+An **Employee Stock Option Pool (ESOP)** is a block of equity that a company reserves specifically to compensate employees, advisors, and key contractors with stock options rather than - or in addition to - cash.
 
 Instead of receiving shares outright, recipients get **options**: the right to buy company shares at a predetermined price (called the **strike price** or **exercise price**) at some point in the future. This lets early-stage startups attract top talent even when they can't compete on salary.
 
@@ -32,7 +32,7 @@ Cash is constrained at most early-stage companies. An ESOP lets founders offer a
 Key reasons:
 - **Attract talent** away from larger, higher-paying employers
 - **Retain key hires** through vesting schedules that reward staying
-- **Align incentives** — employees who own equity think like owners
+- **Align incentives** - employees who own equity think like owners
 - **Defer cash costs** to when the company can better afford them
 
 ## Typical ESOP Structure
@@ -49,14 +49,14 @@ The **409A valuation** is a formal independent appraisal of the company's fair m
 
 ## How the Option Pool Affects Funding Rounds
 
-Investors typically require an option pool to be created or expanded **before** new money enters — meaning the dilution falls on existing shareholders (founders), not on new investors.
+Investors typically require an option pool to be created or expanded **before** new money enters - meaning the dilution falls on existing shareholders (founders), not on new investors.
 
 **Example:**
 - Pre-money valuation agreed: $8M
 - Investor requires 15% option pool created pre-money
 - Founders' effective pre-money value = $8M × 85% = $6.8M
 
-This is called the **option pool shuffle** — a negotiation tactic founders should understand before agreeing to pool sizes.
+This is called the **option pool shuffle** - a negotiation tactic founders should understand before agreeing to pool sizes.
 
 ## Vesting and the Cliff
 

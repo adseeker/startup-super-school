@@ -13,13 +13,13 @@ steps:
   - name: "Define your use case requirements"
     text: "Write a one-page requirements document covering input/output format, latency budget, accuracy threshold, and integration constraints. Without this, tool evaluations become subjective opinion contests rather than structured comparisons."
   - name: "Benchmark models for your task"
-    text: "Assemble a golden dataset of 50–100 representative inputs with known correct outputs. Run each candidate tool against this dataset and score on accuracy, format compliance, and edge-case handling — never on demo outputs provided by the vendor."
+    text: "Assemble a golden dataset of 50–100 representative inputs with known correct outputs. Run each candidate tool against this dataset and score on accuracy, format compliance, and edge-case handling - never on demo outputs provided by the vendor."
   - name: "Estimate real-world costs"
     text: "Model your cost at three usage levels: current (MVP), 10x growth, and 100x growth. Include token counts, API call frequency, storage, and any per-seat or per-call fees. A tool that looks cheap at 100 queries/day may be the most expensive option at 100,000."
   - name: "Assess reliability and vendor risk"
     text: "Review the vendor's uptime SLA, incident history, data retention policy, and rate limits. For any tool processing customer data, confirm SOC 2 compliance and whether your data is used for model training by default."
   - name: "Run a time-boxed POC"
-    text: "Give the top 1–2 candidates a strict 2-week proof-of-concept timebox. Define success criteria in advance — task completion rate, latency p95, cost per query — and treat a failure to meet them as a hard stop, not a reason to extend the timeline."
+    text: "Give the top 1–2 candidates a strict 2-week proof-of-concept timebox. Define success criteria in advance - task completion rate, latency p95, cost per query - and treat a failure to meet them as a hard stop, not a reason to extend the timeline."
 faqs:
   - question: "What is the most important factor when evaluating an AI tool?"
     answer: "Accuracy on your specific task is the most important factor, but it is rarely what teams measure first. Generic benchmarks like MMLU or HumanEval tell you nothing about how a model performs on your data distribution. Always build a domain-specific golden dataset of 50–100 representative inputs with verified correct outputs, and use that as your primary evaluation signal."
@@ -37,7 +37,7 @@ Most AI tool evaluations fail before they start because teams have not written d
 
 A good requirements document covers five areas:
 
-**1. Input/output format**: What format does your application produce as input, and what format does it need back? If your pipeline produces JSON and the tool returns free-text prose, you need a parsing layer — factor in the cost and failure rate.
+**1. Input/output format**: What format does your application produce as input, and what format does it need back? If your pipeline produces JSON and the tool returns free-text prose, you need a parsing layer - factor in the cost and failure rate.
 
 **2. Latency budget**: Is this a synchronous user-facing interaction (budget: <2 seconds) or an asynchronous background job (budget: minutes to hours)? Different tools optimize for different latency profiles.
 
@@ -88,7 +88,7 @@ Daily cost = (avg_input_tokens × input_price_per_M / 1,000,000 +
 | 10x | 5,000 | $25.00 | $20.00 | $45.00 | $1,350 |
 | 100x | 50,000 | $250.00 | $200.00 | $450.00 | $13,500 |
 
-Add 20–30% overhead for retries, logging, prompt versioning, and development/testing calls. At 100x scale, $13,500/month in API costs may be fine or catastrophic depending on your ACV and margins — model it explicitly.
+Add 20–30% overhead for retries, logging, prompt versioning, and development/testing calls. At 100x scale, $13,500/month in API costs may be fine or catastrophic depending on your ACV and margins - model it explicitly.
 
 **Make-vs-buy cost crossover**: Self-hosting an open-source model (e.g., Llama 3 70B on a dedicated A100 instance) costs roughly $2,000–$4,000/month for a single GPU. At the 100x example above, self-hosting becomes cheaper than the managed API. Most startups reach this crossover between 50,000 and 200,000 daily API calls depending on model size and token counts.
 
@@ -107,7 +107,7 @@ AI tool vendors vary enormously in maturity. Some have enterprise-grade infrastr
 - Is the vendor SOC 2 Type II certified? If you handle customer PII, this is non-negotiable.
 
 **Vendor stability**:
-- Is the vendor venture-backed with runway, or bootstrapped and profitable? Both can be fine — but a seed-stage AI startup with 12 months of runway is a higher risk dependency than an established provider.
+- Is the vendor venture-backed with runway, or bootstrapped and profitable? Both can be fine - but a seed-stage AI startup with 12 months of runway is a higher risk dependency than an established provider.
 - What is their model deprecation policy? OpenAI provides at minimum 6 months notice; smaller vendors may not.
 
 **Lock-in**:
@@ -134,8 +134,8 @@ A proof-of-concept with a strict time limit and pre-defined success criteria is 
 | Cost per 1,000 calls | <$5.00 | Pass / Fail |
 | Error rate on edge cases | <10% | Pass / Fail |
 
-If a tool fails any hard criteria, do not extend the POC timeline — move to the next candidate. The sunk cost of two weeks is far smaller than the cost of building on the wrong foundation.
+If a tool fails any hard criteria, do not extend the POC timeline - move to the next candidate. The sunk cost of two weeks is far smaller than the cost of building on the wrong foundation.
 
 ## Key Takeaway
 
-Evaluating AI tools well comes down to one principle: measure on your data, not the vendor's. Build a golden dataset before you open a single demo, model costs at three growth stages, and define binary success criteria before the POC starts. The tools that look best in demos are rarely the ones that perform best in production — and the cost surprises at scale are the ones that kill margins. A rigorous 3-week evaluation process saves months of rework later.
+Evaluating AI tools well comes down to one principle: measure on your data, not the vendor's. Build a golden dataset before you open a single demo, model costs at three growth stages, and define binary success criteria before the POC starts. The tools that look best in demos are rarely the ones that perform best in production - and the cost surprises at scale are the ones that kill margins. A rigorous 3-week evaluation process saves months of rework later.

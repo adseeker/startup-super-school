@@ -12,24 +12,24 @@ relatedConcepts: ["jobs-to-be-done", "customer-development", "agile-for-startups
 seoKeywords: ["lean startup methodology", "what is lean startup", "build measure learn", "validated learning startup"]
 faqs:
   - question: "What is the Build-Measure-Learn loop in the Lean Startup?"
-    answer: "The Build-Measure-Learn loop is the core feedback cycle of the Lean Startup methodology. You start with an idea, build the smallest possible test of that idea (an MVP), measure how real users interact with it, and learn whether your assumptions were correct. The goal is to complete this loop as fast as possible — each iteration generates validated learning that informs the next."
+    answer: "The Build-Measure-Learn loop is the core feedback cycle of the Lean Startup methodology. You start with an idea, build the smallest possible test of that idea (an MVP), measure how real users interact with it, and learn whether your assumptions were correct. The goal is to complete this loop as fast as possible - each iteration generates validated learning that informs the next."
   - question: "What is validated learning?"
-    answer: "Validated learning is empirically proven insight about customers, their behavior, and what creates value for them. It is the unit of progress in the Lean Startup — not features shipped or lines of code written. An assumption is validated when real user behavior confirms or refutes it, not when internal teams agree it is probably true."
+    answer: "Validated learning is empirically proven insight about customers, their behavior, and what creates value for them. It is the unit of progress in the Lean Startup - not features shipped or lines of code written. An assumption is validated when real user behavior confirms or refutes it, not when internal teams agree it is probably true."
   - question: "What is the difference between a pivot and an iteration in the Lean Startup?"
-    answer: "An iteration is a small adjustment within the same strategic direction — tweaking a feature, improving onboarding, changing a price point. A pivot is a structured course correction that changes a fundamental assumption about the business — the customer segment, the problem being solved, the revenue model, or the channel. Pivots are informed by validated learning showing that the current direction is not working."
+    answer: "An iteration is a small adjustment within the same strategic direction - tweaking a feature, improving onboarding, changing a price point. A pivot is a structured course correction that changes a fundamental assumption about the business - the customer segment, the problem being solved, the revenue model, or the channel. Pivots are informed by validated learning showing that the current direction is not working."
   - question: "Is the Lean Startup methodology only for early-stage companies?"
-    answer: "No. Eric Ries explicitly designed the Lean Startup for any organization operating under uncertainty — which includes product teams inside large corporations, not just early-stage startups. The Build-Measure-Learn loop is applicable any time you are making decisions without complete information about what customers want."
+    answer: "No. Eric Ries explicitly designed the Lean Startup for any organization operating under uncertainty - which includes product teams inside large corporations, not just early-stage startups. The Build-Measure-Learn loop is applicable any time you are making decisions without complete information about what customers want."
 ---
 
 ## Origins
 
 The **Lean Startup** methodology was formalized by Eric Ries in his 2011 book of the same name. It synthesizes ideas from **lean manufacturing** (Toyota Production System), **customer development** (Steve Blank), and **agile software development** into a framework for building products in conditions of extreme uncertainty.
 
-The core premise: startups are not small versions of large companies. They operate in an environment where the business model, customer, product, and market are all unknown — and traditional management methods designed for executing known plans are the wrong tool for this job.
+The core premise: startups are not small versions of large companies. They operate in an environment where the business model, customer, product, and market are all unknown - and traditional management methods designed for executing known plans are the wrong tool for this job.
 
 ## The Core Idea: Validated Learning
 
-The unit of progress in a Lean Startup is not *features shipped* or *code written* — it's **validated learning**: empirically proven insights about customers, their behavior, and what creates value for them.
+The unit of progress in a Lean Startup is not *features shipped* or *code written* - it's **validated learning**: empirically proven insights about customers, their behavior, and what creates value for them.
 
 The question is not "did we build what we planned?" but "did we learn what we needed to learn to make better decisions?"
 
@@ -71,7 +71,7 @@ The heart of the Lean Startup is a feedback cycle:
                     └──→ Back to IDEAS
 ```
 
-The goal is to minimize the total time through this loop — not to execute any one phase perfectly.
+The goal is to minimize the total time through this loop - not to execute any one phase perfectly.
 
 ## Key Concepts
 
@@ -79,7 +79,7 @@ The goal is to minimize the total time through this loop — not to execute any 
 The smallest thing you can build to test a specific hypothesis. The minimum viable product reduces the cost and time of testing whether a hypothesis is worth pursuing.
 
 ### Innovation Accounting
-A system for measuring startup progress that looks at leading indicators — activation rates, retention, referral — rather than lagging ones like revenue.
+A system for measuring startup progress that looks at leading indicators - activation rates, retention, referral - rather than lagging ones like revenue.
 
 Three milestones of innovation accounting:
 1. Establish a baseline (what's the current conversion/retention rate?)
@@ -125,9 +125,9 @@ The discipline is in defining the hypothesis before the test, and being honest a
 
 - **Not suited for all industries**: Heavily regulated sectors (medical devices, aerospace) can't always run rapid experiments
 - **Overused as an excuse**: "We're being lean" can rationalize skipping quality, documentation, or proper infrastructure
-- **Misapplied to execution**: Lean Startup is a discovery framework — once you've found what works, execution discipline (closer to traditional management) becomes appropriate
+- **Misapplied to execution**: Lean Startup is a discovery framework - once you've found what works, execution discipline (closer to traditional management) becomes appropriate
 - **MVP can damage brand**: In consumer spaces, a visibly unpolished MVP can permanently tarnish perception
 
 ## Key Takeaway
 
-The Lean Startup is not about building cheap products. It's about **making assumptions explicit, testing them cheaply, and updating your beliefs based on evidence** — before committing significant resources. It's a scientific method applied to the question: "Is this the right thing to build?"
+The Lean Startup is not about building cheap products. It's about **making assumptions explicit, testing them cheaply, and updating your beliefs based on evidence** - before committing significant resources. It's a scientific method applied to the question: "Is this the right thing to build?"

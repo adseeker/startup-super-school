@@ -14,9 +14,9 @@ acronym: "N/A"
 
 ## What Is a Term Sheet?
 
-A term sheet is a written, typically non-binding document that summarizes the key terms and conditions of a proposed investment in a startup. When a venture capital firm or angel investor decides they want to invest, they issue a term sheet before any formal legal paperwork is drafted. It functions as a blueprint for negotiation — both sides agree on the broad strokes before lawyers spend weeks drafting definitive agreements.
+A term sheet is a written, typically non-binding document that summarizes the key terms and conditions of a proposed investment in a startup. When a venture capital firm or angel investor decides they want to invest, they issue a term sheet before any formal legal paperwork is drafted. It functions as a blueprint for negotiation - both sides agree on the broad strokes before lawyers spend weeks drafting definitive agreements.
 
-Term sheets are usually two to ten pages long. Most clauses are **non-binding**, meaning neither party is legally obligated to complete the deal based on the term sheet alone. However, a handful of clauses — most notably the **no-shop clause** and confidentiality provisions — are typically binding from day one.
+Term sheets are usually two to ten pages long. Most clauses are **non-binding**, meaning neither party is legally obligated to complete the deal based on the term sheet alone. However, a handful of clauses - most notably the **no-shop clause** and confidentiality provisions - are typically binding from day one.
 
 Understanding a term sheet is one of the most important skills a founder can develop. The terms agreed upon here will govern the relationship between investors and the company for years, affecting everything from who controls the board to how much founders receive in an exit.
 
@@ -31,7 +31,7 @@ Understanding a term sheet is one of the most important skills a founder can dev
 | Protective terms | Anti-dilution, pro-rata rights | Non-binding |
 | Procedural terms | No-shop clause, confidentiality | **Binding** |
 
-The no-shop clause is the most consequential binding provision. It prevents founders from soliciting competing term sheets from other investors for a specified period — typically 30 to 60 days. Violating it can expose the company to legal liability and, more practically, damages its reputation in the investor community.
+The no-shop clause is the most consequential binding provision. It prevents founders from soliciting competing term sheets from other investors for a specified period - typically 30 to 60 days. Violating it can expose the company to legal liability and, more practically, damages its reputation in the investor community.
 
 ---
 
@@ -45,7 +45,7 @@ The term sheet will specify both the **pre-money valuation** (the company's valu
 
 ### Liquidation Preference
 
-The liquidation preference determines how exit proceeds are distributed if the company is sold or liquidated. A **1x non-participating liquidation preference** is standard and investor-friendly without being predatory — it means investors get their money back first, then common shareholders split the rest.
+The liquidation preference determines how exit proceeds are distributed if the company is sold or liquidated. A **1x non-participating liquidation preference** is standard and investor-friendly without being predatory - it means investors get their money back first, then common shareholders split the rest.
 
 A **participating liquidation preference** (also called "double-dip") lets investors take their preference AND then participate in the remaining proceeds alongside common shareholders. This can significantly reduce founder payouts, especially in smaller exits.
 
@@ -58,7 +58,7 @@ A **participating liquidation preference** (also called "double-dip") lets inves
 Anti-dilution clauses protect investors if the company raises a future round at a lower valuation (a "down round"). The two main types are:
 
 - **Broad-based weighted average**: The most founder-friendly form. The adjustment is weighted by the total shares outstanding, resulting in a modest conversion price adjustment.
-- **Full ratchet**: The most investor-friendly and aggressive form. The conversion price drops to the new, lower round price — even if only one share is sold at that price. This can massively dilute founders.
+- **Full ratchet**: The most investor-friendly and aggressive form. The conversion price drops to the new, lower round price - even if only one share is sold at that price. This can massively dilute founders.
 
 Most standard VC deals use broad-based weighted average anti-dilution.
 
@@ -73,7 +73,7 @@ Control of the board is as important as ownership percentage. A founder can own 
 
 ### Pro-Rata Rights
 
-Pro-rata rights give investors the right — but not the obligation — to participate in future funding rounds to maintain their ownership percentage. This is standard and generally fine for founders. Super pro-rata rights, which allow investors to increase their ownership in future rounds, are more contentious and worth pushing back on.
+Pro-rata rights give investors the right - but not the obligation - to participate in future funding rounds to maintain their ownership percentage. This is standard and generally fine for founders. Super pro-rata rights, which allow investors to increase their ownership in future rounds, are more contentious and worth pushing back on.
 
 ### No-Shop Clause
 
@@ -83,13 +83,13 @@ Once you sign a term sheet with a no-shop clause, you are contractually prohibit
 
 ## What to Negotiate
 
-Not everything in a term sheet is negotiable — some provisions are boilerplate. Focus your negotiation energy on:
+Not everything in a term sheet is negotiable - some provisions are boilerplate. Focus your negotiation energy on:
 
-1. **Valuation** — the most visible term, but not always the most important
-2. **Liquidation preference** — push for 1x non-participating
-3. **Anti-dilution** — insist on broad-based weighted average
-4. **Board composition** — protect your ability to make decisions
-5. **Option pool size** — investors often want a large pool created pre-investment, which dilutes founders before the round closes
+1. **Valuation** - the most visible term, but not always the most important
+2. **Liquidation preference** - push for 1x non-participating
+3. **Anti-dilution** - insist on broad-based weighted average
+4. **Board composition** - protect your ability to make decisions
+5. **Option pool size** - investors often want a large pool created pre-investment, which dilutes founders before the round closes
 
 ---
 
@@ -107,4 +107,4 @@ Always have a startup-experienced attorney review any term sheet before you sign
 
 ## Key Takeaway
 
-A term sheet is the foundational document of any VC investment relationship. While most of its clauses are non-binding, the economics and governance terms it establishes will shape your company for years. Focus your negotiation on liquidation preferences, anti-dilution provisions, and board composition — not just valuation. Always engage experienced legal counsel before signing, and treat the no-shop clause as the one provision that is immediately enforceable the moment you put pen to paper.
+A term sheet is the foundational document of any VC investment relationship. While most of its clauses are non-binding, the economics and governance terms it establishes will shape your company for years. Focus your negotiation on liquidation preferences, anti-dilution provisions, and board composition - not just valuation. Always engage experienced legal counsel before signing, and treat the no-shop clause as the one provision that is immediately enforceable the moment you put pen to paper.

@@ -1,6 +1,6 @@
 ---
 title: "How to Build Your First Startup Sales Funnel"
-description: "A step-by-step guide to building a B2B sales funnel — stages, CRM setup, metrics, discovery calls, and when to hire your first salesperson."
+description: "A step-by-step guide to building a B2B sales funnel - stages, CRM setup, metrics, discovery calls, and when to hire your first salesperson."
 locale: "en"
 category: "growth"
 tags: ["growth", "sales", "funnel", "revenue", "B2B"]
@@ -15,7 +15,7 @@ seoKeywords: ["startup sales funnel", "B2B sales funnel startup", "how to build 
 
 Most early-stage founders approach sales the same way: hustle, outreach, close whatever you can. That works from $0 to your first 10 customers. It does not work from $100K to $1M ARR.
 
-The transition from founder-led chaos to repeatable revenue requires one thing: a defined funnel. A funnel is not a sales methodology or a CRM — it is a documented map of the stages a prospect passes through on their way to becoming a customer, with clear entry and exit criteria for each stage.
+The transition from founder-led chaos to repeatable revenue requires one thing: a defined funnel. A funnel is not a sales methodology or a CRM - it is a documented map of the stages a prospect passes through on their way to becoming a customer, with clear entry and exit criteria for each stage.
 
 Without it, you cannot diagnose what is broken. If deals are not closing, is the problem too few leads, low demo quality, weak proposals, or a slow procurement process? Without stage definitions, you do not know. With them, you can find the bottleneck in 30 minutes.
 
@@ -43,13 +43,13 @@ For early-stage startups, focus obsessively on Evaluation through Purchase. This
 
 Outbound is the fastest way to generate pipeline when you have a defined ICP and cannot afford to wait for inbound to build. A high-performing cold email sequence:
 
-**Email 1 (Day 1) — Problem-first opener:**
+**Email 1 (Day 1) - Problem-first opener:**
 ```
 Subject: [Specific pain point for their company type]
 
 Hi [First name],
 
-[One sentence about a specific challenge your ICP faces — reference something
+[One sentence about a specific challenge your ICP faces - reference something
 specific about their company if possible.]
 
 We built [product] to [specific outcome]. Companies like [1–2 named customers]
@@ -60,14 +60,14 @@ Worth 20 minutes to see if it makes sense for [Company]?
 [Your name]
 ```
 
-**Email 2 (Day 4) — Social proof:**
+**Email 2 (Day 4) - Social proof:**
 Lead with a brief case study. One sentence on the problem, one on the solution, one on the result. Ask again.
 
-**Email 3 (Day 8) — Pattern interrupt:**
-Be direct: "I have sent you a couple of notes. Either the timing is off or this is not a priority right now — both are fair. If you are open to a quick conversation, here is my calendar [link]. If not, I will leave you alone."
+**Email 3 (Day 8) - Pattern interrupt:**
+Be direct: "I have sent you a couple of notes. Either the timing is off or this is not a priority right now - both are fair. If you are open to a quick conversation, here is my calendar [link]. If not, I will leave you alone."
 
-**Email 4 (Day 14) — Final breakup:**
-"Closing the loop — if anything changes on your side, [my calendar link] is always open."
+**Email 4 (Day 14) - Final breakup:**
+"Closing the loop - if anything changes on your side, [my calendar link] is always open."
 
 A 4-email sequence over 14 days hits the right balance between persistence and respect. Response rates of 5–10% are realistic for a tightly targeted ICP. Below 2% means your targeting or messaging needs work.
 
@@ -75,11 +75,11 @@ A 4-email sequence over 14 days hits the right balance between persistence and r
 
 Content takes longer to build but produces compounding returns. For B2B SaaS, the highest-ROI content types are:
 
-- SEO-optimized comparison pages ("X vs. Y" and "Alternatives to X") — high buyer intent
+- SEO-optimized comparison pages ("X vs. Y" and "Alternatives to X") - high buyer intent
 - Use-case landing pages targeting your ICP's specific job titles and industries
 - Long-form how-to guides around the problem you solve (like this one)
 
-Do not invest in thought leadership content until you have a consistent top-of-funnel problem. Write content that your buyer searches for when they are looking for a solution — not content about your company.
+Do not invest in thought leadership content until you have a consistent top-of-funnel problem. Write content that your buyer searches for when they are looking for a solution - not content about your company.
 
 ### Events and Communities
 
@@ -87,7 +87,7 @@ Attending or sponsoring targeted events (industry conferences, community Slack g
 
 ## Middle of Funnel: Demo, Proposal, POC
 
-The middle of the funnel is where most early-stage startups lose deals — not because the product is bad, but because the sales process is weak.
+The middle of the funnel is where most early-stage startups lose deals - not because the product is bad, but because the sales process is weak.
 
 ### The Discovery Call Structure
 
@@ -100,7 +100,7 @@ A 30-minute discovery call structure:
 **Minutes 3–18:** Discovery questions. Work through SPIN (Situation → Problem → Implication → Need-Payoff):
 - "Walk me through how you currently handle [process]."
 - "What is not working about that today?"
-- "What does that cost you — in time, money, or opportunity?"
+- "What does that cost you - in time, money, or opportunity?"
 - "If you solved that, what would change for you?"
 
 **Minutes 18–28:** The demo. Show only what is relevant to what you just learned. Do not run a features tour.
@@ -120,7 +120,7 @@ Send proposals within 24 hours of the discovery call. Proposals sent 3+ days lat
 
 ### Proof of Concept (POC)
 
-For deals above $25K ACV, prospects may ask for a POC — a structured trial period where they test the product against defined success criteria. POCs are high-effort but high-signal.
+For deals above $25K ACV, prospects may ask for a POC - a structured trial period where they test the product against defined success criteria. POCs are high-effort but high-signal.
 
 **Rules for a successful POC:**
 - Define success criteria before the POC begins, in writing
@@ -136,7 +136,7 @@ Enterprise deals (and increasingly mid-market deals) include a formal procuremen
 
 **Security review:** Prepare a security package (SOC 2 report or security questionnaire responses, data processing agreement, privacy policy). Having this ready cuts review time from weeks to days.
 
-**Legal review:** Your standard contract (Master Service Agreement + Order Form) will often be redlined by the customer's legal team. Have your lawyer establish your "fallback positions" in advance — which terms you will agree to change, and which are non-negotiable.
+**Legal review:** Your standard contract (Master Service Agreement + Order Form) will often be redlined by the customer's legal team. Have your lawyer establish your "fallback positions" in advance - which terms you will agree to change, and which are non-negotiable.
 
 **Procurement / purchasing:** Large companies often require vendor registration, purchase order processes, and net-30 or net-60 payment terms. Know your minimum acceptable terms before entering procurement conversations.
 
@@ -158,7 +158,7 @@ You do not need Salesforce. You need a system that:
 | Airtable | Visual thinkers, custom fields | Free tier available |
 | Pipedrive | Slightly more process-oriented | $15/user/mo |
 
-Set up five pipeline stages in your CRM: Prospect → Discovery → Demo/Eval → Proposal → Closed-Won / Closed-Lost. For each stage, define an exit criterion — what must be true for a deal to move forward.
+Set up five pipeline stages in your CRM: Prospect → Discovery → Demo/Eval → Proposal → Closed-Won / Closed-Lost. For each stage, define an exit criterion - what must be true for a deal to move forward.
 
 Example exit criteria:
 - Prospect → Discovery: Responded to outreach, agreed to a call
@@ -196,13 +196,13 @@ For every closed deal (won or lost), conduct a brief debrief. Ask:
 
 **Loss:** Why did they not buy? Was it price, timing, a competitor, or a feature gap? How far did they get in the process before the deal died?
 
-After 20+ deals, patterns will emerge. The most common win patterns should be emphasized in your sales process. The most common loss reasons should be addressed — either through product, pricing, or sales training.
+After 20+ deals, patterns will emerge. The most common win patterns should be emphasized in your sales process. The most common loss reasons should be addressed - either through product, pricing, or sales training.
 
 Talk to lost prospects directly. Most are willing to give candid feedback in a 15-minute call framed as "we want to learn, not re-pitch you."
 
 ## When to Hire Your First Salesperson
 
-The single biggest mistake early-stage founders make is hiring a salesperson too early — before a repeatable sales process exists.
+The single biggest mistake early-stage founders make is hiring a salesperson too early - before a repeatable sales process exists.
 
 **Hire your first salesperson when:**
 - You have closed at least 10 customers with a consistent process
@@ -216,7 +216,7 @@ The single biggest mistake early-stage founders make is hiring a salesperson too
 - You cannot describe what a good sales call sounds like
 - You think the hire will figure out the process for you
 
-The first salesperson's job is to execute and scale a defined process — not to invent one. If there is no process, they will invent their own, it will not match your ICP, and you will waste 6–9 months.
+The first salesperson's job is to execute and scale a defined process - not to invent one. If there is no process, they will invent their own, it will not match your ICP, and you will waste 6–9 months.
 
 ## Common Funnel Mistakes
 
@@ -228,4 +228,4 @@ The first salesperson's job is to execute and scale a defined process — not to
 
 ## Key Takeaway
 
-A sales funnel is not a sophisticated system — it is a defined map of how prospects become customers, with a clear stage for each step and a metric for each transition. Build the funnel before you hire, track five metrics weekly, run discovery before demos, and use win/loss analysis to improve every quarter. The founders who build repeatable revenue before hiring do so because they treated sales as a system to be designed, not a talent problem to be solved by finding the right person. Design the system first. Then hire people to run it.
+A sales funnel is not a sophisticated system - it is a defined map of how prospects become customers, with a clear stage for each step and a metric for each transition. Build the funnel before you hire, track five metrics weekly, run discovery before demos, and use win/loss analysis to improve every quarter. The founders who build repeatable revenue before hiring do so because they treated sales as a system to be designed, not a talent problem to be solved by finding the right person. Design the system first. Then hire people to run it.

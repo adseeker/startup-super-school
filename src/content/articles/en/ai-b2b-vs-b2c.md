@@ -16,14 +16,14 @@ faqs:
   - question: "What is the main defensibility challenge for B2C AI products?"
     answer: "B2C AI products face rapid churn when AI becomes a commodity feature in consumer apps. If your AI writing tool is competing with AI features built into Google Docs, Microsoft Word, and Apple Pages, the distribution disadvantage is severe. B2C AI defensibility requires strong brand, social/community network effects, or a use case where incumbent apps won't add the feature (for competitive or regulatory reasons)."
   - question: "Why do B2B AI companies tend to have better unit economics?"
-    answer: "Enterprise buyers pay $50-500/month per seat vs $10-20/month for consumer products. They churn less (6-18 month contracts vs month-to-month consumer subscriptions). They provide proprietary training data through usage. And they're buying measurable ROI (time saved, errors reduced), not entertainment or convenience — which makes retention more predictable."
+    answer: "Enterprise buyers pay $50-500/month per seat vs $10-20/month for consumer products. They churn less (6-18 month contracts vs month-to-month consumer subscriptions). They provide proprietary training data through usage. And they're buying measurable ROI (time saved, errors reduced), not entertainment or convenience - which makes retention more predictable."
   - question: "Are there successful B2C AI startup models?"
-    answer: "Yes, in specific niches: entertainment and companionship AI (Character.ai), language learning (Duolingo), AI search (Perplexity), and creative tools (Midjourney, ElevenLabs). The common thread is that these products occupy categories where incumbents can't or won't replicate the functionality — or where the product's social/community dimension creates network effects that offset the commodity AI risk."
+    answer: "Yes, in specific niches: entertainment and companionship AI (Character.ai), language learning (Duolingo), AI search (Perplexity), and creative tools (Midjourney, ElevenLabs). The common thread is that these products occupy categories where incumbents can't or won't replicate the functionality - or where the product's social/community dimension creates network effects that offset the commodity AI risk."
 ---
 
 ## The Default Case for B2B AI
 
-In 2022–2023, many founders launched B2C AI products — AI writing assistants, AI art generators, AI tutors. The results have been mixed. While a few became large businesses, many hit a wall: users tried the product, found it impressive, then churned when the novelty wore off or when comparable features appeared in the tools they already used.
+In 2022–2023, many founders launched B2C AI products - AI writing assistants, AI art generators, AI tutors. The results have been mixed. While a few became large businesses, many hit a wall: users tried the product, found it impressive, then churned when the novelty wore off or when comparable features appeared in the tools they already used.
 
 The structural problem with B2C AI is distribution: you're competing with Microsoft (Office + Copilot), Google (Workspace + Gemini), and Apple (Apple Intelligence) for consumer mindshare. These incumbents have zero-cost distribution to billions of users and are rapidly shipping AI features across their platforms.
 
@@ -45,11 +45,11 @@ B2B AI, by contrast, benefits from a different dynamic: enterprise buyers are bu
 
 B2C is viable when at least one of the following is true:
 
-**Social/community network effects**: Midjourney's Discord community, Character.ai's character marketplace. The social layer makes the product more valuable as it grows — this doesn't commoditize.
+**Social/community network effects**: Midjourney's Discord community, Character.ai's character marketplace. The social layer makes the product more valuable as it grows - this doesn't commoditize.
 
 **Unique content moat**: Duolingo's gamification, structured curriculum, and 20 years of language learning data create a product that can't be replicated by adding "AI" to a translation app.
 
-**Incumbent-free category**: AI companionship, adult content AI, niche creative tools. Google and Microsoft won't enter these categories — leaving the field open.
+**Incumbent-free category**: AI companionship, adult content AI, niche creative tools. Google and Microsoft won't enter these categories - leaving the field open.
 
 **Freemium viral with enterprise expansion**: Start B2C to build distribution, convert to B2B as teams adopt. Notion, Figma, and Slack all followed this path.
 

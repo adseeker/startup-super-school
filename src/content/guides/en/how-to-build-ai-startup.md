@@ -13,7 +13,7 @@ steps:
   - name: "Define your AI edge"
     text: "Write a one-sentence AI edge statement: what your model does better than a human or rule-based system, and why that matters commercially. If you cannot complete it with real numbers, you have a product idea, not an AI startup."
   - name: "Choose your AI approach"
-    text: "Decide whether you are building a model wrapper, a vertical AI application, or an autonomous agent. Each archetype has different margins, moats, and fundraising narratives — pick the one that fits your distribution and data advantages."
+    text: "Decide whether you are building a model wrapper, a vertical AI application, or an autonomous agent. Each archetype has different margins, moats, and fundraising narratives - pick the one that fits your distribution and data advantages."
   - name: "Build your data moat"
     text: "Map every proprietary data source available to you: workflow exhaust, expert annotations, transaction logs. Structure a data flywheel so that more usage produces better training signal, widening your moat over time."
   - name: "Validate with real users"
@@ -21,7 +21,7 @@ steps:
   - name: "Raise AI-credibly"
     text: "Prepare a model card and an inference cost model before your first investor meeting. Investors now expect founders to know their cost per query, accuracy benchmarks, and the path to improving both."
   - name: "Scale your AI stack"
-    text: "Introduce a model abstraction layer early so you can swap providers without rewriting application logic. Set up eval pipelines and latency monitoring from day one — production AI degrades silently without them."
+    text: "Introduce a model abstraction layer early so you can swap providers without rewriting application logic. Set up eval pipelines and latency monitoring from day one - production AI degrades silently without them."
 faqs:
   - question: "What is the difference between an AI startup and a traditional SaaS startup?"
     answer: "An AI startup derives its core value from a model's predictions or generated outputs, not just from software workflow automation. The product can improve with more data (a data flywheel), but it also carries variable inference costs that traditional SaaS does not have. Gross margins for pure AI API wrappers are typically 50–65%, versus 70–85% for traditional SaaS, because model costs sit in COGS."
@@ -32,14 +32,14 @@ faqs:
   - question: "What are the most common failure modes for AI startups?"
     answer: "The three most common failure modes are: building on a single model API without abstraction so a price change breaks the business; shipping a product where AI is a feature rather than the core value driver; and underestimating inference costs at scale, which compresses margins and kills unit economics before the company reaches profitability."
   - question: "Is it better to fine-tune a model or use prompt engineering?"
-    answer: "Start with prompt engineering — it is faster, cheaper, and reversible. Fine-tuning is worth the investment when you have at least 1,000–5,000 high-quality labeled examples, when latency or cost require a smaller model to match a larger one's quality, or when your domain vocabulary is so specialized that base models consistently hallucinate. Most startups that fine-tune too early waste weeks of ML engineering time better spent on user research."
+    answer: "Start with prompt engineering - it is faster, cheaper, and reversible. Fine-tuning is worth the investment when you have at least 1,000–5,000 high-quality labeled examples, when latency or cost require a smaller model to match a larger one's quality, or when your domain vocabulary is so specialized that base models consistently hallucinate. Most startups that fine-tune too early waste weeks of ML engineering time better spent on user research."
 ---
 
 ## Define Your AI Edge
 
 Before writing a single line of code, write this sentence: "We use AI to [do X] for [customer Y] so that [outcome Z] happens 10x faster/cheaper/better than [current alternative]."
 
-If you cannot complete that sentence with real numbers, you do not have an AI startup — you have a product idea that might include AI. The distinction matters enormously for fundraising, hiring, and product decisions.
+If you cannot complete that sentence with real numbers, you do not have an AI startup - you have a product idea that might include AI. The distinction matters enormously for fundraising, hiring, and product decisions.
 
 **The "AI-required" test**: Ask whether the core value proposition collapses without the model. If a sufficiently good spreadsheet template or a VA could deliver 80% of the value, AI is a feature, not the foundation.
 
@@ -70,7 +70,7 @@ Data is the compounding asset that separates AI companies from AI features. A da
 
 **Types of proprietary data**:
 - **Workflow exhaust**: logs of how users interact with your product (clicks, corrections, completions accepted vs rejected)
-- **Expert annotations**: domain specialists labeling outputs as correct or incorrect — especially valuable in medicine, law, and finance
+- **Expert annotations**: domain specialists labeling outputs as correct or incorrect - especially valuable in medicine, law, and finance
 - **Transaction data**: behavioral signals from real decisions (purchases, renewals, escalations)
 - **Feedback loops**: explicit ratings, edits to AI-generated content, re-runs of failed completions
 
@@ -80,7 +80,7 @@ Data is the compounding asset that separates AI companies from AI features. A da
 3. Retrain or fine-tune quarterly using this accumulated signal
 4. Measure improvement in task completion rate or error rate at each cycle
 
-At 10,000 monthly active users generating 50 labeled examples each per month, you accumulate 500,000 labeled examples per month — a dataset most academic labs cannot match in your domain.
+At 10,000 monthly active users generating 50 labeled examples each per month, you accumulate 500,000 labeled examples per month - a dataset most academic labs cannot match in your domain.
 
 ## Validate With Real Users
 
@@ -96,7 +96,7 @@ AI products fail in ways that traditional software products do not. A determinis
 | Error rate | % of outputs containing a factual or structural mistake | <5% for high-stakes tasks |
 | Willingness to pay | % of design partners committing to a paid plan | >30% |
 
-Run a structured 2-week pilot with 5–10 design partners. Give them the product for free in exchange for weekly feedback calls and access to usage logs. Do not interpret silence as satisfaction — users who stop using the tool have already given you feedback.
+Run a structured 2-week pilot with 5–10 design partners. Give them the product for free in exchange for weekly feedback calls and access to usage logs. Do not interpret silence as satisfaction - users who stop using the tool have already given you feedback.
 
 ## Raise AI-Credibly
 
@@ -126,7 +126,7 @@ The bar for AI fundraising has risen sharply since 2023. Investors have seen eno
 
 Scaling an AI product introduces failure modes that do not exist in traditional software: model drift, latency spikes, hallucination rates that shift with prompt structure, and cost curves that surprise you at 10x traffic.
 
-**Model abstraction layer**: Introduce a single interface that wraps all LLM calls from day one. Libraries like LiteLLM or a thin custom wrapper mean you can swap GPT-4o for Claude 3.5 Sonnet or Llama 3 in one config change — not a two-week refactor. This also enables A/B testing models in production.
+**Model abstraction layer**: Introduce a single interface that wraps all LLM calls from day one. Libraries like LiteLLM or a thin custom wrapper mean you can swap GPT-4o for Claude 3.5 Sonnet or Llama 3 in one config change - not a two-week refactor. This also enables A/B testing models in production.
 
 **Eval pipelines**: Set up automated evaluation before you scale. An eval pipeline runs a fixed benchmark suite (50–200 representative queries with known correct answers) on every model change or prompt update. Without it, you will ship regressions silently.
 
@@ -139,4 +139,4 @@ Scaling an AI product introduces failure modes that do not exist in traditional 
 
 ## Key Takeaway
 
-Building an AI startup is not about using the latest model — it is about identifying a workflow where AI creates a quantifiable, defensible advantage and then building a data flywheel that compounds that advantage over time. Start by defining your AI edge precisely, validate it with paying design partners before scaling, and treat inference cost and eval pipelines as first-class engineering concerns from day one. The startups that win will not be the ones with the best prompts; they will be the ones with the best training data and the clearest unit economics.
+Building an AI startup is not about using the latest model - it is about identifying a workflow where AI creates a quantifiable, defensible advantage and then building a data flywheel that compounds that advantage over time. Start by defining your AI edge precisely, validate it with paying design partners before scaling, and treat inference cost and eval pipelines as first-class engineering concerns from day one. The startups that win will not be the ones with the best prompts; they will be the ones with the best training data and the clearest unit economics.

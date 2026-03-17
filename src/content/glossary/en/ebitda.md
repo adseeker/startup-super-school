@@ -1,6 +1,6 @@
 ---
 title: "EBITDA"
-description: "EBITDA measures a company's operating profitability before interest, taxes, depreciation, and amortization — a proxy for core business cash generation."
+description: "EBITDA measures a company's operating profitability before interest, taxes, depreciation, and amortization - a proxy for core business cash generation."
 locale: "en"
 category: "finance"
 tags: ["finance", "metrics", "profitability", "accounting", "valuation", "saas"]
@@ -12,9 +12,9 @@ faqs:
   - question: "What does EBITDA stand for?"
     answer: "EBITDA stands for Earnings Before Interest, Taxes, Depreciation, and Amortization. It measures how much operating profit a business generates before accounting for financing costs (interest), tax obligations, and non-cash accounting charges (depreciation and amortization). It is widely used as a proxy for operating cash flow and for comparing profitability across companies."
   - question: "Why do investors use EBITDA instead of net income?"
-    answer: "Investors use EBITDA because it strips out variables that differ between companies for non-operational reasons — like capital structure (how much debt a company carries) and accounting policies (how assets are depreciated). This makes it easier to compare profitability across businesses in the same industry, regardless of how they're financed or how aggressively they depreciate assets."
+    answer: "Investors use EBITDA because it strips out variables that differ between companies for non-operational reasons - like capital structure (how much debt a company carries) and accounting policies (how assets are depreciated). This makes it easier to compare profitability across businesses in the same industry, regardless of how they're financed or how aggressively they depreciate assets."
   - question: "What is a good EBITDA margin for a startup?"
-    answer: "EBITDA margins vary significantly by industry and stage. Early-stage startups often have negative EBITDA as they invest in growth. SaaS companies at scale typically target EBITDA margins of 20–30%. The Rule of 40 — where growth rate plus EBITDA margin should equal at least 40% — is a common benchmark in SaaS. For most startups, EBITDA becomes a relevant metric only after achieving meaningful revenue scale."
+    answer: "EBITDA margins vary significantly by industry and stage. Early-stage startups often have negative EBITDA as they invest in growth. SaaS companies at scale typically target EBITDA margins of 20–30%. The Rule of 40 - where growth rate plus EBITDA margin should equal at least 40% - is a common benchmark in SaaS. For most startups, EBITDA becomes a relevant metric only after achieving meaningful revenue scale."
   - question: "What are the limitations of EBITDA?"
     answer: "EBITDA has significant limitations. It ignores capital expenditure requirements (a manufacturer needs expensive equipment; EBITDA doesn't reflect this), working capital changes, and actual cash taxes paid. Warren Buffett famously criticizes EBITDA for giving a misleadingly positive picture of profitability. For asset-light software businesses it's more useful; for capital-intensive companies it can be seriously misleading."
 ---
@@ -77,7 +77,7 @@ The multiple varies by growth rate, industry, and market conditions. High-growth
 
 ## When EBITDA Matters for Startups
 
-For pre-revenue and early-stage startups, EBITDA is largely irrelevant — investors focus on growth, product-market fit, and revenue momentum. EBITDA becomes meaningful when:
+For pre-revenue and early-stage startups, EBITDA is largely irrelevant - investors focus on growth, product-market fit, and revenue momentum. EBITDA becomes meaningful when:
 
 - You're approaching or at profitability
 - You're raising growth equity or debt financing
@@ -88,4 +88,4 @@ The **EBITDA margin** (EBITDA as a percentage of revenue) is often more useful t
 
 ## Key Takeaway
 
-EBITDA is a useful tool for measuring and comparing operating profitability — but it's not the same as cash flow or profit. Use it alongside metrics like free cash flow, gross margin, and net income to get the full picture. For SaaS startups specifically, the Rule of 40 (growth rate + EBITDA margin ≥ 40%) is a more relevant and commonly used benchmark than EBITDA in isolation.
+EBITDA is a useful tool for measuring and comparing operating profitability - but it's not the same as cash flow or profit. Use it alongside metrics like free cash flow, gross margin, and net income to get the full picture. For SaaS startups specifically, the Rule of 40 (growth rate + EBITDA margin ≥ 40%) is a more relevant and commonly used benchmark than EBITDA in isolation.

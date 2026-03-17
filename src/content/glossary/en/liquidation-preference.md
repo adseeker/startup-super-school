@@ -13,11 +13,11 @@ seoKeywords: ["liquidation preference startup", "what is liquidation preference"
 
 ## What Is Liquidation Preference?
 
-Liquidation preference is a contractual right given to preferred stockholders — typically venture capital investors — to receive a specified amount of money before common stockholders (founders and employees) receive anything in a liquidation event. A liquidation event includes a company sale, merger, or asset dissolution. It is one of the most economically significant terms in any VC term sheet.
+Liquidation preference is a contractual right given to preferred stockholders - typically venture capital investors - to receive a specified amount of money before common stockholders (founders and employees) receive anything in a liquidation event. A liquidation event includes a company sale, merger, or asset dissolution. It is one of the most economically significant terms in any VC term sheet.
 
 The rationale is straightforward: investors are providing capital at risk. If a startup sells for less than expected, the liquidation preference ensures investors recover their principal before founders and employees see a penny. It is, fundamentally, downside protection for the investor.
 
-Understanding liquidation preference is critical because the type and multiple of preference can radically change how exit proceeds are distributed — particularly in small to medium exits.
+Understanding liquidation preference is critical because the type and multiple of preference can radically change how exit proceeds are distributed - particularly in small to medium exits.
 
 ---
 
@@ -37,7 +37,7 @@ Participating preferred is more aggressive and investor-friendly. Founders shoul
 
 ### 3. Multiple Liquidation Preference (2x, 3x)
 
-The investor receives a **multiple of their investment** — 2x, 3x, or higher — before anyone else sees proceeds. These were common during certain boom cycles but are considered aggressive in standard early-stage deals. A 3x preference means investors get three times their money back before founders receive a single dollar.
+The investor receives a **multiple of their investment** - 2x, 3x, or higher - before anyone else sees proceeds. These were common during certain boom cycles but are considered aggressive in standard early-stage deals. A 3x preference means investors get three times their money back before founders receive a single dollar.
 
 ---
 
@@ -54,25 +54,25 @@ Assume a VC invests **$5M** and owns **25%** of the company. The remaining 75% i
 **Key insight on the $20M exit:**
 
 - Non-participating: founders keep **$15M** (75%)
-- Participating: founders keep **$11.25M** (56%) — a $3.75M difference from one clause
+- Participating: founders keep **$11.25M** (56%) - a $3.75M difference from one clause
 
-At a $100M exit, non-participating and participating converge more closely because investors prefer to convert to common stock anyway. The preference matters most in **small to medium exits** — which are statistically the most common outcome for startups.
+At a $100M exit, non-participating and participating converge more closely because investors prefer to convert to common stock anyway. The preference matters most in **small to medium exits** - which are statistically the most common outcome for startups.
 
 ---
 
 ## The Option Pool Factor
 
-Before calculating distributions, remember that the fully diluted cap table includes the employee stock option pool (ESOP). If the option pool is 15% of the company, the founders' 75% stake above is actually shared between founders and the option pool. The liquidation preference is calculated against the **invested capital**, not the percentage, so the option pool does not affect the investor's preference amount — but it does dilute the effective founder payout from the common pool.
+Before calculating distributions, remember that the fully diluted cap table includes the employee stock option pool (ESOP). If the option pool is 15% of the company, the founders' 75% stake above is actually shared between founders and the option pool. The liquidation preference is calculated against the **invested capital**, not the percentage, so the option pool does not affect the investor's preference amount - but it does dilute the effective founder payout from the common pool.
 
 ---
 
 ## Capped vs. Uncapped Participating Preferred
 
-Some term sheets include a **participation cap** on participating preferred — for example, investors participate until they have received 3x their investment in total (preference + participation), then convert to common. This is a reasonable compromise. Full uncapped participation is the most aggressive structure.
+Some term sheets include a **participation cap** on participating preferred - for example, investors participate until they have received 3x their investment in total (preference + participation), then convert to common. This is a reasonable compromise. Full uncapped participation is the most aggressive structure.
 
 | Structure | Investor-Friendliness | Common in Market? |
 |-----------|----------------------|-------------------|
-| 1x non-participating | Moderate | Yes — standard |
+| 1x non-participating | Moderate | Yes - standard |
 | 1x participating, capped at 3x | High | Occasionally |
 | 1x participating, uncapped | Very high | Less common post-2020 |
 | 2x+ non-participating | Very high | Rare in seed/Series A |
@@ -88,14 +88,14 @@ Liquidation preference works in concert with **anti-dilution provisions**. If th
 
 ## How to Negotiate Liquidation Preference
 
-1. **Push for 1x non-participating** — this is the market standard at seed and Series A. It is a reasonable ask that most reputable investors will accept.
-2. **Resist any multiple above 1x** at early stages — a 2x preference from a seed investor is an aggressive term that signals misaligned incentives.
+1. **Push for 1x non-participating** - this is the market standard at seed and Series A. It is a reasonable ask that most reputable investors will accept.
+2. **Resist any multiple above 1x** at early stages - a 2x preference from a seed investor is an aggressive term that signals misaligned incentives.
 3. **If you cannot avoid participating preferred**, negotiate a participation cap (e.g., 2x–3x total return).
-4. **Understand the stack** — if you have multiple investors with preferences, they are typically paid in reverse chronological order (last in, first out). Later investors often have senior preferences.
-5. **Model every scenario** — build a simple spreadsheet showing founder proceeds at $5M, $10M, $20M, and $50M exits under each proposed preference structure.
+4. **Understand the stack** - if you have multiple investors with preferences, they are typically paid in reverse chronological order (last in, first out). Later investors often have senior preferences.
+5. **Model every scenario** - build a simple spreadsheet showing founder proceeds at $5M, $10M, $20M, and $50M exits under each proposed preference structure.
 
 ---
 
 ## Key Takeaway
 
-Liquidation preference is the mechanism that determines who gets paid first — and how much — when your startup is sold. A 1x non-participating preference is the founder-friendly standard: investors get their money back in a small exit, or convert to common stock in a large one. Participating preferred lets investors do both, meaningfully reducing founder payouts in the exit scenarios that happen most frequently. Always model the preference against multiple exit scenarios before signing, and prioritize eliminating participation over negotiating valuation — a lower valuation with clean terms is usually better for founders than a higher valuation with aggressive preferences.
+Liquidation preference is the mechanism that determines who gets paid first - and how much - when your startup is sold. A 1x non-participating preference is the founder-friendly standard: investors get their money back in a small exit, or convert to common stock in a large one. Participating preferred lets investors do both, meaningfully reducing founder payouts in the exit scenarios that happen most frequently. Always model the preference against multiple exit scenarios before signing, and prioritize eliminating participation over negotiating valuation - a lower valuation with clean terms is usually better for founders than a higher valuation with aggressive preferences.

@@ -22,7 +22,7 @@ faqs:
 
 ## What Is an Embedding?
 
-An embedding is a list of numbers — a vector — that represents the meaning of a piece of text. When you embed the sentence "startup funding is hard," you get back something like `[0.23, -0.87, 0.41, ...]` — potentially thousands of numbers. Similar meanings produce numerically similar vectors, which means you can find semantically related content by comparing distances between vectors.
+An embedding is a list of numbers - a vector - that represents the meaning of a piece of text. When you embed the sentence "startup funding is hard," you get back something like `[0.23, -0.87, 0.41, ...]` - potentially thousands of numbers. Similar meanings produce numerically similar vectors, which means you can find semantically related content by comparing distances between vectors.
 
 This is the mathematical foundation of modern AI search, recommendation, and retrieval systems.
 
@@ -36,7 +36,7 @@ For example:
 
 ## Why Embeddings Matter for Startups
 
-**Semantic search**: Traditional keyword search misses synonyms and related concepts. Embedding-based search finds documents based on meaning, not exact word matches — dramatically improving search quality.
+**Semantic search**: Traditional keyword search misses synonyms and related concepts. Embedding-based search finds documents based on meaning, not exact word matches - dramatically improving search quality.
 
 **RAG pipelines**: Embeddings power the retrieval step in Retrieval-Augmented Generation. You embed all your documents once, store the vectors in a vector database, then at query time embed the user's question and find the most similar document chunks to inject into the LLM prompt.
 
@@ -57,4 +57,4 @@ For most startup use cases, `text-embedding-3-small` offers the best cost-to-qua
 
 ## Key Takeaway
 
-Embeddings convert meaning into math — enabling AI products to find relevant information based on semantic similarity rather than exact keywords. Every startup building search, RAG, or personalization features needs to understand embeddings. The good news: generating embeddings is cheap, fast, and well-supported by every major AI provider.
+Embeddings convert meaning into math - enabling AI products to find relevant information based on semantic similarity rather than exact keywords. Every startup building search, RAG, or personalization features needs to understand embeddings. The good news: generating embeddings is cheap, fast, and well-supported by every major AI provider.

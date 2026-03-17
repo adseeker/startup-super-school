@@ -1,6 +1,6 @@
 ---
 title: "The Real Cost of an AI Startup"
-description: "A clear-eyed breakdown of AI startup costs — infrastructure, inference, people, and what unit economics actually look like at different revenue stages."
+description: "A clear-eyed breakdown of AI startup costs - infrastructure, inference, people, and what unit economics actually look like at different revenue stages."
 locale: "en"
 category: "ai"
 tags: ["ai", "startup", "costs", "infrastructure", "finance", "unit-economics"]
@@ -16,7 +16,7 @@ faqs:
   - question: "What is a typical AI inference cost per user per month?"
     answer: "It varies enormously by product type. A lightweight AI writing assistant might cost $0.05–$0.50/user/month in API fees. A document analysis product processing dozens of pages per user could cost $2–$10/user/month. A code generation tool with heavy usage could hit $10–$30/user/month. The key question is whether your pricing model scales with these variable costs or creates margin compression at high usage."
   - question: "How do you model gross margins for an AI startup?"
-    answer: "Start with your average revenue per user (ARPU), subtract your direct AI inference cost per user, hosting, and support costs to get contribution margin per user. A healthy AI SaaS business targets 60-70%+ gross margins. Many AI startups initially run at 40-50% due to high inference costs — this is acceptable early if there's a clear path to improvement through model optimization, caching, or tiering to cheaper models."
+    answer: "Start with your average revenue per user (ARPU), subtract your direct AI inference cost per user, hosting, and support costs to get contribution margin per user. A healthy AI SaaS business targets 60-70%+ gross margins. Many AI startups initially run at 40-50% due to high inference costs - this is acceptable early if there's a clear path to improvement through model optimization, caching, or tiering to cheaper models."
   - question: "At what scale does it make sense to self-host AI models?"
     answer: "Self-hosting typically becomes cost-effective when monthly AI API spend consistently exceeds $2,000–$5,000. A GPU instance (A100) on a cloud provider costs roughly $1,500–$3,000/month and can serve millions of tokens per day. Below the $2K/month threshold, managed API simplicity and reliability outweigh the infrastructure overhead of self-hosting."
 ---
@@ -32,7 +32,7 @@ The three most common financial surprises AI founders encounter:
 
 ## AI Inference Costs
 
-Inference — calling your LLM API to serve user requests — is typically the largest variable cost in an AI product. Unlike traditional SaaS where serving an additional user costs near-zero marginal compute, every AI interaction has a material cost.
+Inference - calling your LLM API to serve user requests - is typically the largest variable cost in an AI product. Unlike traditional SaaS where serving an additional user costs near-zero marginal compute, every AI interaction has a material cost.
 
 **Sample inference cost calculations** (at GPT-4o pricing, $2.50/$10 per 1M in/out tokens):
 
@@ -69,7 +69,7 @@ At 10,000 users, these costs multiply by 10x. Model the scaling curve before pri
 
 ML engineers command 20-40% salary premiums over generalist software engineers. In San Francisco, a senior ML engineer costs $250,000–$400,000 all-in compensation. Even "AI-savvy" generalist engineers who can work with LLM APIs and build AI systems effectively command a 15-25% premium.
 
-The implication: AI startups have higher people costs per engineer than traditional SaaS, even when the product is "just calling an API." The team needs to evaluate, fine-tune, and optimize AI systems — that requires real ML literacy.
+The implication: AI startups have higher people costs per engineer than traditional SaaS, even when the product is "just calling an API." The team needs to evaluate, fine-tune, and optimize AI systems - that requires real ML literacy.
 
 ## Gross Margin Math
 
@@ -86,4 +86,4 @@ A startup with 50% gross margins at $500K ARR that reaches 70% by $3M ARR has a 
 
 ## Key Takeaway
 
-AI startup unit economics are fundamentally different from traditional SaaS — variable inference costs mean margins compress with usage unless you actively manage model costs. Model the inference costs for your specific use case before you price your product. Build a margin improvement roadmap. And never let "we'll optimize later" become an excuse for not understanding your cost structure from the start.
+AI startup unit economics are fundamentally different from traditional SaaS - variable inference costs mean margins compress with usage unless you actively manage model costs. Model the inference costs for your specific use case before you price your product. Build a margin improvement roadmap. And never let "we'll optimize later" become an excuse for not understanding your cost structure from the start.

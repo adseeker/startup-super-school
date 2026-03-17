@@ -14,7 +14,7 @@ acronym: "N/A"
 
 ## What Is Equity Dilution?
 
-**Equity dilution** occurs when a company issues new shares, which increases the total number of shares outstanding and decreases the percentage of the company owned by each existing shareholder. The existing shareholders' absolute number of shares does not change — only their proportional ownership shrinks.
+**Equity dilution** occurs when a company issues new shares, which increases the total number of shares outstanding and decreases the percentage of the company owned by each existing shareholder. The existing shareholders' absolute number of shares does not change - only their proportional ownership shrinks.
 
 Dilution is a fundamental and unavoidable feature of startup financing. Every time a company raises a new round, creates an option pool, issues warrants, or converts SAFEs and convertible notes, the total share count grows and every existing shareholder's percentage ownership decreases.
 
@@ -50,7 +50,7 @@ A startup has 8,000,000 shares outstanding. The two founders each own 4,000,000 
 |-------------|--------|-------------|--------------|
 | Founder A | 4,000,000 | 50% | 40% |
 | Founder B | 4,000,000 | 50% | 40% |
-| Seed Investor | 2,000,000 | — | 20% |
+| Seed Investor | 2,000,000 | - | 20% |
 | **Total** | **10,000,000** | **100%** | **100%** |
 
 Both founders were diluted by 10 percentage points each, even though neither sold a single share. Their 4,000,000 shares represent a smaller slice of a larger pie.
@@ -61,25 +61,25 @@ Both founders were diluted by 10 percentage points each, even though neither sol
 
 Dilution is not limited to funding rounds. It happens whenever new shares are created:
 
-1. **Priced equity rounds** (Seed, Series A, B, C, etc.) — the most common source
-2. **Option pool creation or expansion** — shares reserved for employee grants dilute all existing shareholders
-3. **SAFE and convertible note conversion** — when these instruments convert, new shares are issued
-4. **Warrant exercises** — advisors, partners, or lenders exercising warrants create new shares
-5. **Secondary transactions** — if the company issues shares in a secondary sale, dilution may occur
+1. **Priced equity rounds** (Seed, Series A, B, C, etc.) - the most common source
+2. **Option pool creation or expansion** - shares reserved for employee grants dilute all existing shareholders
+3. **SAFE and convertible note conversion** - when these instruments convert, new shares are issued
+4. **Warrant exercises** - advisors, partners, or lenders exercising warrants create new shares
+5. **Secondary transactions** - if the company issues shares in a secondary sale, dilution may occur
 
 ### The Option Pool Shuffle
 
-A particularly impactful source of dilution for founders is the **option pool shuffle**. Investors typically require that a new option pool (commonly 10–20% of post-money shares) be created before the round closes — not after. This means the new option pool dilutes founders and existing investors before the round price is calculated, effectively reducing the founders' stake without reducing the investor's ownership percentage.
+A particularly impactful source of dilution for founders is the **option pool shuffle**. Investors typically require that a new option pool (commonly 10–20% of post-money shares) be created before the round closes - not after. This means the new option pool dilutes founders and existing investors before the round price is calculated, effectively reducing the founders' stake without reducing the investor's ownership percentage.
 
 ---
 
 ## Anti-Dilution Provisions
 
-Anti-dilution provisions protect investors (not founders) in the event the company raises a future round at a lower valuation — a "down round." These provisions adjust the conversion price of the investor's preferred shares downward, giving them more shares to compensate for the lower valuation.
+Anti-dilution provisions protect investors (not founders) in the event the company raises a future round at a lower valuation - a "down round." These provisions adjust the conversion price of the investor's preferred shares downward, giving them more shares to compensate for the lower valuation.
 
 ### Broad-Based Weighted Average (BBWA)
 
-The most commonly used and founder-friendly form. The new conversion price is calculated using a weighted average formula that accounts for the total number of shares outstanding — not just the shares in the new, lower-priced round.
+The most commonly used and founder-friendly form. The new conversion price is calculated using a weighted average formula that accounts for the total number of shares outstanding - not just the shares in the new, lower-priced round.
 
 **Effect**: The adjustment is moderate and proportional. Founders experience some additional dilution but not a catastrophic amount.
 
@@ -87,7 +87,7 @@ The most commonly used and founder-friendly form. The new conversion price is ca
 
 The most aggressive form. The investor's conversion price resets to the price per share in the down round, regardless of how many new shares were sold at that price.
 
-**Effect**: Even if just one share is sold in a down round, the full ratchet clause adjusts all preferred shares downward to that price — potentially massively diluting common shareholders (founders and employees).
+**Effect**: Even if just one share is sold in a down round, the full ratchet clause adjusts all preferred shares downward to that price - potentially massively diluting common shareholders (founders and employees).
 
 | Anti-Dilution Type | How It Works | Founder Impact |
 |--------------------|--------------|----------------|
@@ -112,7 +112,7 @@ Dilution reduces your ownership percentage, but it does not reduce the value of 
 | After Series A (20% dilution) | 32% | $40,000,000 | $12,800,000 |
 | After Series B (15% dilution) | 27% | $120,000,000 | $32,400,000 |
 
-In absolute terms, each round of dilution increased the founder's wealth significantly — even as the ownership percentage declined. This is why experienced founders focus on the quality and terms of each round, not just on minimizing dilution at all costs.
+In absolute terms, each round of dilution increased the founder's wealth significantly - even as the ownership percentage declined. This is why experienced founders focus on the quality and terms of each round, not just on minimizing dilution at all costs.
 
 ---
 
@@ -122,7 +122,7 @@ Founders should model their fully diluted ownership at each anticipated stage of
 
 | Funding Stage | Typical Dilution Per Round | Founder Ownership (2 founders) |
 |---------------|---------------------------|-------------------------------|
-| Founding | — | 80–100% (after initial option pool) |
+| Founding | - | 80–100% (after initial option pool) |
 | Pre-Seed / Seed | 15–25% | 55–70% |
 | Series A | 20–25% | 40–55% |
 | Series B | 15–20% | 30–45% |
@@ -144,4 +144,4 @@ These are approximate figures. Actual outcomes vary widely based on option pool 
 
 ## Key Takeaway
 
-Equity dilution is the price founders pay for outside capital. Every funding round, option grant, and instrument conversion shrinks your ownership percentage — but if the capital is deployed well, the absolute value of your stake should grow with each round. What matters is not avoiding dilution entirely, but understanding it precisely: model your ownership across every anticipated round, pay close attention to anti-dilution provisions in term sheets (insist on broad-based weighted average), and always account for option pool creation and instrument conversion in your cap table projections. A founder who owns 20% of a $500M company has done far better than one who guarded their 50% stake and never scaled.
+Equity dilution is the price founders pay for outside capital. Every funding round, option grant, and instrument conversion shrinks your ownership percentage - but if the capital is deployed well, the absolute value of your stake should grow with each round. What matters is not avoiding dilution entirely, but understanding it precisely: model your ownership across every anticipated round, pay close attention to anti-dilution provisions in term sheets (insist on broad-based weighted average), and always account for option pool creation and instrument conversion in your cap table projections. A founder who owns 20% of a $500M company has done far better than one who guarded their 50% stake and never scaled.

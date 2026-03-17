@@ -15,9 +15,9 @@ seoKeywords: ["due diligence startup", "what is due diligence", "investor due di
 
 **Due diligence** (commonly abbreviated DD) is the structured investigation that an investor conducts before formally closing an investment. It is the process of verifying that the claims made during fundraising are accurate, the risks are understood, and the terms of the investment are justified.
 
-Due diligence is triggered by a signed term sheet. Before the term sheet, investors may conduct light preliminary research — but the formal, comprehensive process begins once both parties have agreed to the headline terms and the investor is moving toward committing capital.
+Due diligence is triggered by a signed term sheet. Before the term sheet, investors may conduct light preliminary research - but the formal, comprehensive process begins once both parties have agreed to the headline terms and the investor is moving toward committing capital.
 
-Think of it this way: **the pitch earns the term sheet; due diligence closes — or kills — the deal.**
+Think of it this way: **the pitch earns the term sheet; due diligence closes - or kills - the deal.**
 
 ## DD Timeline
 
@@ -25,10 +25,10 @@ The duration of due diligence varies significantly by stage:
 
 | Stage | Typical DD Duration | Depth |
 |-------|--------------------|----|
-| Angel / Pre-seed | 1–2 weeks | Light — primarily founder reference checks and gut feel |
-| Seed | 2–4 weeks | Moderate — financials, legal basics, product demo, customer calls |
-| Series A | 4–8 weeks | Thorough — full financial, legal, technical, market |
-| Series B+ | 6–12 weeks | Exhaustive — may include third-party legal counsel, accounting firm, and technical auditors |
+| Angel / Pre-seed | 1–2 weeks | Light - primarily founder reference checks and gut feel |
+| Seed | 2–4 weeks | Moderate - financials, legal basics, product demo, customer calls |
+| Series A | 4–8 weeks | Thorough - full financial, legal, technical, market |
+| Series B+ | 6–12 weeks | Exhaustive - may include third-party legal counsel, accounting firm, and technical auditors |
 
 ## Areas Covered in Due Diligence
 
@@ -43,7 +43,7 @@ The duration of due diligence varies significantly by stage:
 ### Legal DD
 - Certificate of incorporation and corporate structure
 - All equity agreements (SAFEs, convertible notes, stock purchase agreements)
-- Intellectual property assignments — do employees and contractors have signed IP assignment agreements?
+- Intellectual property assignments - do employees and contractors have signed IP assignment agreements?
 - Patent filings and trademark registrations
 - Material contracts (customer agreements, vendor contracts, NDAs)
 - Employment agreements and any non-compete or non-solicitation clauses
@@ -89,12 +89,12 @@ Tools commonly used: Notion, Google Drive (with organized folder structure), Doc
 
 These are the findings that most commonly cause investors to withdraw or reprice after due diligence:
 
-- **IP ownership gaps** — a contractor built core technology without signing an IP assignment; the company does not own its own product
-- **Cap table problems** — a missing co-founder with unvested shares, a messy SAFE stack with onerous terms, or a prior investor with blocking rights
-- **Customer concentration** — one customer represents >40% of revenue; losing them is an existential event
-- **Inconsistent financials** — numbers in the deck do not match the actual financials
-- **Reference check failures** — a founder has a documented history of dishonesty or team dysfunction
-- **Undisclosed litigation** — active legal disputes that were not mentioned during the process
+- **IP ownership gaps** - a contractor built core technology without signing an IP assignment; the company does not own its own product
+- **Cap table problems** - a missing co-founder with unvested shares, a messy SAFE stack with onerous terms, or a prior investor with blocking rights
+- **Customer concentration** - one customer represents >40% of revenue; losing them is an existential event
+- **Inconsistent financials** - numbers in the deck do not match the actual financials
+- **Reference check failures** - a founder has a documented history of dishonesty or team dysfunction
+- **Undisclosed litigation** - active legal disputes that were not mentioned during the process
 
 ## How DD Depth Differs by Stage
 
@@ -102,8 +102,8 @@ At the **angel and pre-seed stage**, due diligence is almost entirely qualitativ
 
 At **Series A**, a professional venture firm will assign an analyst and an associate to lead DD, with a general partner overseeing. They will verify every material claim, call 5–10 customers, engage legal counsel for document review, and potentially bring in a technical advisor to assess the codebase.
 
-At **Series B and beyond**, institutional investors may hire third-party accounting firms for financial audits, engage cybersecurity firms for technical assessments, and retain outside legal counsel to review all material contracts. This is not unusual and should not alarm founders — it is standard practice for checks of $20M+.
+At **Series B and beyond**, institutional investors may hire third-party accounting firms for financial audits, engage cybersecurity firms for technical assessments, and retain outside legal counsel to review all material contracts. This is not unusual and should not alarm founders - it is standard practice for checks of $20M+.
 
 ## Key Takeaway
 
-Due diligence is not an obstacle — it is a founder's opportunity to demonstrate that the business is exactly what was described in the pitch. Founders who maintain a clean data room, keep their cap table organized, and have signed IP assignments from day one move through DD in weeks rather than months. The single most common deal-killer in DD is not a bad business — it is administrative negligence that creates legal ambiguity around ownership, contracts, or financial accuracy.
+Due diligence is not an obstacle - it is a founder's opportunity to demonstrate that the business is exactly what was described in the pitch. Founders who maintain a clean data room, keep their cap table organized, and have signed IP assignments from day one move through DD in weeks rather than months. The single most common deal-killer in DD is not a bad business - it is administrative negligence that creates legal ambiguity around ownership, contracts, or financial accuracy.

@@ -1,6 +1,6 @@
 ---
 title: "Equity for Early Employees Explained"
-description: "How to structure stock option grants for early hires — covering grant sizes, vesting, strike prices, and how to communicate equity fairly."
+description: "How to structure stock option grants for early hires - covering grant sizes, vesting, strike prices, and how to communicate equity fairly."
 locale: "en"
 category: "equity"
 tags: ["team", "equity", "hiring", "compensation", "founders", "culture", "stock options"]
@@ -18,12 +18,12 @@ faqs:
   - question: "What happens to employee equity if the company is acquired?"
     answer: "It depends on the acquisition terms and the employee's agreement. In a single-trigger acceleration clause, unvested equity immediately vests upon acquisition. In a double-trigger clause (more common), unvested equity only accelerates if the employee is also terminated within a set window after the acquisition. Some employees receive nothing on their unvested equity if neither trigger applies. Always clarify acceleration provisions before accepting an offer."
   - question: "Should you tell employees what their equity is worth?"
-    answer: "You should give employees enough information to assess the value — including the current 409A valuation, total shares outstanding, and your current preferred share price from the last funding round. Don't overstate upside or promise outcomes. Be honest about dilution risk and the fact that options have value only at a liquidity event. Employees who understand their equity are more motivated and less likely to feel misled if outcomes disappoint."
+    answer: "You should give employees enough information to assess the value - including the current 409A valuation, total shares outstanding, and your current preferred share price from the last funding round. Don't overstate upside or promise outcomes. Be honest about dilution risk and the fact that options have value only at a liquidity event. Employees who understand their equity are more motivated and less likely to feel misled if outcomes disappoint."
 ---
 
 ## Why Early Employee Equity Is a Founder's Most Important Hiring Tool
 
-The first 10–20 employees you hire will define your company's trajectory. They take on enormous risk — leaving stable jobs, accepting below-market salaries, betting on you and your vision. Equity is how you compensate them for that risk and align their incentives with the company's long-term success.
+The first 10–20 employees you hire will define your company's trajectory. They take on enormous risk - leaving stable jobs, accepting below-market salaries, betting on you and your vision. Equity is how you compensate them for that risk and align their incentives with the company's long-term success.
 
 Done right, equity makes early employees think and act like owners. Done wrong, it creates confusion, resentment, and attrition at the worst possible time.
 
@@ -31,7 +31,7 @@ Done right, equity makes early employees think and act like owners. Done wrong, 
 
 Most early employees receive **stock options** rather than actual shares. An option is the right to buy shares at a fixed price (the **strike price**, set at the current 409A valuation) at some point in the future.
 
-The upside: if the company grows, the fair market value of shares rises while the strike price stays fixed — giving the employee a real financial gain when they exercise.
+The upside: if the company grows, the fair market value of shares rises while the strike price stays fixed - giving the employee a real financial gain when they exercise.
 
 The risk: options are only valuable if there's a liquidity event (acquisition or IPO) and if the company's value exceeds the strike price.
 
@@ -62,13 +62,13 @@ Month 13–48:  ~2.08% vests each month
 Month 48:     100% fully vested
 ```
 
-The cliff protects against early departures — if someone leaves in month 6, they walk away with nothing, which is fair given the minimal time they've contributed.
+The cliff protects against early departures - if someone leaves in month 6, they walk away with nothing, which is fair given the minimal time they've contributed.
 
 ## Key Terms to Get Right
 
-**Strike price**: Set at the 409A valuation at time of grant. Must be at fair market value — below-market grants create tax problems for employees (IRC Section 409A penalties).
+**Strike price**: Set at the 409A valuation at time of grant. Must be at fair market value - below-market grants create tax problems for employees (IRC Section 409A penalties).
 
-**Exercise window**: The time an employee has to buy their shares after leaving. The standard is 90 days — dangerously short for most employees, who can't afford to pay the exercise price and taxes. Some progressive companies offer 5–10 year windows.
+**Exercise window**: The time an employee has to buy their shares after leaving. The standard is 90 days - dangerously short for most employees, who can't afford to pay the exercise price and taxes. Some progressive companies offer 5–10 year windows.
 
 **Post-termination exercise (PTE)**: If your exercise window is 90 days, most employees will lose their options when they leave. This is increasingly seen as unfair and out of step with best practices. Consider offering longer windows for employees with 2+ years of tenure.
 
@@ -81,9 +81,9 @@ Most employees receive an equity grant without understanding what it means. Your
 1. **Explain the grant size** in options and percentage of fully diluted shares
 2. **Share the current valuation** (409A and last round preferred price)
 3. **Explain the vesting schedule** clearly, including the cliff
-4. **Acknowledge dilution** — their percentage will decrease in future rounds
-5. **Give realistic scenarios** — what the options might be worth at different exit valuations
-6. **Never overpromise** — employees who feel misled on equity become toxic
+4. **Acknowledge dilution** - their percentage will decrease in future rounds
+5. **Give realistic scenarios** - what the options might be worth at different exit valuations
+6. **Never overpromise** - employees who feel misled on equity become toxic
 
 ## Refresh Grants: Retaining Long-Tenured Employees
 

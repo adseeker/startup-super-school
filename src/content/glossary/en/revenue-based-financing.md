@@ -14,7 +14,7 @@ seoKeywords: ["revenue-based financing startup", "what is revenue-based financin
 
 ## What Is Revenue-Based Financing?
 
-**Revenue-based financing (RBF)** is a form of startup funding in which a company receives a lump sum of capital in exchange for agreeing to repay that amount — plus a fixed fee — as a percentage of its monthly revenue. There is no equity given up, no fixed monthly payment, and no personal guarantee required. The repayment automatically accelerates in strong months and slows in weak months.
+**Revenue-based financing (RBF)** is a form of startup funding in which a company receives a lump sum of capital in exchange for agreeing to repay that amount - plus a fixed fee - as a percentage of its monthly revenue. There is no equity given up, no fixed monthly payment, and no personal guarantee required. The repayment automatically accelerates in strong months and slows in weak months.
 
 The defining feature is the **repayment cap**: the total amount owed is typically **1.5× to 3×** the original investment. Once that cap is reached, the obligation is fully satisfied. The lender takes no ongoing ownership stake.
 
@@ -27,7 +27,7 @@ Here is a concrete example:
 - **Remittance rate**: 5% of monthly gross revenue
 - **Current MRR**: $100,000
 
-At $100,000 MRR and a 5% remittance rate, the company pays back $5,000 per month. At that rate, it takes **150 months** to fully repay — but that assumes revenue never grows. If MRR grows to $300,000, the monthly payment becomes $15,000, and the total repayment period compresses to roughly **50 months**.
+At $100,000 MRR and a 5% remittance rate, the company pays back $5,000 per month. At that rate, it takes **150 months** to fully repay - but that assumes revenue never grows. If MRR grows to $300,000, the monthly payment becomes $15,000, and the total repayment period compresses to roughly **50 months**.
 
 In practice, RBF providers model repayment over a **12 to 36 month horizon** and set the remittance rate accordingly based on expected revenue trajectory.
 
@@ -60,9 +60,9 @@ Some traditional venture debt providers (Lighter Capital, Arc) offer RBF-adjacen
 Revenue-based financing is well-suited to companies that meet most of these criteria:
 
 - **$500K–$10M ARR** with predictable, recurring revenue
-- **Profitable or near-profitable** — lenders need confidence that revenue will be maintained
-- **Gross margins above 50%** — the repayment comes from revenue, so thin margins make it painful
-- **Doesn't want to give up equity** — particularly relevant for founders who are close to profitability and don't want dilution from a round that would only fund bridge operations
+- **Profitable or near-profitable** - lenders need confidence that revenue will be maintained
+- **Gross margins above 50%** - the repayment comes from revenue, so thin margins make it painful
+- **Doesn't want to give up equity** - particularly relevant for founders who are close to profitability and don't want dilution from a round that would only fund bridge operations
 - **Specific, bounded use case**: hiring one sales rep, funding one expansion into a new market, or bridging between fundraising rounds
 
 ## Who RBF Is Wrong For
@@ -76,20 +76,20 @@ RBF is a poor fit for:
 
 ## The Cost of RBF vs. the Cost of Equity
 
-This comparison is often misunderstood. The cost of RBF (a 1.5–2× cap) looks expensive in absolute terms — you are paying 50–100% more than you borrowed. But compared to equity, the calculation depends entirely on your eventual outcome:
+This comparison is often misunderstood. The cost of RBF (a 1.5–2× cap) looks expensive in absolute terms - you are paying 50–100% more than you borrowed. But compared to equity, the calculation depends entirely on your eventual outcome:
 
-**If the company succeeds**: A $500K seed investment at a $5M post-money valuation represents 10% ownership. If the company sells for $50M, that 10% is worth $5M — a 10× return on $500K, far more expensive than $250K–$500K in RBF fees. At a $200M exit, that seed equity costs the founder $20M in foregone value.
+**If the company succeeds**: A $500K seed investment at a $5M post-money valuation represents 10% ownership. If the company sells for $50M, that 10% is worth $5M - a 10× return on $500K, far more expensive than $250K–$500K in RBF fees. At a $200M exit, that seed equity costs the founder $20M in foregone value.
 
 **If the company fails**: RBF is more expensive. The equity investors get nothing; the RBF lender may have already received partial repayments.
 
-At early-stage valuations, **equity is structurally more expensive than RBF if the company succeeds** — the question is whether you have enough conviction in your outcome to prefer RBF.
+At early-stage valuations, **equity is structurally more expensive than RBF if the company succeeds** - the question is whether you have enough conviction in your outcome to prefer RBF.
 
 ## The Rise of RBF as an Asset Class
 
-Revenue-based financing existed informally for decades (music royalty advances, film distribution deals), but became a recognized startup financing category around 2018–2020. The rise of SaaS — with its predictable, subscription-based revenue — made RBF structurally attractive as an asset class for lenders: the risk profile of recurring SaaS revenue is closer to a bond than a venture bet.
+Revenue-based financing existed informally for decades (music royalty advances, film distribution deals), but became a recognized startup financing category around 2018–2020. The rise of SaaS - with its predictable, subscription-based revenue - made RBF structurally attractive as an asset class for lenders: the risk profile of recurring SaaS revenue is closer to a bond than a venture bet.
 
-The 2021–22 downturn significantly tested the RBF market. Several providers that had underwritten aggressively against growth assumptions faced repayment shortfalls when portfolio companies missed projections. The post-2022 RBF market has become more conservative in underwriting — requiring stronger margins, lower burn, and longer revenue track records.
+The 2021–22 downturn significantly tested the RBF market. Several providers that had underwritten aggressively against growth assumptions faced repayment shortfalls when portfolio companies missed projections. The post-2022 RBF market has become more conservative in underwriting - requiring stronger margins, lower burn, and longer revenue track records.
 
 ## Key Takeaway
 
-Revenue-based financing is a legitimate, often overlooked tool for profitable or near-profitable SaaS founders who want growth capital without dilution. It works best when the use of proceeds is specific, the revenue is predictable, and the founder understands that the 1.5–2× repayment cap — while seemingly high in absolute terms — is almost always cheaper than giving up equity at early-stage valuations if the company ultimately succeeds.
+Revenue-based financing is a legitimate, often overlooked tool for profitable or near-profitable SaaS founders who want growth capital without dilution. It works best when the use of proceeds is specific, the revenue is predictable, and the founder understands that the 1.5–2× repayment cap - while seemingly high in absolute terms - is almost always cheaper than giving up equity at early-stage valuations if the company ultimately succeeds.

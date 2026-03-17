@@ -1,6 +1,6 @@
 ---
 title: "How to Build a Go-to-Market Strategy"
-description: "A step-by-step guide to building a GTM strategy — ICP, channels, sales motion, pricing, and metrics that drive real revenue."
+description: "A step-by-step guide to building a GTM strategy - ICP, channels, sales motion, pricing, and metrics that drive real revenue."
 locale: "en"
 category: "growth"
 tags: ["growth", "GTM", "sales", "marketing", "strategy"]
@@ -25,7 +25,7 @@ A GTM strategy answers five questions:
 4. What sales motion converts them?
 5. How do you measure success?
 
-Get these five right in the right sequence and growth becomes a system. Get them wrong — or skip straight to tactics — and you will spend months generating activity with no revenue to show for it.
+Get these five right in the right sequence and growth becomes a system. Get them wrong - or skip straight to tactics - and you will spend months generating activity with no revenue to show for it.
 
 ## Component 1: Define Your Ideal Customer Profile
 
@@ -47,7 +47,7 @@ Build your ICP using three layers:
 
 ### Technographics
 
-What tools do they already use? ICP customers for a sales automation tool might already use Salesforce and LinkedIn Sales Navigator — meaning they are sophisticated enough to buy your product but not so large they need enterprise-grade compliance.
+What tools do they already use? ICP customers for a sales automation tool might already use Salesforce and LinkedIn Sales Navigator - meaning they are sophisticated enough to buy your product but not so large they need enterprise-grade compliance.
 
 ### Behavioral Signals
 
@@ -57,7 +57,7 @@ What actions indicate they are ready to buy? Examples:
 - Job postings for SDRs (building a sales team, need tooling)
 - Competitor customer reviews mentioning frustration with a specific gap
 
-**ICP validation exercise:** List your 10 best current customers. Find what they have in common across all three layers. That pattern *is* your ICP. If you have no customers yet, list the 10 prospects you are most excited about and hypothesize — then validate with interviews.
+**ICP validation exercise:** List your 10 best current customers. Find what they have in common across all three layers. That pattern *is* your ICP. If you have no customers yet, list the 10 prospects you are most excited about and hypothesize - then validate with interviews.
 
 ## Component 2: Craft Your Value Proposition
 
@@ -69,10 +69,10 @@ Your value proposition is not a tagline. It is a precise statement of three thin
 
 A strong value proposition template:
 
-> "We help [ICP] who struggle with [problem] achieve [specific outcome] in [timeframe or condition] — unlike [alternative], which [key limitation]."
+> "We help [ICP] who struggle with [problem] achieve [specific outcome] in [timeframe or condition] - unlike [alternative], which [key limitation]."
 
 Example for a B2B SaaS:
-> "We help Series A SaaS companies who struggle to onboard enterprise customers achieve a 60-day time-to-value — unlike their current manual process, which takes 4–6 months and relies on the CS team."
+> "We help Series A SaaS companies who struggle to onboard enterprise customers achieve a 60-day time-to-value - unlike their current manual process, which takes 4–6 months and relies on the CS team."
 
 Write this statement before you build any marketing asset. Every piece of outreach, every landing page, every demo script should be a restatement of this sentence.
 
@@ -91,7 +91,7 @@ The right channel depends on your Average Contract Value (ACV) and where your IC
 | Partnerships | Established adjacent markets | $5K+ | Slow |
 | Paid acquisition | Consumer, high-volume B2B | <$2K | Fast |
 
-**Choosing your channel:** If your ACV is above $20K, you almost certainly need outbound or partnerships — content alone will not close deals fast enough. If your ACV is below $500, you cannot afford a human sales motion; PLG or paid acquisition is required.
+**Choosing your channel:** If your ACV is above $20K, you almost certainly need outbound or partnerships - content alone will not close deals fast enough. If your ACV is below $500, you cannot afford a human sales motion; PLG or paid acquisition is required.
 
 ## Component 4: Choose Your Sales Motion
 
@@ -115,7 +115,7 @@ Most seed-stage startups should start with inside sales even if they intend to m
 
 ## Component 5: Pricing and Packaging as GTM
 
-Pricing is not a finance decision — it is a GTM decision. How you package and price your product determines which channel is viable and which sales motion is possible.
+Pricing is not a finance decision - it is a GTM decision. How you package and price your product determines which channel is viable and which sales motion is possible.
 
 **Three pricing principles for GTM:**
 
@@ -147,7 +147,7 @@ Set these metrics from day one. They tell you where your GTM is broken.
 | Time-to-close | Days from first contact to signed contract | Varies by ACV |
 | Win rate vs. specific competitors | % of deals won when X is in the process | Track for each named rival |
 
-Review these metrics weekly. If CAC is spiking, a channel is degrading. If demo-to-close is dropping, your demo or your proposal is broken — not your product.
+Review these metrics weekly. If CAC is spiking, a channel is degrading. If demo-to-close is dropping, your demo or your proposal is broken - not your product.
 
 ## GTM Example: B2B SaaS vs. Consumer App
 
@@ -173,8 +173,8 @@ The GTM is completely different because the buyer, the ACV, and the sales cycle 
 - **Wrong channel for your ACV.** Running paid ads for a $40K ACV product will produce a negative CAC from day one.
 - **Skipping the value proposition.** Writing outreach before locking the value proposition means every message will be different and you will not know what is working.
 - **Measuring activity instead of pipeline.** Sending 500 emails is activity. The only thing that matters is qualified opportunities created.
-- **Scaling before repeatability.** Hiring salespeople before you have a repeatable sequence means each hire will invent their own process — and none of them will work.
+- **Scaling before repeatability.** Hiring salespeople before you have a repeatable sequence means each hire will invent their own process - and none of them will work.
 
 ## Key Takeaway
 
-A go-to-market strategy is the upstream decision that determines whether every downstream tactic works. Define your ICP precisely, state your value proposition clearly, commit to one channel for 90 days, match your sales motion to your ACV, and measure pipeline — not activity. Founders who do this systematically close their first 10 customers in months; those who skip to tactics spin for years. Build the strategy first. The tactics are only as good as the strategy underneath them.
+A go-to-market strategy is the upstream decision that determines whether every downstream tactic works. Define your ICP precisely, state your value proposition clearly, commit to one channel for 90 days, match your sales motion to your ACV, and measure pipeline - not activity. Founders who do this systematically close their first 10 customers in months; those who skip to tactics spin for years. Build the strategy first. The tactics are only as good as the strategy underneath them.

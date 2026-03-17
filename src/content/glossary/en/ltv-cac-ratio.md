@@ -67,10 +67,10 @@ Track both:
 
 | LTV:CAC | Interpretation |
 |---|---|
-| < 1:1 | Destroying value — each customer costs more than they return |
-| 1:1 – 2:1 | Marginal — no room for overhead or growth investment |
-| 3:1 | Healthy — the standard SaaS benchmark |
-| 4:1 – 5:1 | Strong — good margin for reinvestment |
+| < 1:1 | Destroying value - each customer costs more than they return |
+| 1:1 – 2:1 | Marginal - no room for overhead or growth investment |
+| 3:1 | Healthy - the standard SaaS benchmark |
+| 4:1 – 5:1 | Strong - good margin for reinvestment |
 | > 5:1 | Often a signal to invest more aggressively in acquisition |
 
 A ratio above 5:1 does not mean your business is healthy in isolation—it often means you are being too conservative with your growth investment and leaving market share available to competitors.

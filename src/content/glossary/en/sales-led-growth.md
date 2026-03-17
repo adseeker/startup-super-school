@@ -1,6 +1,6 @@
 ---
 title: "Sales-Led Growth (SLG)"
-description: "A growth model where the sales team drives acquisition and conversion — the dominant motion for high-ACV B2B products and complex enterprise deals."
+description: "A growth model where the sales team drives acquisition and conversion - the dominant motion for high-ACV B2B products and complex enterprise deals."
 locale: "en"
 category: "strategy"
 tags: ["strategy", "sales", "growth", "B2B", "enterprise"]
@@ -14,9 +14,9 @@ seoKeywords: ["sales-led growth startup", "what is sales-led growth", "SLG vs PL
 
 ## What Is Sales-Led Growth?
 
-Sales-Led Growth (SLG) is a go-to-market model in which the sales organization is the primary mechanism for acquiring, qualifying, and converting customers. In an SLG motion, a human being — not the product itself — is the primary vehicle for communicating value, navigating the buying process, and closing deals. The sales team generates or qualifies leads, runs discovery and demonstration calls, handles objections, writes and negotiates proposals, and shepherds the prospect through a structured sales process to a signed contract.
+Sales-Led Growth (SLG) is a go-to-market model in which the sales organization is the primary mechanism for acquiring, qualifying, and converting customers. In an SLG motion, a human being - not the product itself - is the primary vehicle for communicating value, navigating the buying process, and closing deals. The sales team generates or qualifies leads, runs discovery and demonstration calls, handles objections, writes and negotiates proposals, and shepherds the prospect through a structured sales process to a signed contract.
 
-SLG is the dominant go-to-market motion for high-complexity, high-ACV (Annual Contract Value) B2B software products. It has been the foundation of enterprise software sales for decades — the model behind Salesforce, Workday, SAP, and the vast majority of Fortune 500 software vendors.
+SLG is the dominant go-to-market motion for high-complexity, high-ACV (Annual Contract Value) B2B software products. It has been the foundation of enterprise software sales for decades - the model behind Salesforce, Workday, SAP, and the vast majority of Fortune 500 software vendors.
 
 ## SLG vs. Product-Led Growth (PLG)
 
@@ -53,16 +53,16 @@ SLG is the appropriate model when several conditions are present:
 
 A canonical SLG sales motion follows this structure:
 
-**SDR (Sales Development Representative) — Top of Funnel:**
+**SDR (Sales Development Representative) - Top of Funnel:**
 SDRs are responsible for generating qualified pipeline. They execute outbound prospecting (cold email, LinkedIn outreach, cold calls), qualify inbound leads from marketing, and book discovery calls for Account Executives. SDRs are measured on meetings booked and qualified opportunities created.
 
-**AE (Account Executive) — Middle and Bottom of Funnel:**
+**AE (Account Executive) - Middle and Bottom of Funnel:**
 AEs own the deal from discovery call through close. They run product demonstrations, perform discovery to understand the prospect's pain points and buying process, write proposals, negotiate terms, and secure the signature. AEs are measured on closed ARR (Annual Recurring Revenue).
 
-**SE (Sales Engineer) — Technical Validation:**
+**SE (Sales Engineer) - Technical Validation:**
 For complex technical products, a Sales Engineer accompanies the AE to handle deep technical questions, run proof-of-concept projects, and address security and integration concerns. SEs are critical in deals where technical stakeholders are key decision-makers.
 
-**CS (Customer Success) — Post-Sale:**
+**CS (Customer Success) - Post-Sale:**
 Customer Success owns the relationship after the contract is signed. In an SLG model, CS handles onboarding, ongoing health monitoring, renewal negotiation, and expansion selling. CS is measured on Net Revenue Retention (NRR).
 
 ## SLG Economics
@@ -73,7 +73,7 @@ SLG companies have a fundamentally different unit economic profile than PLG comp
 
 **Higher ACV:** SLG's high CAC is justified by large contracts. A deal with a $50,000 ACV can absorb a $15,000 CAC and still produce a 3:1 LTV:CAC ratio at reasonable retention rates.
 
-**Longer sales cycles:** B2B SLG deals for mid-market typically close in 30–90 days; enterprise deals can take 6–18 months. This creates a pipeline management challenge — the company must maintain a full pipeline of deals at different stages to forecast ARR predictably.
+**Longer sales cycles:** B2B SLG deals for mid-market typically close in 30–90 days; enterprise deals can take 6–18 months. This creates a pipeline management challenge - the company must maintain a full pipeline of deals at different stages to forecast ARR predictably.
 
 **More predictable ARR:** Multi-year contracts with annual prepayment provide highly predictable revenue, which is a significant advantage for financial planning and investor confidence.
 
@@ -93,13 +93,13 @@ SLG companies have a fundamentally different unit economic profile than PLG comp
 
 ## The Hybrid Motion: PLG + Sales (Product-Led Sales)
 
-The most sophisticated go-to-market evolution of the 2020s is the combination of PLG and SLG — sometimes called "Product-Led Sales" or the "land and expand" motion:
+The most sophisticated go-to-market evolution of the 2020s is the combination of PLG and SLG - sometimes called "Product-Led Sales" or the "land and expand" motion:
 
 1. **Land:** PLG drives product adoption at the individual or team level. Free or low-cost product tiers generate organic adoption within target organizations. No sales involvement required.
-2. **Identify:** Product usage data surfaces accounts where adoption is growing — many users, high engagement, departments using the product, feature usage patterns that indicate enterprise-level needs.
+2. **Identify:** Product usage data surfaces accounts where adoption is growing - many users, high engagement, departments using the product, feature usage patterns that indicate enterprise-level needs.
 3. **Expand:** A sales team engages accounts that have already demonstrated product value through usage. The AE's job shifts from convincing to commercializing an existing champion.
 
-This hybrid motion dramatically improves SLG economics because: (a) CAC is lower — the product has already sold itself at the team level; (b) sales cycles are shorter — the buyer already knows the product works; (c) retention is higher — deals sourced through product usage churn at lower rates than deals closed through pure outbound.
+This hybrid motion dramatically improves SLG economics because: (a) CAC is lower - the product has already sold itself at the team level; (b) sales cycles are shorter - the buyer already knows the product works; (c) retention is higher - deals sourced through product usage churn at lower rates than deals closed through pure outbound.
 
 ## How SLG Companies Incorporate Product Signals
 
@@ -111,4 +111,4 @@ Modern SLG companies are increasingly using product usage data as a lead scoring
 
 ## Key Takeaway
 
-Sales-Led Growth is the go-to-market model where human sales professionals — SDRs, AEs, and SEs — drive acquisition, qualification, and conversion. It is the right model when ACV exceeds $10,000–$15,000, when the product is complex, when deals involve multiple stakeholders, or when the industry requires compliance-driven procurement. SLG has higher CAC than PLG but justifies it through larger ACV and multi-year contracts. The most powerful modern motion combines SLG discipline with PLG-driven product adoption: letting the product land organically at the team level, then using a sales team to expand into enterprise contracts once usage has proven value. Product signals — usage thresholds, engagement data, department adoption — are becoming essential inputs to SLG lead qualification even in traditionally human-driven sales organizations.
+Sales-Led Growth is the go-to-market model where human sales professionals - SDRs, AEs, and SEs - drive acquisition, qualification, and conversion. It is the right model when ACV exceeds $10,000–$15,000, when the product is complex, when deals involve multiple stakeholders, or when the industry requires compliance-driven procurement. SLG has higher CAC than PLG but justifies it through larger ACV and multi-year contracts. The most powerful modern motion combines SLG discipline with PLG-driven product adoption: letting the product land organically at the team level, then using a sales team to expand into enterprise contracts once usage has proven value. Product signals - usage thresholds, engagement data, department adoption - are becoming essential inputs to SLG lead qualification even in traditionally human-driven sales organizations.

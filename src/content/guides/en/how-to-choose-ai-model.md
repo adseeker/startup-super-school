@@ -11,7 +11,7 @@ primaryKeyword: "how to choose the right ai model"
 seoKeywords: ["choose ai model", "gpt-4o vs claude vs gemini", "llm comparison", "best llm for startup"]
 steps:
   - name: "Identify your performance requirements"
-    text: "Define the minimum acceptable accuracy, output format, and reasoning depth for your specific task. Not every task needs a frontier model — matching task complexity to model capability is the single highest-leverage cost decision you will make."
+    text: "Define the minimum acceptable accuracy, output format, and reasoning depth for your specific task. Not every task needs a frontier model - matching task complexity to model capability is the single highest-leverage cost decision you will make."
   - name: "Map your budget constraints"
     text: "Calculate your cost per query at current volume and at 10x scale for each candidate model. Set a hard cost ceiling per query before looking at model quality, so price does not become a rationalization rather than a constraint."
   - name: "Test on your actual data"
@@ -25,7 +25,7 @@ faqs:
     answer: "All three are frontier models with strong general-purpose capabilities. GPT-4o leads on function calling, JSON mode reliability, and coding tasks. Claude 3.5 Sonnet leads on long-document reasoning, instruction following, and nuanced writing tasks. Gemini 1.5 Pro has the largest context window (1M+ tokens) and leads on multimodal tasks involving both text and images. For most startup applications, the differences are smaller than the pricing and latency differences, making cost and integration fit the primary decision factors."
   - question: "When should you use an open-source model instead of a commercial API?"
     answer: "Use an open-source model when your query volume exceeds roughly 50,000 per day (where self-hosting becomes cheaper than API pricing), when your data cannot leave your infrastructure for compliance or privacy reasons, or when you need to fine-tune extensively on proprietary data without sharing it with a vendor. Llama 3 70B and Mistral Large are the strongest open-source options as of early 2026 and match frontier models on many structured tasks."
-  - question: "How do you choose the right model size — 7B, 13B, 70B, or frontier?"
+  - question: "How do you choose the right model size - 7B, 13B, 70B, or frontier?"
     answer: "Match model size to task complexity. 7B–13B parameter models handle classification, extraction, and simple summarization well at very low cost (~$0.10 per million tokens self-hosted). 70B models handle multi-step reasoning, complex summarization, and most code generation tasks at moderate cost. Frontier models (GPT-4o, Claude 3.5) are necessary for tasks requiring deep reasoning, novel problem-solving, or high-stakes accuracy where a 70B model's ~5% error rate is unacceptable. Start with the smallest model that meets your accuracy threshold."
   - question: "What is model abstraction and why does it matter?"
     answer: "Model abstraction means routing all LLM calls through a single interface rather than calling each provider's SDK directly. It matters because it lets you swap models with a config change rather than a code refactor, run A/B tests between models in production, implement fallback routing when a provider has an outage, and track costs and latency per model centrally. Libraries like LiteLLM implement this pattern and support over 100 provider APIs with an OpenAI-compatible interface."
@@ -35,7 +35,7 @@ faqs:
 
 ## Identify Your Performance Requirements
 
-The most expensive mistake in model selection is defaulting to the largest, most capable frontier model for every task. A frontier model like GPT-4o costs roughly 20–50x more per token than a capable 7B or 13B model — and for many tasks, the smaller model performs identically.
+The most expensive mistake in model selection is defaulting to the largest, most capable frontier model for every task. A frontier model like GPT-4o costs roughly 20–50x more per token than a capable 7B or 13B model - and for many tasks, the smaller model performs identically.
 
 Before comparing models, define your requirements across four dimensions:
 
@@ -159,4 +159,4 @@ Set up the abstraction layer on day one, even if you only use one model initiall
 
 ## Key Takeaway
 
-Model selection is an ongoing operational decision, not a one-time architecture choice. The right model today may not be the right model in 12 months, and the best model for one task in your product may not be the best for another. Start by defining your accuracy requirement and cost ceiling, test every candidate on your actual data — not vendor benchmarks — and build a model abstraction layer from day one so that swapping providers costs hours, not weeks. For most startups, the answer is a tiered approach: a cheap fast model for high-volume simple tasks, a frontier model for complex or high-stakes tasks, and an open-source model wherever data privacy or fine-tuning requirements demand it.
+Model selection is an ongoing operational decision, not a one-time architecture choice. The right model today may not be the right model in 12 months, and the best model for one task in your product may not be the best for another. Start by defining your accuracy requirement and cost ceiling, test every candidate on your actual data - not vendor benchmarks - and build a model abstraction layer from day one so that swapping providers costs hours, not weeks. For most startups, the answer is a tiered approach: a cheap fast model for high-volume simple tasks, a frontier model for complex or high-stakes tasks, and an open-source model wherever data privacy or fine-tuning requirements demand it.

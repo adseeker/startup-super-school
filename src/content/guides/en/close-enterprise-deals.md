@@ -15,15 +15,15 @@ seoKeywords: ["enterprise sales startup", "how to close enterprise deals", "B2B 
 
 Enterprise deals are not large SMB deals. They operate by entirely different mechanics, and treating them as simply "bigger" versions of your standard sales motion is the most common and costly mistake early-stage founders make.
 
-In an SMB sale, you typically have one or two decision-makers, a buying cycle of days to weeks, and a relatively direct path from demo to close. In an enterprise sale, you have 6–10 stakeholders with different priorities and veto power, a buying cycle of 3–12 months, and multiple formal review stages — procurement, legal, security, compliance — that can each kill a deal independently of how much the users love your product.
+In an SMB sale, you typically have one or two decision-makers, a buying cycle of days to weeks, and a relatively direct path from demo to close. In an enterprise sale, you have 6–10 stakeholders with different priorities and veto power, a buying cycle of 3–12 months, and multiple formal review stages - procurement, legal, security, compliance - that can each kill a deal independently of how much the users love your product.
 
-The economics are correspondingly different. Enterprise ACV (annual contract value) typically runs $25K–$500K+, which means the investment in a 6-month sales cycle is often justified. But it also means that a single lost deal can represent a meaningful miss on your quarterly revenue target. Understanding the specific mechanics of enterprise buying is therefore not a nice-to-have — it is the difference between building a real enterprise business and spending 12 months in a deal that never closes.
+The economics are correspondingly different. Enterprise ACV (annual contract value) typically runs $25K–$500K+, which means the investment in a 6-month sales cycle is often justified. But it also means that a single lost deal can represent a meaningful miss on your quarterly revenue target. Understanding the specific mechanics of enterprise buying is therefore not a nice-to-have - it is the difference between building a real enterprise business and spending 12 months in a deal that never closes.
 
 ## The Enterprise Buying Committee
 
 No enterprise deal is decided by one person. The buying committee typically includes five categories of stakeholder, each with different concerns and different levels of authority:
 
-**The economic buyer** controls the budget and has final sign-off authority. This is typically a VP or C-suite executive. They care about business outcomes, ROI, and risk. They are often not in your early meetings — your job is to get access to them before the end of the process.
+**The economic buyer** controls the budget and has final sign-off authority. This is typically a VP or C-suite executive. They care about business outcomes, ROI, and risk. They are often not in your early meetings - your job is to get access to them before the end of the process.
 
 **The champion** is the person inside the organization who wants your product to win. They may be the one who found you, booked the first meeting, and has been pushing the evaluation forward. They do not have final budget authority, but they have enormous influence. Enabling your champion is the highest-leverage activity in enterprise sales.
 
@@ -60,7 +60,7 @@ Spend the first 15–20 minutes asking questions before showing anything:
 
 These questions tell you whether you have a champion or just a curious contact, whether there is real budget or just interest, and whether the timeline is real or aspirational. Deals that fail to close are often deals where these questions were not asked early enough.
 
-Only after understanding the context should you show the product — and when you do, show only the pieces directly relevant to the pain they described.
+Only after understanding the context should you show the product - and when you do, show only the pieces directly relevant to the pain they described.
 
 ## Building and Enabling Your Champion
 
@@ -98,22 +98,22 @@ Many startup enterprise deals die in legal and security review, not because of a
 
 **Security questionnaire.** Enterprise security teams will send you a 100–300 question questionnaire covering data storage, access controls, incident response, and penetration testing. Building a "security trust page" on your website (similar to Notion's or Stripe's) and maintaining a pre-filled response document will save weeks of back-and-forth.
 
-**SLAs.** Know your actual uptime numbers and what you can commit to. 99.9% uptime is a reasonable baseline. Be precise about what happens when you miss the SLA — credits, remediation processes, escalation paths.
+**SLAs.** Know your actual uptime numbers and what you can commit to. 99.9% uptime is a reasonable baseline. Be precise about what happens when you miss the SLA - credits, remediation processes, escalation paths.
 
 ## Pricing for Enterprise
 
 Enterprise pricing should be value-based, not competitor-anchored. The question to answer is: what is the cost of the problem you are solving, and what percentage of that is a reasonable price to pay?
 
-Multi-year contracts are worth discounting for — predictable revenue is valuable enough to justify 10–15% off annual pricing for a 2-year commit. Implementation fees are appropriate for complex deployments and signal to the buyer that you will invest in their success. Do not be afraid to charge for implementation — it aligns incentives and increases the probability that the customer will actually use the product.
+Multi-year contracts are worth discounting for - predictable revenue is valuable enough to justify 10–15% off annual pricing for a 2-year commit. Implementation fees are appropriate for complex deployments and signal to the buyer that you will invest in their success. Do not be afraid to charge for implementation - it aligns incentives and increases the probability that the customer will actually use the product.
 
 On contract terms, keep your standard agreement as clean and short as possible. The more complex your paper, the more time your customer's legal team will spend on it.
 
 ## The Close and What Comes After
 
-Know who needs to sign. In an enterprise deal, there are often multiple signatories — the budget owner, legal counsel, sometimes a board or committee. Find out early so you are not surprised at the last stage.
+Know who needs to sign. In an enterprise deal, there are often multiple signatories - the budget owner, legal counsel, sometimes a board or committee. Find out early so you are not surprised at the last stage.
 
 After close is when enterprise deals actually begin. The first 90 days post-signature determine whether the contract renews, whether the account expands, and whether the customer becomes a reference. Assign a CSM or implementation lead before the contract is signed, not after. Have a detailed onboarding plan ready to share at signature. Set a 30-day and 60-day check-in call on the calendar on day one. Enterprise deals start at close, not end there.
 
 ## Key Takeaway
 
-Enterprise sales rewards patience, precision, and preparation. Invest early in identifying and enabling a strong internal champion who will sell for you in rooms you will never be in. Define POC success criteria in writing before you start. Prepare for legal and security review before they ask — SOC 2, a DPA, and a security questionnaire response document will save months of delays. Price on value, not on competition. And treat the post-close period as the most important phase of the deal — because your renewal, expansion, and reference pipeline are built in those first 90 days.
+Enterprise sales rewards patience, precision, and preparation. Invest early in identifying and enabling a strong internal champion who will sell for you in rooms you will never be in. Define POC success criteria in writing before you start. Prepare for legal and security review before they ask - SOC 2, a DPA, and a security questionnaire response document will save months of delays. Price on value, not on competition. And treat the post-close period as the most important phase of the deal - because your renewal, expansion, and reference pipeline are built in those first 90 days.

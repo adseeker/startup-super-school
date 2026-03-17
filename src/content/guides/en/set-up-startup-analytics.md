@@ -1,6 +1,6 @@
 ---
 title: "How to Set Up Analytics for Your Startup"
-description: "Set up a three-layer analytics stack for your startup — product, revenue, and marketing analytics — and avoid the data traps that waste founder time."
+description: "Set up a three-layer analytics stack for your startup - product, revenue, and marketing analytics - and avoid the data traps that waste founder time."
 locale: "en"
 category: "product"
 tags: ["analytics", "metrics", "product", "data", "tools"]
@@ -19,7 +19,7 @@ There are two failure modes, and most early-stage startups fall into one of them
 
 **Failure mode 2: Measure nothing until it's too late.** The founder skips analytics entirely in the early days to focus on building. By the time they raise a Series A, they have no historical data on activation rates, no cohort retention analysis, and no evidence of the trends they're claiming in investor conversations. They're running the business on gut feel and can't defend it with numbers.
 
-The correct approach is neither of these. It's a minimal, deliberate analytics stack built in three layers — installed at the right time, tracking the right events, connected to a North Star Metric your team actually looks at.
+The correct approach is neither of these. It's a minimal, deliberate analytics stack built in three layers - installed at the right time, tracking the right events, connected to a North Star Metric your team actually looks at.
 
 ## The Three-Layer Analytics Stack
 
@@ -33,7 +33,7 @@ Every startup needs three types of analytics data. Each layer answers a differen
 
 **What you get:** Event tracking (every user action), funnel analysis (where users drop off), retention curves (who comes back, and when), cohort analysis (do users who came from channel X retain better than channel Y?), and user-level activity timelines.
 
-This is the layer that tells you whether your product is actually working — not whether revenue is growing, but whether users are doing the things that create value.
+This is the layer that tells you whether your product is actually working - not whether revenue is growing, but whether users are doing the things that create value.
 
 ### Layer 2: Revenue Analytics
 
@@ -51,7 +51,7 @@ This layer answers the questions your board and investors care about most, but i
 
 **Tools:** Google Analytics 4 (free, industry standard), Plausible (privacy-first, €9/month, excellent UX), or Fathom (similar to Plausible, privacy-focused). For early-stage B2B, Plausible or Fathom are often preferable to GA4 because they're simpler and require no cookie consent for most use cases.
 
-**What you get:** Website traffic by source, landing page conversion rates, geographic distribution, and device breakdown. Connected to your product analytics and revenue analytics, this layer tells you which acquisition channels produce the users who actually activate and pay — not just the users who click.
+**What you get:** Website traffic by source, landing page conversion rates, geographic distribution, and device breakdown. Connected to your product analytics and revenue analytics, this layer tells you which acquisition channels produce the users who actually activate and pay - not just the users who click.
 
 ## When to Set Up Each Layer
 
@@ -61,11 +61,11 @@ Timing matters. Installing all three layers on day one is waste. Installing them
 
 **At first users (1–50 customers):** Add Layer 1 (product analytics). You now have real users doing real things in your product. Track the key events in your onboarding flow from day one so you can see where users drop off before you have a retention problem.
 
-**At $10K MRR:** Invest in the full stack. Connect your product analytics to your revenue analytics (most tools allow this via a customer ID field). Start running cohort analyses. This is when the connections between acquisition channels, user behavior, and revenue retention become visible — and actionable.
+**At $10K MRR:** Invest in the full stack. Connect your product analytics to your revenue analytics (most tools allow this via a customer ID field). Start running cohort analyses. This is when the connections between acquisition channels, user behavior, and revenue retention become visible - and actionable.
 
 ## Event Tracking Architecture
 
-The most important decision in your product analytics setup is not which tool to use — it's what to track and how to name it.
+The most important decision in your product analytics setup is not which tool to use - it's what to track and how to name it.
 
 An **event** is any user action you want to measure. Examples: `signed_up`, `completed_onboarding`, `created_first_project`, `invited_teammate`, `upgraded_plan`, `exported_report`.
 
@@ -79,7 +79,7 @@ Use `noun_verb` format for consistency: `project_created`, `plan_upgraded`, `tea
 
 - `signed_up` (user created an account)
 - `onboarding_completed` (user reached your defined "activated" state)
-- `core_action_performed` (whatever the key value-delivery action in your product is — replace with your specific event name)
+- `core_action_performed` (whatever the key value-delivery action in your product is - replace with your specific event name)
 - `plan_upgraded` (free to paid, or tier upgrade)
 - `session_started` (user returned to the product)
 
@@ -132,7 +132,7 @@ PostHog and Plausible have significantly lighter privacy footprints than Google 
 
 If you're a non-technical founder, the analytics setup can feel intimidating. It doesn't need to be.
 
-**PostHog** is the most founder-friendly option for product analytics. The cloud version requires no infrastructure management. The event autocapture feature means you can get basic behavioral data with a single line of script installed on your site — no custom event code required to start. You can add specific event tracking incrementally as you understand your product better.
+**PostHog** is the most founder-friendly option for product analytics. The cloud version requires no infrastructure management. The event autocapture feature means you can get basic behavioral data with a single line of script installed on your site - no custom event code required to start. You can add specific event tracking incrementally as you understand your product better.
 
 **Baremetrics** is the simplest revenue analytics layer if you're on Stripe. Connect your Stripe account and your MRR, churn, and LTV metrics are live within minutes. No configuration required.
 
@@ -148,8 +148,8 @@ This three-tool stack (PostHog + Baremetrics + Plausible) covers all three layer
 
 **Not connecting product analytics to revenue data.** Knowing that users do X inside your product is interesting. Knowing that users who do X are 3x more likely to upgrade to a paid plan is actionable. Connect these layers by passing a consistent customer ID across tools.
 
-**Measuring weekly instead of by cohort.** Weekly active users can go up even as retention declines, if new signups are masking churn. Cohort analysis — looking at a group of users who joined in the same week and tracking their retention over time — gives you the true retention picture that weekly aggregates hide.
+**Measuring weekly instead of by cohort.** Weekly active users can go up even as retention declines, if new signups are masking churn. Cohort analysis - looking at a group of users who joined in the same week and tracking their retention over time - gives you the true retention picture that weekly aggregates hide.
 
 ## Key Takeaway
 
-A startup analytics stack is not about collecting as much data as possible — it is about having the right three layers in place at the right time, tracking events that correspond to outcomes rather than clicks, and reviewing the numbers on a consistent weekly cadence. Install revenue and marketing analytics before your first user, add product analytics at first users, and connect all three layers at $10K MRR. The tools are secondary; what matters is consistent event naming, a visible North Star Metric, and the discipline to act on what the data tells you.
+A startup analytics stack is not about collecting as much data as possible - it is about having the right three layers in place at the right time, tracking events that correspond to outcomes rather than clicks, and reviewing the numbers on a consistent weekly cadence. Install revenue and marketing analytics before your first user, add product analytics at first users, and connect all three layers at $10K MRR. The tools are secondary; what matters is consistent event naming, a visible North Star Metric, and the discipline to act on what the data tells you.

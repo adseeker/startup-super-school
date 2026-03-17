@@ -1,6 +1,6 @@
 ---
 title: "How to Make Your First 5 Hires"
-description: "A practical guide to hiring your first employees — how to define the roles, run the process, set comp, and avoid the mistakes that derail early teams."
+description: "A practical guide to hiring your first employees - how to define the roles, run the process, set comp, and avoid the mistakes that derail early teams."
 locale: "en"
 category: "team"
 tags: ["team", "hiring", "people", "founders", "scaling"]
@@ -29,7 +29,7 @@ Before you write a job description, commit to these principles internally:
 You are not buying credentials. You are buying someone's ability to achieve a specific outcome in the next 12 months. Define that outcome before you define the role.
 
 **2. Hire people who are better than you.**
-This sounds obvious and is systematically violated. Founders hire people they feel comfortable managing — which often means people with slightly lower capability. The result is a team that cannot outperform its founder. Specifically seek out people who intimidate you in their domain.
+This sounds obvious and is systematically violated. Founders hire people they feel comfortable managing - which often means people with slightly lower capability. The result is a team that cannot outperform its founder. Specifically seek out people who intimidate you in their domain.
 
 **3. Slow to hire, fast to fire.**
 One extra month of diligence is worth six months of managing a poor fit. But once you have confirmed a mistake, moving slowly to correct it is a compounding error. Most founders wait 3–4 months too long.
@@ -48,13 +48,13 @@ Work through this exercise:
 3. Rank those bottlenecks by impact on the milestone
 4. The top 5 bottlenecks become your first 5 hires
 
-For most seed-stage B2B SaaS startups, the first 5 hires look like this — but yours will depend on your specific bottlenecks:
+For most seed-stage B2B SaaS startups, the first 5 hires look like this - but yours will depend on your specific bottlenecks:
 
 | Hire | Problem being solved | Common mistake |
 |------|---------------------|----------------|
 | Engineer #1 or #2 | Founders cannot build fast enough alone | Hiring a generalist when you need a specific skill (e.g., you need ML but hire a web dev) |
 | Head of Customer Success / first CS | Customers are churning or stuck; founder cannot do onboarding | Hiring too senior too fast (VP of CS at 50 customers is premature) |
-| First Account Executive | Founders are doing all sales; can't scale to $1M ARR alone | Hiring before a repeatable sales process exists — they will invent their own |
+| First Account Executive | Founders are doing all sales; can't scale to $1M ARR alone | Hiring before a repeatable sales process exists - they will invent their own |
 | Growth / Marketing | No inbound pipeline; founder has no time for content or SEO | Hiring a brand person when you need a demand gen person |
 | Operations / Chief of Staff | Founder is drowning in admin, recruiting, finance | Hiring too early (this hire only makes sense once the founder is truly a bottleneck) |
 
@@ -70,14 +70,14 @@ Before any skills conversation, run a 30-minute culture conversation. Ask behavi
 
 - "Tell me about a project that failed. What would you do differently?"
 - "Describe a situation where you disagreed strongly with a decision. What did you do?"
-- "What does your ideal work environment look like — give me specifics about structure, autonomy, feedback frequency."
+- "What does your ideal work environment look like - give me specifics about structure, autonomy, feedback frequency."
 - "What was the last thing you learned that changed how you approach your work?"
 
 You are looking for intellectual honesty, self-awareness, comfort with ambiguity, and evidence of initiative. You are screening out people who need significant structure, blame external factors for failures, or give polished non-answers.
 
 ### Step 2: Skills Deep-Dive (60 minutes)
 
-Have the candidate talk through one project in depth — from brief, to execution, to result. Push past the summary version. Ask:
+Have the candidate talk through one project in depth - from brief, to execution, to result. Push past the summary version. Ask:
 - "What exactly did you build/write/design? Walk me through it."
 - "What were the constraints you were operating under?"
 - "What was your specific contribution vs. the team's?"
@@ -111,11 +111,11 @@ A strong candidate will have references who are enthusiastic and specific. A wea
 
 ## Equity and Compensation for Early Employees
 
-Early employees take on enormous risk. Compensate that risk appropriately — both to be fair and because under-compensating attracts candidates who have no better options.
+Early employees take on enormous risk. Compensate that risk appropriately - both to be fair and because under-compensating attracts candidates who have no better options.
 
 ### Option Pool Basics
 
-Before your first hire, ensure you have an option pool established (typically 10–20% of fully diluted shares pre-Series A). Options vest over 4 years with a 1-year cliff — meaning the employee must stay for 1 year before any equity vests, then vests monthly thereafter.
+Before your first hire, ensure you have an option pool established (typically 10–20% of fully diluted shares pre-Series A). Options vest over 4 years with a 1-year cliff - meaning the employee must stay for 1 year before any equity vests, then vests monthly thereafter.
 
 ### Early Employee Equity Benchmarks
 
@@ -131,7 +131,7 @@ These ranges vary significantly based on stage, location, and candidate seniorit
 
 ### Salary Benchmarks
 
-Pay at or slightly below market salary in exchange for meaningful equity. Do not ask candidates to take a 40% pay cut and offer 0.1% equity — this tells them you do not understand the tradeoff you are asking them to make.
+Pay at or slightly below market salary in exchange for meaningful equity. Do not ask candidates to take a 40% pay cut and offer 0.1% equity - this tells them you do not understand the tradeoff you are asking them to make.
 
 If you cannot afford market salary, be explicit and increase the equity accordingly. A candidate willing to take 20% below market deserves proportionally more equity. Model it out together.
 
@@ -143,7 +143,7 @@ You do not need a recruiter for your first 5 hires. You need a sourcing system.
 Message everyone in your network asking for one specific referral: "I am hiring a [role] who [specific trait]. Who is the most impressive person you have worked with in that function?"
 
 **Twitter/X and LinkedIn:**
-Post publicly about who you are looking for. Be specific: "Looking for a first AE — someone who has closed $50K–$200K deals at an early-stage startup, is comfortable building their own pipeline, and is excited about [space]. DM me if interested or if you know someone."
+Post publicly about who you are looking for. Be specific: "Looking for a first AE - someone who has closed $50K–$200K deals at an early-stage startup, is comfortable building their own pipeline, and is excited about [space]. DM me if interested or if you know someone."
 
 **Relevant communities:**
 - Slack communities (e.g., RevGenius for sales, Designer Hangout for design)
@@ -160,13 +160,13 @@ The first week of a new hire's experience sets their belief about whether joinin
 A strong onboarding week for an early startup:
 
 - **Day 1:** Company overview, access to all tools, walk through the product as a user from end to end
-- **Day 2:** 1:1 with each team member (30 minutes each) — not to explain their role, but to understand the business from each person's perspective
-- **Day 3:** Assigned first real task — small enough to complete in the week, important enough to matter
-- **Day 4:** Customer call shadow — they observe a sales call or customer success call
+- **Day 2:** 1:1 with each team member (30 minutes each) - not to explain their role, but to understand the business from each person's perspective
+- **Day 3:** Assigned first real task - small enough to complete in the week, important enough to matter
+- **Day 4:** Customer call shadow - they observe a sales call or customer success call
 - **Day 5:** Present back: what did they learn this week? What are they most uncertain about? What would they change?
 
 The "present back" on day 5 is the single most valuable onboarding activity. It surfaces what they understand, what they misunderstood, and what gaps you have in documentation or communication. It also immediately signals that you are a company that values clear thinking over political performance.
 
 ## Key Takeaway
 
-Your first five hires are not just employees — they are co-architects of the company you will become. Define each role by the specific problem it solves, run a process that tests real capability rather than interviewing performance, compensate the risk fairly, and invest in an onboarding week that earns their trust from day one. The founders who build great early teams do not have better networks or more money — they are simply more deliberate at every stage of the process. That deliberateness is learnable. Start before you think you are ready to hire.
+Your first five hires are not just employees - they are co-architects of the company you will become. Define each role by the specific problem it solves, run a process that tests real capability rather than interviewing performance, compensate the risk fairly, and invest in an onboarding week that earns their trust from day one. The founders who build great early teams do not have better networks or more money - they are simply more deliberate at every stage of the process. That deliberateness is learnable. Start before you think you are ready to hire.

@@ -1,6 +1,6 @@
 ---
 title: "Build vs Buy AI for Startups"
-description: "When to build custom AI vs buy an off-the-shelf solution — a practical framework for AI infrastructure decisions at each startup stage."
+description: "When to build custom AI vs buy an off-the-shelf solution - a practical framework for AI infrastructure decisions at each startup stage."
 locale: "en"
 category: "ai"
 tags: ["ai", "strategy", "product", "infrastructure", "technology"]
@@ -25,7 +25,7 @@ faqs:
 
 Every AI startup faces a series of build vs buy decisions: which AI capabilities to develop internally vs source externally. These decisions have significant implications for engineering velocity, costs, and competitive positioning.
 
-The default answer for early-stage startups is almost always **buy** — but understanding where this changes is critical.
+The default answer for early-stage startups is almost always **buy** - but understanding where this changes is critical.
 
 ## The Decision Framework
 
@@ -33,11 +33,11 @@ The default answer for early-stage startups is almost always **buy** — but und
 
 | Scenario | Recommendation |
 |----------|----------------|
-| Pre-PMF / early validation | Always buy — don't build custom AI before proving the product |
-| Commodity AI tasks (summarization, classification, simple Q&A) | Buy — frontier APIs are excellent and cheap |
-| Rapidly evolving capabilities | Buy — APIs improve automatically with model updates |
-| Limited ML engineering resources | Buy — custom AI requires ML expertise to build and maintain |
-| Data volume <500 examples | Buy — insufficient data for meaningful fine-tuning |
+| Pre-PMF / early validation | Always buy - don't build custom AI before proving the product |
+| Commodity AI tasks (summarization, classification, simple Q&A) | Buy - frontier APIs are excellent and cheap |
+| Rapidly evolving capabilities | Buy - APIs improve automatically with model updates |
+| Limited ML engineering resources | Buy - custom AI requires ML expertise to build and maintain |
+| Data volume <500 examples | Buy - insufficient data for meaningful fine-tuning |
 
 ### When to Build (Custom AI)
 
@@ -73,13 +73,13 @@ Most mature AI startups use a hybrid model:
 2. Add fine-tuning for specific high-volume, high-value tasks as data accumulates
 3. Migrate highest-volume inference to self-hosted open-source models at scale
 
-This mirrors the classic "build when it matters, buy when it doesn't" principle — applied to each layer of the AI stack.
+This mirrors the classic "build when it matters, buy when it doesn't" principle - applied to each layer of the AI stack.
 
 ## Common Build vs Buy Mistakes
 
 **Building too early**: Spending 3 months building a custom embedding model before validating PMF. The opportunity cost is enormous.
 
-**Buying when differentiation is needed**: Using a generic AI writing tool to power a specialized product when a fine-tuned model would perform 30% better — and that 30% is the product's actual value proposition.
+**Buying when differentiation is needed**: Using a generic AI writing tool to power a specialized product when a fine-tuned model would perform 30% better - and that 30% is the product's actual value proposition.
 
 **Over-building infrastructure**: Recreating Pinecone when pgvector would have sufficed for the next 18 months.
 

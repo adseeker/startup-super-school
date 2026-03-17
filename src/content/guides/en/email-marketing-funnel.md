@@ -41,7 +41,7 @@ Despite the rise of social media, SMS, and push notifications, email remains the
 
 For startups, email serves three critical functions: converting leads into customers, onboarding and activating new users, and retaining customers over time. Each requires a different type of sequence, but they all share the same foundation: a well-designed funnel.
 
-## Step 1 — Choose Your Email Platform
+## Step 1 - Choose Your Email Platform
 
 Select a platform that fits your use case before you start building.
 
@@ -54,7 +54,7 @@ Select a platform that fits your use case before you start building.
 
 Pick one and commit. The cost of switching platforms later—exporting lists, rebuilding sequences, re-verifying domains—is high. Choose based on your 12-month needs, not your current state.
 
-## Step 2 — Create a Lead Magnet
+## Step 2 - Create a Lead Magnet
 
 A lead magnet is a specific, immediately useful asset exchanged for an email address. The best lead magnets solve one concrete problem in the next 48 hours.
 
@@ -66,7 +66,7 @@ High-performing lead magnet formats:
 
 "Subscribe to our newsletter" is not a lead magnet. It describes what you get (emails), not what problem it solves. Name the specific outcome: "Get the 7-step fundraising checklist used by 400+ YC founders."
 
-## Step 3 — Build the Opt-In Form and Landing Page
+## Step 3 - Build the Opt-In Form and Landing Page
 
 Your opt-in landing page needs:
 1. A headline that names the specific outcome the lead magnet delivers
@@ -76,7 +76,7 @@ Your opt-in landing page needs:
 
 Also embed a compact opt-in form within your highest-traffic blog posts and resource pages. These in-content forms often convert at 2–5× the rate of a standalone page because the visitor is already engaged with related content.
 
-## Step 4 — Write the Welcome Sequence
+## Step 4 - Write the Welcome Sequence
 
 The welcome sequence is the most important automation you will build. Use the "jobs to be done" framing: each email should help the subscriber accomplish a specific job, not just inform them about your product.
 
@@ -88,7 +88,7 @@ A 5-email structure:
 4. **Email 4 (Day 5)**: Share social proof—a specific result, a testimonial, a number ("Our customers reduce churn by 22% in 90 days").
 5. **Email 5 (Day 7)**: Make the ask. A direct, low-friction CTA: start a free trial, book a 20-minute call, or use a specific feature.
 
-## Step 5 — Set Up Automated Behavioral Triggers
+## Step 5 - Set Up Automated Behavioral Triggers
 
 Behavioral emails outperform broadcast campaigns by 3–5× because they are sent at the moment the user's action signals intent.
 
@@ -99,7 +99,7 @@ Key triggers to set up:
 - **Usage milestone**: congratulate and introduce the next level feature
 - **Subscription nearing renewal**: surface value delivered over the period
 
-## Step 6 — Segment Your List
+## Step 6 - Segment Your List
 
 Send more relevant emails by dividing your list before every broadcast send.
 
@@ -110,7 +110,7 @@ Useful segments:
 
 Always send your broadcast campaigns to engaged segments first. High engagement in the first hour improves your sender reputation and deliverability for the rest of the send.
 
-## Step 7 — Measure and Iterate
+## Step 7 - Measure and Iterate
 
 | Metric | Healthy benchmark | What a low number signals |
 |---|---|---|

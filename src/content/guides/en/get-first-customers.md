@@ -1,6 +1,6 @@
 ---
 title: "How to Get Your First 100 Customers"
-description: "Learn the 5 most effective channels for landing your first 100 customers — with practical playbooks for outreach, communities, and partnerships."
+description: "Learn the 5 most effective channels for landing your first 100 customers - with practical playbooks for outreach, communities, and partnerships."
 locale: "en"
 category: "growth"
 tags: ["growth", "sales", "early stage", "acquisition", "customers"]
@@ -40,13 +40,13 @@ Your first customers are more likely to come from people you already know than f
 
 Start by building a target list. Go through your LinkedIn connections, past colleagues, university contacts, and industry acquaintances. For each one, answer: "Does this person match my ICP, or do they know someone who does?"
 
-**The right approach is a direct message, not an email blast.** Personalized, one-at-a-time outreach dramatically outperforms a newsletter-style announcement sent to 200 contacts. Mention something specific — a project you worked on together, a recent post of theirs, something relevant to the problem you're solving.
+**The right approach is a direct message, not an email blast.** Personalized, one-at-a-time outreach dramatically outperforms a newsletter-style announcement sent to 200 contacts. Mention something specific - a project you worked on together, a recent post of theirs, something relevant to the problem you're solving.
 
 A message that works:
 
-> "Hey [Name] — I've been building a tool that helps [ICP description] do [specific outcome]. Given your work at [Company], I thought you might either be the right fit or know someone who is. Would you be open to a 20-minute call this week?"
+> "Hey [Name] - I've been building a tool that helps [ICP description] do [specific outcome]. Given your work at [Company], I thought you might either be the right fit or know someone who is. Would you be open to a 20-minute call this week?"
 
-Do not pitch in the first message. Ask for a call. The goal of the message is the call. The goal of the call is to understand if there's a fit — and if not, who else they might introduce you to.
+Do not pitch in the first message. Ask for a call. The goal of the message is the call. The goal of the call is to understand if there's a fit - and if not, who else they might introduce you to.
 
 Work through your list systematically. Ten conversations per week from your network is a realistic and sustainable pace.
 
@@ -54,13 +54,13 @@ Work through your list systematically. Ten conversations per week from your netw
 
 Your target customers already gather somewhere online. Find those places and show up there before you need anything from them.
 
-The most productive communities for B2B founders: Reddit subreddits relevant to your industry, niche Slack groups (many industries have them — search "[industry] slack community"), Discord servers for your target persona, Indie Hackers for product-focused customers, and Product Hunt for tech-forward early adopters.
+The most productive communities for B2B founders: Reddit subreddits relevant to your industry, niche Slack groups (many industries have them - search "[industry] slack community"), Discord servers for your target persona, Indie Hackers for product-focused customers, and Product Hunt for tech-forward early adopters.
 
 **The sequence that works:**
 
 1. Lurk for one to two weeks. Read threads. Understand the language, the recurring complaints, the respected voices.
 2. Contribute genuinely. Answer questions. Share something useful. Do this for two to three weeks before you mention your product at all.
-3. Share selectively. When you do mention your product, do it in context — when someone asks about the problem you solve, or in a dedicated "show your project" thread. Don't spam.
+3. Share selectively. When you do mention your product, do it in context - when someone asks about the problem you solve, or in a dedicated "show your project" thread. Don't spam.
 
 The lifetime value of being known in a relevant community far exceeds any ad spend at this stage. A genuine community recommendation converts 5 to 10 times better than cold traffic.
 
@@ -70,11 +70,11 @@ Cold outreach works when it's highly specific and treats the recipient as a pers
 
 The framework that actually generates replies: a **three-sentence cold email**.
 
-1. A specific, researched observation about the prospect (not "I saw your company is growing fast" — too generic; something like "I noticed you just launched a [specific feature] — that usually means the team is dealing with [specific pain]")
+1. A specific, researched observation about the prospect (not "I saw your company is growing fast" - too generic; something like "I noticed you just launched a [specific feature] - that usually means the team is dealing with [specific pain]")
 2. A one-sentence explanation of what you do and who it's for
 3. A single, low-friction ask ("Would a 15-minute call make sense?")
 
-Ten personalized emails per day is the right volume at this stage. Ten emails per day equals 50 per week. At a 10% reply rate — which is achievable with true personalization — that's 5 conversations per week, 20 per month. That is more than enough pipeline to reach 100 customers.
+Ten personalized emails per day is the right volume at this stage. Ten emails per day equals 50 per week. At a 10% reply rate - which is achievable with true personalization - that's 5 conversations per week, 20 per month. That is more than enough pipeline to reach 100 customers.
 
 **What not to do:** don't use a spray-and-pray template, don't automate follow-ups before you've validated the message, and don't pitch in the first email. Volume is irrelevant if conversion is zero.
 
@@ -99,7 +99,7 @@ One well-executed partnership with a product that has 10,000 customers can deliv
 
 Content is the only channel on this list that compounds over time. It's also the slowest. Plant the seeds now and expect meaningful returns around month six.
 
-For your first 100 customers, content isn't the primary engine — but it sets up the next 900. Start a simple blog (or even a LinkedIn newsletter if that's where your customers live). Write one piece per week. Focus on the specific problems your customers have, not on your product.
+For your first 100 customers, content isn't the primary engine - but it sets up the next 900. Start a simple blog (or even a LinkedIn newsletter if that's where your customers live). Write one piece per week. Focus on the specific problems your customers have, not on your product.
 
 A good early content brief: "What is the question my ideal customer Googles before they realize my product exists?" Write the best possible answer to that question. Do it ten times. That is the foundation of an organic acquisition channel that will still be generating leads two years from now.
 
@@ -110,7 +110,7 @@ Your retention is being decided during onboarding. At this stage, white-glove an
 For every new customer:
 
 - Schedule a onboarding call (video, not email)
-- Watch them use the product live — don't wait for them to figure it out
+- Watch them use the product live - don't wait for them to figure it out
 - Follow up 48 hours later with a specific question about their progress
 - Check in again at day 7 and day 30
 
@@ -128,7 +128,7 @@ If you're worried no one will pay, that worry is actually the most important hyp
 
 Rejection is research. Every "no" contains information if you ask for it.
 
-When someone declines — on a call, via email, or by going silent — ask one follow-up question: "Would you be willing to tell me what didn't feel right about it?"
+When someone declines - on a call, via email, or by going silent - ask one follow-up question: "Would you be willing to tell me what didn't feel right about it?"
 
 Document every answer. After 20 to 30 rejections, you'll start to see patterns. Those patterns are either product problems (build differently), messaging problems (explain differently), or ICP problems (talk to different people). All three are valuable findings.
 
@@ -151,7 +151,7 @@ Update it every day. This discipline compounds. By the time you have 50 customer
 
 When you reach 100 customers, three things will break simultaneously:
 
-1. **Manual outreach can't keep up.** You need a repeatable inbound channel or a scalable outbound sequence — not just individual emails.
+1. **Manual outreach can't keep up.** You need a repeatable inbound channel or a scalable outbound sequence - not just individual emails.
 2. **White-glove onboarding isn't possible.** You need to systematize the onboarding experience: documentation, automated check-ins, in-product guidance.
 3. **Your ICP hypothesis is now data.** Look at your best 20 customers. What do they have in common? That profile is who you target next, systematically, at scale.
 
@@ -159,4 +159,4 @@ The channels, principles, and infrastructure you build for your first 100 custom
 
 ## Key Takeaway
 
-Your first 100 customers won't come from ads or SEO — they come from direct, personal, specific effort: your network, targeted online communities, highly personalized cold outreach, and smart partnerships. The principles that matter at this stage are the opposite of scale: manual, unscalable, and deeply personal. Charge from day one, document every rejection as research, and use the patterns you find in customers 1–100 to build the scalable systems that take you to 1,000.
+Your first 100 customers won't come from ads or SEO - they come from direct, personal, specific effort: your network, targeted online communities, highly personalized cold outreach, and smart partnerships. The principles that matter at this stage are the opposite of scale: manual, unscalable, and deeply personal. Charge from day one, document every rejection as research, and use the patterns you find in customers 1–100 to build the scalable systems that take you to 1,000.

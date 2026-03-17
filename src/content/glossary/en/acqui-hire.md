@@ -13,9 +13,9 @@ seoKeywords: ["acqui-hire startup", "what is an acqui-hire", "acqui-hire vs acqu
 
 ## What Is an Acqui-hire?
 
-An acqui-hire (a portmanteau of "acquisition" and "hire") is a transaction in which a company acquires a startup primarily — or exclusively — to hire its team. The product, technology, or business of the acquired company is typically shut down or abandoned. The acquirer is buying talent and team cohesion, not a business.
+An acqui-hire (a portmanteau of "acquisition" and "hire") is a transaction in which a company acquires a startup primarily - or exclusively - to hire its team. The product, technology, or business of the acquired company is typically shut down or abandoned. The acquirer is buying talent and team cohesion, not a business.
 
-Acqui-hires are most common in technology, where skilled engineering, AI, and product talent is expensive and difficult to assemble. Rather than spending 18 months and significant recruiting costs trying to hire six senior engineers one at a time, a large tech company may spend $6–12M acquiring a startup to hire the entire team in one transaction — with the added benefit that the team has already worked together and has a demonstrated track record.
+Acqui-hires are most common in technology, where skilled engineering, AI, and product talent is expensive and difficult to assemble. Rather than spending 18 months and significant recruiting costs trying to hire six senior engineers one at a time, a large tech company may spend $6–12M acquiring a startup to hire the entire team in one transaction - with the added benefit that the team has already worked together and has a demonstrated track record.
 
 For founders and investors, an acqui-hire represents a fundamentally different outcome than a strategic acquisition. Understanding the structure and economics is essential before entering any M&A conversation.
 
@@ -30,7 +30,7 @@ From the **acquirer's perspective**, the logic is straightforward:
 | Talent scarcity | Senior technical talent is rare and commands high salaries |
 | Speed | Hiring a pre-assembled team is faster than individual recruiting |
 | Cohesion | An existing team has trust, shared vocabulary, and working dynamics |
-| Validated ability | The team has shipped product under pressure — a meaningful filter |
+| Validated ability | The team has shipped product under pressure - a meaningful filter |
 | Competitive blocking | Prevents a competitor from hiring the same team |
 
 From the **startup's perspective**, an acqui-hire typically occurs when:
@@ -55,13 +55,13 @@ The central element of an acqui-hire is the **employment offer** made to the tea
 - A signing bonus or retention bonus, sometimes structured as "golden handcuffs" paid over 2–3 years
 - A retention period during which departure forfeits some or all of the bonus
 
-The new equity grant is how acqui-hire targets receive most of their financial upside. The acquisition consideration itself — the cash paid to shareholders — is typically minimal.
+The new equity grant is how acqui-hire targets receive most of their financial upside. The acquisition consideration itself - the cash paid to shareholders - is typically minimal.
 
 ### What Happens to Shareholders
 
 This is where acqui-hires diverge sharply from strategic acquisitions. In a typical acqui-hire:
 
-- The **acquisition price** is low — often just enough to cover outstanding debt, legal wind-down costs, and any liquidation preferences owed to investors
+- The **acquisition price** is low - often just enough to cover outstanding debt, legal wind-down costs, and any liquidation preferences owed to investors
 - Common shareholders (founders with unvested stock, early employees) may receive **little to nothing**
 - Preferred investors (VCs) may recover a portion of their investment through the liquidation preference, or may also receive nothing if the price is too low
 - The product is shut down and the IP is either acquired for nominal value or abandoned
@@ -110,7 +110,7 @@ The pattern is consistent: the acquirer's goal is the people, and the product is
 If you receive an acqui-hire approach, evaluate it against several dimensions:
 
 1. **What is the total compensation package?** Add up the retention bonus, new equity grant (at current valuation), and base salary over the vesting period. This is your real economic outcome.
-2. **What do your investors receive?** Understand your liquidation preference stack. If investors are not made whole, the conversation with your board becomes more complex — and some investors may attempt to block a deal that doesn't cover their preference.
+2. **What do your investors receive?** Understand your liquidation preference stack. If investors are not made whole, the conversation with your board becomes more complex - and some investors may attempt to block a deal that doesn't cover their preference.
 3. **What are the employment conditions?** Is joining a condition of the deal? Can you negotiate autonomy, scope, or title? How long are the handcuff provisions?
 4. **What happens to employees?** Not all team members may be offered positions. Be explicit about who the acquirer wants, and negotiate for fair treatment of those not included.
 5. **What is the alternative?** An acqui-hire at $5M is a poor outcome if a strategic buyer might pay $25M in two years. It may be the right outcome if the company is days from shutdown.
@@ -119,7 +119,7 @@ If you receive an acqui-hire approach, evaluate it against several dimensions:
 
 ## The Ethics of Acqui-hires
 
-Acqui-hires surface a genuine ethical tension that founders should consider honestly. Investors provided capital on the expectation of a financial return. If founders accept an acqui-hire deal that returns nothing to investors while providing themselves with lucrative employment packages, they are — at minimum — in an uncomfortable position that may approach a breach of fiduciary duty.
+Acqui-hires surface a genuine ethical tension that founders should consider honestly. Investors provided capital on the expectation of a financial return. If founders accept an acqui-hire deal that returns nothing to investors while providing themselves with lucrative employment packages, they are - at minimum - in an uncomfortable position that may approach a breach of fiduciary duty.
 
 Best practices:
 
@@ -128,10 +128,10 @@ Best practices:
 - If investors cannot recover their investment, acknowledge that openly
 - Consider whether a longer runway or alternative path was actually available before accepting an outcome that serves founders but not investors
 
-Many founders feel acute guilt after acqui-hires. The cleanest approach is to treat shareholders as you would want to be treated — with transparency, early disclosure, and genuine effort to maximize their outcome within the constraints of the situation.
+Many founders feel acute guilt after acqui-hires. The cleanest approach is to treat shareholders as you would want to be treated - with transparency, early disclosure, and genuine effort to maximize their outcome within the constraints of the situation.
 
 ---
 
 ## Key Takeaway
 
-An acqui-hire is an acquisition designed to hire a team, not buy a business. The product is typically shut down, investors often recover only a fraction of their capital through liquidation preferences, and founders' economic upside comes primarily from employment retention packages rather than acquisition proceeds. When evaluating an acqui-hire offer, calculate the true total compensation package — including new equity grants and retention bonuses — and weigh it honestly against both the alternatives and your obligations to shareholders. Done transparently and ethically, an acqui-hire can be a dignified exit for a talented team; done poorly, it can damage relationships and reputation within the investor community for years.
+An acqui-hire is an acquisition designed to hire a team, not buy a business. The product is typically shut down, investors often recover only a fraction of their capital through liquidation preferences, and founders' economic upside comes primarily from employment retention packages rather than acquisition proceeds. When evaluating an acqui-hire offer, calculate the true total compensation package - including new equity grants and retention bonuses - and weigh it honestly against both the alternatives and your obligations to shareholders. Done transparently and ethically, an acqui-hire can be a dignified exit for a talented team; done poorly, it can damage relationships and reputation within the investor community for years.

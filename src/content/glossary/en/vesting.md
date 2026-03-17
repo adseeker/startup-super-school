@@ -14,7 +14,7 @@ acronym: "N/A"
 
 ## What Is Equity Vesting?
 
-**Vesting** is the process by which a founder or employee earns the right to own their equity shares over a defined period of time. Although a founder may be granted 4,000,000 shares "on paper" at company formation, they do not own all of those shares outright on day one. Instead, they earn them gradually — typically over four years — through continued service to the company.
+**Vesting** is the process by which a founder or employee earns the right to own their equity shares over a defined period of time. Although a founder may be granted 4,000,000 shares "on paper" at company formation, they do not own all of those shares outright on day one. Instead, they earn them gradually - typically over four years - through continued service to the company.
 
 Vesting serves a single core purpose: ensuring that everyone with equity in the company actually works to build it. Without vesting, a co-founder could leave after six months, take 30% of the company with them, and contribute nothing further while new investors and employees carry the business forward.
 
@@ -24,7 +24,7 @@ Vesting serves a single core purpose: ensuring that everyone with equity in the 
 
 Vesting aligns the interests of founders, employees, and investors over the long term. For a startup that typically takes seven to ten years to reach a meaningful exit, vesting creates a powerful retention mechanism and protects the company against short-term departures.
 
-From an investor's perspective, vesting is non-negotiable. Before writing a check, VCs will always review the founders' vesting schedules. If founders are not on vesting, investors will insist that vesting is implemented as a condition of the investment — because an unvested co-founder who leaves is a catastrophic risk to the company.
+From an investor's perspective, vesting is non-negotiable. Before writing a check, VCs will always review the founders' vesting schedules. If founders are not on vesting, investors will insist that vesting is implemented as a condition of the investment - because an unvested co-founder who leaves is a catastrophic risk to the company.
 
 ---
 
@@ -53,13 +53,13 @@ A co-founder is granted 4,800,000 shares on a 4-year, 1-year cliff schedule:
 
 ### Founders
 
-Founder vesting is sometimes implemented retroactively — meaning founders may have already been working on the company for months or years before formal vesting is set up. In these cases, it is common to grant founders partial credit for time already served.
+Founder vesting is sometimes implemented retroactively - meaning founders may have already been working on the company for months or years before formal vesting is set up. In these cases, it is common to grant founders partial credit for time already served.
 
-**Example:** A startup raises a seed round after 14 months of operation. The lead investor requires founder vesting. Since each founder has been working for 14 months, they might receive 14 months of "vesting credit" at closing — meaning they have already vested roughly 29% of their grant (14/48), with the remaining 71% vesting over the next 34 months.
+**Example:** A startup raises a seed round after 14 months of operation. The lead investor requires founder vesting. Since each founder has been working for 14 months, they might receive 14 months of "vesting credit" at closing - meaning they have already vested roughly 29% of their grant (14/48), with the remaining 71% vesting over the next 34 months.
 
 ### Employees
 
-Employee option grants typically use the same 4-year, 1-year cliff schedule. However, employees are usually awarded **options** (the right to purchase shares at a fixed price) rather than actual shares. The vesting mechanics are identical, but employees must exercise their options — paying the strike price — to actually own shares.
+Employee option grants typically use the same 4-year, 1-year cliff schedule. However, employees are usually awarded **options** (the right to purchase shares at a fixed price) rather than actual shares. The vesting mechanics are identical, but employees must exercise their options - paying the strike price - to actually own shares.
 
 ---
 
@@ -69,7 +69,7 @@ Vesting acceleration allows an employee or founder to have their unvested equity
 
 ### Single-Trigger Acceleration
 
-Unvested equity accelerates automatically upon a single defined event — most commonly an acquisition. For example, a founder's remaining unvested shares might fully vest the moment a company is acquired, regardless of whether they stay on.
+Unvested equity accelerates automatically upon a single defined event - most commonly an acquisition. For example, a founder's remaining unvested shares might fully vest the moment a company is acquired, regardless of whether they stay on.
 
 Investors typically dislike single-trigger acceleration for founders because it can make the company less attractive to acquirers who want the founders to stick around post-acquisition. Common in executive compensation packages, but unusual for early founders in VC-backed companies.
 
@@ -103,10 +103,10 @@ Once fully vested, the person owns all their shares outright regardless of conti
 
 - **"Vesting means I own my shares"**: Vesting means you have earned the right to own your shares. For option holders, you must still exercise the option (pay the strike price) to legally own the shares.
 - **"If I leave, I lose everything"**: You only lose unvested shares. Any vested equity is yours.
-- **"All vesting schedules are the same"**: While 4-year / 1-year cliff is standard, some companies use 3-year schedules, back-weighted vesting, or milestone-based vesting — particularly for senior hires.
+- **"All vesting schedules are the same"**: While 4-year / 1-year cliff is standard, some companies use 3-year schedules, back-weighted vesting, or milestone-based vesting - particularly for senior hires.
 
 ---
 
 ## Key Takeaway
 
-Vesting is the mechanism that aligns long-term effort with long-term reward in a startup. The standard 4-year schedule with a 1-year cliff protects the company from short-term departures while fairly compensating people who stay and build. Founders should set up vesting from day one — before the first outside investment — and include double-trigger acceleration in their agreements to protect against being pushed out after an acquisition. Every person with equity in your company should understand their schedule, their cliff date, and what happens to their shares if they leave.
+Vesting is the mechanism that aligns long-term effort with long-term reward in a startup. The standard 4-year schedule with a 1-year cliff protects the company from short-term departures while fairly compensating people who stay and build. Founders should set up vesting from day one - before the first outside investment - and include double-trigger acceleration in their agreements to protect against being pushed out after an acquisition. Every person with equity in your company should understand their schedule, their cliff date, and what happens to their shares if they leave.

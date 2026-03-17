@@ -13,7 +13,7 @@ seoKeywords: ["technical debt startup", "what is technical debt", "managing tech
 
 ## What Is Technical Debt?
 
-**Technical debt** is the implied cost of additional rework caused by choosing an easy or fast solution now instead of a better approach that would take longer. Like financial debt, it is not inherently bad — but if left unmanaged, the interest compounds until it cripples the team's ability to move.
+**Technical debt** is the implied cost of additional rework caused by choosing an easy or fast solution now instead of a better approach that would take longer. Like financial debt, it is not inherently bad - but if left unmanaged, the interest compounds until it cripples the team's ability to move.
 
 The metaphor was introduced by Ward Cunningham in 1992. Cunningham was trying to explain to non-technical stakeholders why his team needed time to refactor code that was already "working." He described the quick-and-dirty code as debt: it let the team ship faster now, but every future change would require paying interest in the form of extra time to work around the mess.
 
@@ -25,7 +25,7 @@ The financial analogy is precise:
 
 ## Fowler's Technical Debt Quadrant
 
-Not all technical debt is the same. Martin Fowler's Technical Debt Quadrant provides a useful taxonomy across two axes — reckless vs. prudent, and deliberate vs. inadvertent:
+Not all technical debt is the same. Martin Fowler's Technical Debt Quadrant provides a useful taxonomy across two axes - reckless vs. prudent, and deliberate vs. inadvertent:
 
 |  | **Deliberate** | **Inadvertent** |
 |--|---------------|----------------|
@@ -33,7 +33,7 @@ Not all technical debt is the same. Martin Fowler's Technical Debt Quadrant prov
 | **Prudent** | "We must ship now and deal with it later" | "Now we know how we should have done it" |
 
 - **Prudent + Deliberate** debt is the only kind a startup should willingly take on. You make a conscious trade-off with a plan to fix it.
-- **Reckless debt** — whether deliberate or inadvertent — always costs more than it saves.
+- **Reckless debt** - whether deliberate or inadvertent - always costs more than it saves.
 - **Inadvertent debt** is simply a skill or knowledge gap, addressed through hiring, mentorship, and code review.
 
 ## Why Startups Accumulate Debt Deliberately
@@ -53,19 +53,19 @@ The rule of thumb: take on technical debt at the edges (integrations, UI, data p
 
 Technical debt crosses into dangerous territory when it starts visibly degrading team output:
 
-- **Developer velocity drops** — features that should take days take weeks; engineers cite "the codebase" as the blocker
-- **Bug rate increases** — fixing one bug creates two new ones; regressions are common
-- **Onboarding collapses** — new engineers take months to become productive because the code is incomprehensible
-- **Deployments become feared** — teams avoid releasing on Fridays; rollbacks happen frequently
-- **"We'd have to rewrite everything"** — a refactor that requires touching every part of the system simultaneously signals debt has reached structural levels
+- **Developer velocity drops** - features that should take days take weeks; engineers cite "the codebase" as the blocker
+- **Bug rate increases** - fixing one bug creates two new ones; regressions are common
+- **Onboarding collapses** - new engineers take months to become productive because the code is incomprehensible
+- **Deployments become feared** - teams avoid releasing on Fridays; rollbacks happen frequently
+- **"We'd have to rewrite everything"** - a refactor that requires touching every part of the system simultaneously signals debt has reached structural levels
 
 ## When to Pay It Down
 
 Technical debt should be addressed in three scenarios:
 
-1. **Before a scaling event** — if you are about to hire 5 engineers or migrate to a new infrastructure, pay down debt first so the new team doesn't inherit the mess.
-2. **Before a feature that requires touching the same area** — if you're building on top of something shaky, reinforce the foundation before adding floors.
-3. **When the interest rate spikes** — if the same piece of code causes 40% of your incidents, the interest rate on that debt is too high to ignore.
+1. **Before a scaling event** - if you are about to hire 5 engineers or migrate to a new infrastructure, pay down debt first so the new team doesn't inherit the mess.
+2. **Before a feature that requires touching the same area** - if you're building on top of something shaky, reinforce the foundation before adding floors.
+3. **When the interest rate spikes** - if the same piece of code causes 40% of your incidents, the interest rate on that debt is too high to ignore.
 
 A practical approach used by many engineering teams: **20% rule**. Allocate 20% of every sprint explicitly to paying down debt. This prevents accumulation from becoming a crisis without requiring a disruptive "refactoring sprint" that stalls product work for weeks.
 
@@ -74,7 +74,7 @@ A practical approach used by many engineering teams: **20% rule**. Allocate 20% 
 The financial metaphor is your best tool. Reframe the conversation:
 
 - Instead of: "We need to refactor the authentication module"
-- Say: "We took on $50,000 worth of debt when we built this quickly last year. We're currently paying $5,000 per month in interest — every new feature in this area takes 3x longer than it should. Paying it down now costs 2 weeks; not paying it down costs 6 weeks by Q3."
+- Say: "We took on $50,000 worth of debt when we built this quickly last year. We're currently paying $5,000 per month in interest - every new feature in this area takes 3x longer than it should. Paying it down now costs 2 weeks; not paying it down costs 6 weeks by Q3."
 
 Quantify the interest rate. Estimates of lost developer time per sprint, bugs per release, and onboarding weeks per engineer make the cost concrete.
 
@@ -89,4 +89,4 @@ The long-term cost of unmanaged technical debt is severe and measurable:
 
 ## Key Takeaway
 
-Technical debt is a legitimate financing tool for early-stage startups — borrowing against future engineering time to move faster now. Used deliberately and documented honestly, it is a rational trade-off. Left unmanaged, it compounds silently until it becomes the single biggest obstacle to growth, not the codebase's complexity, but the team's inability to change it.
+Technical debt is a legitimate financing tool for early-stage startups - borrowing against future engineering time to move faster now. Used deliberately and documented honestly, it is a rational trade-off. Left unmanaged, it compounds silently until it becomes the single biggest obstacle to growth, not the codebase's complexity, but the team's inability to change it.

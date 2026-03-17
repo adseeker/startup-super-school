@@ -1,6 +1,6 @@
 ---
 title: "Why AI Wrappers Fail"
-description: "Most AI wrapper startups fail within 18 months. Here's the structural reason — and the few ways to build defensibility on top of a foundation model."
+description: "Most AI wrapper startups fail within 18 months. Here's the structural reason - and the few ways to build defensibility on top of a foundation model."
 locale: "en"
 category: "ai"
 tags: ["ai", "startup", "strategy", "product", "competitive-advantage"]
@@ -12,13 +12,13 @@ primaryKeyword: "ai wrapper startup fail"
 seoKeywords: ["why ai wrappers fail", "ai wrapper startup", "building on top of openai", "ai wrapper business model"]
 faqs:
   - question: "What is an AI wrapper startup?"
-    answer: "An AI wrapper is a startup that builds a product primarily by calling a foundation model API (OpenAI, Anthropic, etc.) and adding a UI or workflow around it. The term is often used critically to describe startups with thin differentiation — their core value is accessing the model, not anything they've built independently."
+    answer: "An AI wrapper is a startup that builds a product primarily by calling a foundation model API (OpenAI, Anthropic, etc.) and adding a UI or workflow around it. The term is often used critically to describe startups with thin differentiation - their core value is accessing the model, not anything they've built independently."
   - question: "Why do most AI wrapper startups fail?"
     answer: "AI wrappers fail because they build on a capability (model intelligence) that any competitor can equally access. When GPT-5 improves on a task the wrapper was built around, every competitor gets the same improvement. The startup has no proprietary data, no switching costs, and no distribution advantage to maintain its position when the underlying model changes."
   - question: "Can you build a successful business on top of foundation model APIs?"
-    answer: "Yes — but only if you add proprietary value beyond API access. Successful API-based AI companies have at least one of: proprietary data that improves outputs beyond the base model, deep workflow integrations that create switching costs, distribution advantages in a specific vertical, or a user experience that's genuinely hard to replicate. The API is the commodity input; everything else is the product."
+    answer: "Yes - but only if you add proprietary value beyond API access. Successful API-based AI companies have at least one of: proprietary data that improves outputs beyond the base model, deep workflow integrations that create switching costs, distribution advantages in a specific vertical, or a user experience that's genuinely hard to replicate. The API is the commodity input; everything else is the product."
   - question: "What are examples of AI wrappers that succeeded?"
-    answer: "Jasper ($1.5B valuation at peak) initially succeeded by being first to market with an AI writing tool and building distribution through SEO and affiliate channels. Cursor succeeded by building an IDE paradigm around AI — not just a wrapper but a fundamentally different development environment. The common thread: distribution and workflow depth, not better prompts."
+    answer: "Jasper ($1.5B valuation at peak) initially succeeded by being first to market with an AI writing tool and building distribution through SEO and affiliate channels. Cursor succeeded by building an IDE paradigm around AI - not just a wrapper but a fundamentally different development environment. The common thread: distribution and workflow depth, not better prompts."
 ---
 
 ## The Commodity Trap
@@ -36,12 +36,12 @@ This is the commodity trap: a market where the primary input to value creation i
 The survival pattern for API-dependent AI companies has three forms:
 
 ### 1. Distribution Lock-In
-Jasper survived not because it had better AI than competitors, but because it built distribution first — SEO, affiliate marketing, brand awareness, and a large user base. When competitors arrived, Jasper already owned the customer relationships. Moat = distribution, not technology.
+Jasper survived not because it had better AI than competitors, but because it built distribution first - SEO, affiliate marketing, brand awareness, and a large user base. When competitors arrived, Jasper already owned the customer relationships. Moat = distribution, not technology.
 
 **The insight**: If you can acquire users faster than competitors can replicate your product, you buy time to build real differentiation. This requires significant marketing investment and execution speed.
 
 ### 2. Proprietary Data Accumulation
-Every user interaction generates data — feedback, corrections, preferences, domain-specific completions. Startups that instrument this feedback and use it to fine-tune their models develop performance advantages that new entrants can't replicate quickly.
+Every user interaction generates data - feedback, corrections, preferences, domain-specific completions. Startups that instrument this feedback and use it to fine-tune their models develop performance advantages that new entrants can't replicate quickly.
 
 Harvey (legal AI) is built on access to legal documents, case outcomes, and attorney feedback that takes years to accumulate legitimately. Any competitor faces the same multi-year data acquisition barrier.
 
@@ -69,4 +69,4 @@ If you've identified that your current product is a wrapper, the path to defensi
 
 ## Key Takeaway
 
-Being an AI wrapper isn't a death sentence — it's a starting position. Every successful AI application company started by calling an API. The companies that survive build proprietary value on top of that access: data, integrations, distribution, and vertical depth. The ones that don't evolve past the API call stage become commodities, regardless of how impressive their demo was in 2023.
+Being an AI wrapper isn't a death sentence - it's a starting position. Every successful AI application company started by calling an API. The companies that survive build proprietary value on top of that access: data, integrations, distribution, and vertical depth. The ones that don't evolve past the API call stage become commodities, regardless of how impressive their demo was in 2023.

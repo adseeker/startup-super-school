@@ -1,6 +1,6 @@
 ---
 title: "How to Price Your SaaS Product"
-description: "A practical guide to SaaS pricing strategy — which model to use, how to set your tiers, and the exact research process to find your right price."
+description: "A practical guide to SaaS pricing strategy - which model to use, how to set your tiers, and the exact research process to find your right price."
 locale: "en"
 category: "product"
 tags: ["pricing", "SaaS", "revenue", "strategy", "monetization"]
@@ -13,11 +13,11 @@ seoKeywords: ["SaaS pricing strategy", "how to price SaaS", "SaaS pricing models
 
 ## Pricing Is the Highest-Leverage Growth Lever You Have
 
-A 1% improvement in pricing delivers 11x the profit improvement of a 1% improvement in customer acquisition volume — according to McKinsey research on B2B software companies. Yet most early-stage SaaS founders spend weeks on their landing page and 20 minutes on their pricing page.
+A 1% improvement in pricing delivers 11x the profit improvement of a 1% improvement in customer acquisition volume - according to McKinsey research on B2B software companies. Yet most early-stage SaaS founders spend weeks on their landing page and 20 minutes on their pricing page.
 
 Pricing is not just a revenue decision. It is a positioning decision. Your price signals who the product is for, how serious it is, and what category it competes in. A $9/month product and a $900/month product are perceived as fundamentally different tools, even if they share identical features.
 
-This guide walks you through every pricing decision you need to make for your first real pricing page — with frameworks, research methods, and specific numbers.
+This guide walks you through every pricing decision you need to make for your first real pricing page - with frameworks, research methods, and specific numbers.
 
 ## The Five SaaS Pricing Models
 
@@ -35,7 +35,7 @@ Example: $25/user/month with a 5-seat minimum.
 
 ### 2. Usage-Based Pricing
 
-Customers pay for what they consume — API calls, documents processed, emails sent, tokens used.
+Customers pay for what they consume - API calls, documents processed, emails sent, tokens used.
 
 - **Best for**: Infrastructure, developer tools, AI products, communication APIs (Twilio, Stripe, OpenAI)
 - **Advantage**: Aligns your success with customer success; low barrier to start
@@ -47,7 +47,7 @@ Example: $0.002 per API call, with a $50 minimum monthly commitment.
 
 Three plans (Starter, Growth, Enterprise) with progressively unlocked features.
 
-- **Best for**: Most B2B SaaS products — especially those with varying customer sophistication
+- **Best for**: Most B2B SaaS products - especially those with varying customer sophistication
 - **Advantage**: Captures willingness to pay across different customer segments; clear upgrade path
 - **Disadvantage**: Feature gating decisions are hard; wrong gates create frustration
 
@@ -88,7 +88,7 @@ The "Professional" tier in a three-tier structure should be priced to make the "
 | Professional | $79/mo | 10 users, 50 projects |
 | Business | $99/mo | Unlimited users, unlimited projects |
 
-The $20 gap between Professional and Business makes Business feel nearly free by comparison — and it converts at a higher rate than if Business were $149.
+The $20 gap between Professional and Business makes Business feel nearly free by comparison - and it converts at a higher rate than if Business were $149.
 
 ### Charm Pricing
 
@@ -111,11 +111,11 @@ Always lead with the annual price as the default display on your pricing page. M
 
 ### Cost-Plus Pricing (Don't Use This)
 
-Cost-plus means you calculate your infrastructure costs, add a margin, and arrive at a price. This is the wrong approach for SaaS. Software has near-zero marginal costs — cost-plus will always underprice your product.
+Cost-plus means you calculate your infrastructure costs, add a margin, and arrive at a price. This is the wrong approach for SaaS. Software has near-zero marginal costs - cost-plus will always underprice your product.
 
 ### Competitor-Based Pricing (Use Only as a Sanity Check)
 
-Matching competitors' prices tells you what the market currently pays — which is useful context but not a ceiling. If competitors charge $49/month, that doesn't mean $49 is right for you. You may deliver more value. You may target a segment willing to pay more.
+Matching competitors' prices tells you what the market currently pays - which is useful context but not a ceiling. If competitors charge $49/month, that doesn't mean $49 is right for you. You may deliver more value. You may target a segment willing to pay more.
 
 Use competitor prices to avoid pricing yourself into a different mental category (e.g., don't charge $5,000/month if all alternatives are $100/month unless you have an extreme differentiation story). Use it as a floor check, not a pricing formula.
 
@@ -128,7 +128,7 @@ A useful formula: charge roughly 10% of the value your product delivers.
 - If your tool saves a sales rep 5 hours/week at a fully loaded cost of $80/hour, that's $400/week or ~$1,600/month in value. 10% = $160/month per seat.
 - If your tool increases a user's monthly revenue by $3,000, charge ~$300/month.
 
-This won't be exact, but it forces you to think about outcomes rather than features — and it almost always produces a higher price than gut instinct.
+This won't be exact, but it forces you to think about outcomes rather than features - and it almost always produces a higher price than gut instinct.
 
 ## How to Run a Willingness-to-Pay Research Conversation
 
@@ -139,7 +139,7 @@ Before you set prices, run 10–15 structured pricing conversations with your ta
 In each interview, after demonstrating your product, ask four questions:
 
 1. "At what price would this product be so cheap that you'd question its quality?"
-2. "At what price would this product start to feel like a bargain — cheap, but not suspiciously so?"
+2. "At what price would this product start to feel like a bargain - cheap, but not suspiciously so?"
 3. "At what price would this product start to feel expensive, but you'd still consider it?"
 4. "At what price would this product be too expensive, regardless of its quality?"
 
@@ -155,17 +155,17 @@ This is uncomfortable. Do it anyway.
 
 Most early B2B SaaS products should launch with three tiers structured like this:
 
-**Tier 1 — Starter** (~20–25% of your target price)
+**Tier 1 - Starter** (~20–25% of your target price)
 - For individual users or very small teams
 - Solves the core problem with limits (seat count, usage, feature set)
 - Goal: get someone in the door; this should not be your most popular plan
 
-**Tier 2 — Professional** (~your primary target price)
+**Tier 2 - Professional** (~your primary target price)
 - For small teams (5–25 users)
 - Removes the most painful Starter limitations
 - Goal: this should be your modal customer
 
-**Tier 3 — Business/Enterprise** (~2–3x Professional)
+**Tier 3 - Business/Enterprise** (~2–3x Professional)
 - For larger teams or organizations
 - Adds SSO, advanced permissions, audit logs, SLA, priority support
 - Goal: capture larger customers without custom sales motions
@@ -180,7 +180,7 @@ Most early B2B SaaS products should launch with three tiers structured like this
 | Integrations | Basic | All | All + custom |
 | Support | Email | Priority email | Dedicated CSM |
 
-Highlight the middle tier as "Most Popular." This is not manipulation — it's navigation. Customers are genuinely unsure which plan to choose, and social proof from a label reduces cognitive load.
+Highlight the middle tier as "Most Popular." This is not manipulation - it's navigation. Customers are genuinely unsure which plan to choose, and social proof from a label reduces cognitive load.
 
 ## Common Pricing Mistakes
 
@@ -219,4 +219,4 @@ The right approach for raising prices: grandfather existing customers at their c
 
 ## Key Takeaway
 
-Your first pricing page should be three tiers, value-based, with annual billing as the default. Run 10–15 willingness-to-pay conversations before you launch it. Charge more than feels comfortable — you can always offer discounts, but it's painful to raise prices after customers anchor on a low number. If your product saves or makes your customer money, charging 10% of that value is not just fair — it's the right place to start.
+Your first pricing page should be three tiers, value-based, with annual billing as the default. Run 10–15 willingness-to-pay conversations before you launch it. Charge more than feels comfortable - you can always offer discounts, but it's painful to raise prices after customers anchor on a low number. If your product saves or makes your customer money, charging 10% of that value is not just fair - it's the right place to start.

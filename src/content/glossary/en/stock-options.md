@@ -13,7 +13,7 @@ seoKeywords: ["stock options startup", "what are stock options", "employee stock
 
 ## What Are Stock Options?
 
-**Stock options** are a contract that gives the holder the **right — but not the obligation** — to purchase a specific number of company shares at a fixed price, called the **strike price** (also called the exercise price or grant price), at any time during a defined period. They are the most common form of equity compensation used by startups in the United States.
+**Stock options** are a contract that gives the holder the **right - but not the obligation** - to purchase a specific number of company shares at a fixed price, called the **strike price** (also called the exercise price or grant price), at any time during a defined period. They are the most common form of equity compensation used by startups in the United States.
 
 Options are not shares. When you receive a stock option grant, you do not own anything yet. You own the right to buy shares in the future, at a price set today. The value of that right depends entirely on whether the company's share price rises above the strike price before the options expire or are forfeited.
 
@@ -27,21 +27,21 @@ Startups use options rather than direct share grants for two main reasons:
 ## How Stock Options Work: Step by Step
 
 1. **Grant**: The company issues you a grant of, say, 10,000 options with a $0.10 strike price. The grant is documented in an option agreement and tracked in the cap table.
-2. **Vest**: Options vest over time according to a schedule. The standard is a **4-year vest with a 1-year cliff** — meaning no options vest in the first 12 months, then 25% vest on the cliff date, then the remaining 75% vest monthly over the following 36 months.
+2. **Vest**: Options vest over time according to a schedule. The standard is a **4-year vest with a 1-year cliff** - meaning no options vest in the first 12 months, then 25% vest on the cliff date, then the remaining 75% vest monthly over the following 36 months.
 3. **Exercise**: Once vested, you can choose to exercise your options by paying the strike price to the company in exchange for actual shares. 10,000 options at $0.10 = $1,000 to exercise.
 4. **Own shares**: After exercising, you own real shares of the company. These shares can then be sold in a secondary transaction, tender offer, or eventually at an IPO or acquisition.
 
 ## The Two Types of Stock Options
 
-### ISO — Incentive Stock Option
+### ISO - Incentive Stock Option
 
 ISOs are available **only to employees** (not contractors or advisors). They carry the most favorable US tax treatment:
 
-- **No ordinary income tax at exercise**: The spread between the strike price and the current FMV is not taxed as ordinary income when you exercise (though it may trigger the Alternative Minimum Tax — see below)
+- **No ordinary income tax at exercise**: The spread between the strike price and the current FMV is not taxed as ordinary income when you exercise (though it may trigger the Alternative Minimum Tax - see below)
 - **Long-term capital gains treatment**: If you hold the shares for at least **2 years from the grant date** and **1 year from the exercise date**, any gain is taxed at long-term capital gains rates (15–20%) rather than ordinary income rates (up to 37%)
 - **ISO limit**: Only the first $100,000 of options that become exercisable in a single year qualify as ISOs; anything above automatically converts to NSO treatment
 
-### NSO — Non-Qualified Stock Option
+### NSO - Non-Qualified Stock Option
 
 NSOs can be granted to **employees, contractors, advisors, and board members**. Their tax treatment is less favorable:
 
@@ -84,7 +84,7 @@ Some companies (notably Stripe, Pinterest, and Quora) have extended their exerci
 
 ## AMT Risk with ISOs
 
-The Alternative Minimum Tax (AMT) is a parallel tax system that can apply to ISO exercises. The spread on exercising ISOs (which avoids regular income tax) is an **AMT preference item** — meaning it can trigger an AMT liability even if no shares are sold.
+The Alternative Minimum Tax (AMT) is a parallel tax system that can apply to ISO exercises. The spread on exercising ISOs (which avoids regular income tax) is an **AMT preference item** - meaning it can trigger an AMT liability even if no shares are sold.
 
 In practice: if you exercise a large number of ISOs in a year when the company's 409A valuation is high, you may owe AMT on the spread even if the stock is illiquid and you have received no cash. This is one of the most common financial mistakes made by early startup employees.
 
@@ -110,8 +110,8 @@ You join a Series A startup in 2022 and receive **10,000 options at a $0.10 stri
 - If these were ISOs held the required period: taxed at long-term capital gains (~20%) = ~$19,800 in taxes; **net ~$79,200**
 - If these were NSOs: the $99,000 spread is ordinary income (~37% federal) = ~$36,630 in taxes; **net ~$62,370**
 
-The difference between ISO and NSO treatment on this single grant is approximately $17,000 — a meaningful gap that compounds significantly with larger grants at higher valuations.
+The difference between ISO and NSO treatment on this single grant is approximately $17,000 - a meaningful gap that compounds significantly with larger grants at higher valuations.
 
 ## Key Takeaway
 
-Stock options are one of the most powerful tools for aligning employee incentives with long-term company outcomes, but they come with real complexity around tax treatment, exercise timing, and the 90-day post-termination window. Every employee who receives options should understand the difference between ISOs and NSOs, the role of 409A valuations in determining their strike price, and the financial consequences of exercising — both when the company is doing well and when they leave before an exit.
+Stock options are one of the most powerful tools for aligning employee incentives with long-term company outcomes, but they come with real complexity around tax treatment, exercise timing, and the 90-day post-termination window. Every employee who receives options should understand the difference between ISOs and NSOs, the role of 409A valuations in determining their strike price, and the financial consequences of exercising - both when the company is doing well and when they leave before an exit.

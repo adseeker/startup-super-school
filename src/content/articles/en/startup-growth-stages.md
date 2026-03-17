@@ -1,6 +1,6 @@
 ---
 title: "The Stages of Startup Growth"
-description: "The five stages of startup growth explained — from ideation to scale — with key milestones, exit criteria, and common failure modes for each phase."
+description: "The five stages of startup growth explained - from ideation to scale - with key milestones, exit criteria, and common failure modes for each phase."
 locale: "en"
 category: "strategy"
 tags: ["strategy", "growth", "fundraising", "product-market-fit", "founders"]
@@ -23,7 +23,7 @@ faqs:
 
 ## The Five Stages of Startup Growth
 
-Every startup — regardless of industry, business model, or team size — moves through a series of developmental stages. Each stage answers a different fundamental question, requires a different operating mode, and carries a different set of risks.
+Every startup - regardless of industry, business model, or team size - moves through a series of developmental stages. Each stage answers a different fundamental question, requires a different operating mode, and carries a different set of risks.
 
 Understanding which stage you're in is one of the most important things a founder can do. The right strategy at Stage 2 is often the wrong strategy at Stage 4. Misreading your stage leads to premature scaling, resource misallocation, and the kind of organizational confusion that quietly kills otherwise promising companies.
 
@@ -34,12 +34,12 @@ Understanding which stage you're in is one of the most important things a founde
 **What it looks like**: The founding team is exploring a problem space, forming hypotheses, and stress-testing their assumptions about who has the problem, how painful it is, and whether a product-based solution is viable.
 
 **Key activities**:
-- [Customer discovery interviews](/guides/customer-discovery-interviews) — not pitching, listening
+- [Customer discovery interviews](/guides/customer-discovery-interviews) - not pitching, listening
 - Market research and competitive mapping
 - Defining the initial [value proposition](/concepts/value-proposition-canvas)
 - Assembling the founding team
 
-**How to exit this stage**: You have clear, specific evidence — from real conversations with potential customers, not assumptions — that a painful, frequent problem exists and that people would genuinely engage with a solution.
+**How to exit this stage**: You have clear, specific evidence - from real conversations with potential customers, not assumptions - that a painful, frequent problem exists and that people would genuinely engage with a solution.
 
 **Common failure modes**: Falling in love with a solution before understanding the problem. Building before talking to customers.
 
@@ -47,7 +47,7 @@ Understanding which stage you're in is one of the most important things a founde
 
 **The question**: Will anyone pay for (or meaningfully use) this?
 
-**What it looks like**: Building the smallest possible version of the product to test the core value proposition. This is [MVP](/glossary/mvp) territory — not a polished product, but a functional hypothesis test.
+**What it looks like**: Building the smallest possible version of the product to test the core value proposition. This is [MVP](/glossary/mvp) territory - not a polished product, but a functional hypothesis test.
 
 **Key activities**:
 - Building an [MVP](/glossary/mvp) or concierge MVP
@@ -55,7 +55,7 @@ Understanding which stage you're in is one of the most important things a founde
 - [Validating the idea](/guides/validate-your-idea) with real willingness-to-pay signals
 - Identifying the beachhead customer segment
 
-**How to exit this stage**: You have evidence of demand — paying customers, pre-orders, or consistent, unprompted engagement from a specific user profile. A waitlist is insufficient; you need behavioral proof.
+**How to exit this stage**: You have evidence of demand - paying customers, pre-orders, or consistent, unprompted engagement from a specific user profile. A waitlist is insufficient; you need behavioral proof.
 
 **Common failure modes**: Mistaking positive feedback for validation. "Everyone I talked to loved the idea" is not validation; payment or consistent engagement is.
 
@@ -75,7 +75,7 @@ Understanding which stage you're in is one of the most important things a founde
 
 **How to exit this stage**: Retention is strong (users come back without prompting), a cohort of customers clearly love the product (high NPS or equivalent), and the core use case is well-defined and consistently valuable.
 
-**Common failure modes**: Scaling acquisition before retention is solved. This is the trap that creates leaky buckets — high CAC, high churn, and a [burn rate](/glossary/burn-rate) that can't be sustained.
+**Common failure modes**: Scaling acquisition before retention is solved. This is the trap that creates leaky buckets - high CAC, high churn, and a [burn rate](/glossary/burn-rate) that can't be sustained.
 
 ## Stage 4: Growth
 
@@ -99,10 +99,10 @@ Understanding which stage you're in is one of the most important things a founde
 
 **The question**: How do we become the category leader?
 
-**What it looks like**: The business has proven its model. The task shifts from discovery to execution — building organizational infrastructure, expanding into new markets, and defending and extending competitive position.
+**What it looks like**: The business has proven its model. The task shifts from discovery to execution - building organizational infrastructure, expanding into new markets, and defending and extending competitive position.
 
 **Key activities**:
-- Market expansion ([Ansoff Matrix](/concepts/ansoff-matrix) — new geographies, new segments)
+- Market expansion ([Ansoff Matrix](/concepts/ansoff-matrix) - new geographies, new segments)
 - Platform and product extension
 - Building management depth and organizational structure
 - Competing for market leadership via [network effects](/concepts/network-effects), brand, or [moat](/glossary/moat) development
@@ -123,4 +123,4 @@ Understanding which stage you're in is one of the most important things a founde
 
 ## Key Takeaway
 
-Startup stages are not a bureaucratic framework — they are a forcing function. Each stage answers a specific question before you spend resources assuming the answer is yes. The founders who move fastest through the stages are rarely the ones who skip questions; they're the ones who answer them most rigorously. Know your stage, focus on the right question, and resist the pull to operate like you're further along than you are.
+Startup stages are not a bureaucratic framework - they are a forcing function. Each stage answers a specific question before you spend resources assuming the answer is yes. The founders who move fastest through the stages are rarely the ones who skip questions; they're the ones who answer them most rigorously. Know your stage, focus on the right question, and resist the pull to operate like you're further along than you are.

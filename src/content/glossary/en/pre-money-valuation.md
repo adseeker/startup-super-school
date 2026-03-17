@@ -13,7 +13,7 @@ seoKeywords: ["pre-money valuation startup", "post-money valuation startup", "pr
 
 ## What Is Pre-Money and Post-Money Valuation?
 
-When a startup raises a funding round, the negotiated valuation comes in two forms: **pre-money** and **post-money**. Both refer to the same company at the same moment in time — but they measure value at different points in the transaction.
+When a startup raises a funding round, the negotiated valuation comes in two forms: **pre-money** and **post-money**. Both refer to the same company at the same moment in time - but they measure value at different points in the transaction.
 
 - **Pre-money valuation**: The agreed value of the company *before* the new investment is added
 - **Post-money valuation**: The value of the company *after* the investment is included
@@ -26,7 +26,7 @@ And the investor's resulting ownership stake is:
 
 > **Investor ownership % = Investment amount / Post-money valuation**
 
-This distinction is not merely technical. Confusing pre-money and post-money is one of the most common — and costly — errors founders make when calculating how much of their company they are giving away.
+This distinction is not merely technical. Confusing pre-money and post-money is one of the most common - and costly - errors founders make when calculating how much of their company they are giving away.
 
 ---
 
@@ -49,7 +49,7 @@ The confusion most commonly arises when a founder says "we're raising at a $10M 
 
 ## The Option Pool Shuffle
 
-One of the most impactful — and often overlooked — mechanics in pre-money negotiations is the **option pool shuffle**. Investors frequently require that an employee stock option pool (ESOP) be created or expanded **before** the round closes. This option pool comes out of the pre-money valuation, effectively diluting founders before the investment even lands.
+One of the most impactful - and often overlooked - mechanics in pre-money negotiations is the **option pool shuffle**. Investors frequently require that an employee stock option pool (ESOP) be created or expanded **before** the round closes. This option pool comes out of the pre-money valuation, effectively diluting founders before the investment even lands.
 
 **Without option pool shuffle:**
 - Pre-money: $10M
@@ -60,7 +60,7 @@ One of the most impactful — and often overlooked — mechanics in pre-money ne
 
 **With option pool shuffle (15% option pool required):**
 
-The investor requires a 15% post-closing option pool. To achieve this, the pool must be carved out of the pre-money. If the post-money is $12M and 15% must be options, the pool = $1.8M. This $1.8M comes from the founder's pre-money share — reducing the effective founder value.
+The investor requires a 15% post-closing option pool. To achieve this, the pool must be carved out of the pre-money. If the post-money is $12M and 15% must be options, the pool = $1.8M. This $1.8M comes from the founder's pre-money share - reducing the effective founder value.
 
 | | Without Pool Shuffle | With 15% Pool Shuffle |
 |--|---------------------|-----------------------|
@@ -72,7 +72,7 @@ The investor requires a 15% post-closing option pool. To achieve this, the pool 
 | Investor ownership | 16.7% | 16.7% |
 | Founder + employee ownership | 83.3% | ~70.8% (founders) + 12.5% (option pool) |
 
-The investor's percentage is the same either way — but the founders' effective ownership has dropped. The option pool shuffle transfers value from founders to employees (via the option pool) without affecting the investor's stake. Founders should model the fully diluted cap table, including the post-closing option pool, before agreeing to any valuation.
+The investor's percentage is the same either way - but the founders' effective ownership has dropped. The option pool shuffle transfers value from founders to employees (via the option pool) without affecting the investor's stake. Founders should model the fully diluted cap table, including the post-closing option pool, before agreeing to any valuation.
 
 ---
 
@@ -82,14 +82,14 @@ Y Combinator's SAFE (Simple Agreement for Future Equity) originally used a **pre
 
 **Pre-money SAFE** (old format): The valuation cap is applied pre-investment, meaning the SAFE holder's dilution from the priced round is calculated differently. Multiple SAFEs with pre-money caps stack in complex ways.
 
-**Post-money SAFE** (current YC format): The ownership percentage is locked in at signing. If an investor puts $500K on a $5M post-money SAFE cap, they are guaranteed at least **10%** of the company at conversion — regardless of how many other SAFEs are issued afterward.
+**Post-money SAFE** (current YC format): The ownership percentage is locked in at signing. If an investor puts $500K on a $5M post-money SAFE cap, they are guaranteed at least **10%** of the company at conversion - regardless of how many other SAFEs are issued afterward.
 
 | SAFE Type | Ownership Certainty | Impact of Multiple SAFEs |
 |-----------|--------------------|-----------------------|
 | Pre-money SAFE | Uncertain until conversion | SAFEs dilute each other |
 | Post-money SAFE | Fixed at issuance | Each SAFE has guaranteed floor |
 
-Post-money SAFEs are cleaner for investors and more predictable. However, if a founder issues multiple post-money SAFEs, the cumulative dilution is fully borne by the founders — each SAFE's ownership guarantee stacks, and the total can be substantial before a priced round occurs.
+Post-money SAFEs are cleaner for investors and more predictable. However, if a founder issues multiple post-money SAFEs, the cumulative dilution is fully borne by the founders - each SAFE's ownership guarantee stacks, and the total can be substantial before a priced round occurs.
 
 ---
 
@@ -126,4 +126,4 @@ Always build a scenario model that shows founder proceeds at multiple exit sizes
 
 ## Key Takeaway
 
-Pre-money valuation is the agreed value of your company before investment; post-money is the value after. The investor's ownership percentage is always calculated against the post-money figure — a mistake here can cost founders several percentage points of ownership. Equally important is the option pool shuffle: demanding a large option pool be created pre-investment is a common investor tactic that dilutes founders without appearing on the headline valuation. When evaluating any term sheet, look at the fully diluted post-money cap table — including the option pool — to understand what you are actually giving up.
+Pre-money valuation is the agreed value of your company before investment; post-money is the value after. The investor's ownership percentage is always calculated against the post-money figure - a mistake here can cost founders several percentage points of ownership. Equally important is the option pool shuffle: demanding a large option pool be created pre-investment is a common investor tactic that dilutes founders without appearing on the headline valuation. When evaluating any term sheet, look at the fully diluted post-money cap table - including the option pool - to understand what you are actually giving up.

@@ -1,6 +1,6 @@
 ---
 title: "How to Manage Investor Relations"
-description: "Build a systematic investor relations practice — from monthly update emails to board meetings — that keeps investors engaged and working for you."
+description: "Build a systematic investor relations practice - from monthly update emails to board meetings - that keeps investors engaged and working for you."
 locale: "en"
 category: "fundraising"
 tags: ["fundraising", "investors", "communication", "board", "strategy"]
@@ -13,13 +13,13 @@ seoKeywords: ["investor relations startup", "how to manage investors startup", "
 
 ## Why Investor Relations Is Actually a Growth Strategy
 
-Most founders treat investor relations as an obligation — a box to check between funding rounds. This is a costly mistake.
+Most founders treat investor relations as an obligation - a box to check between funding rounds. This is a costly mistake.
 
 Your investors, if managed well, are one of your highest-leverage assets. A warm investor who receives consistent updates and feels genuinely involved will re-invest in your next round, introduce you to future investors, refer customers and enterprise deals, make introductions for executive hiring, and go to bat for you in due diligence calls.
 
 A ghosted investor does none of those things. And they remember being ghosted. The fundraising market is small, reputation travels fast, and every investor conversation your next lead investor has will include a call or two to your current backers.
 
-Investor relations is not about managing feelings. It is about maintaining a network of informed, activated advocates who can materially accelerate your business — if you give them the information and the context they need to help.
+Investor relations is not about managing feelings. It is about maintaining a network of informed, activated advocates who can materially accelerate your business - if you give them the information and the context they need to help.
 
 ## The Investor Update Email
 
@@ -31,15 +31,15 @@ The monthly (or quarterly) investor update is the backbone of your IR practice. 
 
 **The structure that works:**
 
-1. **One key win.** The single most important thing that went well since the last update. Be specific — "Closed our first enterprise customer, a 500-person logistics firm at $3,500/month ARR" is better than "Good progress on enterprise sales."
+1. **One key win.** The single most important thing that went well since the last update. Be specific - "Closed our first enterprise customer, a 500-person logistics firm at $3,500/month ARR" is better than "Good progress on enterprise sales."
 
 2. **One key challenge.** The single most important thing that isn't working. Be direct. Founders who only report good news are either lying or not thinking clearly, and investors know it.
 
-3. **Metrics dashboard.** A small table or bullet list of your core metrics: MRR/ARR, month-over-month growth rate, burn rate, runway in months, and headcount. Consistent formatting matters — use the same layout every month so investors can track trends at a glance.
+3. **Metrics dashboard.** A small table or bullet list of your core metrics: MRR/ARR, month-over-month growth rate, burn rate, runway in months, and headcount. Consistent formatting matters - use the same layout every month so investors can track trends at a glance.
 
-4. **What you need help with.** One to three specific asks. This is the most neglected section and the one that generates the most value. "Looking for a warm intro to the Head of Procurement at [Target Company]" or "Seeking a fractional CFO with SaaS experience — do you know anyone?" — specific asks get specific responses.
+4. **What you need help with.** One to three specific asks. This is the most neglected section and the one that generates the most value. "Looking for a warm intro to the Head of Procurement at [Target Company]" or "Seeking a fractional CFO with SaaS experience - do you know anyone?" - specific asks get specific responses.
 
-**Subject line format:** `[Your Company] Investor Update — [Month Year]`. Boring and effective. Investors create inbox filters for these; don't make it hard for them.
+**Subject line format:** `[Your Company] Investor Update - [Month Year]`. Boring and effective. Investors create inbox filters for these; don't make it hard for them.
 
 ## What Goes in Your Investor Dashboard
 
@@ -56,7 +56,7 @@ Your metrics dashboard should contain the same set of numbers every month so inv
 | Pipeline Value | Forward-looking revenue signal |
 | NPS or CSAT | Customer satisfaction proxy |
 
-If your business model is not SaaS, adapt accordingly — but maintain the same consistent format month over month.
+If your business model is not SaaS, adapt accordingly - but maintain the same consistent format month over month.
 
 ## How to Handle Bad News
 
@@ -64,7 +64,7 @@ Bad news is where your IR practice either builds lasting trust or destroys it.
 
 **The rule is simple: tell investors before they hear it elsewhere.**
 
-If you're going to miss a key milestone, if a major customer churned, if you're six months from running out of runway instead of twelve, if a key executive is leaving — communicate it proactively. Sending an investor update that reveals a crisis they already heard about from another founder or investor is far more damaging than the crisis itself.
+If you're going to miss a key milestone, if a major customer churned, if you're six months from running out of runway instead of twelve, if a key executive is leaving - communicate it proactively. Sending an investor update that reveals a crisis they already heard about from another founder or investor is far more damaging than the crisis itself.
 
 **How to frame bad news:**
 
@@ -82,9 +82,9 @@ A well-run board meeting is a tool for getting the most senior and experienced p
 **The structure that works:**
 
 - **48 hours before:** Send the pre-read. This is a detailed document (10 to 20 pages) containing all metrics, updates, and background context. Board members read this before the meeting so you don't spend meeting time on information transfer.
-- **30 minutes — metrics review:** Walk through the dashboard together. Allow questions but keep it time-boxed. The goal is shared understanding, not analysis.
-- **60 minutes — strategy discussion:** One or two meaty strategic topics where you genuinely want board input. Examples: "Should we move upmarket to enterprise now or wait until our product matures?" or "We have three go-to-market hypotheses — which would you prioritize?"
-- **30 minutes — hot topics and asks:** Open topics, anything not covered in the agenda, and your specific asks from the board. "I need two investor intros for our Series B process" belongs here.
+- **30 minutes - metrics review:** Walk through the dashboard together. Allow questions but keep it time-boxed. The goal is shared understanding, not analysis.
+- **60 minutes - strategy discussion:** One or two meaty strategic topics where you genuinely want board input. Examples: "Should we move upmarket to enterprise now or wait until our product matures?" or "We have three go-to-market hypotheses - which would you prioritize?"
+- **30 minutes - hot topics and asks:** Open topics, anything not covered in the agenda, and your specific asks from the board. "I need two investor intros for our Series B process" belongs here.
 
 **What to put in the board deck vs. what to discuss live:** Data, metrics, and context go in the pre-read. Decisions, strategy, and judgment calls go in the live discussion. The meeting should create value, not transfer information that could be sent over email.
 
@@ -133,10 +133,10 @@ Investors with large networks will help you if you make it easy. Build a regular
 
 Manage these relationships differently.
 
-**Lead investors** (typically on your board or with a pro-rata right) receive the full monthly update, are included in strategy discussions, and are the first call when something significant happens — good or bad.
+**Lead investors** (typically on your board or with a pro-rata right) receive the full monthly update, are included in strategy discussions, and are the first call when something significant happens - good or bad.
 
 **Follow-on investors** (smaller checks, no board seat) receive the same monthly update but less frequent direct outreach. Engage them specifically when you have asks that match their specific networks or expertise. They should feel informed but don't need the same level of operational visibility.
 
 ## Key Takeaway
 
-Investor relations is not a compliance task — it is a systematic practice that, done well, turns your cap table into an active, warm network of advocates who help you hire, sell, and raise. The foundation is a consistent monthly update: honest, short, specific, with a concrete ask at the end. Pair that with well-structured board meetings, proactive bad-news communication, and targeted individual asks — and your investors become one of your most valuable assets between rounds, not just during them.
+Investor relations is not a compliance task - it is a systematic practice that, done well, turns your cap table into an active, warm network of advocates who help you hire, sell, and raise. The foundation is a consistent monthly update: honest, short, specific, with a concrete ask at the end. Pair that with well-structured board meetings, proactive bad-news communication, and targeted individual asks - and your investors become one of your most valuable assets between rounds, not just during them.

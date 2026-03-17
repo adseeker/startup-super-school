@@ -45,7 +45,7 @@ The SOP is: validate organically first, then use paid to pour fuel on a fire you
 
 That said, when the fundamentals are in place, paid acquisition is one of the most controllable and scalable channels available. You can turn it on and off, test hypotheses in days, and target with precision that organic never offers.
 
-## Step 1 — Define Your Conversion Goal and Acceptable CAC
+## Step 1 - Define Your Conversion Goal and Acceptable CAC
 
 Before spending a dollar, answer two questions:
 
@@ -54,7 +54,7 @@ Before spending a dollar, answer two questions:
 
 Calculate your CAC ceiling from your LTV:CAC target. If your LTV is $1,500 and you want a 3:1 ratio, your CAC ceiling is $500. Every campaign decision—bid strategy, audience size, landing page investment—flows from this number.
 
-## Step 2 — Choose Your First Channel
+## Step 2 - Choose Your First Channel
 
 Do not run on three channels simultaneously. Pick one and learn it deeply first.
 
@@ -67,7 +67,7 @@ Do not run on three channels simultaneously. Pick one and learn it deeply first.
 
 **The matching rule**: if people actively search for your category, start with Google Search. If your audience needs to be introduced to the problem, start with Meta or YouTube. If your buyer is a specific professional role, start with LinkedIn and accept higher CPCs in exchange for targeting precision.
 
-## Step 3 — Build a Dedicated Landing Page
+## Step 3 - Build a Dedicated Landing Page
 
 Never send paid traffic to your homepage. Homepages are designed for exploration; landing pages are designed for a single decision.
 
@@ -78,7 +78,7 @@ A high-converting paid landing page includes:
 - Social proof immediately adjacent to the CTA (logos, a testimonial, a star rating)
 - No navigation header—remove every exit point that isn't your CTA
 
-## Step 4 — Set Your Test Budget
+## Step 4 - Set Your Test Budget
 
 The rule: **spend 3–5× your target CAC before judging a channel**.
 
@@ -86,7 +86,7 @@ If your target CAC is $300, your minimum test budget is $900–$1,500. This is n
 
 Spread the test budget over 10–14 days to account for day-of-week variation. Set a daily cap that prevents overspend.
 
-## Step 5 — Launch and Monitor Daily
+## Step 5 - Launch and Monitor Daily
 
 Track three metrics every morning:
 
@@ -94,13 +94,13 @@ Track three metrics every morning:
 2. **CPC (cost per click)**: benchmark against the channel averages above; if far above, tighten your audience or improve Quality Score
 3. **Landing page conversion rate**: if CPC is acceptable but CAC is high, the problem is the page, not the ad—iterate there first
 
-## Step 6 — Cut Underperformers, Double What Works
+## Step 6 - Cut Underperformers, Double What Works
 
 After hitting statistical significance, make binary decisions: pause ad groups or creatives above your CAC ceiling. Reallocate that budget to the variants performing below it.
 
 Avoid the temptation to average. Combining a 2% conversion rate variant with a 0.3% variant produces a 1.15% blended result—and obscures the signal entirely.
 
-## Step 7 — Scale With Creative and Audience Testing
+## Step 7 - Scale With Creative and Audience Testing
 
 Once you have a profitable baseline (at least 20–30 conversions at or below your target CAC), begin scaling:
 

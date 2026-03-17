@@ -13,9 +13,9 @@ seoKeywords: ["pro-rata rights startup", "what are pro-rata rights", "pro-rata i
 
 ## What Are Pro-Rata Rights?
 
-Pro-rata rights give an investor the **right — but not the obligation** — to invest in a company's future funding rounds in proportion to their current ownership stake. The purpose is to allow investors to maintain their percentage ownership as the company raises successive rounds of capital and issues new shares.
+Pro-rata rights give an investor the **right - but not the obligation** - to invest in a company's future funding rounds in proportion to their current ownership stake. The purpose is to allow investors to maintain their percentage ownership as the company raises successive rounds of capital and issues new shares.
 
-Without pro-rata rights, every new funding round dilutes all existing shareholders equally, including early investors. Pro-rata rights give those investors a mechanism to "top up" their position by investing new capital alongside new investors, thereby preserving — or even increasing — their ownership percentage.
+Without pro-rata rights, every new funding round dilutes all existing shareholders equally, including early investors. Pro-rata rights give those investors a mechanism to "top up" their position by investing new capital alongside new investors, thereby preserving - or even increasing - their ownership percentage.
 
 Pro-rata rights are one of the most commonly negotiated terms in seed and early-stage term sheets. They are valuable enough that institutional investors treat them as a near-standard expectation, and angel investors increasingly request them as deal volume has grown more competitive.
 
@@ -54,12 +54,12 @@ If the investor exercises their full pro-rata, they invest $400K into the Series
 
 ## Super Pro-Rata Rights
 
-Super pro-rata rights go further: they give an investor the right to invest **more than** their pro-rata share — effectively increasing their ownership stake in future rounds. For example, an investor with 5% ownership might negotiate the right to invest up to 10% of the next round.
+Super pro-rata rights go further: they give an investor the right to invest **more than** their pro-rata share - effectively increasing their ownership stake in future rounds. For example, an investor with 5% ownership might negotiate the right to invest up to 10% of the next round.
 
 Super pro-rata rights are typically reserved for lead investors in seed rounds or very active early-stage funds. They are more contentious because they can:
 
-1. **Crowd out new investors** — Series A or Series B investors want to own a meaningful percentage; if existing investors exercise super pro-rata rights aggressively, there is less allocation available
-2. **Signal to lead investors** — a new lead investor wanting 20% of a Series A will be less enthusiastic if 10% of the round is already allocated to existing investors via super pro-rata
+1. **Crowd out new investors** - Series A or Series B investors want to own a meaningful percentage; if existing investors exercise super pro-rata rights aggressively, there is less allocation available
+2. **Signal to lead investors** - a new lead investor wanting 20% of a Series A will be less enthusiastic if 10% of the round is already allocated to existing investors via super pro-rata
 
 Founders should carefully evaluate super pro-rata requests. Granting them to a strong, value-add investor who will keep exercising through multiple rounds can be beneficial. Granting them to passive investors can create headaches when assembling later rounds.
 
@@ -67,7 +67,7 @@ Founders should carefully evaluate super pro-rata requests. Granting them to a s
 
 ## Pro-Rata vs. Information Rights
 
-Pro-rata rights are often bundled with **information rights** — the contractual right to receive the company's financial statements, board minutes, and other periodic reports. These are related but distinct concepts.
+Pro-rata rights are often bundled with **information rights** - the contractual right to receive the company's financial statements, board minutes, and other periodic reports. These are related but distinct concepts.
 
 | Right | What It Gives Investors | Typical Threshold |
 |-------|------------------------|-------------------|
@@ -81,7 +81,7 @@ Smaller angel checks are increasingly unlikely to receive pro-rata rights, espec
 
 ## The Founder's Perspective
 
-From the founder's side, pro-rata rights are largely benign — but not without complexity.
+From the founder's side, pro-rata rights are largely benign - but not without complexity.
 
 **The upside:** Pro-rata investors are typically your most committed backers. Having existing investors re-up in your Series A signals confidence to new investors and can accelerate due diligence. Many Series A leads actually want to see strong pro-rata participation from seed investors as a validation signal.
 
@@ -90,15 +90,15 @@ From the founder's side, pro-rata rights are largely benign — but not without 
 **Practical guidance for founders:**
 
 1. Limit pro-rata rights to investors writing checks above a meaningful threshold (e.g., $100K or $250K at seed)
-2. Avoid granting super pro-rata rights broadly — reserve them for one or two lead investors
+2. Avoid granting super pro-rata rights broadly - reserve them for one or two lead investors
 3. Build awareness of your total pro-rata obligations before beginning a new fundraise
-4. Know that pro-rata rights are sometimes negotiable — they can be waived by investors who decline to exercise, or transferred in some cases
+4. Know that pro-rata rights are sometimes negotiable - they can be waived by investors who decline to exercise, or transferred in some cases
 
 ---
 
 ## When Pro-Rata Rights Are Waived or Modified
 
-Investors may waive pro-rata rights voluntarily — for example, a small angel who lacks capital for follow-on may simply choose not to exercise. In some cases, pro-rata rights can be **transferred** or **assigned** to affiliated funds or special purpose vehicles (SPVs), which is common for angels syndicating a follow-on investment.
+Investors may waive pro-rata rights voluntarily - for example, a small angel who lacks capital for follow-on may simply choose not to exercise. In some cases, pro-rata rights can be **transferred** or **assigned** to affiliated funds or special purpose vehicles (SPVs), which is common for angels syndicating a follow-on investment.
 
 Pro-rata rights sometimes lapse after a certain number of rounds or years. Some term sheets specify that pro-rata rights apply only to the next two financing rounds, for example.
 
@@ -106,4 +106,4 @@ Pro-rata rights sometimes lapse after a certain number of rounds or years. Some 
 
 ## Key Takeaway
 
-Pro-rata rights are the mechanism that allows early investors to maintain their ownership percentage as a company grows and raises successive rounds. They are a near-standard expectation for institutional investors and a valuable tool for any investor whose goal is to double down on their winners. For founders, they are manageable when granted selectively to lead investors above a meaningful check-size threshold, but can become a headache if granted too broadly — consuming future round allocation and complicating relationships with new lead investors. Before signing any seed term sheet, map out the total pro-rata obligations you are creating and model how they will affect the allocation available in your Series A.
+Pro-rata rights are the mechanism that allows early investors to maintain their ownership percentage as a company grows and raises successive rounds. They are a near-standard expectation for institutional investors and a valuable tool for any investor whose goal is to double down on their winners. For founders, they are manageable when granted selectively to lead investors above a meaningful check-size threshold, but can become a headache if granted too broadly - consuming future round allocation and complicating relationships with new lead investors. Before signing any seed term sheet, map out the total pro-rata obligations you are creating and model how they will affect the allocation available in your Series A.

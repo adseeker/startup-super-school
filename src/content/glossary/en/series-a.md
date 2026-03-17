@@ -13,7 +13,7 @@ seoKeywords: ["Series A funding", "Series A startup", "how to raise Series A", "
 
 ## What Is a Series A?
 
-A **Series A** is the first institutional equity financing round for a startup after the seed stage. It's almost always a **priced round** — meaning investors receive preferred stock at a negotiated valuation — and is typically led by one major venture capital firm.
+A **Series A** is the first institutional equity financing round for a startup after the seed stage. It's almost always a **priced round** - meaning investors receive preferred stock at a negotiated valuation - and is typically led by one major venture capital firm.
 
 Series A rounds in the US currently average **$10M–$20M**, though the range varies from $5M to $30M+ depending on sector, geography, and market conditions.
 
@@ -32,11 +32,11 @@ Series A rounds in the US currently average **$10M–$20M**, though the range va
 
 Series A investors are buying into a growth story, not a promise. They want evidence of:
 
-1. **Product-market fit** — strong retention, low churn, organic growth
-2. **Revenue traction** — typically $1M–$2M ARR with consistent MoM growth (15–20%+)
-3. **Repeatable GTM** — a go-to-market motion that can be scaled with capital
-4. **Unit economics** — healthy LTV:CAC ratio, realistic path to payback < 18 months
-5. **Market size** — a credible path to $100M+ ARR in 5–7 years
+1. **Product-market fit** - strong retention, low churn, organic growth
+2. **Revenue traction** - typically $1M–$2M ARR with consistent MoM growth (15–20%+)
+3. **Repeatable GTM** - a go-to-market motion that can be scaled with capital
+4. **Unit economics** - healthy LTV:CAC ratio, realistic path to payback < 18 months
+5. **Market size** - a credible path to $100M+ ARR in 5–7 years
 
 ## The Metrics Bar (2024)
 
@@ -51,7 +51,7 @@ Common benchmarks that attract top-tier Series A investors:
 | LTV : CAC | >3x |
 | CAC payback | <18 months |
 
-These are targets, not gates — a compelling team with exceptional growth may raise before hitting all of them.
+These are targets, not gates - a compelling team with exceptional growth may raise before hitting all of them.
 
 ## The Series A Process
 
@@ -68,4 +68,4 @@ Post-money valuations at Series A typically range from **$20M to $80M**, with th
 
 ## Key Takeaway
 
-Series A is the transition from "figuring it out" to "scaling what works." Raise when you can show a repeatable go-to-market motion and have conviction in your unit economics — not just because you need the money.
+Series A is the transition from "figuring it out" to "scaling what works." Raise when you can show a repeatable go-to-market motion and have conviction in your unit economics - not just because you need the money.

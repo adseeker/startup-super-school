@@ -12,20 +12,20 @@ primaryKeyword: "startup KPIs by stage"
 seoKeywords: ["startup metrics by stage", "what kpis do startups track", "pre-seed metrics", "series a kpis", "startup growth metrics"]
 faqs:
   - question: "What KPIs do investors look for at pre-seed?"
-    answer: "At pre-seed, investors are not expecting polished metrics — they're evaluating founder judgment and early signals. The most important indicators are: evidence of demand (waitlist signups, letters of intent, early paying customers), qualitative feedback from 10–20 user interviews, and a clear hypothesis about the problem being solved. Quantitative KPIs matter less than the quality of your customer insights."
+    answer: "At pre-seed, investors are not expecting polished metrics - they're evaluating founder judgment and early signals. The most important indicators are: evidence of demand (waitlist signups, letters of intent, early paying customers), qualitative feedback from 10–20 user interviews, and a clear hypothesis about the problem being solved. Quantitative KPIs matter less than the quality of your customer insights."
   - question: "What revenue metrics do Series A investors expect?"
-    answer: "Series A investors typically look for $500K–$2M ARR with month-over-month growth of 10–20%, strong retention (below 5% monthly churn for SaaS), and early evidence that the go-to-market motion can scale. The exact numbers vary by sector, but the core requirement is demonstrating a repeatable, scalable revenue engine — not just one-off wins."
+    answer: "Series A investors typically look for $500K–$2M ARR with month-over-month growth of 10–20%, strong retention (below 5% monthly churn for SaaS), and early evidence that the go-to-market motion can scale. The exact numbers vary by sector, but the core requirement is demonstrating a repeatable, scalable revenue engine - not just one-off wins."
   - question: "How do KPIs change after product-market fit?"
     answer: "Before product-market fit, KPIs should focus on learning: activation rates, retention cohorts, and qualitative NPS. After PMF, they shift toward scaling: CAC payback period, net revenue retention, and ARR growth rate. The transition happens when retention curves flatten (users who are retained after month 3 stay for a long time) and organic/word-of-mouth growth begins to appear without explicit push."
   - question: "What is the most important metric at each funding stage?"
-    answer: "Pre-seed: evidence of real demand (10+ paying customers or clear letters of intent). Seed: retention — do users come back? Series A: ARR growth rate + NRR — is the revenue engine repeatable and expanding? Series B: CAC payback and burn multiple — is the growth efficient? The theme is progressive: first prove demand, then retention, then repeatability, then efficiency."
+    answer: "Pre-seed: evidence of real demand (10+ paying customers or clear letters of intent). Seed: retention - do users come back? Series A: ARR growth rate + NRR - is the revenue engine repeatable and expanding? Series B: CAC payback and burn multiple - is the growth efficient? The theme is progressive: first prove demand, then retention, then repeatability, then efficiency."
 ---
 
 ## Why Your Metrics Must Change as You Grow
 
 One of the most common mistakes founders make is tracking the same KPIs at Series A that mattered at pre-seed, or worse, measuring everything at once and developing no clear signal about what actually drives the business.
 
-The metrics that indicate a healthy company change dramatically across stages — because the fundamental questions you're answering change:
+The metrics that indicate a healthy company change dramatically across stages - because the fundamental questions you're answering change:
 
 - **Pre-seed**: Is this a real problem worth solving?
 - **Seed**: Do users actually want what we've built?
@@ -73,7 +73,7 @@ By seed, you have a product and early users. The key question shifts from "does 
 | Activation rate | 40–60% | Below 20% |
 | NPS | Above 30 | Below 10 |
 
-**Retention cohort curves** are the most important output at this stage. If you plot retention by signup cohort and the curves flatten — meaning users acquired in month 1 and users acquired in month 6 show similar long-run retention — you have the core PMF signal. If curves keep declining toward zero, you have a product problem that more marketing won't fix.
+**Retention cohort curves** are the most important output at this stage. If you plot retention by signup cohort and the curves flatten - meaning users acquired in month 1 and users acquired in month 6 show similar long-run retention - you have the core PMF signal. If curves keep declining toward zero, you have a product problem that more marketing won't fix.
 
 ### Revenue expectations at seed
 - $0–$500K ARR for most SaaS businesses
@@ -98,12 +98,12 @@ Series A is the first institutional scale-up round. Investors at this stage want
 | Lead-to-close conversion | 10–30% (by channel) |
 | Payback-adjusted burn multiple | Below 2× |
 
-**Net Revenue Retention (NRR)** is the standout metric at Series A. NRR above 110% means your existing customers are growing faster than they churn — creating a compounding revenue base that makes future growth cheaper. NRR below 100% means churn is eating your gains.
+**Net Revenue Retention (NRR)** is the standout metric at Series A. NRR above 110% means your existing customers are growing faster than they churn - creating a compounding revenue base that makes future growth cheaper. NRR below 100% means churn is eating your gains.
 
 ### Signs the Series A story is working
 - You can explain precisely which acquisition channels produce the best customers
 - Your retention curves are flat by month 4+
-- You're not winning deals on price alone — customers can articulate why you're differentiated
+- You're not winning deals on price alone - customers can articulate why you're differentiated
 - Revenue growth is accelerating or holding at 15%+ MoM
 
 ---

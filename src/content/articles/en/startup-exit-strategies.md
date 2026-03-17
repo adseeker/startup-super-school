@@ -1,6 +1,6 @@
 ---
 title: "Startup Exit Strategies Explained"
-description: "A complete guide to startup exit strategies — how acquisitions, IPOs, and secondaries work, and what founders need to know before planning an exit."
+description: "A complete guide to startup exit strategies - how acquisitions, IPOs, and secondaries work, and what founders need to know before planning an exit."
 locale: "en"
 category: "fundraising"
 tags: ["fundraising", "exit", "acquisition", "ipo", "equity", "founders"]
@@ -14,7 +14,7 @@ faqs:
   - question: "What is a startup exit strategy?"
     answer: "A startup exit strategy is a plan for how founders and investors will eventually realize the financial value of their equity. Common exits include acquisition (being bought by another company), IPO (going public on a stock exchange), secondary sales (selling shares to other investors before a liquidity event), and in some cases, management buyouts or wind-downs."
   - question: "What is the most common exit for venture-backed startups?"
-    answer: "Acquisition is by far the most common exit for venture-backed startups. Roughly 80–90% of successful VC-backed startups are acquired rather than going public. IPOs are reserved for a small number of high-growth companies that reach sufficient scale — typically $100M+ ARR with a clear path to profitability."
+    answer: "Acquisition is by far the most common exit for venture-backed startups. Roughly 80–90% of successful VC-backed startups are acquired rather than going public. IPOs are reserved for a small number of high-growth companies that reach sufficient scale - typically $100M+ ARR with a clear path to profitability."
   - question: "Do founders need to plan their exit from the beginning?"
     answer: "Not in detail, but understanding exit dynamics matters from day one. Your fundraising structure (SAFE vs. priced round), liquidation preferences, and investor expectations all affect what an eventual exit looks like for founders. Decisions made at the seed stage can significantly impact how much founders receive in an exit five years later."
   - question: "What happens to employee stock options in an acquisition?"
@@ -23,7 +23,7 @@ faqs:
 
 ## What Is an Exit Strategy?
 
-An exit strategy is the mechanism through which founders, employees, and investors convert their equity in a startup into cash or liquid assets. It is the final chapter in the startup lifecycle — the moment at which the value created (or lost) is realized.
+An exit strategy is the mechanism through which founders, employees, and investors convert their equity in a startup into cash or liquid assets. It is the final chapter in the startup lifecycle - the moment at which the value created (or lost) is realized.
 
 For venture-backed startups, exits are especially important because [VCs](/articles/what-is-venture-capital) operate on a fund timeline (typically 10 years) and need a liquidity event to return capital to their limited partners. Understanding exit dynamics shapes fundraising strategy, [cap table](/glossary/cap-table) management, and even early product decisions.
 
@@ -91,7 +91,7 @@ MBOs allow founders to regain full control of the company without a third-party 
 
 Not all exits are positive. A wind-down occurs when a startup cannot find a buyer, raise more capital, or reach [default alive](/glossary/default-alive) status. In an orderly wind-down, assets are liquidated, creditors are paid, and any remaining proceeds are distributed per the [liquidation preference](/glossary/liquidation-preference) stack.
 
-A "soft landing" is an informal term for a below-expectations acquisition — typically an [acqui-hire](/glossary/acqui-hire) that returns little to investors but provides team members with jobs and founders with some consideration.
+A "soft landing" is an informal term for a below-expectations acquisition - typically an [acqui-hire](/glossary/acqui-hire) that returns little to investors but provides team members with jobs and founders with some consideration.
 
 ## How Liquidation Preferences Affect Exit Outcomes
 
@@ -103,13 +103,13 @@ A "soft landing" is an informal term for a below-expectations acquisition — ty
 - With 1x non-participating preference: Investors get $10M first. Remaining $10M goes to all shareholders pro-rata.
 - With 2x participating preference: Investors get $20M first. Nothing left for founders.
 
-This is why [term sheet](/glossary/term-sheet) negotiation — especially around liquidation preferences — matters enormously for founder outcomes in an acquisition.
+This is why [term sheet](/glossary/term-sheet) negotiation - especially around liquidation preferences - matters enormously for founder outcomes in an acquisition.
 
 ## What Investors Expect
 
 Venture investors raise funds with a 10-year horizon and a mandate to return 3x+ the fund. This creates a specific exit calculus: most VCs need portfolio companies to return at least 5–10x their investment to justify the risk. A $5M seed investment needs a $25–50M exit just to be interesting.
 
-This is one reason VCs push founders toward large markets and aggressive growth — the math of [VC fund economics](/articles/what-is-venture-capital) requires big outcomes.
+This is one reason VCs push founders toward large markets and aggressive growth - the math of [VC fund economics](/articles/what-is-venture-capital) requires big outcomes.
 
 ## Planning Your Exit
 
@@ -122,4 +122,4 @@ Founders rarely control the timing or form of their exit, but they can shape the
 
 ## Key Takeaway
 
-Most successful startup exits are acquisitions, not IPOs. Understanding the exit landscape early helps founders make better decisions about fundraising structure, cap table management, and strategic relationships. But the most reliable path to a good exit is simply building a business with strong fundamentals — the exits tend to follow.
+Most successful startup exits are acquisitions, not IPOs. Understanding the exit landscape early helps founders make better decisions about fundraising structure, cap table management, and strategic relationships. But the most reliable path to a good exit is simply building a business with strong fundamentals - the exits tend to follow.

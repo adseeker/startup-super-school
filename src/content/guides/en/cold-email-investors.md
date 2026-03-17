@@ -1,6 +1,6 @@
 ---
 title: "How to Write a Cold Email to Investors"
-description: "How to write a cold email to investors that actually gets a reply — anatomy of a great VC email, subject lines, templates, and what not to do."
+description: "How to write a cold email to investors that actually gets a reply - anatomy of a great VC email, subject lines, templates, and what not to do."
 locale: "en"
 category: "fundraising"
 tags: ["fundraising", "investors", "outreach", "email", "pitch"]
@@ -13,7 +13,7 @@ seoKeywords: ["cold email investors", "how to email VCs", "investor cold outreac
 
 ## The Reality of Cold VC Outreach
 
-A warm introduction from a trusted mutual contact is roughly 10x more likely to result in a meeting than a cold email. This is not a number pulled from the air — it reflects how venture capital actually works. VCs fund people, and people fund people they trust. A warm intro transfers a small slice of that trust.
+A warm introduction from a trusted mutual contact is roughly 10x more likely to result in a meeting than a cold email. This is not a number pulled from the air - it reflects how venture capital actually works. VCs fund people, and people fund people they trust. A warm intro transfers a small slice of that trust.
 
 That said, cold email works. Founders get funded through cold outreach regularly. The bar is just higher: your email needs to be exceptional because it has no trust transfer to lean on.
 
@@ -32,10 +32,10 @@ VCs receive hundreds of cold emails per week. A partner at a top-tier fund reads
 
 1. **Is this a real market?** (Are enough people willing to pay for this?)
 2. **Is this team capable of winning it?** (Domain expertise, prior execution, unfair advantage)
-3. **Is there early evidence it's working?** (Traction — revenue, growth, retention, LOIs)
+3. **Is there early evidence it's working?** (Traction - revenue, growth, retention, LOIs)
 4. **Is this the right stage for my fund?** (Check size, sector, geography)
 
-Your cold email needs to answer all four questions in under 150 words. This is not a constraint — it is a forcing function that makes your pitch better.
+Your cold email needs to answer all four questions in under 150 words. This is not a constraint - it is a forcing function that makes your pitch better.
 
 ## The Anatomy of a Great Cold Email
 
@@ -43,9 +43,9 @@ Your cold email needs to answer all four questions in under 150 words. This is n
 
 Your subject line determines whether the email is opened. The best subject lines are specific and traction-forward:
 
-- `[Company] — $18K MRR, 40% MoM growth, raising $750K seed`
-- `Seed round — B2B SaaS for [specific ICP], 3 enterprise LOIs`
-- `[Mutual contact] suggested I reach out — [Company] raising $500K`
+- `[Company] - $18K MRR, 40% MoM growth, raising $750K seed`
+- `Seed round - B2B SaaS for [specific ICP], 3 enterprise LOIs`
+- `[Mutual contact] suggested I reach out - [Company] raising $500K`
 
 Avoid:
 - "Introduction" (generic, signals no traction)
@@ -62,26 +62,26 @@ Here is the structure of a high-performing cold VC email, section by section:
 One sentence that leads with your strongest traction number or most compelling fact. This is the sentence they read if they read nothing else.
 
 **Lines 2–3: Company description**
-Two sentences maximum. What your company does, for whom, and what the outcome is. Write this as if explaining to a smart generalist — no jargon.
+Two sentences maximum. What your company does, for whom, and what the outcome is. Write this as if explaining to a smart generalist - no jargon.
 
 **Line 4: Traction**
-Your single best data point. Revenue, growth rate, customer count, retention — whatever is most impressive. Do not list five metrics. Pick the one that matters most.
+Your single best data point. Revenue, growth rate, customer count, retention - whatever is most impressive. Do not list five metrics. Pick the one that matters most.
 
 **Line 5: Ask**
-Specific, simple, easy to say yes to. "I'd love 20 minutes to share what we're building and hear your perspective." Do not ask for a decision — ask for a conversation.
+Specific, simple, easy to say yes to. "I'd love 20 minutes to share what we're building and hear your perspective." Do not ask for a decision - ask for a conversation.
 
 **Line 6: Social proof (optional but powerful)**
-One sentence on a notable advisor, investor, customer, or award. Only include this if it is genuinely impressive to a VC — a YC batch, a Fortune 500 customer, a well-known angel.
+One sentence on a notable advisor, investor, customer, or award. Only include this if it is genuinely impressive to a VC - a YC batch, a Fortune 500 customer, a well-known angel.
 
 ### Full Template With Commentary
 
 ---
 
-Subject: `[Company] — $22K MRR, 3x in 90 days, raising $1M seed`
+Subject: `[Company] - $22K MRR, 3x in 90 days, raising $1M seed`
 
 Hi [First Name],
 
-**[Hook]** [Company] hit $22K MRR last month — 3x from where we were 90 days ago.
+**[Hook]** [Company] hit $22K MRR last month - 3x from where we were 90 days ago.
 
 **[Description]** We help [specific ICP: e.g., "logistics operators at mid-market 3PLs"] [outcome: "reduce detention time by 40%"] through [mechanism: "automated ETA alerts tied directly to their TMS"]. Customers describe us as the first tool that actually changes driver behavior, not just measures it.
 
@@ -97,7 +97,7 @@ Hi [First Name],
 
 ---
 
-This email is 130 words. That is the target range: 100–150 words. If your email is longer than 150 words, cut it — not tighten it. Cut entire sentences.
+This email is 130 words. That is the target range: 100–150 words. If your email is longer than 150 words, cut it - not tighten it. Cut entire sentences.
 
 ## Finding the Right Partner at the Right Fund
 
@@ -105,11 +105,11 @@ Sending to the wrong person at the right fund is nearly as bad as sending to the
 
 ### Stage Fit
 
-Check the fund's most recent investments on Crunchbase or their website. If their recent deals are Series A and B, and you're raising a pre-seed, they will not invest — regardless of how good your email is. Target funds that have made at least 3 investments at your stage in the last 18 months.
+Check the fund's most recent investments on Crunchbase or their website. If their recent deals are Series A and B, and you're raising a pre-seed, they will not invest - regardless of how good your email is. Target funds that have made at least 3 investments at your stage in the last 18 months.
 
 ### Sector Fit
 
-Every fund has thesis areas. Many publish them. Read the partner's bio, recent blog posts, and Twitter to understand their specific areas of conviction. A partner who has written three posts about supply chain software and invested in four logistics companies is your target for a logistics startup — not the generalist partner at the same fund.
+Every fund has thesis areas. Many publish them. Read the partner's bio, recent blog posts, and Twitter to understand their specific areas of conviction. A partner who has written three posts about supply chain software and invested in four logistics companies is your target for a logistics startup - not the generalist partner at the same fund.
 
 ### Geography Fit
 
@@ -120,7 +120,7 @@ Most US-based funds invest in US-based companies. Most European funds invest pri
 - **Crunchbase Pro**: Search by stage, sector, geography, check size. Filter for investors who've invested in your category in the last 2 years.
 - **Signal (NFX)**: Free investor database with thesis and portfolio information.
 - **PitchBook**: Most comprehensive, expensive, available at many university libraries.
-- **LinkedIn**: Research individual partners — their background, what they've written, who they know in common with you.
+- **LinkedIn**: Research individual partners - their background, what they've written, who they know in common with you.
 - **Investor Twitter/X**: Many VCs are active on Twitter. Reading their threads tells you more about their thesis than their fund website.
 
 ## Personalization vs. Templates
@@ -129,7 +129,7 @@ Do not blast a generic email to 200 VCs. Targeted, personalized emails to 20 rel
 
 Personalization does not mean a three-paragraph preamble about their career. It means one specific sentence that shows you did homework:
 
-> "I saw your post last week on AI in vertical SaaS — that framing around distribution moats resonates directly with what we're building."
+> "I saw your post last week on AI in vertical SaaS - that framing around distribution moats resonates directly with what we're building."
 
 Or:
 
@@ -141,11 +141,11 @@ One sentence of genuine personalization is enough. It signals that this is not a
 
 If you don't hear back within 5–7 business days, send one follow-up. One.
 
-> Hi [Name], bumping this up in case it got buried. Happy to send more context if helpful — or if this isn't the right fit for [Fund], completely understand.
+> Hi [Name], bumping this up in case it got buried. Happy to send more context if helpful - or if this isn't the right fit for [Fund], completely understand.
 
 That's it. Do not follow up a second time unless you have a meaningful update (new traction, new investor committing, closing a round). A second follow-up without new information signals desperation, which is the single most damaging signal you can send to a VC.
 
-If you have a real update — you hit a new revenue milestone, got an LOI from a notable customer, had another term sheet — that is a legitimate reason to re-engage even an investor who has gone quiet.
+If you have a real update - you hit a new revenue milestone, got an LOI from a notable customer, had another term sheet - that is a legitimate reason to re-engage even an investor who has gone quiet.
 
 ## What Not to Do
 
@@ -155,7 +155,7 @@ Never ask a VC to sign an NDA before a first meeting. VCs see hundreds of ideas 
 
 ### Send Attachments
 
-Do not attach a pitch deck to a cold email. Attachments reduce open rates (spam filters) and force the VC to take an extra action before they know if you're worth their time. Include a link to a Google Drive or Docsend deck instead — and only if you include it at all. Many great cold emails include no deck. The goal of the email is a meeting, not a deck review.
+Do not attach a pitch deck to a cold email. Attachments reduce open rates (spam filters) and force the VC to take an extra action before they know if you're worth their time. Include a link to a Google Drive or Docsend deck instead - and only if you include it at all. Many great cold emails include no deck. The goal of the email is a meeting, not a deck review.
 
 ### Write "I Just Wanted to Follow Up"
 
@@ -182,4 +182,4 @@ Track every interaction. Fundraising is a process, not a one-shot event. You wil
 
 ## Key Takeaway
 
-A cold email to a VC has one job: earn 20 minutes on the calendar. Write under 150 words, lead with your best traction number, describe the company in two sentences, and make a specific ask. Personalize with one genuine sentence per email, target only investors with demonstrated stage and sector fit, and follow up once — not twice. The email is not a pitch; it is a door opener. Everything you want to say about vision, market size, and team can wait until the meeting.
+A cold email to a VC has one job: earn 20 minutes on the calendar. Write under 150 words, lead with your best traction number, describe the company in two sentences, and make a specific ask. Personalize with one genuine sentence per email, target only investors with demonstrated stage and sector fit, and follow up once - not twice. The email is not a pitch; it is a door opener. Everything you want to say about vision, market size, and team can wait until the meeting.

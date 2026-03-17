@@ -11,7 +11,7 @@ primaryKeyword: "zero-shot learning ai"
 seoKeywords: ["what is zero-shot learning", "zero-shot vs few-shot", "zero-shot llm", "zero shot prompting"]
 faqs:
   - question: "What is zero-shot learning in AI?"
-    answer: "Zero-shot learning is an AI model's ability to correctly perform a task without any training examples, guided only by a natural language description. Ask an LLM to classify a review as positive or negative without showing it examples first — that's zero-shot. The model generalizes from its broad pre-training to the specific task described."
+    answer: "Zero-shot learning is an AI model's ability to correctly perform a task without any training examples, guided only by a natural language description. Ask an LLM to classify a review as positive or negative without showing it examples first - that's zero-shot. The model generalizes from its broad pre-training to the specific task described."
   - question: "What is the difference between zero-shot, few-shot, and fine-tuning?"
     answer: "Zero-shot uses no examples in the prompt. Few-shot includes 2–10 examples directly in the prompt to show the model what good output looks like. Fine-tuning trains the model's weights on hundreds or thousands of labeled examples. Each approach trades simplicity for performance: zero-shot is fastest to implement, fine-tuning delivers the highest accuracy for specialized tasks."
   - question: "When should I use few-shot prompting instead of zero-shot?"
@@ -22,7 +22,7 @@ faqs:
 
 ## What Is Zero-Shot Learning?
 
-Zero-shot learning is an AI model's ability to correctly perform a task it has never seen explicit examples of during training, guided only by a description of what to do. Ask a large language model to "classify this review as positive or negative" without any examples, and it will succeed — that's zero-shot.
+Zero-shot learning is an AI model's ability to correctly perform a task it has never seen explicit examples of during training, guided only by a description of what to do. Ask a large language model to "classify this review as positive or negative" without any examples, and it will succeed - that's zero-shot.
 
 The "zero" refers to zero labeled training examples provided at inference time. The model generalizes from its broad pre-training to the specific task described in the prompt.
 
@@ -34,7 +34,7 @@ The "zero" refers to zero labeled training examples provided at inference time. 
 | **Few-shot** | 2–10 examples in the prompt | Tasks needing specific format or tone |
 | **Fine-tuning** | Hundreds–thousands | Highly specialized tasks, consistent style |
 
-**Few-shot learning** adds examples directly in the prompt to show the model what good output looks like. It reliably improves performance on tasks with specific formatting requirements or unusual patterns — at the cost of using more tokens per request.
+**Few-shot learning** adds examples directly in the prompt to show the model what good output looks like. It reliably improves performance on tasks with specific formatting requirements or unusual patterns - at the cost of using more tokens per request.
 
 **Fine-tuning** trains the model's weights on your examples. It's the highest-performance option but requires labeled data, compute, and time. Use it when you need consistent behavior that prompt engineering alone can't achieve.
 
@@ -52,4 +52,4 @@ Most startup AI features don't need fine-tuning. A zero-shot or few-shot prompt 
 
 ## Key Takeaway
 
-Zero-shot learning is what makes modern LLMs so versatile — they can tackle novel tasks described in plain language without task-specific training. For startups, this means shipping AI features in days rather than months. Master zero-shot prompting before investing in few-shot examples, and consider fine-tuning only when you have the data and scale to justify it.
+Zero-shot learning is what makes modern LLMs so versatile - they can tackle novel tasks described in plain language without task-specific training. For startups, this means shipping AI features in days rather than months. Master zero-shot prompting before investing in few-shot examples, and consider fine-tuning only when you have the data and scale to justify it.

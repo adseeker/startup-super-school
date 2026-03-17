@@ -14,15 +14,15 @@ seoKeywords: ["customer development startup", "what is customer development", "S
 
 ## Origins
 
-In the 1990s, Steve Blank had already co-founded or been part of eight Silicon Valley startups — some successful, some not. Looking back at the failures, he noticed a pattern: the companies did not collapse because of engineering problems. They collapsed because they built products nobody wanted, sold them to the wrong customers, or misunderstood the market entirely. The technical execution was often fine; the commercial assumptions were disastrously wrong.
+In the 1990s, Steve Blank had already co-founded or been part of eight Silicon Valley startups - some successful, some not. Looking back at the failures, he noticed a pattern: the companies did not collapse because of engineering problems. They collapsed because they built products nobody wanted, sold them to the wrong customers, or misunderstood the market entirely. The technical execution was often fine; the commercial assumptions were disastrously wrong.
 
-Blank spent years reverse-engineering what had gone right in his wins and wrong in his losses. The result was **Customer Development**, a systematic process for testing startup assumptions against reality before a company commits its full resources to building and scaling. He published it in *The Four Steps to the Epiphany* in 2003 — a book that started as a course reader at Stanford and went on to become one of the most influential startup texts ever written, predating and directly inspiring Eric Ries's Lean Startup methodology.
+Blank spent years reverse-engineering what had gone right in his wins and wrong in his losses. The result was **Customer Development**, a systematic process for testing startup assumptions against reality before a company commits its full resources to building and scaling. He published it in *The Four Steps to the Epiphany* in 2003 - a book that started as a course reader at Stanford and went on to become one of the most influential startup texts ever written, predating and directly inspiring Eric Ries's Lean Startup methodology.
 
 ## The Core Idea
 
-Traditional product development assumes you know who your customer is, what problem they have, and how much they will pay before you write a line of code. You write a requirements document, build the product, hand it to sales and marketing, and launch. This is the waterfall model — it works fine when building a product for a known market. It is catastrophic when applied to a startup, because a startup's defining characteristic is that it does not yet know any of those things.
+Traditional product development assumes you know who your customer is, what problem they have, and how much they will pay before you write a line of code. You write a requirements document, build the product, hand it to sales and marketing, and launch. This is the waterfall model - it works fine when building a product for a known market. It is catastrophic when applied to a startup, because a startup's defining characteristic is that it does not yet know any of those things.
 
-Customer Development flips the model. Instead of building first and asking customers later, you talk to customers first — systematically, rigorously, and repeatedly — to **test your hypotheses** before and throughout development. The question at the center of Customer Development is not "Can we build it?" but "Should we build it, and for whom?"
+Customer Development flips the model. Instead of building first and asking customers later, you talk to customers first - systematically, rigorously, and repeatedly - to **test your hypotheses** before and throughout development. The question at the center of Customer Development is not "Can we build it?" but "Should we build it, and for whom?"
 
 ## The Four Steps
 
@@ -34,13 +34,13 @@ The goal is to find out whether the problem you think exists actually exists, an
 
 The core discipline of Customer Discovery is: **get out of the building.** No assumptions can be validated from inside the office. Founders must go to where the customers are, observe how they work today, ask open questions, and listen without pitching. The moment you start selling your solution, you stop learning.
 
-A Customer Discovery interview is guided by a set of pre-written hypotheses — beliefs the founding team holds about the customer's problem, current behavior, and willingness to change. After a minimum of 20–50 conversations, you evaluate whether the hypotheses held up. If they did not, you update them and repeat. If they did, you move on.
+A Customer Discovery interview is guided by a set of pre-written hypotheses - beliefs the founding team holds about the customer's problem, current behavior, and willingness to change. After a minimum of 20–50 conversations, you evaluate whether the hypotheses held up. If they did not, you update them and repeat. If they did, you move on.
 
 ### Step 2: Customer Validation
 
-Once you believe you understand the customer and their problem, the question becomes: **do you have a repeatable, scalable sales process?** In Customer Validation, you take an early version of the product to a small set of paying customers — not free users, paying customers — and try to sell it. This is the proof that the value proposition is real and that the sales model can be systematized.
+Once you believe you understand the customer and their problem, the question becomes: **do you have a repeatable, scalable sales process?** In Customer Validation, you take an early version of the product to a small set of paying customers - not free users, paying customers - and try to sell it. This is the proof that the value proposition is real and that the sales model can be systematized.
 
-If you cannot find a handful of customers willing to pay, Customer Development tells you to go back to Customer Discovery. This loop — discover, validate, discover, validate — is the engine of the methodology. Progress is earned, not assumed.
+If you cannot find a handful of customers willing to pay, Customer Development tells you to go back to Customer Discovery. This loop - discover, validate, discover, validate - is the engine of the methodology. Progress is earned, not assumed.
 
 ### Step 3: Customer Creation
 
@@ -48,13 +48,13 @@ Only when you have a validated sales process do you invest in creating end-user 
 
 ### Step 4: Company Building
 
-The final phase is the transition from a startup — an organization searching for a repeatable, scalable business model — to a company that executes on one. Management structures, processes, and departments are built to support what has been validated in the prior steps.
+The final phase is the transition from a startup - an organization searching for a repeatable, scalable business model - to a company that executes on one. Management structures, processes, and departments are built to support what has been validated in the prior steps.
 
 ## Applying Customer Development in Practice
 
-**The problem statement interview** is the workhorse of Customer Discovery. You go in with three to five hypotheses written as falsifiable statements ("We believe that X customer has Y problem, and they currently solve it by doing Z"). You ask about the customer's life and work — not about your product. You probe the problem area. You close by asking how important this problem is relative to other things on their plate.
+**The problem statement interview** is the workhorse of Customer Discovery. You go in with three to five hypotheses written as falsifiable statements ("We believe that X customer has Y problem, and they currently solve it by doing Z"). You ask about the customer's life and work - not about your product. You probe the problem area. You close by asking how important this problem is relative to other things on their plate.
 
-**Keep score.** After each conversation, score how well your hypotheses held up on a 1–3 scale. After 20 conversations, patterns emerge. If 18 out of 20 people said the problem you identified is real and urgent, that is signal. If 15 out of 20 described a completely different problem in the same area, that is a redirect — and a valuable one.
+**Keep score.** After each conversation, score how well your hypotheses held up on a 1–3 scale. After 20 conversations, patterns emerge. If 18 out of 20 people said the problem you identified is real and urgent, that is signal. If 15 out of 20 described a completely different problem in the same area, that is a redirect - and a valuable one.
 
 **Time constraints are real.** Blank's original methodology was written for well-funded startups with room to iterate extensively. If you are capital-constrained, you can compress the process: prioritize the highest-risk hypotheses (the ones where being wrong kills the company), run focused sprints of 10–15 interviews, and be ruthless about updating your assumptions quickly.
 
@@ -71,4 +71,4 @@ These two methodologies are often confused or used interchangeably. The relation
 
 ## Key Takeaway
 
-Customer Development is the discipline of treating your startup's business assumptions as hypotheses that must be tested against real customers — before and during product development, not after. Its central rule is deceptively simple: get out of the building. The insight behind it is more profound: a startup that builds first and validates later is not moving fast, it is moving blind. Customer Development is the method for replacing assumptions with evidence, one conversation at a time.
+Customer Development is the discipline of treating your startup's business assumptions as hypotheses that must be tested against real customers - before and during product development, not after. Its central rule is deceptively simple: get out of the building. The insight behind it is more profound: a startup that builds first and validates later is not moving fast, it is moving blind. Customer Development is the method for replacing assumptions with evidence, one conversation at a time.

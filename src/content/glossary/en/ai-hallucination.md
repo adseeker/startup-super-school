@@ -11,24 +11,24 @@ primaryKeyword: "ai hallucination"
 seoKeywords: ["what is ai hallucination", "llm hallucination", "how to prevent ai hallucination", "ai hallucination examples"]
 faqs:
   - question: "What is AI hallucination?"
-    answer: "AI hallucination is when a language model generates confident-sounding but factually incorrect or fabricated information. The model doesn't 'know' it's wrong — it's predicting likely text based on patterns, not retrieving verified facts. Hallucinations can include invented citations, wrong statistics, or completely made-up events."
+    answer: "AI hallucination is when a language model generates confident-sounding but factually incorrect or fabricated information. The model doesn't 'know' it's wrong - it's predicting likely text based on patterns, not retrieving verified facts. Hallucinations can include invented citations, wrong statistics, or completely made-up events."
   - question: "Why do AI models hallucinate?"
     answer: "LLMs are trained to predict the next token, not to verify facts. When asked about something outside their training data or at the edge of their knowledge, they generate plausible-sounding text rather than admitting uncertainty. The more fluent the model, the more convincing its hallucinations can appear."
   - question: "How can startups reduce AI hallucination in their products?"
     answer: "The most effective technique is RAG (Retrieval-Augmented Generation), which grounds the model's answers in verified source documents. Other approaches include lowering the model's temperature for more deterministic outputs, prompting the model to express uncertainty, and implementing output validation against structured data sources."
   - question: "Is AI hallucination a bug that will eventually be fixed?"
-    answer: "No — hallucination is an inherent property of current LLM architectures based on next-token prediction. It cannot be fully eliminated, only reduced and mitigated through product design. High-stakes applications (medical, legal, financial) should always combine AI with human review and citation of source documents."
+    answer: "No - hallucination is an inherent property of current LLM architectures based on next-token prediction. It cannot be fully eliminated, only reduced and mitigated through product design. High-stakes applications (medical, legal, financial) should always combine AI with human review and citation of source documents."
 ---
 
 ## What Is AI Hallucination?
 
-AI hallucination occurs when a large language model generates text that sounds confident and coherent but is factually incorrect, fabricated, or unsupported by its training data. The model doesn't "know" it's wrong — it's simply predicting the most statistically likely next tokens, without any internal truth-checking mechanism.
+AI hallucination occurs when a large language model generates text that sounds confident and coherent but is factually incorrect, fabricated, or unsupported by its training data. The model doesn't "know" it's wrong - it's simply predicting the most statistically likely next tokens, without any internal truth-checking mechanism.
 
 Classic examples include models inventing academic citations, generating plausible-sounding but nonexistent court cases (as happened in a real 2023 legal filing), or confidently stating wrong statistics.
 
 ## Why Do LLMs Hallucinate?
 
-LLMs are trained to predict the next token in a sequence — not to retrieve facts from a verified database. When asked about something outside their training data, or at the edge of their knowledge, they generate plausible-sounding text rather than saying "I don't know." The more fluent the model, the more convincing its hallucinations.
+LLMs are trained to predict the next token in a sequence - not to retrieve facts from a verified database. When asked about something outside their training data, or at the edge of their knowledge, they generate plausible-sounding text rather than saying "I don't know." The more fluent the model, the more convincing its hallucinations.
 
 Key causes:
 - **Training data gaps**: The model never saw accurate information about the topic
@@ -38,7 +38,7 @@ Key causes:
 
 ## The Product Design Implications
 
-Hallucination is not a bug to be "fixed" — it's an inherent property of current LLM architectures. Product designers must build around it:
+Hallucination is not a bug to be "fixed" - it's an inherent property of current LLM architectures. Product designers must build around it:
 
 **High-stakes use cases** (legal, medical, financial): Always require human review. Never use LLM output as ground truth without verification.
 
@@ -60,4 +60,4 @@ Hallucination is not a bug to be "fixed" — it's an inherent property of curren
 
 ## Key Takeaway
 
-Hallucination is the single biggest reliability risk when building AI products. The solution isn't to avoid LLMs — it's to architect your product so the model has access to verified information (via RAG), outputs are validated where possible, and users understand they're interacting with a probabilistic system, not a database.
+Hallucination is the single biggest reliability risk when building AI products. The solution isn't to avoid LLMs - it's to architect your product so the model has access to verified information (via RAG), outputs are validated where possible, and users understand they're interacting with a probabilistic system, not a database.

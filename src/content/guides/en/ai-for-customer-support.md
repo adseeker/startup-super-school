@@ -11,9 +11,9 @@ primaryKeyword: "ai customer support startup"
 seoKeywords: ["ai customer support", "ai chatbot customer service", "automate customer support ai", "llm customer support"]
 steps:
   - name: "Map your support ticket taxonomy"
-    text: "Export your last 3-6 months of support tickets and cluster them by topic. Identify the top 10-15 issue categories by volume. Calculate what percentage of tickets are answerable from documentation vs requiring human judgment — typically 60-80% fall into the first category."
+    text: "Export your last 3-6 months of support tickets and cluster them by topic. Identify the top 10-15 issue categories by volume. Calculate what percentage of tickets are answerable from documentation vs requiring human judgment - typically 60-80% fall into the first category."
   - name: "Build your knowledge base"
-    text: "Create a structured knowledge base covering your top ticket categories: product documentation, common troubleshooting steps, billing/account FAQs, and integration guides. Quality matters more than quantity — 50 accurate, comprehensive articles outperform 200 thin ones."
+    text: "Create a structured knowledge base covering your top ticket categories: product documentation, common troubleshooting steps, billing/account FAQs, and integration guides. Quality matters more than quantity - 50 accurate, comprehensive articles outperform 200 thin ones."
   - name: "Choose your AI stack"
     text: "Evaluate purpose-built tools (Intercom Fin, Zendesk AI, Freshdesk Freddy) vs building custom on an LLM API with RAG. Purpose-built tools are faster to deploy (days vs weeks) but less customizable and more expensive per conversation. Custom RAG pipelines cost less at scale but require engineering investment."
   - name: "Set escalation rules"
@@ -24,11 +24,11 @@ faqs:
   - question: "What deflection rate can AI customer support realistically achieve?"
     answer: "Well-implemented AI support systems typically achieve 60-80% deflection for SaaS products with good documentation. The range varies by product complexity, knowledge base quality, and ticket mix. Products with highly technical or account-specific issues (billing, data access) tend toward the lower end; products with predictable, documented workflows trend toward the higher end."
   - question: "What are the best AI tools for customer support?"
-    answer: "Purpose-built AI support tools include Intercom Fin, Zendesk AI, Freshdesk Freddy, and Tidio. For custom builds, a RAG pipeline using Claude or GPT-4o on top of your documentation is common. The right choice depends on your current support platform, engineering capacity, and ticket volume — purpose-built tools are faster to deploy, custom builds are cheaper at scale."
+    answer: "Purpose-built AI support tools include Intercom Fin, Zendesk AI, Freshdesk Freddy, and Tidio. For custom builds, a RAG pipeline using Claude or GPT-4o on top of your documentation is common. The right choice depends on your current support platform, engineering capacity, and ticket volume - purpose-built tools are faster to deploy, custom builds are cheaper at scale."
   - question: "When should AI escalate to a human agent?"
-    answer: "AI should escalate when: the customer expresses frustration or anger, the question involves billing disputes or refunds, the issue requires access to customer-specific account data the AI doesn't have, the AI's confidence is below threshold, or the topic is outside the knowledge base. Design the escalation experience to feel seamless — acknowledge the issue and set a response time expectation."
+    answer: "AI should escalate when: the customer expresses frustration or anger, the question involves billing disputes or refunds, the issue requires access to customer-specific account data the AI doesn't have, the AI's confidence is below threshold, or the topic is outside the knowledge base. Design the escalation experience to feel seamless - acknowledge the issue and set a response time expectation."
   - question: "How do I measure whether my AI support is working?"
-    answer: "The primary metrics are: deflection rate (% of tickets fully resolved by AI), AI CSAT (user satisfaction with AI responses specifically), escalation rate (% of AI conversations that need human takeover), and mean resolution time. Compare these against your pre-AI baseline. Also monitor for negative qualitative signals — customers expressing frustration with the bot before escalating."
+    answer: "The primary metrics are: deflection rate (% of tickets fully resolved by AI), AI CSAT (user satisfaction with AI responses specifically), escalation rate (% of AI conversations that need human takeover), and mean resolution time. Compare these against your pre-AI baseline. Also monitor for negative qualitative signals - customers expressing frustration with the bot before escalating."
 ---
 
 ## Map Your Support Ticket Taxonomy
@@ -37,17 +37,17 @@ Before building anything, understand your actual support workload. Export 3-6 mo
 
 - **How-to questions**: 30-40% (fully automatable)
 - **Bug reports**: 15-25% (needs triage + possible human)
-- **Billing/account**: 15-20% (sensitive — careful with AI)
+- **Billing/account**: 15-20% (sensitive - careful with AI)
 - **Integration/API**: 10-15% (highly technical)
 - **Feature requests**: 5-10% (route to product)
 
-Your AI investment should target the "how-to" and straightforward bug categories first — the highest volume, lowest risk, and most automatable.
+Your AI investment should target the "how-to" and straightforward bug categories first - the highest volume, lowest risk, and most automatable.
 
 ## Build Your Knowledge Base
 
 The quality of your AI support scales directly with the quality of your knowledge base. Priorities:
 
-1. **Write answers to your top 20 ticket types** in long-form — detailed, step-by-step, with screenshots
+1. **Write answers to your top 20 ticket types** in long-form - detailed, step-by-step, with screenshots
 2. **Cover every error message** your product can display with a troubleshooting flow
 3. **Document your billing policies** explicitly (refund policy, plan changes, cancellation)
 4. **Add integration guides** for every platform you officially connect to
@@ -98,4 +98,4 @@ Review every escalated conversation weekly for the first 2 months. Each escalati
 
 ## Key Takeaway
 
-AI customer support compounds over time: each new knowledge base article and refined escalation rule improves deflection and CSAT simultaneously. The teams that win build disciplined feedback loops — treating every escalated ticket as a data point for improvement. The goal isn't to eliminate human support; it's to ensure humans only handle conversations where their judgment genuinely adds value.
+AI customer support compounds over time: each new knowledge base article and refined escalation rule improves deflection and CSAT simultaneously. The teams that win build disciplined feedback loops - treating every escalated ticket as a data point for improvement. The goal isn't to eliminate human support; it's to ensure humans only handle conversations where their judgment genuinely adds value.

@@ -11,24 +11,24 @@ primaryKeyword: "409a valuation startup"
 seoKeywords: ["what is a 409a valuation", "409a valuation explained", "how often 409a startup", "strike price stock options"]
 faqs:
   - question: "What is a 409A valuation used for?"
-    answer: "A 409A valuation determines the fair market value (FMV) of a private company's common stock. This FMV is used as the strike price for employee stock options. Under U.S. tax law (IRC Section 409A), options must be granted at or above FMV. Granting options below FMV triggers immediate taxation for the employee plus a 20% penalty tax — making a proper 409A critical for any startup issuing equity."
+    answer: "A 409A valuation determines the fair market value (FMV) of a private company's common stock. This FMV is used as the strike price for employee stock options. Under U.S. tax law (IRC Section 409A), options must be granted at or above FMV. Granting options below FMV triggers immediate taxation for the employee plus a 20% penalty tax - making a proper 409A critical for any startup issuing equity."
   - question: "How often does a startup need a 409A valuation?"
-    answer: "A 409A valuation is valid for 12 months or until a material event occurs — whichever comes first. Material events include a new funding round, a significant acquisition, a major change in financial performance, or M&A activity. Most startups refresh their 409A annually or immediately after each priced equity round."
+    answer: "A 409A valuation is valid for 12 months or until a material event occurs - whichever comes first. Material events include a new funding round, a significant acquisition, a major change in financial performance, or M&A activity. Most startups refresh their 409A annually or immediately after each priced equity round."
   - question: "How much does a 409A valuation cost?"
     answer: "A 409A valuation typically costs $1,000–$5,000 for early-stage startups using specialist providers like Carta, Pulley, or Preferred Return. Later-stage companies with complex cap tables and more scrutiny may pay $5,000–$20,000+ from Big Four accounting firms or boutique valuation specialists. The cost is small relative to the legal risk of skipping it."
   - question: "Why is the 409A valuation lower than the preferred stock valuation?"
-    answer: "Preferred stock — what investors buy — carries additional rights: liquidation preferences, anti-dilution provisions, and priority payouts. Common stock has none of these protections. Valuation firms apply a discount to common stock to reflect this difference, often resulting in a 409A that is 20–80% lower than the most recent preferred share price. This is normal and expected, not a sign that the company is struggling."
+    answer: "Preferred stock - what investors buy - carries additional rights: liquidation preferences, anti-dilution provisions, and priority payouts. Common stock has none of these protections. Valuation firms apply a discount to common stock to reflect this difference, often resulting in a 409A that is 20–80% lower than the most recent preferred share price. This is normal and expected, not a sign that the company is struggling."
 ---
 
 ## What Is a 409A Valuation?
 
-A **409A valuation** is an independent, third-party appraisal of the **fair market value (FMV) of a private company's common stock**. It takes its name from Section 409A of the Internal Revenue Code, the U.S. tax regulation that governs deferred compensation — including employee stock options.
+A **409A valuation** is an independent, third-party appraisal of the **fair market value (FMV) of a private company's common stock**. It takes its name from Section 409A of the Internal Revenue Code, the U.S. tax regulation that governs deferred compensation - including employee stock options.
 
 Any U.S. company issuing stock options to employees or contractors must grant them at or above FMV to comply with 409A rules. Without a proper valuation, employees face significant tax penalties that can make their equity worthless before they even benefit from it.
 
 ## Why 409A Compliance Matters
 
-The consequences of non-compliance are severe — and they fall on the employee, not the company:
+The consequences of non-compliance are severe - and they fall on the employee, not the company:
 
 - **Immediate income recognition**: Options granted below FMV are treated as compensation income in the year of vesting, not exercise
 - **20% penalty tax**: On top of ordinary income tax, the IRS imposes an additional 20% excise tax
@@ -61,9 +61,9 @@ The 409A valuation is almost always lower than the company's last round valuatio
 | Anti-dilution protection | ✓ Protected from dilution | ✗ No protection |
 | Conversion rights | ✓ Can convert to common | N/A |
 | Voting rights | Often enhanced | Standard |
-| Typical discount to preferred | — | 20–80% |
+| Typical discount to preferred | - | 20–80% |
 
-A company that raised at a $20M valuation might receive a 409A valuing common stock at $12–16M — reflecting the structural disadvantage of common shares relative to the preferred shares investors hold.
+A company that raised at a $20M valuation might receive a 409A valuing common stock at $12–16M - reflecting the structural disadvantage of common shares relative to the preferred shares investors hold.
 
 ## When You Need a New 409A
 
@@ -88,4 +88,4 @@ Equity management platforms like Carta have made 409A valuations fast (2–5 bus
 
 ## Key Takeaway
 
-A 409A valuation is not bureaucratic overhead — it is the legal foundation for your equity compensation program. Skipping or deferring it exposes your employees to serious tax liability and creates material risk in M&A due diligence. Get one before you issue your first option grant, refresh it after every funding round, and use a reputable third-party provider so the appraisal can withstand IRS challenge.
+A 409A valuation is not bureaucratic overhead - it is the legal foundation for your equity compensation program. Skipping or deferring it exposes your employees to serious tax liability and creates material risk in M&A due diligence. Get one before you issue your first option grant, refresh it after every funding round, and use a reputable third-party provider so the appraisal can withstand IRS challenge.

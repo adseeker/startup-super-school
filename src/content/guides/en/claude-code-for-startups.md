@@ -1,6 +1,6 @@
 ---
 title: "Claude Code for Startups"
-description: "How to use Claude Code to ship faster as a startup founder or small engineering team — from setup to team workflows."
+description: "How to use Claude Code to ship faster as a startup founder or small engineering team - from setup to team workflows."
 locale: "en"
 category: "ai"
 tags: ["ai", "developer-tools", "productivity", "coding", "anthropic"]
@@ -13,7 +13,7 @@ steps:
   - name: "Install and configure Claude Code"
     text: "Install via npm: `npm install -g @anthropic-ai/claude-code`. Authenticate with your Anthropic API key. Run `claude` in any project directory to start a session. Claude Code reads your entire file tree before acting."
   - name: "Create your CLAUDE.md context file"
-    text: "Add a CLAUDE.md file to your project root with custom instructions: coding conventions, architecture decisions, SOPs, libraries to prefer or avoid. Claude Code reads this at the start of every session — it's the equivalent of onboarding a new engineer to your codebase."
+    text: "Add a CLAUDE.md file to your project root with custom instructions: coding conventions, architecture decisions, SOPs, libraries to prefer or avoid. Claude Code reads this at the start of every session - it's the equivalent of onboarding a new engineer to your codebase."
   - name: "Use it for feature development"
     text: "Give Claude Code a clear, scoped feature request in plain English: 'Add email verification to the signup flow using Resend. Follow the auth patterns in src/lib/auth.ts.' The more specific and constrained your request, the better the output."
   - name: "Leverage it for refactoring and debugging"
@@ -22,9 +22,9 @@ steps:
     text: "Standardize how your team uses Claude Code: shared CLAUDE.md conventions, a policy for reviewing AI-generated code before merging, and a practice of giving Claude context about what changed recently. Treat it as a team member that needs onboarding."
 faqs:
   - question: "What is Claude Code and how is it different from other AI coding tools?"
-    answer: "Claude Code is Anthropic's CLI tool that gives Claude access to your entire codebase, terminal, and file system. Unlike Cursor or GitHub Copilot (which provide inline suggestions in an IDE), Claude Code executes multi-step tasks autonomously: reading multiple files, making coordinated changes across the codebase, running tests, and fixing failures — all from a single instruction."
+    answer: "Claude Code is Anthropic's CLI tool that gives Claude access to your entire codebase, terminal, and file system. Unlike Cursor or GitHub Copilot (which provide inline suggestions in an IDE), Claude Code executes multi-step tasks autonomously: reading multiple files, making coordinated changes across the codebase, running tests, and fixing failures - all from a single instruction."
   - question: "What is a CLAUDE.md file and why does it matter?"
-    answer: "CLAUDE.md is a configuration file in your project root that Claude Code reads at the start of every session. It contains custom instructions — your coding conventions, architecture decisions, prohibited patterns, and standard operating procedures. It's how you teach Claude Code about your specific codebase so it doesn't have to re-learn context each session."
+    answer: "CLAUDE.md is a configuration file in your project root that Claude Code reads at the start of every session. It contains custom instructions - your coding conventions, architecture decisions, prohibited patterns, and standard operating procedures. It's how you teach Claude Code about your specific codebase so it doesn't have to re-learn context each session."
   - question: "Is Claude Code safe to use on production codebases?"
     answer: "Claude Code operates locally on your machine and requires your approval for significant actions. Best practice: use it on a feature branch, review all changes before merging, run your full test suite after any Claude-generated changes, and keep your existing code review process in place. Don't give it access to production credentials or environments."
   - question: "How much does Claude Code cost for a startup?"
@@ -86,11 +86,11 @@ Send the reset email using Resend (see src/lib/email.ts).
 Write a test in __tests__/auth/forgot-password.test.ts.
 ```
 
-**Large-scale refactoring**: Claude Code understands cross-file dependencies — it won't break imports when renaming or restructuring.
+**Large-scale refactoring**: Claude Code understands cross-file dependencies - it won't break imports when renaming or restructuring.
 
 ```
 Migrate all API routes from the Pages Router to App Router. 
-Start with src/pages/api/users/ — there are 6 files.
+Start with src/pages/api/users/ - there are 6 files.
 ```
 
 **Debugging**: Give it the error and the context; let it trace through the codebase.
@@ -120,7 +120,7 @@ The tools are complementary, not mutually exclusive. Many teams use Cursor for a
 
 **Session handoffs**: End each Claude Code session with a summary commit message explaining what changed. This helps teammates (and future Claude sessions) understand the context.
 
-**Review process**: Treat AI-generated code like contractor code — it ships when it passes your review and tests, not before.
+**Review process**: Treat AI-generated code like contractor code - it ships when it passes your review and tests, not before.
 
 ## Key Takeaway
 

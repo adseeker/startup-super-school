@@ -11,18 +11,18 @@ relatedTerms: ["ltv", "mrr", "product-market-fit"]
 seoKeywords: ["churn rate startup", "what is churn", "customer churn", "revenue churn vs customer churn"]
 faqs:
   - question: "What is the difference between customer churn and revenue churn?"
-    answer: "Customer churn (logo churn) measures the percentage of customer accounts lost. Revenue churn measures the percentage of recurring revenue lost. Revenue churn is more meaningful because not all customers are equal — losing one $10,000/month enterprise customer is far more significant than losing ten $100/month accounts, even though the logo churn rate is the same."
+    answer: "Customer churn (logo churn) measures the percentage of customer accounts lost. Revenue churn measures the percentage of recurring revenue lost. Revenue churn is more meaningful because not all customers are equal - losing one $10,000/month enterprise customer is far more significant than losing ten $100/month accounts, even though the logo churn rate is the same."
   - question: "What is a good monthly churn rate for a SaaS startup?"
     answer: "Benchmarks vary by segment: B2B SaaS serving SMBs should target 2–5% monthly churn; enterprise-focused SaaS should aim for 0.5–1%. B2C subscription products typically see 5–8% monthly churn. At 5% monthly churn, a company loses roughly 46% of its customer base in a year, which is why even small improvements in retention compound significantly."
   - question: "What is negative churn and why does it matter?"
-    answer: "Negative net revenue churn occurs when expansion revenue from existing customers — upgrades, upsells, additional seats — exceeds revenue lost from cancellations. If you lose $2,000/month in churned MRR but gain $3,500 in expansions, your net revenue churn is −3%. Negative churn is a powerful growth engine because the business grows even with zero new customer acquisition."
+    answer: "Negative net revenue churn occurs when expansion revenue from existing customers - upgrades, upsells, additional seats - exceeds revenue lost from cancellations. If you lose $2,000/month in churned MRR but gain $3,500 in expansions, your net revenue churn is −3%. Negative churn is a powerful growth engine because the business grows even with zero new customer acquisition."
   - question: "What are the most common reasons customers churn?"
     answer: "The most frequent causes are: value not realized due to poor onboarding, competitive alternatives that offer better pricing or features, budget cuts (especially in B2B during economic downturns), use-case mismatch where the wrong customers were acquired, and product gaps that block critical workflows. The best diagnostic tool is talking to churned customers within 48 hours of cancellation."
 ---
 
 ## What Is Churn Rate?
 
-**Churn rate** measures the rate at which customers (or revenue) stop doing business with a company over a defined period — typically a month or year.
+**Churn rate** measures the rate at which customers (or revenue) stop doing business with a company over a defined period - typically a month or year.
 
 **Monthly Customer Churn = Customers Lost in Month ÷ Customers at Start of Month**
 
@@ -40,7 +40,7 @@ Customer churn: 10 / 200 = 5%
 ```
 
 ### 2. Revenue (MRR) Churn
-The percentage of recurring revenue lost — more important because not all customers are equal:
+The percentage of recurring revenue lost - more important because not all customers are equal:
 
 ```
 MRR at start: $50,000
@@ -54,7 +54,7 @@ Revenue churn: 2,000 / 50,000 = 4%
 
 One of the most powerful concepts in SaaS: **negative net revenue churn** happens when expansion revenue from existing customers (upgrades, upsells, additional seats) exceeds revenue lost from cancellations.
 
-If you lose $2,000/month in churned MRR but gain $3,500 in expansions, your **net revenue churn is -3%** — your base grows even if you acquire zero new customers.
+If you lose $2,000/month in churned MRR but gain $3,500 in expansions, your **net revenue churn is -3%** - your base grows even if you acquire zero new customers.
 
 ## Churn Rate Benchmarks
 
@@ -77,14 +77,14 @@ This is why improving retention from 5% to 3% monthly churn has far more value t
 
 Understanding *why* customers leave is as important as knowing the rate:
 
-- **Value not realized** — poor onboarding, feature complexity
-- **Competitive alternatives** — a better or cheaper option emerged
-- **Budget cuts** — especially true in B2B during downturns
-- **Use case mismatch** — you acquired customers you shouldn't have
-- **Product gaps** — missing features critical to their workflow
+- **Value not realized** - poor onboarding, feature complexity
+- **Competitive alternatives** - a better or cheaper option emerged
+- **Budget cuts** - especially true in B2B during downturns
+- **Use case mismatch** - you acquired customers you shouldn't have
+- **Product gaps** - missing features critical to their workflow
 
 The best churn reduction tool is **talking to churned customers** within 48 hours of cancellation.
 
 ## Key Takeaway
 
-Churn is a silent killer. A business growing 20% per month with 8% monthly churn is essentially running on a treadmill. Fix churn before you scale — pouring new customers into a leaky bucket doesn't build a business.
+Churn is a silent killer. A business growing 20% per month with 8% monthly churn is essentially running on a treadmill. Fix churn before you scale - pouring new customers into a leaky bucket doesn't build a business.

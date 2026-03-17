@@ -1,6 +1,6 @@
 ---
 title: "AI Regulation for Startups"
-description: "The key AI regulations founders need to know in 2025-2026 — EU AI Act, US rules, GDPR implications, and a practical compliance checklist."
+description: "The key AI regulations founders need to know in 2025-2026 - EU AI Act, US rules, GDPR implications, and a practical compliance checklist."
 locale: "en"
 category: "ai"
 tags: ["ai", "legal", "compliance", "startup", "regulation"]
@@ -12,7 +12,7 @@ primaryKeyword: "ai regulation startups"
 seoKeywords: ["ai regulation for startups", "eu ai act startup", "ai compliance startup", "gdpr ai"]
 faqs:
   - question: "What is the EU AI Act and who does it apply to?"
-    answer: "The EU AI Act is the world's first comprehensive AI regulation, fully effective from August 2026. It applies to any company placing AI systems on the EU market or using AI to affect EU residents — including non-EU startups. It classifies AI systems into risk tiers (unacceptable, high, limited, minimal) with requirements scaling by risk. Most AI startups fall into the 'limited' or 'minimal' risk categories with relatively light obligations."
+    answer: "The EU AI Act is the world's first comprehensive AI regulation, fully effective from August 2026. It applies to any company placing AI systems on the EU market or using AI to affect EU residents - including non-EU startups. It classifies AI systems into risk tiers (unacceptable, high, limited, minimal) with requirements scaling by risk. Most AI startups fall into the 'limited' or 'minimal' risk categories with relatively light obligations."
   - question: "What AI applications are banned under EU regulation?"
     answer: "The EU AI Act prohibits: real-time biometric surveillance in public spaces by law enforcement (with narrow exceptions), social scoring systems by governments, AI that exploits psychological vulnerabilities to manipulate behavior, and subliminal AI manipulation techniques. These unacceptable-risk applications are outright banned. For commercial AI products, these restrictions rarely affect typical startup use cases."
   - question: "What does the EU AI Act require for 'high-risk' AI systems?"
@@ -32,7 +32,7 @@ For startups, the key questions are: which regulations apply to you, what do the
 The EU AI Act is the most comprehensive and globally influential AI regulation. It applies to:
 - Companies established in the EU
 - Companies placing AI systems on the EU market
-- **Companies using AI that affects EU residents** — this means US startups serving European users are in scope
+- **Companies using AI that affects EU residents** - this means US startups serving European users are in scope
 
 ### Risk Classification
 
@@ -43,7 +43,7 @@ The EU AI Act is the most comprehensive and globally influential AI regulation. 
 | **Limited** | Chatbots, deepfakes, emotion recognition | Transparency obligations |
 | **Minimal** | Spam filters, AI in games, recommendation systems | No specific requirements |
 
-**Most AI startups fall in the limited or minimal risk categories.** If you're building a B2B SaaS product with an AI copilot or a content generation tool, you likely face limited risk obligations — primarily transparency: users must know they're interacting with AI.
+**Most AI startups fall in the limited or minimal risk categories.** If you're building a B2B SaaS product with an AI copilot or a content generation tool, you likely face limited risk obligations - primarily transparency: users must know they're interacting with AI.
 
 ### High-Risk AI: The Harder Category
 
@@ -84,7 +84,7 @@ GDPR already creates AI obligations that predate the AI Act:
 
 **Training data**: If you train or fine-tune on personal data of EU residents, you need a lawful basis. Consent or legitimate interest are most common.
 
-**Data minimization**: Models trained on personal data must use the minimum necessary data — "we scraped the internet" is not a GDPR-compliant training data strategy.
+**Data minimization**: Models trained on personal data must use the minimum necessary data - "we scraped the internet" is not a GDPR-compliant training data strategy.
 
 ## Practical Compliance Checklist
 
@@ -106,4 +106,4 @@ GDPR already creates AI obligations that predate the AI Act:
 
 ## Key Takeaway
 
-AI regulation is no longer hypothetical — it's binding law with meaningful penalties. Most AI startups face limited obligations (transparency notices, documentation) under current frameworks. But if you're building AI that affects employment, credit, healthcare, or education decisions, high-risk requirements apply and legal counsel is essential. Build your compliance documentation early — it's also a selling point with enterprise customers who ask about AI governance.
+AI regulation is no longer hypothetical - it's binding law with meaningful penalties. Most AI startups face limited obligations (transparency notices, documentation) under current frameworks. But if you're building AI that affects employment, credit, healthcare, or education decisions, high-risk requirements apply and legal counsel is essential. Build your compliance documentation early - it's also a selling point with enterprise customers who ask about AI governance.

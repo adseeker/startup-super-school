@@ -1,13 +1,13 @@
 ---
 title: "Jobs to Be Done"
-description: "Jobs to Be Done (JTBD) explains why people choose products. Customers don't buy features — they hire products to make progress in a specific circumstance."
+description: "Jobs to Be Done (JTBD) explains why people choose products. Customers don't buy features - they hire products to make progress in a specific circumstance."
 locale: "en"
 category: "framework"
 tags: ["framework", "customer research", "product strategy", "positioning", "clay christensen"]
 difficulty: "intermediate"
 publishedDate: 2024-09-07
 primaryKeyword: "Jobs to Be Done"
-origin: "Clayton Christensen, Tony Ulwick — 1990s to 2000s"
+origin: "Clayton Christensen, Tony Ulwick - 1990s to 2000s"
 relatedConcepts: ["lean-startup", "customer-development"]
 seoKeywords: ["jobs to be done framework", "JTBD startup", "what is jobs to be done", "Clayton Christensen JTBD"]
 ---
@@ -16,23 +16,23 @@ seoKeywords: ["jobs to be done framework", "JTBD startup", "what is jobs to be d
 
 **Jobs to Be Done (JTBD)** grew from the work of Clayton Christensen (Harvard Business School) and Tony Ulwick (Strategyn) in the 1990s and early 2000s. Christensen popularized the concept in *The Innovator's Dilemma* and later in *Competing Against Luck* (2016, co-authored with Karen Dillon, David Duncan, and Taddy Hall).
 
-The famous milkshake study — where McDonald's discovered that 40% of milkshakes were sold in the morning to commuters who "hired" them to keep their hands busy and fill them up until lunch — is the canonical illustration of the framework.
+The famous milkshake study - where McDonald's discovered that 40% of milkshakes were sold in the morning to commuters who "hired" them to keep their hands busy and fill them up until lunch - is the canonical illustration of the framework.
 
 ## The Core Idea
 
 People don't buy products. They **hire products to get a job done.**
 
-The "job" is the progress a person is trying to make in a particular circumstance. It's not the feature or benefit of a product — it's the underlying motivation that caused someone to look for a solution in the first place.
+The "job" is the progress a person is trying to make in a particular circumstance. It's not the feature or benefit of a product - it's the underlying motivation that caused someone to look for a solution in the first place.
 
 > "When I _____, I want to _____, so I can _____."
 
-For the milkshake commuter: *"When I have a long commute, I want something that keeps me occupied and staves off hunger, so I can arrive at work without having stopped somewhere."* A banana was also considered — but it's eaten too fast and makes a mess.
+For the milkshake commuter: *"When I have a long commute, I want something that keeps me occupied and staves off hunger, so I can arrive at work without having stopped somewhere."* A banana was also considered - but it's eaten too fast and makes a mess.
 
 ## Why It Matters for Startups
 
 JTBD reframes competition in a powerful way:
 
-Your real competitors are not just direct substitutes — they're **everything a customer might hire instead of your product.** Slack competes with email, walking to someone's desk, and writing things in a shared doc. Calendly competes with going back and forth on email to find a time.
+Your real competitors are not just direct substitutes - they're **everything a customer might hire instead of your product.** Slack competes with email, walking to someone's desk, and writing things in a shared doc. Calendly competes with going back and forth on email to find a time.
 
 Understanding the job lets you:
 - Identify what customers really value (and what they don't)
@@ -54,7 +54,7 @@ Key concept: the **Four Forces of Progress**:
 - Attachment to current habits (inertia)
 
 ### 2. Tony Ulwick (Outcome-Driven Innovation)
-More structured and quantitative. Customers have **desired outcomes** that can be measured and prioritized. Identify outcomes that are both important and underserved — that's your opportunity space.
+More structured and quantitative. Customers have **desired outcomes** that can be measured and prioritized. Identify outcomes that are both important and underserved - that's your opportunity space.
 
 | Job Type | Description | Example |
 |----------|-------------|---------|
@@ -66,14 +66,14 @@ More structured and quantitative. Customers have **desired outcomes** that can b
 
 ### Step 1: Interview Switchers
 
-Talk to recent customers — specifically people who recently switched from a competitor or from doing nothing. Ask:
+Talk to recent customers - specifically people who recently switched from a competitor or from doing nothing. Ask:
 - What were you doing before this product?
 - What was the moment you decided to look for something different?
 - What did you try first? Why didn't it work?
 - When did you first hear about us?
 - What almost stopped you from switching?
 
-Listen for the **struggling moment** — the specific event or frustration that triggered the search.
+Listen for the **struggling moment** - the specific event or frustration that triggered the search.
 
 ### Step 2: Map the Job
 
@@ -99,11 +99,11 @@ Jobs-based positioning focuses on the struggle and progress, not on features:
 
 ## JTBD and Market Segmentation
 
-Traditional segmentation (by age, industry, job title) describes who the customer is but not *why* they buy. JTBD segments by **circumstance and job** — which often reveals that very different demographic groups hire the same product for the same job, and that people who look similar on paper hire for completely different reasons.
+Traditional segmentation (by age, industry, job title) describes who the customer is but not *why* they buy. JTBD segments by **circumstance and job** - which often reveals that very different demographic groups hire the same product for the same job, and that people who look similar on paper hire for completely different reasons.
 
 ## Limitations
 
-- Time-consuming to do well — requires deep qualitative interviews
+- Time-consuming to do well - requires deep qualitative interviews
 - The framework resists quantification; can feel vague without rigorous application
 - Not suited for every buying context (impulse purchases, highly habitual behavior)
 - Requires skilled interviewers who can avoid leading questions

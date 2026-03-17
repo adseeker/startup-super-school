@@ -1,6 +1,6 @@
 ---
 title: "AI Startup Fundraising"
-description: "What investors actually look for when funding AI startups in 2025-2026 — the metrics, questions, and red flags that determine who gets funded."
+description: "What investors actually look for when funding AI startups in 2025-2026 - the metrics, questions, and red flags that determine who gets funded."
 locale: "en"
 category: "ai"
 tags: ["ai", "fundraising", "startup", "investors", "venture-capital"]
@@ -16,7 +16,7 @@ faqs:
   - question: "What metrics do investors want to see for AI startups?"
     answer: "Core SaaS metrics still apply (ARR, growth rate, churn, NRR) but AI-specific metrics matter too: AI feature adoption rate (% of users actively using AI features), accuracy or satisfaction scores for AI outputs, AI cost per user and its trajectory, and evidence of data network effects. At seed, traction matters less than compelling early signals and a credible team."
   - question: "What is the typical valuation for an AI startup at seed?"
-    answer: "AI seed valuations in 2024-2026 range widely: $5-15M pre-money for pre-revenue teams with strong pedigree, $10-25M for early revenue AI products ($50K-300K ARR), and $20-50M+ for AI companies showing rapid growth in hot categories. The AI premium has normalized somewhat — VCs now require stronger evidence of defensibility for premium valuations."
+    answer: "AI seed valuations in 2024-2026 range widely: $5-15M pre-money for pre-revenue teams with strong pedigree, $10-25M for early revenue AI products ($50K-300K ARR), and $20-50M+ for AI companies showing rapid growth in hot categories. The AI premium has normalized somewhat - VCs now require stronger evidence of defensibility for premium valuations."
   - question: "What are the biggest red flags VCs see in AI startup pitches?"
     answer: "The most common red flags: describing model API access as a competitive advantage, no credible answer to 'what happens when OpenAI builds this natively?', no proprietary data strategy, founders who can't explain their technical architecture at a reasonable depth, and unit economics that don't account for variable AI inference costs. 'We use AI' without a clear defensibility story no longer closes rounds."
 ---
@@ -25,7 +25,7 @@ faqs:
 
 AI startup funding peaked in 2024 at over $100B globally and has remained elevated in 2025. But the market has matured: early-stage investors who funded nearly any AI company in 2022–2023 are now far more selective. The question that dominates every AI pitch: **what makes this defensible?**
 
-Understanding what sophisticated AI investors are actually evaluating — beyond the demo — is the difference between a quick close and a prolonged fundraise.
+Understanding what sophisticated AI investors are actually evaluating - beyond the demo - is the difference between a quick close and a prolonged fundraise.
 
 ## What Investors Actually Evaluate
 
@@ -50,7 +50,7 @@ A credible answer covers:
 ### Model Dependency Analysis
 Investors now routinely ask: "What happens when OpenAI or Google builds this feature natively?"
 
-A good answer demonstrates that your value is in the data, workflow, and vertical depth — not the model capability. A weak answer reveals that you're one product update away from irrelevance.
+A good answer demonstrates that your value is in the data, workflow, and vertical depth - not the model capability. A weak answer reveals that you're one product update away from irrelevance.
 
 ### Unit Economics with AI Costs
 Founders frequently underestimate AI inference costs and over-project margins. Investors scrutinize:

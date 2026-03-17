@@ -13,11 +13,11 @@ steps:
   - name: "Identify the user persona"
     text: "Replace the generic word 'user' with a specific persona that reflects a real person using your product. Write down who this person is, what their role is, and what context they are operating in. The more specific the persona, the easier it is for the whole team to build the right thing."
   - name: "Frame the job to be done"
-    text: "Write the story in the standard format: 'As a [persona], I want to [action] so that [outcome].' The action describes what the user is trying to do; the outcome describes why they want to do it. Never skip the 'so that' clause — it is the most important part."
+    text: "Write the story in the standard format: 'As a [persona], I want to [action] so that [outcome].' The action describes what the user is trying to do; the outcome describes why they want to do it. Never skip the 'so that' clause - it is the most important part."
   - name: "Write the acceptance criteria"
-    text: "Define what 'done' means for this story using Given / When / Then format. Given a specific starting condition, when the user takes a specific action, then a specific observable result occurs. Write at least two to three criteria per story — one for the happy path and one for the main error state."
+    text: "Define what 'done' means for this story using Given / When / Then format. Given a specific starting condition, when the user takes a specific action, then a specific observable result occurs. Write at least two to three criteria per story - one for the happy path and one for the main error state."
   - name: "Size the story"
-    text: "Estimate the story using your team's sizing method (story points or T-shirt sizes). If the story cannot be completed in one sprint, break it into smaller slices. A story that spans two sprints is a feature or epic, not a story — split it until each piece delivers a standalone slice of value."
+    text: "Estimate the story using your team's sizing method (story points or T-shirt sizes). If the story cannot be completed in one sprint, break it into smaller slices. A story that spans two sprints is a feature or epic, not a story - split it until each piece delivers a standalone slice of value."
   - name: "Add edge cases and error states"
     text: "Walk through what happens when input is invalid, the network is unavailable, or the user does something unexpected. Document these as additional acceptance criteria. Edge cases discovered during sprint planning are far cheaper to address than bugs reported after launch."
   - name: "Review with the engineer before sprint planning"
@@ -28,16 +28,16 @@ faqs:
   - question: "What is the difference between a user story and an epic?"
     answer: "An epic is a large body of work that cannot be completed in a single sprint and must be broken into smaller user stories. For example, 'Users can manage their account settings' is an epic. Individual user stories within it might be 'change email address,' 'reset password,' and 'delete account.' Epics exist for planning and roadmap purposes; user stories are the units of work that actually enter a sprint."
   - question: "What are acceptance criteria and why are they required?"
-    answer: "Acceptance criteria are the specific, testable conditions that must be true for a story to be considered complete. They eliminate ambiguity about what 'done' means for engineers, QA, and the product manager. A story without acceptance criteria is a request, not a requirement — it will be interpreted differently by everyone on the team and almost always results in rework. Every user story must have at least two acceptance criteria: one for the happy path and one for the main failure case."
+    answer: "Acceptance criteria are the specific, testable conditions that must be true for a story to be considered complete. They eliminate ambiguity about what 'done' means for engineers, QA, and the product manager. A story without acceptance criteria is a request, not a requirement - it will be interpreted differently by everyone on the team and almost always results in rework. Every user story must have at least two acceptance criteria: one for the happy path and one for the main failure case."
   - question: "What makes a user story too big to implement?"
-    answer: "A user story is too big if it cannot realistically be designed, built, and tested within a single sprint. Common signs of an oversized story include multiple 'and' clauses in the action ('I want to create, edit, and delete my profile'), acceptance criteria that span more than one screen or system, or an estimate higher than 8 story points. Split large stories by user scenario, data type, or step in the workflow — never by front end and back end, as that creates stories with no independently shippable value."
+    answer: "A user story is too big if it cannot realistically be designed, built, and tested within a single sprint. Common signs of an oversized story include multiple 'and' clauses in the action ('I want to create, edit, and delete my profile'), acceptance criteria that span more than one screen or system, or an estimate higher than 8 story points. Split large stories by user scenario, data type, or step in the workflow - never by front end and back end, as that creates stories with no independently shippable value."
 ---
 
 ## Why User Stories Matter
 
 User stories are the primary unit of work in agile product development. A well-written user story answers three questions simultaneously: who needs this, what do they want to do, and why does it matter. When a story answers all three, engineers build the right thing, designers make the right tradeoffs, and QA knows exactly what to test.
 
-A poorly written story — too vague, too large, solution-framed instead of problem-framed — is one of the leading causes of wasted engineering time. This guide walks through the six steps to writing user stories that actually work.
+A poorly written story - too vague, too large, solution-framed instead of problem-framed - is one of the leading causes of wasted engineering time. This guide walks through the six steps to writing user stories that actually work.
 
 ## Step 1: Identify the User Persona
 
@@ -57,7 +57,7 @@ Once you have a persona, write the story in the standard format:
 
 > **As a** [persona], **I want to** [action] **so that** [outcome].
 
-The action describes what the user is trying to accomplish. The outcome — the "so that" clause — describes why, and it is the most important part of the sentence. Without the outcome, engineers cannot make sensible tradeoffs when constraints arise.
+The action describes what the user is trying to accomplish. The outcome - the "so that" clause - describes why, and it is the most important part of the sentence. Without the outcome, engineers cannot make sensible tradeoffs when constraints arise.
 
 ### Bad vs. Good User Stories
 
@@ -94,7 +94,7 @@ Write at least two criteria per story: one for the happy path and one for the ma
 
 ## Step 4: Size the Story
 
-Size stories using your team's system — story points (Fibonacci: 1, 2, 3, 5, 8, 13) or T-shirt sizes (S, M, L, XL). The goal is not precision; it is identifying stories that are too big to complete in a sprint.
+Size stories using your team's system - story points (Fibonacci: 1, 2, 3, 5, 8, 13) or T-shirt sizes (S, M, L, XL). The goal is not precision; it is identifying stories that are too big to complete in a sprint.
 
 **If a story is estimated above 8 points or L/XL, split it.** Good ways to split:
 
@@ -102,7 +102,7 @@ Size stories using your team's system — story points (Fibonacci: 1, 2, 3, 5, 8
 - By data type (export invoices before adding export for expenses)
 - By workflow step (create before edit before delete)
 
-Never split a story into "front end" and "back end" — a back-end-only story delivers no user value and cannot be demonstrated in a sprint review.
+Never split a story into "front end" and "back end" - a back-end-only story delivers no user value and cannot be demonstrated in a sprint review.
 
 ## Step 5: Add Edge Cases and Error States
 
@@ -138,4 +138,4 @@ A user story is complete when:
 
 ## Key Takeaway
 
-Good user stories are not a writing exercise — they are a communication tool. A well-written story gives engineers enough context to make good decisions independently, gives QA a clear testing checklist, and gives the PM a verifiable definition of done. The six steps in this guide — specific persona, jobs-to-be-done format, acceptance criteria, right sizing, edge cases, and engineer review — take less than 20 minutes per story and eliminate the most expensive category of product waste: building the wrong thing.
+Good user stories are not a writing exercise - they are a communication tool. A well-written story gives engineers enough context to make good decisions independently, gives QA a clear testing checklist, and gives the PM a verifiable definition of done. The six steps in this guide - specific persona, jobs-to-be-done format, acceptance criteria, right sizing, edge cases, and engineer review - take less than 20 minutes per story and eliminate the most expensive category of product waste: building the wrong thing.

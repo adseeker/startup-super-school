@@ -1,5 +1,5 @@
 ---
-title: "CAC — Customer Acquisition Cost"
+title: "CAC - Customer Acquisition Cost"
 description: "CAC is the total cost to acquire a new customer, including all sales and marketing spend. A core unit economics metric for evaluating business viability."
 locale: "en"
 category: "metrics"
@@ -43,8 +43,8 @@ CAC is most meaningful when compared to **Lifetime Value (LTV)**:
 
 | Ratio | Interpretation |
 |-------|---------------|
-| LTV : CAC < 1 | Losing money on every customer — unsustainable |
-| LTV : CAC = 1–2 | Breaking even or marginal — needs improvement |
+| LTV : CAC < 1 | Losing money on every customer - unsustainable |
+| LTV : CAC = 1–2 | Breaking even or marginal - needs improvement |
 | LTV : CAC = 3 | Healthy benchmark for most SaaS businesses |
 | LTV : CAC > 5 | Possibly underinvesting in growth |
 
@@ -61,17 +61,17 @@ If CAC is $600 and a customer generates $100/month in gross profit, payback is 6
 ## How to Reduce CAC
 
 - **Improve conversion rates** at each funnel stage
-- **Invest in content marketing** — organic traffic has near-zero marginal CAC
-- **Build referral and word-of-mouth loops** — the lowest-cost channel
-- **Narrow your ICP** — targeting precisely reduces wasted spend
-- **Shorten sales cycles** — faster closes reduce sales team costs per deal
+- **Invest in content marketing** - organic traffic has near-zero marginal CAC
+- **Build referral and word-of-mouth loops** - the lowest-cost channel
+- **Narrow your ICP** - targeting precisely reduces wasted spend
+- **Shorten sales cycles** - faster closes reduce sales team costs per deal
 
 ## Common Mistakes
 
-1. **Forgetting overhead** — headcount is often 60–70% of CAC; don't leave it out
-2. **Mixing time periods** — spend and customer acquisition must be measured in the same window
-3. **Ignoring churn** — a low CAC means nothing if customers leave after two months
-4. **Over-optimizing too early** — in early stages, learning which channels work matters more than CAC
+1. **Forgetting overhead** - headcount is often 60–70% of CAC; don't leave it out
+2. **Mixing time periods** - spend and customer acquisition must be measured in the same window
+3. **Ignoring churn** - a low CAC means nothing if customers leave after two months
+4. **Over-optimizing too early** - in early stages, learning which channels work matters more than CAC
 
 ## Key Takeaway
 

@@ -13,9 +13,9 @@ faqs:
   - question: "How is ACV calculated?"
     answer: "ACV = Total contract value ÷ Contract length in years. For a 3-year contract worth $150,000, the ACV is $50,000. One-time fees (implementation, setup, training) are excluded from ACV calculations. For month-to-month customers, ACV equals their monthly recurring revenue × 12."
   - question: "What is the difference between ACV and ARR?"
-    answer: "ACV is the average annualized value of a single customer contract. ARR is the total annualized recurring revenue across all active customers. If you have 100 customers with an average ACV of $10,000, your ARR is $1,000,000. ACV is a sales metric — it measures deal size. ARR is a company-level metric — it measures total recurring revenue."
+    answer: "ACV is the average annualized value of a single customer contract. ARR is the total annualized recurring revenue across all active customers. If you have 100 customers with an average ACV of $10,000, your ARR is $1,000,000. ACV is a sales metric - it measures deal size. ARR is a company-level metric - it measures total recurring revenue."
   - question: "What is a good ACV for a B2B SaaS startup?"
-    answer: "ACV benchmarks vary widely by target market. SMB-focused SaaS typically has ACV of $1,000–$5,000. Mid-market products range from $10,000–$50,000. Enterprise products often reach $50,000–$500,000+. What matters more than the absolute number is whether your ACV is large enough to justify your sales motion — inside sales requires at least $5,000–$10,000 ACV; field sales needs $25,000+."
+    answer: "ACV benchmarks vary widely by target market. SMB-focused SaaS typically has ACV of $1,000–$5,000. Mid-market products range from $10,000–$50,000. Enterprise products often reach $50,000–$500,000+. What matters more than the absolute number is whether your ACV is large enough to justify your sales motion - inside sales requires at least $5,000–$10,000 ACV; field sales needs $25,000+."
   - question: "Why does ACV matter for startup fundraising?"
     answer: "ACV tells investors how you go to market and whether the economics work. A $500 ACV product can only be sold through self-serve or light inside sales. A $50,000 ACV product can support account executives. Investors use ACV to assess scalability, sales efficiency, and whether the CAC payback period is sustainable. Low ACV with high CAC is a common startup death trap."
 ---
@@ -65,7 +65,7 @@ ARR is what you report to investors as a measure of business scale. ACV is what 
 | Mid-market (50–500 employees) | $5,000–$50,000 | Inside sales (SDR/AE) |
 | Enterprise (500+ employees) | $50,000–$500,000+ | Field sales, solution selling |
 
-These aren't rigid rules — companies like HubSpot started with SMB ACV and expanded upmarket — but they reflect the economic realities of customer acquisition cost and sales cycle length.
+These aren't rigid rules - companies like HubSpot started with SMB ACV and expanded upmarket - but they reflect the economic realities of customer acquisition cost and sales cycle length.
 
 ## Why ACV Shapes Your Entire Business
 
@@ -75,7 +75,7 @@ A $1,200 ACV product cannot support human sales. At $1,200/year, paying a $70,00
 A $60,000 ACV product can support inside sales with a structured SDR/AE model. At $120,000+, you can invest in field sales, solution engineers, and complex procurement cycles.
 
 ### It affects your CAC payback period
-If your ACV is $12,000 and your CAC is $8,000, you recover customer acquisition cost in 8 months. If your ACV is $3,000 and CAC is $4,000, you never recover it without expansion revenue — a fundamental unit economics problem.
+If your ACV is $12,000 and your CAC is $8,000, you recover customer acquisition cost in 8 months. If your ACV is $3,000 and CAC is $4,000, you never recover it without expansion revenue - a fundamental unit economics problem.
 
 ### It signals your market positioning
 Enterprise buyers pay more for products that solve high-stakes problems, integrate deeply with existing systems, and come with SLAs and enterprise security. SMB buyers pay less and need simpler, faster time-to-value. ACV both reflects and reinforces where you're positioned.
@@ -88,7 +88,7 @@ ACV should grow over a customer's lifetime through:
 - **Cross-sells**: Expanding into adjacent product lines
 - **Price increases**: Justified by accumulated value
 
-**Net Revenue Retention (NRR)** measures how well you expand ACV within your existing base. An NRR above 110% means your existing customers are growing faster than they churn — a powerful signal for investors and a key driver of efficient growth.
+**Net Revenue Retention (NRR)** measures how well you expand ACV within your existing base. An NRR above 110% means your existing customers are growing faster than they churn - a powerful signal for investors and a key driver of efficient growth.
 
 ## Key Takeaway
 

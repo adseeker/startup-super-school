@@ -1,6 +1,6 @@
 ---
 title: "How to Write a Startup Pitch Deck"
-description: "A complete guide to building a startup pitch deck — what slides to include, what investors look for, and mistakes that get decks deleted immediately."
+description: "A complete guide to building a startup pitch deck - what slides to include, what investors look for, and mistakes that get decks deleted immediately."
 locale: "en"
 category: "fundraising"
 tags: ["fundraising", "pitch deck", "investors", "storytelling", "Series A"]
@@ -11,31 +11,31 @@ readingTime: 15
 seoKeywords: ["startup pitch deck", "how to write pitch deck", "pitch deck slides", "fundraising pitch deck template"]
 steps:
   - name: "Understand What a Pitch Deck Must Accomplish"
-    text: "A pitch deck is not a business plan — it is a story with evidence designed to make an investor want to learn more. The average VC spends 3 minutes and 44 seconds reviewing a deck. Your goal is a single reaction: 'I need to know more about this.' Everything else is secondary."
+    text: "A pitch deck is not a business plan - it is a story with evidence designed to make an investor want to learn more. The average VC spends 3 minutes and 44 seconds reviewing a deck. Your goal is a single reaction: 'I need to know more about this.' Everything else is secondary."
   - name: "Write a Compelling One-Liner"
     text: "Before building any slides, nail your one-liner using this formula: '[Company] is [what you do] for [who] so that [outcome they care about].' This sentence becomes your cover slide and the north star for every other slide. If you cannot explain your business in one sentence, the deck will not be coherent."
   - name: "Build the Problem and Solution Slides"
-    text: "The Problem slide is the single most important slide — it must make investors feel the pain. Quantify it, use a real user story, and establish that the status quo is inadequate. The Solution slide describes what you have built with one sentence and a screenshot, demo GIF, or product video. Show the outcome you deliver, not a feature list."
+    text: "The Problem slide is the single most important slide - it must make investors feel the pain. Quantify it, use a real user story, and establish that the status quo is inadequate. The Solution slide describes what you have built with one sentence and a screenshot, demo GIF, or product video. Show the outcome you deliver, not a feature list."
   - name: "Add Market Size, Traction, and Business Model"
-    text: "Use bottom-up market sizing (number of potential customers × average contract value) rather than citing a research report — it is more credible. Show traction with the most compelling data you have: revenue, growth rate, retention, pilot customers. The business model slide should show how you make money and your pricing logic."
+    text: "Use bottom-up market sizing (number of potential customers × average contract value) rather than citing a research report - it is more credible. Show traction with the most compelling data you have: revenue, growth rate, retention, pilot customers. The business model slide should show how you make money and your pricing logic."
   - name: "Build the Team and Ask Slides"
     text: "The team slide should explain why you specifically are the right people to solve this problem. Highlight relevant domain expertise, past startup experience, and unfair advantages. The Ask slide states how much you are raising, what it will be used for (headcount, product, sales), and what milestone it funds you to."
   - name: "Apply Good Design and Test It"
-    text: "Keep slides to one idea each, use white space generously, limit text to what is essential, and use visuals wherever possible. Send the deck to 2–3 trusted people and ask what questions they still have after reading it — those gaps are what you need to fix. Iterate before sending to investors."
+    text: "Keep slides to one idea each, use white space generously, limit text to what is essential, and use visuals wherever possible. Send the deck to 2–3 trusted people and ask what questions they still have after reading it - those gaps are what you need to fix. Iterate before sending to investors."
 faqs:
   - question: "How many slides should a startup pitch deck have?"
-    answer: "10 slides is the standard, covering: Cover, Problem, Solution, Market Size, Traction, Product, Business Model, Team, Go-to-Market, and The Ask. Never exceed 15 slides. Investors read hundreds of decks per month — a longer deck signals you cannot prioritize, not that you have more to say."
+    answer: "10 slides is the standard, covering: Cover, Problem, Solution, Market Size, Traction, Product, Business Model, Team, Go-to-Market, and The Ask. Never exceed 15 slides. Investors read hundreds of decks per month - a longer deck signals you cannot prioritize, not that you have more to say."
   - question: "How long do investors spend reviewing a startup pitch deck?"
-    answer: "According to DocSend research, the average VC spends 3 minutes and 44 seconds reviewing a deck before deciding whether to take a meeting. The most time is spent on the Team, Traction, and Financials slides. This means your deck must communicate the core story without being read carefully — it is a teaser, not a document."
+    answer: "According to DocSend research, the average VC spends 3 minutes and 44 seconds reviewing a deck before deciding whether to take a meeting. The most time is spent on the Team, Traction, and Financials slides. This means your deck must communicate the core story without being read carefully - it is a teaser, not a document."
   - question: "What is the most important slide in a pitch deck?"
-    answer: "The Problem slide. It must make the investor feel the pain acutely — quantified, specific, and with a clear explanation of why the current solution is inadequate. If an investor does not believe the problem is real and significant, nothing else in the deck matters. Many founders spend too much time on the Solution and not enough on making the problem visceral."
+    answer: "The Problem slide. It must make the investor feel the pain acutely - quantified, specific, and with a clear explanation of why the current solution is inadequate. If an investor does not believe the problem is real and significant, nothing else in the deck matters. Many founders spend too much time on the Solution and not enough on making the problem visceral."
   - question: "Should you include financial projections in a seed stage pitch deck?"
-    answer: "Yes, but frame them as a model of your assumptions, not a prediction. A 12–18 month model showing key drivers (customer acquisition, pricing, headcount) demonstrates that you understand your business mechanics. Avoid 5-year projections at seed — they are not credible and waste slide space. Show the path to the next fundraising milestone, not an exit scenario."
+    answer: "Yes, but frame them as a model of your assumptions, not a prediction. A 12–18 month model showing key drivers (customer acquisition, pricing, headcount) demonstrates that you understand your business mechanics. Avoid 5-year projections at seed - they are not credible and waste slide space. Show the path to the next fundraising milestone, not an exit scenario."
 ---
 
 ## What Makes a Pitch Deck Work
 
-A pitch deck is not a business plan. It's a **story with evidence** — one that convinces a skeptical, time-starved investor to spend more time with you.
+A pitch deck is not a business plan. It's a **story with evidence** - one that convinces a skeptical, time-starved investor to spend more time with you.
 
 The average VC spends **3 minutes and 44 seconds** (according to DocSend research) reviewing a deck before deciding whether to take a meeting. Your deck is not a document to be read carefully. It's a teaser designed to generate curiosity.
 
@@ -47,7 +47,7 @@ The best pitch decks do one thing: make the investor think "I need to know more 
 - Company name, logo, one-line description
 - Your name, email, LinkedIn
 - "Confidential" label
-- Keep it clean — no walls of text
+- Keep it clean - no walls of text
 
 > **One-liner formula**: [Company] is [what you do] for [who] so that [outcome they care about].
 
@@ -62,7 +62,7 @@ The single most important slide. It must make investors feel the pain:
 Red flag: a problem slide that says "there's a big market for X." That's a market slide, not a problem slide.
 
 ### 3. Solution
-Describe what you've built — clearly, simply, visually:
+Describe what you've built - clearly, simply, visually:
 
 - One sentence explaining what the product does
 - A screenshot, demo GIF, or product video (even 30 seconds works)
@@ -117,7 +117,7 @@ Keep it simple. One sentence: "We charge $X/month per user on annual contracts."
 How will you acquire your first 100, then 1,000, then 10,000 customers?
 
 - Primary acquisition channel(s) and why they work
-- ICP (Ideal Customer Profile) — who you're targeting and why
+- ICP (Ideal Customer Profile) - who you're targeting and why
 - Sales motion (self-serve, inside sales, enterprise)
 - Early channel experiments and results
 
@@ -145,28 +145,28 @@ End with exactly what you're raising and what you'll do with it:
 
 Add these after the core 10 if they strengthen your story:
 
-- **Competition** — how you're positioned vs. alternatives (2x2 matrix or table)
-- **Financial projections** — 3-year model (investors know it's fiction but it shows you think in numbers)
-- **Technology/moat** — explain your defensibility if it's technical
-- **Testimonials** — quotes from customers or notable advisors
+- **Competition** - how you're positioned vs. alternatives (2x2 matrix or table)
+- **Financial projections** - 3-year model (investors know it's fiction but it shows you think in numbers)
+- **Technology/moat** - explain your defensibility if it's technical
+- **Testimonials** - quotes from customers or notable advisors
 
 ## Design Principles
 
-- **One idea per slide** — if you need two title lines, it's two slides
-- **Images over words** — a chart or screenshot says more than a paragraph
-- **Consistent typography** — pick two fonts max
-- **Minimal color** — white background, one accent color
-- **12-15 slides maximum** — brevity is a signal of clarity
+- **One idea per slide** - if you need two title lines, it's two slides
+- **Images over words** - a chart or screenshot says more than a paragraph
+- **Consistent typography** - pick two fonts max
+- **Minimal color** - white background, one accent color
+- **12-15 slides maximum** - brevity is a signal of clarity
 
 Tools: Pitch, Figma, Canva (for templates), Google Slides.
 
 ## Common Mistakes
 
-1. **Leading with the technology, not the problem** — investors don't fund technology; they fund solutions to problems
-2. **Market sizing with no methodology** — "The market is $50B" with no explanation kills credibility
-3. **Traction hidden in a table** — if your growth is good, visualize it prominently
-4. **No clear ask** — some founders end without stating what they're raising; don't make investors guess
-5. **Confidential information overload** — NDAs are rarely signed; don't put trade secrets in a fundraising deck
+1. **Leading with the technology, not the problem** - investors don't fund technology; they fund solutions to problems
+2. **Market sizing with no methodology** - "The market is $50B" with no explanation kills credibility
+3. **Traction hidden in a table** - if your growth is good, visualize it prominently
+4. **No clear ask** - some founders end without stating what they're raising; don't make investors guess
+5. **Confidential information overload** - NDAs are rarely signed; don't put trade secrets in a fundraising deck
 
 ## Key Takeaway
 

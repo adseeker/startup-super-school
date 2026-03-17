@@ -1,6 +1,6 @@
 ---
 title: "Cap Table"
-description: "A cap table tracks who owns what in a startup — founders, investors, and employees — and how ownership changes across funding rounds."
+description: "A cap table tracks who owns what in a startup - founders, investors, and employees - and how ownership changes across funding rounds."
 locale: "en"
 category: "equity"
 tags: ["equity", "fundraising", "investors", "ownership"]
@@ -14,7 +14,7 @@ acronym: "N/A"
 
 ## What Is a Cap Table?
 
-A capitalization table — universally known as a **cap table** — is a spreadsheet or software-managed ledger that records the complete ownership structure of a company. It lists every shareholder, the type and number of shares they hold, the price paid, and the resulting ownership percentage. For a startup, the cap table is one of the most important documents in existence: it determines who controls the company, who profits in an exit, and how much each person's stake is worth at any given valuation.
+A capitalization table - universally known as a **cap table** - is a spreadsheet or software-managed ledger that records the complete ownership structure of a company. It lists every shareholder, the type and number of shares they hold, the price paid, and the resulting ownership percentage. For a startup, the cap table is one of the most important documents in existence: it determines who controls the company, who profits in an exit, and how much each person's stake is worth at any given valuation.
 
 A clean, accurate, and well-managed cap table signals operational competence to investors. A messy or disputed cap table is one of the fastest ways to derail a fundraising process or an acquisition.
 
@@ -24,12 +24,12 @@ A clean, accurate, and well-managed cap table signals operational competence to 
 
 A cap table captures every class of securities the company has issued or promised to issue:
 
-- **Common shares** — typically held by founders and employees
-- **Preferred shares** — typically held by investors, carrying special rights
-- **Options** — granted to employees through a stock option plan (ESOP/ESPP)
-- **Warrants** — often issued to advisors or as part of debt agreements
-- **SAFEs and convertible notes** — pre-equity instruments that will convert in a future round
-- **Option pool (unissued)** — shares reserved for future employee grants
+- **Common shares** - typically held by founders and employees
+- **Preferred shares** - typically held by investors, carrying special rights
+- **Options** - granted to employees through a stock option plan (ESOP/ESPP)
+- **Warrants** - often issued to advisors or as part of debt agreements
+- **SAFEs and convertible notes** - pre-equity instruments that will convert in a future round
+- **Option pool (unissued)** - shares reserved for future employee grants
 
 ---
 
@@ -40,10 +40,10 @@ A cap table captures every class of securities the company has issued or promise
 | Founder A | Common | 4,000,000 | 40% | $0.0001 | $4,000,000 |
 | Founder B | Common | 3,000,000 | 30% | $0.0001 | $3,000,000 |
 | Seed Investor | Preferred Series Seed | 1,500,000 | 15% | $1.00 | $1,500,000 |
-| Option Pool | Common (unissued) | 1,500,000 | 15% | — | — |
+| Option Pool | Common (unissued) | 1,500,000 | 15% | - | - |
 | **Total** | | **10,000,000** | **100%** | | **$8,500,000** |
 
-"FD" stands for **fully diluted** — meaning the ownership percentage assumes all options, warrants, and convertible instruments have been exercised or converted. Investors almost always reference fully diluted share counts when discussing ownership.
+"FD" stands for **fully diluted** - meaning the ownership percentage assumes all options, warrants, and convertible instruments have been exercised or converted. Investors almost always reference fully diluted share counts when discussing ownership.
 
 ---
 
@@ -61,7 +61,7 @@ New preferred shares are issued to investors, and an option pool is established 
 A new class of preferred shares (Series A Preferred) is issued to Series A investors. The existing seed investors' percentages shrink (they are diluted), but their absolute share count stays the same unless they exercised pro-rata rights.
 
 ### After an Option Pool Refresh
-The board approves additional shares for the option pool — for example, ahead of key engineering hires. This increases the total share count and dilutes all existing shareholders proportionally.
+The board approves additional shares for the option pool - for example, ahead of key engineering hires. This increases the total share count and dilutes all existing shareholders proportionally.
 
 ---
 
@@ -69,7 +69,7 @@ The board approves additional shares for the option pool — for example, ahead 
 
 When new shares are issued, the total share count increases. Existing shareholders hold the same number of shares, but those shares now represent a smaller percentage of the total. This is dilution.
 
-**Example:** Founder A holds 4,000,000 shares out of 8,000,000 total = 50%. After a new round issues 2,000,000 new shares, the total becomes 10,000,000. Founder A still holds 4,000,000 shares, but now owns 40% — a 10-point dilution.
+**Example:** Founder A holds 4,000,000 shares out of 8,000,000 total = 50%. After a new round issues 2,000,000 new shares, the total becomes 10,000,000. Founder A still holds 4,000,000 shares, but now owns 40% - a 10-point dilution.
 
 The key insight for founders: dilution is not inherently bad. Being diluted from 50% to 40% of a company worth $50M is far better than holding 50% of a company worth $5M.
 
@@ -112,4 +112,4 @@ Most founders start with a spreadsheet and migrate to dedicated software before 
 
 ## Key Takeaway
 
-The cap table is the definitive record of who owns what in your startup. It evolves with every funding round, option grant, and share transfer, and it will be the first document any serious investor requests. Keep it accurate, fully diluted, and professionally managed from day one. Messy cap tables derail fundraises and acquisitions — clean ones signal that you run a tight ship. Migrate from spreadsheets to purpose-built software like Carta or Pulley before your first institutional round.
+The cap table is the definitive record of who owns what in your startup. It evolves with every funding round, option grant, and share transfer, and it will be the first document any serious investor requests. Keep it accurate, fully diluted, and professionally managed from day one. Messy cap tables derail fundraises and acquisitions - clean ones signal that you run a tight ship. Migrate from spreadsheets to purpose-built software like Carta or Pulley before your first institutional round.

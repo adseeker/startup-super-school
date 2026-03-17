@@ -14,15 +14,15 @@ seoKeywords: ["innovation accounting startup", "what is innovation accounting", 
 
 ## Origins
 
-**Innovation accounting** was introduced by Eric Ries in *The Lean Startup* (2011) as a direct response to a paradox that every early-stage startup encounters: the metrics that determine whether a business is healthy — revenue, profit, market share — are meaningless when the business is still trying to discover whether it is building something people want.
+**Innovation accounting** was introduced by Eric Ries in *The Lean Startup* (2011) as a direct response to a paradox that every early-stage startup encounters: the metrics that determine whether a business is healthy - revenue, profit, market share - are meaningless when the business is still trying to discover whether it is building something people want.
 
-A pre-revenue startup can run a hundred experiments, learn that its initial assumptions were wrong, and pivot toward a dramatically better model — and traditional accounting will show nothing but losses. Or it can keep building the wrong thing with great operational efficiency, generating clean financial reports while destroying value. Revenue tells you nothing about learning, and learning is the only thing that matters before product-market fit.
+A pre-revenue startup can run a hundred experiments, learn that its initial assumptions were wrong, and pivot toward a dramatically better model - and traditional accounting will show nothing but losses. Or it can keep building the wrong thing with great operational efficiency, generating clean financial reports while destroying value. Revenue tells you nothing about learning, and learning is the only thing that matters before product-market fit.
 
 Ries framed innovation accounting as the accountability layer for a startup that is genuinely operating as a learning machine: a system for measuring whether you are making progress toward building something people will pay for, even when that payment hasn't arrived yet.
 
 ## The Core Idea
 
-Traditional accounting measures **lagging indicators**: revenue, profit, costs, and margins. These metrics reflect the past — what happened as a result of decisions already made.
+Traditional accounting measures **lagging indicators**: revenue, profit, costs, and margins. These metrics reflect the past - what happened as a result of decisions already made.
 
 Innovation accounting measures **leading indicators**: the early signals that predict whether future revenue and retention will materialize. These are the metrics that change *before* revenue changes, and that tell you whether your current trajectory leads somewhere valuable.
 
@@ -36,15 +36,15 @@ Ries structures the framework around three sequential milestones, each building 
 
 Before running any experiments, measure your current state with precision. What is your activation rate today? What percentage of new users complete the core action that defines engagement? What is your conversion rate from trial to paid? What is your week-one retention?
 
-These numbers are your baseline. They are almost certainly bad — that is expected. The point is not to start from a good number; the point is to start from a *known* number. You cannot evaluate whether an experiment worked if you don't know what you started from.
+These numbers are your baseline. They are almost certainly bad - that is expected. The point is not to start from a good number; the point is to start from a *known* number. You cannot evaluate whether an experiment worked if you don't know what you started from.
 
-A startup that skips baseline measurement is not running experiments — it is shipping features and guessing at causality.
+A startup that skips baseline measurement is not running experiments - it is shipping features and guessing at causality.
 
 ### Milestone 2: Tune the Engine
 
 With a baseline established, design and run structured experiments aimed at improving specific metrics. Each experiment tests a hypothesis about why a metric is at its current level and what change might move it.
 
-The critical discipline here is **one variable at a time**. An experiment that changes five things simultaneously — the onboarding flow, the pricing page, the email sequence, the feature set, and the support documentation — produces data that cannot be interpreted. If the metric moves, you don't know why. If it doesn't move, you don't know what failed.
+The critical discipline here is **one variable at a time**. An experiment that changes five things simultaneously - the onboarding flow, the pricing page, the email sequence, the feature set, and the support documentation - produces data that cannot be interpreted. If the metric moves, you don't know why. If it doesn't move, you don't know what failed.
 
 Each iteration in the tuning phase answers: did this change produce a measurable improvement in the leading indicator we targeted? If yes, what does that tell us about our customer and our model? If no, what assumption were we wrong about?
 
@@ -56,11 +56,11 @@ After a series of tuning experiments, you have accumulated evidence about whethe
 - Is the rate of improvement sufficient to reach a viable business model within a reasonable timeframe and resource envelope?
 - Have we exhausted the most plausible hypotheses for why the metric isn't moving?
 
-If the answers are yes, yes, and not yet — persevere. If the answer to the first question is persistently no despite genuine effort, it is a signal to pivot: not to try one more thing in the same direction, but to change a fundamental assumption about the customer, the problem, or the solution.
+If the answers are yes, yes, and not yet - persevere. If the answer to the first question is persistently no despite genuine effort, it is a signal to pivot: not to try one more thing in the same direction, but to change a fundamental assumption about the customer, the problem, or the solution.
 
 ## What to Measure: Leading Indicators Over Lagging
 
-The power of innovation accounting depends on choosing the right leading indicators. The most commonly used metrics — because they predict future health across most business models — are:
+The power of innovation accounting depends on choosing the right leading indicators. The most commonly used metrics - because they predict future health across most business models - are:
 
 | Metric | What It Measures | Why It Matters |
 |---|---|---|
@@ -76,7 +76,7 @@ The unifying principle: these metrics change *before* revenue changes. A cohort 
 
 Ries' distinction between **actionable metrics** and **vanity metrics** is central to the framework.
 
-Vanity metrics are numbers that feel good but don't inform decisions. They tend to increase monotonically regardless of what you do — which means they cannot distinguish between a business that is making progress and one that is not.
+Vanity metrics are numbers that feel good but don't inform decisions. They tend to increase monotonically regardless of what you do - which means they cannot distinguish between a business that is making progress and one that is not.
 
 | Vanity Metric | Actionable Alternative |
 |---|---|
@@ -86,7 +86,7 @@ Vanity metrics are numbers that feel good but don't inform decisions. They tend 
 | Total revenue (all time) | Revenue per cohort by month of acquisition |
 | Press mentions | Direct signups attributable to campaign |
 
-The test for whether a metric is actionable: **could this metric go down?** If a metric can only go up — because it's cumulative, because it's not normalized, because it counts things rather than rates — it is almost certainly a vanity metric.
+The test for whether a metric is actionable: **could this metric go down?** If a metric can only go up - because it's cumulative, because it's not normalized, because it counts things rather than rates - it is almost certainly a vanity metric.
 
 ## Implementing Innovation Accounting
 
@@ -106,15 +106,15 @@ Cohort tracking is essential. Looking at aggregate metrics hides the most import
 
 The framework applies wherever a team is running experiments and needs to measure progress toward a goal that traditional financial metrics cannot capture yet. Corporate innovation labs, product teams inside large companies, and nonprofit programs all face versions of the same problem: how do you prove you are making progress before the lagging indicators move?
 
-In these contexts, innovation accounting provides a reporting structure that leadership can evaluate without reverting to premature revenue demands — which typically cause innovation teams to optimize for short-term financial performance at the cost of the learning that would generate long-term value.
+In these contexts, innovation accounting provides a reporting structure that leadership can evaluate without reverting to premature revenue demands - which typically cause innovation teams to optimize for short-term financial performance at the cost of the learning that would generate long-term value.
 
 ## Limitations
 
 - Innovation accounting requires the discipline to define metrics before running experiments. Most teams find this uncomfortable and revert to post-hoc metric selection.
-- The framework does not tell you *which* experiments to run — only how to evaluate them. Poor experiment design will produce clean data about the wrong questions.
+- The framework does not tell you *which* experiments to run - only how to evaluate them. Poor experiment design will produce clean data about the wrong questions.
 - It can create a false sense of rigor if the chosen metrics are not genuinely predictive of the business model's success. Optimizing an activation metric that doesn't correlate with retention or revenue is a sophisticated way to build the wrong thing.
 - The pivot-or-persevere decision is structurally clear but humanly difficult. Teams with emotional attachment to a direction find ways to interpret plateauing metrics as "almost there" indefinitely.
 
 ## Key Takeaway
 
-Innovation accounting solves the problem every pre-revenue startup faces: how do you know if you are making progress before the lagging indicators move? The answer is to measure the right leading indicators — activation, retention, conversion, and referral — track them by cohort, and evaluate every experiment against a pre-defined baseline. When those indicators improve consistently, you are learning and building something real. When they plateau despite genuine experimentation, that is data too — the most important kind. A startup that measures the right things and acts honestly on what those measurements show will always outperform one that ships features and hopes.
+Innovation accounting solves the problem every pre-revenue startup faces: how do you know if you are making progress before the lagging indicators move? The answer is to measure the right leading indicators - activation, retention, conversion, and referral - track them by cohort, and evaluate every experiment against a pre-defined baseline. When those indicators improve consistently, you are learning and building something real. When they plateau despite genuine experimentation, that is data too - the most important kind. A startup that measures the right things and acts honestly on what those measurements show will always outperform one that ships features and hopes.

@@ -1,6 +1,6 @@
 ---
 title: "Build a Startup Financial Model"
-description: "How to build a startup financial model from scratch — revenue assumptions, burn rate, runway, and investor-ready outputs that hold up in due diligence."
+description: "How to build a startup financial model from scratch - revenue assumptions, burn rate, runway, and investor-ready outputs that hold up in due diligence."
 locale: "en"
 category: "finance"
 tags: ["financial model", "startup finance", "fundraising", "burn rate", "runway", "forecasting"]
@@ -11,9 +11,9 @@ primaryKeyword: "startup financial model"
 seoKeywords: ["how to build a startup financial model", "startup financial projections", "startup forecast template", "financial model for investors"]
 steps:
   - name: "Define your revenue model"
-    text: "Identify how your company generates revenue — subscription, transactional, usage-based, or services — and map out the unit economics that drive each revenue stream. This is the foundation everything else builds on."
+    text: "Identify how your company generates revenue - subscription, transactional, usage-based, or services - and map out the unit economics that drive each revenue stream. This is the foundation everything else builds on."
   - name: "Build the revenue forecast"
-    text: "Model revenue from the bottom up: start with the number of customers or transactions, apply conversion rates and pricing, and project forward 24–36 months. Avoid top-down 'we'll capture 1% of a $10B market' projections — investors don't trust them."
+    text: "Model revenue from the bottom up: start with the number of customers or transactions, apply conversion rates and pricing, and project forward 24–36 months. Avoid top-down 'we'll capture 1% of a $10B market' projections - investors don't trust them."
   - name: "Map your headcount and payroll costs"
     text: "Build a hiring plan by role, quarter by quarter. Payroll is typically 60–80% of a startup's burn. Include fully-loaded cost per employee (salary + benefits + taxes ≈ 1.2–1.3× base salary) and model the lag between hiring decisions and full productivity."
   - name: "List all other operating expenses"
@@ -28,16 +28,16 @@ faqs:
   - question: "How far ahead should startup financial projections go?"
     answer: "Most investors expect 24–36 months of projections. 12 months is too short to show the business trajectory; 5 years is too speculative for early-stage companies. For Series A and B fundraising, 3 years is standard, with the first 12 months modeled monthly and years 2–3 modeled quarterly."
   - question: "What makes a financial model credible to investors?"
-    answer: "Credibility comes from bottom-up assumptions, not top-down market share claims. Show how each revenue line is derived from operational drivers: number of sales reps × quota attainment, or website traffic × conversion rate × ARPU. Include a downside scenario. Be able to explain every assumption verbally. Investors don't expect you to be right — they want to see that you understand your business."
+    answer: "Credibility comes from bottom-up assumptions, not top-down market share claims. Show how each revenue line is derived from operational drivers: number of sales reps × quota attainment, or website traffic × conversion rate × ARPU. Include a downside scenario. Be able to explain every assumption verbally. Investors don't expect you to be right - they want to see that you understand your business."
   - question: "What is a good burn rate for a startup?"
-    answer: "There is no universal good burn rate — it depends on your runway, growth rate, and stage. What matters is the burn multiple: net burn divided by net new ARR. Below 1× is excellent; 1–1.5× is good; above 2× at Series A+ requires justification. The rule of thumb for runway: always maintain at least 18 months before beginning a new fundraise, and 12 months as an absolute floor before cash concerns become existential."
+    answer: "There is no universal good burn rate - it depends on your runway, growth rate, and stage. What matters is the burn multiple: net burn divided by net new ARR. Below 1× is excellent; 1–1.5× is good; above 2× at Series A+ requires justification. The rule of thumb for runway: always maintain at least 18 months before beginning a new fundraise, and 12 months as an absolute floor before cash concerns become existential."
 ---
 
 ## Why Your Financial Model Matters
 
 A startup financial model serves two purposes that founders often conflate: it's a **management tool** (to understand your business and make decisions) and a **fundraising document** (to communicate your trajectory to investors).
 
-Most early-stage models are built primarily for fundraising and fail at the management purpose. The best models do both — they're built on operational assumptions that founders actually believe and update regularly, so the projections remain a living picture of the business, not a one-time presentation deck.
+Most early-stage models are built primarily for fundraising and fail at the management purpose. The best models do both - they're built on operational assumptions that founders actually believe and update regularly, so the projections remain a living picture of the business, not a one-time presentation deck.
 
 This guide walks you through building a model that works for both.
 
@@ -102,7 +102,7 @@ Build this month by month for 36 months. The key inputs are:
 - Average ACV
 - Monthly churn rate
 
-For growth-stage companies, also model expansion revenue separately — upsells and seat expansions from existing customers.
+For growth-stage companies, also model expansion revenue separately - upsells and seat expansions from existing customers.
 
 ---
 
@@ -226,4 +226,4 @@ The investor-facing financial model summary should fit on one page and include:
 
 ## Key Takeaway
 
-A financial model's value is not in the precision of its outputs — it's in the clarity of its assumptions. Build bottom-up. Know your unit economics cold. Update the model monthly with actuals so the projections drift less from reality. And when investors stress-test your assumptions, be able to explain the logic behind every number. A founder who can do that has already passed the most important test the model is used for.
+A financial model's value is not in the precision of its outputs - it's in the clarity of its assumptions. Build bottom-up. Know your unit economics cold. Update the model monthly with actuals so the projections drift less from reality. And when investors stress-test your assumptions, be able to explain the logic behind every number. A founder who can do that has already passed the most important test the model is used for.

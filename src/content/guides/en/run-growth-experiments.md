@@ -13,11 +13,11 @@ seoKeywords: ["startup growth experiments", "how to run growth experiments", "gr
 
 ## Why Experimentation Beats Intuition
 
-Most growth decisions at startups are made based on intuition, precedent, or whoever in the room has the strongest opinion. This is understandable — intuition is fast and confident, and in early-stage companies speed feels like everything.
+Most growth decisions at startups are made based on intuition, precedent, or whoever in the room has the strongest opinion. This is understandable - intuition is fast and confident, and in early-stage companies speed feels like everything.
 
 The problem is that growth intuitions are wrong more often than they're right. Not because founders are unintelligent, but because growth behavior is counterintuitive and context-dependent. The pricing structure that worked at a competitor may not work for your customer segment. The onboarding flow your team found obvious may be confusing to users who don't share your mental model. The acquisition channel that worked at your last company may not apply here.
 
-Experimentation doesn't replace intuition — it disciplines it. Your intuition generates the hypothesis. The experiment tests whether that intuition is correct in this specific context, with this specific customer, at this specific stage. The job is not to be right immediately. The job is to test cheaply, learn quickly, and be right eventually.
+Experimentation doesn't replace intuition - it disciplines it. Your intuition generates the hypothesis. The experiment tests whether that intuition is correct in this specific context, with this specific customer, at this specific stage. The job is not to be right immediately. The job is to test cheaply, learn quickly, and be right eventually.
 
 Companies that build an experimentation culture consistently outgrow companies that don't, not because every individual experiment succeeds but because they accumulate valid learnings faster.
 
@@ -29,11 +29,11 @@ Every growth experiment, regardless of what it's testing, should follow the same
 
 **Step 2: Metric.** The single number that will tell you whether the hypothesis was confirmed or rejected.
 
-**Step 3: Test design.** The minimum test required to generate a useful signal — the audience, the variant, the duration, the success threshold.
+**Step 3: Test design.** The minimum test required to generate a useful signal - the audience, the variant, the duration, the success threshold.
 
 **Step 4: Result.** What actually happened versus what you expected.
 
-**Step 5: Decision.** What you're doing next because of this result — ship it, kill it, iterate, or run a follow-up experiment.
+**Step 5: Decision.** What you're doing next because of this result - ship it, kill it, iterate, or run a follow-up experiment.
 
 This structure matters because it prevents the most common failure mode in growth experimentation: running a test, getting ambiguous results, and then arguing about what the results mean because no one defined success criteria in advance.
 
@@ -77,7 +77,7 @@ Example backlog:
 | Redesign email sequence day 3 | 4 | 7 | 7 | 196 |
 | New acquisition channel: LinkedIn ads | 8 | 4 | 4 | 128 |
 
-The progress bar experiment runs first. The LinkedIn ads experiment runs last — not because it wouldn't have high impact if successful, but because confidence and ease are both low, meaning the expected return on effort is relatively lower.
+The progress bar experiment runs first. The LinkedIn ads experiment runs last - not because it wouldn't have high impact if successful, but because confidence and ease are both low, meaning the expected return on effort is relatively lower.
 
 ICE scores are not objective truth. They're a forcing function for making prioritization explicit and discussable, rather than defaulting to whoever has the strongest opinion.
 
@@ -104,10 +104,10 @@ This does not mean you can't run experiments. It means you need to adapt your ap
 
 - **Time-based tests.** Run variant A for two weeks, then variant B for two weeks, and compare. Control for seasonality and any other time-based effects. Less rigorous than true A/B, but often sufficient for large effect sizes.
 - **Run longer.** If you can't widen your audience, run the test for longer to accumulate more data points. A test with 200 data points per variant is meaningful for a 20% effect size; it's not meaningful for a 2% effect size.
-- **Focus on large effects.** At low traffic volumes, only run experiments where you're looking for meaningful improvements — 15%+ changes in a metric. Trying to detect small improvements without sufficient statistical power produces noise, not signal.
+- **Focus on large effects.** At low traffic volumes, only run experiments where you're looking for meaningful improvements - 15%+ changes in a metric. Trying to detect small improvements without sufficient statistical power produces noise, not signal.
 - **Use qualitative validation.** Supplement low-volume quantitative experiments with qualitative research. If 8 out of 10 users in usability testing prefer variant B, that's directional signal even without statistical significance.
 
-The honest statement for most early-stage founders: you don't have enough traffic to run rigorous A/B tests. Run directional experiments, be transparent about the confidence level, and use the results to make better decisions — not to claim certainty you don't have.
+The honest statement for most early-stage founders: you don't have enough traffic to run rigorous A/B tests. Run directional experiments, be transparent about the confidence level, and use the results to make better decisions - not to claim certainty you don't have.
 
 ## The Growth Experiment Log
 
@@ -128,7 +128,7 @@ Every experiment you run should be documented, whether it succeeds or fails. The
 
 The learnings field is the most important and the most neglected. A failed experiment that teaches you something specific about user behavior is more valuable than a successful experiment you don't understand.
 
-Keep the log in a shared document. Review it at the start of every growth planning session. New experiment ideas should explicitly reference the log — "This builds on the finding from Experiment 14, which showed that users who see social proof during onboarding are 22% more likely to invite a teammate."
+Keep the log in a shared document. Review it at the start of every growth planning session. New experiment ideas should explicitly reference the log - "This builds on the finding from Experiment 14, which showed that users who see social proof during onboarding are 22% more likely to invite a teammate."
 
 ## Experiment Velocity: How Many Tests to Run
 
@@ -154,12 +154,12 @@ The trap is letting the perfect be the enemy of the useful. Two simple, imperfec
 
 ## Building a Culture of Experimentation
 
-Experimentation is not a tool — it's a mindset. You're trying to create an environment where hypotheses are welcomed, tests are run quickly, failures are analyzed rather than blamed, and learnings are shared openly.
+Experimentation is not a tool - it's a mindset. You're trying to create an environment where hypotheses are welcomed, tests are run quickly, failures are analyzed rather than blamed, and learnings are shared openly.
 
-This means explicitly rewarding the learning, not just the result. When an experiment disproves a firmly-held assumption, that is worth celebrating — it has just saved you from building in the wrong direction. When a high-confidence experiment fails, that is genuinely valuable information.
+This means explicitly rewarding the learning, not just the result. When an experiment disproves a firmly-held assumption, that is worth celebrating - it has just saved you from building in the wrong direction. When a high-confidence experiment fails, that is genuinely valuable information.
 
 The teams that scale fastest are the ones where every person, from product to marketing to sales, operates with the question: "How could we test that?"
 
 ## Key Takeaway
 
-Growth experimentation at a startup is not about running sophisticated A/B tests — it's about developing the discipline to turn intuitions into hypotheses, hypotheses into minimum viable tests, and results into documented learnings that compound over time. Use the ICE framework to prioritize what to test, write specific falsifiable hypotheses before every experiment, accept that your traffic volume will limit statistical rigor, and document every result whether it succeeds or fails. Two well-designed experiments per month, consistently applied, will compound into a decisive growth advantage within a year.
+Growth experimentation at a startup is not about running sophisticated A/B tests - it's about developing the discipline to turn intuitions into hypotheses, hypotheses into minimum viable tests, and results into documented learnings that compound over time. Use the ICE framework to prioritize what to test, write specific falsifiable hypotheses before every experiment, accept that your traffic volume will limit statistical rigor, and document every result whether it succeeds or fails. Two well-designed experiments per month, consistently applied, will compound into a decisive growth advantage within a year.

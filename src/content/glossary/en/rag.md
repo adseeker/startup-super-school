@@ -11,20 +11,20 @@ primaryKeyword: "retrieval augmented generation"
 seoKeywords: ["what is RAG ai", "retrieval augmented generation", "rag vs fine-tuning", "rag pipeline startup"]
 faqs:
   - question: "What is RAG (Retrieval-Augmented Generation)?"
-    answer: "RAG is an AI architecture that enhances LLM outputs by retrieving relevant external documents at query time and including them in the model's context. Instead of relying solely on the model's training data, RAG grounds answers in a specific, up-to-date knowledge base — reducing hallucination and enabling AI products to answer questions about proprietary or recent information."
+    answer: "RAG is an AI architecture that enhances LLM outputs by retrieving relevant external documents at query time and including them in the model's context. Instead of relying solely on the model's training data, RAG grounds answers in a specific, up-to-date knowledge base - reducing hallucination and enabling AI products to answer questions about proprietary or recent information."
   - question: "How does RAG work technically?"
     answer: "A RAG pipeline has two stages: retrieval and generation. During retrieval, the user's query is embedded into a vector and used to search a vector database for the most similar document chunks. During generation, those chunks are injected into the LLM's prompt context along with the question, so the model can answer based on real source material."
   - question: "When should a startup use RAG vs fine-tuning?"
-    answer: "Use RAG when you need the model to answer questions based on a specific knowledge base (product docs, company data, customer records), when that knowledge changes frequently, or when you need citations. Use fine-tuning when you need to change the model's style, tone, or behavior consistently across all outputs — not just inject knowledge."
+    answer: "Use RAG when you need the model to answer questions based on a specific knowledge base (product docs, company data, customer records), when that knowledge changes frequently, or when you need citations. Use fine-tuning when you need to change the model's style, tone, or behavior consistently across all outputs - not just inject knowledge."
   - question: "What are the main challenges of building a RAG system?"
     answer: "The biggest challenges are chunking strategy (how you split documents affects retrieval quality), retrieval accuracy (finding the right chunks for ambiguous queries), context window limits (you can only inject so many chunks), and evaluation (measuring whether retrieved chunks actually helped the answer). Many RAG systems fail not at the LLM step but at the retrieval step."
 ---
 
 ## What Is Retrieval-Augmented Generation?
 
-Retrieval-Augmented Generation (RAG) is an AI architecture that combines a retrieval system with a large language model, giving the model access to external knowledge at query time rather than relying solely on what it memorized during training. Instead of asking "what do you know about X?", a RAG system asks "here are the relevant documents about X — now answer the question."
+Retrieval-Augmented Generation (RAG) is an AI architecture that combines a retrieval system with a large language model, giving the model access to external knowledge at query time rather than relying solely on what it memorized during training. Instead of asking "what do you know about X?", a RAG system asks "here are the relevant documents about X - now answer the question."
 
-The result: AI products that can answer questions about your proprietary data, recent events, or specialized knowledge bases — without fine-tuning and without hallucinating information the model never learned.
+The result: AI products that can answer questions about your proprietary data, recent events, or specialized knowledge bases - without fine-tuning and without hallucinating information the model never learned.
 
 ## How RAG Works
 
@@ -51,7 +51,7 @@ A typical RAG pipeline has two phases:
 | **Hallucination** | Reduced (grounded in sources) | Still possible |
 | **Citations** | Easy to provide | Not inherent |
 
-Most AI products that need to answer questions from a knowledge base should start with RAG. Fine-tuning is for problems that RAG can't solve — like changing the model's tone, making it refuse certain topics, or teaching it specialized terminology.
+Most AI products that need to answer questions from a knowledge base should start with RAG. Fine-tuning is for problems that RAG can't solve - like changing the model's tone, making it refuse certain topics, or teaching it specialized terminology.
 
 ## Common RAG Failure Modes
 
@@ -62,4 +62,4 @@ Most AI products that need to answer questions from a knowledge base should star
 
 ## Key Takeaway
 
-RAG is the most practical way to build AI products on top of proprietary or domain-specific knowledge. It's faster to implement than fine-tuning, cheaper, and keeps your knowledge base up-to-date without retraining. Master RAG before considering fine-tuning — the vast majority of AI product use cases don't require anything more.
+RAG is the most practical way to build AI products on top of proprietary or domain-specific knowledge. It's faster to implement than fine-tuning, cheaper, and keeps your knowledge base up-to-date without retraining. Master RAG before considering fine-tuning - the vast majority of AI product use cases don't require anything more.

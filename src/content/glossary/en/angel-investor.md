@@ -13,7 +13,7 @@ seoKeywords: ["angel investor startup", "what is an angel investor", "angel vs V
 
 ## What Is an Angel Investor?
 
-An **angel investor** is an individual who invests their own money into early-stage companies, typically at the pre-seed or seed stage — when institutional venture capital is not yet interested or available. Angels often fill the gap between a founder's personal savings and the first institutional round.
+An **angel investor** is an individual who invests their own money into early-stage companies, typically at the pre-seed or seed stage - when institutional venture capital is not yet interested or available. Angels often fill the gap between a founder's personal savings and the first institutional round.
 
 The term "angel" originated from Broadway theater, where wealthy patrons would fund productions that commercial producers wouldn't touch. The startup application of the term followed naturally.
 
@@ -33,7 +33,7 @@ The term "angel" originated from Broadway theater, where wealthy patrons would f
 | Seed | $25K–$250K | $1M–$3M |
 | Seed extension | $50K–$500K | $2M–$5M |
 
-Angels often invest via **SAFEs** (Simple Agreements for Future Equity) — simple instruments that convert to equity at the next priced round.
+Angels often invest via **SAFEs** (Simple Agreements for Future Equity) - simple instruments that convert to equity at the next priced round.
 
 ## Types of Angels
 
@@ -58,13 +58,13 @@ Angels often invest via **SAFEs** (Simple Agreements for Future Equity) — simp
 
 1. **Warm introductions** through your network (most effective)
 2. **AngelList** and **Crunchbase** for research and outreach
-3. **Alumni networks** — especially from Stanford, MIT, and top tech companies
-4. **Founder communities** — other founders often have intros to their angels
-5. **Startup events** — conferences, demo days, accelerator showcases
+3. **Alumni networks** - especially from Stanford, MIT, and top tech companies
+4. **Founder communities** - other founders often have intros to their angels
+5. **Startup events** - conferences, demo days, accelerator showcases
 
 ## What Angels Look for
 
-Most angels invest primarily in **founders**, not ideas — especially at pre-seed:
+Most angels invest primarily in **founders**, not ideas - especially at pre-seed:
 
 - Exceptional domain expertise or unfair insight
 - Evidence of obsessive commitment to the problem

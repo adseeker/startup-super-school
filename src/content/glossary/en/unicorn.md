@@ -11,7 +11,7 @@ primaryKeyword: "unicorn startup meaning"
 seoKeywords: ["what is a unicorn startup", "unicorn company definition", "unicorn valuation"]
 faqs:
   - question: "What makes a company a unicorn?"
-    answer: "A company becomes a unicorn when its valuation surpasses $1 billion, as determined during a private funding round. The valuation is agreed upon by the company and its investors — it is not set by public markets. This means the title reflects investor sentiment at a specific point in time, not necessarily underlying financial performance."
+    answer: "A company becomes a unicorn when its valuation surpasses $1 billion, as determined during a private funding round. The valuation is agreed upon by the company and its investors - it is not set by public markets. This means the title reflects investor sentiment at a specific point in time, not necessarily underlying financial performance."
   - question: "How many unicorn startups exist in 2025?"
     answer: "As of early 2025, roughly 1,200–1,300 unicorns exist globally, according to CB Insights. The U.S. leads with around 700, followed by China, India, and the UK. The number surged between 2020 and 2022 during peak venture activity, then growth slowed sharply as interest rates rose and multiples compressed."
   - question: "What comes after unicorn status?"
@@ -58,20 +58,20 @@ Unicorn status is priced, not earned. A company becomes a unicorn when investors
 Most unicorns are valued as a multiple of ARR (Annual Recurring Revenue). In a bull market, SaaS unicorns trade at 20–50× ARR. In a correction, those multiples compress to 5–15×. A SaaS company with $60M ARR at a 20× multiple hits unicorn status; at a 10× multiple, it does not.
 
 ### Comparable company analysis
-Investors benchmark against similar public companies and apply a private-market discount — typically 20–30% below comparable public multiples — to account for illiquidity.
+Investors benchmark against similar public companies and apply a private-market discount - typically 20–30% below comparable public multiples - to account for illiquidity.
 
 ### Strategic positioning
-Some unicorns carry valuations primarily on the strength of their market position, network effects, or proprietary data — not current revenue. The logic is that the underlying asset justifies the price even if current financials don't.
+Some unicorns carry valuations primarily on the strength of their market position, network effects, or proprietary data - not current revenue. The logic is that the underlying asset justifies the price even if current financials don't.
 
 ## The Unicorn Criticism: Paper Valuations
 
 Skeptics make several well-founded arguments:
 
-**Preferred stock ≠ common stock.** Investors hold preferred shares with liquidation preferences, meaning they get paid first and often at a guaranteed multiple in a sale or wind-down. The "unicorn" valuation applies to preferred stock. Common stockholders — founders, early employees — may realize significantly less.
+**Preferred stock ≠ common stock.** Investors hold preferred shares with liquidation preferences, meaning they get paid first and often at a guaranteed multiple in a sale or wind-down. The "unicorn" valuation applies to preferred stock. Common stockholders - founders, early employees - may realize significantly less.
 
 **Ratchets and downside protection.** In many unicorn rounds, investors negotiate IPO ratchets that guarantee a minimum return if the company goes public below the funding valuation. The headline number can be maintained even as the economics deteriorate.
 
-**The correction track record.** Of the roughly 150 unicorns that went public between 2020 and 2023, the majority traded below their last private valuation within 12 months. Several — Klarna, Stripe, Brex — formally cut their own valuations before or after going public.
+**The correction track record.** Of the roughly 150 unicorns that went public between 2020 and 2023, the majority traded below their last private valuation within 12 months. Several - Klarna, Stripe, Brex - formally cut their own valuations before or after going public.
 
 ## Beyond the Unicorn
 
@@ -81,7 +81,7 @@ Skeptics make several well-founded arguments:
 | Decacorn | $10B+ | Stripe, Revolut, Klarna |
 | Hectocorn | $100B+ | SpaceX, ByteDance |
 
-A more practical benchmark than the "unicorn" label is the **409A valuation** — the independent appraisal of common stock fair market value that governs stock option pricing. This figure, done by a third-party firm, typically comes in well below the preferred-share valuation and reflects a more conservative assessment of the company's real worth.
+A more practical benchmark than the "unicorn" label is the **409A valuation** - the independent appraisal of common stock fair market value that governs stock option pricing. This figure, done by a third-party firm, typically comes in well below the preferred-share valuation and reflects a more conservative assessment of the company's real worth.
 
 ## Key Takeaway
 
