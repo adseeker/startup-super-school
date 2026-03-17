@@ -530,13 +530,13 @@ const breadcrumbLd = {
     const em = container.querySelector('[data-share-email]');
     const cp = container.querySelector('[data-share-copy]');
 
-    const waText = "Dai un'occhiata a questo articolo:\n\n" + title + '\n' + url;
+    const waText = 'Check out this article:\n\n' + title + '\n' + url;
     if (wa) wa.setAttribute('href', 'https://wa.me/?text=' + encodeURIComponent(waText));
 
-    const tgText = "Dai un'occhiata a questo articolo: " + title;
+    const tgText = 'Check out this article: ' + title;
     if (tg) tg.setAttribute('href', 'https://t.me/share/url?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(tgText));
 
-    const emailBody = "Dai un'occhiata a questo articolo:\n\n" + title + '\n' + url + '\n\n--\nStartup Super School - The Startup Encyclopedia\nhttps://www.startupsuperschool.com';
+    const emailBody = 'Check out this article:\n\n' + title + '\n' + url + '\n\n--\nStartup Super School - The Startup Encyclopedia\nhttps://www.startupsuperschool.com';
     if (em) em.setAttribute('href', 'mailto:?subject=' + encodeURIComponent(title) + '&body=' + encodeURIComponent(emailBody));
 
     if (cp) {
