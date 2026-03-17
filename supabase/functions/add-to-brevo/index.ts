@@ -46,7 +46,7 @@ serve(async (req) => {
           ...(role              ? { JOB_TITLE: role }                    : {}),
           ...(country           ? { COUNTRY: country }                  : {}),
           ...(stage             ? { STAGE: stage }                      : {}),
-          MARKETING_CONSENT: marketingConsent ? 'true' : 'false',
+          MARKETING_CONSENT: marketingConsent === true,
         },
         listIds: [3],
         updateEnabled: true,
