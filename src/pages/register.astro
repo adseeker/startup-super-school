@@ -64,6 +64,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             />
           </div>
 
+          <!-- Marketing consent -->
+          <label class="flex items-start gap-3 cursor-pointer">
+            <input
+              type="checkbox" id="marketing_consent" name="marketing_consent"
+              class="mt-0.5 h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 shrink-0"
+            />
+            <span class="text-sm text-gray-600">
+              I agree to receive startup insights, guides, and product updates from Startup Super School. You can unsubscribe at any time.
+            </span>
+          </label>
+
           <!-- Error -->
           <div id="form-error" class="hidden text-sm text-red-600 bg-red-50 border border-red-200 rounded-lg px-4 py-3"></div>
 
@@ -103,6 +114,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     const last_name = document.getElementById('last_name').value.trim();
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
+    const marketing_consent = document.getElementById('marketing_consent').checked;
 
     try {
       const { supabase } = await import('../lib/supabase');
@@ -117,7 +129,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       }
 
       if (data.user) {
-        await supabase.from('profiles').update({ first_name, last_name }).eq('id', data.user.id);
+        await supabase.from('profiles').update({ first_name, last_name, marketing_consent }).eq('id', data.user.id);
+
+        if (marketing_consent) {
+          await supabase.functions.invoke('add-to-brevo', {
+            body: { email, firstName: first_name, lastName: last_name },
+          });
+        }
       }
 
       window.dataLayer = window.dataLayer || [];
