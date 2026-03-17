@@ -41,8 +41,8 @@ serve(async (req) => {
       body: JSON.stringify({
         email,
         attributes: {
-          FIRSTNAME: firstName ?? '',
-          LASTNAME: lastName ?? '',
+          NOME: firstName ?? '',
+          COGNOME: lastName ?? '',
         },
         listIds: [3],
         updateEnabled: true,
