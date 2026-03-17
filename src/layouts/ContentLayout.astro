@@ -244,7 +244,7 @@ const breadcrumbLd = {
         <header class="mb-8">
           <div class="flex flex-wrap items-center gap-3 mb-4">
             <DifficultyBadge difficulty={difficulty} locale={locale} />
-            <span class="text-sm text-gray-500 capitalize">{category}</span>
+            <span class="text-sm text-gray-500">{category === 'ai' ? 'AI' : category.charAt(0).toUpperCase() + category.slice(1)}</span>
             {readingTime && (
               <span class="text-sm text-gray-500">
                 {t.content.readingTime.replace('{n}', String(readingTime))}

@@ -10,7 +10,7 @@ const { locale } = Astro.props;
 const t = getTranslations(locale);
 
 const navLinks = [
-  { href: '/ai', label: 'AI', highlight: true },
+  { href: '/ai', label: 'AI' },
   { href: localePath(locale, 'curriculum'), label: 'Curriculum' },
   { href: localePath(locale, 'glossary'), label: t.nav.glossary },
   { href: localePath(locale, 'guides'), label: t.nav.guides },
@@ -38,16 +38,14 @@ const currentPath = Astro.url.pathname;
 
       <!-- Desktop nav -->
       <nav class="hidden md:flex items-center gap-6" aria-label="Main navigation">
-        {navLinks.map(({ href, label, highlight }) => (
+        {navLinks.map(({ href, label }) => (
           <a
             href={href}
             class:list={[
               'text-sm font-medium no-underline transition-colors',
               currentPath === href || (href !== '/ai' && currentPath.startsWith(href))
                 ? 'text-indigo-600'
-                : highlight
-                  ? 'text-indigo-600 hover:text-indigo-800'
-                  : 'text-gray-600 hover:text-gray-900',
+                : 'text-gray-600 hover:text-gray-900',
             ]}
           >
             {label}
@@ -80,16 +78,14 @@ const currentPath = Astro.url.pathname;
   <!-- Mobile nav -->
   <div class="md:hidden hidden border-t border-gray-200" id="mobile-menu">
     <nav class="px-4 py-3 space-y-1">
-      {navLinks.map(({ href, label, highlight }) => (
+      {navLinks.map(({ href, label }) => (
         <a
           href={href}
           class:list={[
             'block px-3 py-2 rounded-md text-sm font-medium no-underline',
             currentPath === href || (href !== '/ai' && currentPath.startsWith(href))
               ? 'bg-indigo-50 text-indigo-600'
-              : highlight
-                ? 'text-indigo-600 hover:bg-indigo-50'
-                : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900',
+              : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900',
           ]}
         >
           {label}
