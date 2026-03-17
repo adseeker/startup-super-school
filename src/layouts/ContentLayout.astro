@@ -534,7 +534,7 @@ const breadcrumbLd = {
     const waText = 'Check out this article:\n\n' + title + '\n' + url + sig;
     if (wa) wa.setAttribute('href', 'https://wa.me/?text=' + encodeURIComponent(waText));
 
-    const tgText = 'Check out this article:\n\n' + title + sig;
+    const tgText = 'Check out this article:\n\n' + title + '\n' + url + sig;
     if (tg) tg.setAttribute('href', 'https://t.me/share/url?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(tgText));
 
     const emailBody = 'Check out this article:\n\n' + title + '\n' + url + sig;
