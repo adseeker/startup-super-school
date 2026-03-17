@@ -438,6 +438,15 @@ All existing content pages should eventually have `faqs` added. Prioritize by tr
 3. Commit message format: `type(scope): description` (e.g. `feat(video): add intro for mvp`)
 4. Push to `main` — Vercel auto-deploys on every push
 5. **Never force-push**, never `--no-verify`, never amend published commits
+6. After any push that adds or updates content pages, run IndexNow to notify search engines:
+   ```bash
+   node scripts/submit-indexnow.mjs --all
+   ```
+   Use `--all` when multiple pages changed (bulk content updates, em dash cleanups, etc.).
+   For single-page updates, pass `CHANGED_FILES` instead:
+   ```bash
+   CHANGED_FILES="src/content/glossary/en/mvp.md" node scripts/submit-indexnow.mjs
+   ```
 
 ### SOP: Supabase auth (client-side pattern)
 
