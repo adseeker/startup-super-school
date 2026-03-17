@@ -1,0 +1,155 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContentCard from '../components/ContentCard.astro';
+
+const allGlossary = await getCollection('glossary', ({ data }) => data.category === 'ai' && data.published !== false);
+const allGuides = await getCollection('guides', ({ data }) => data.category === 'ai' && data.published !== false);
+const allConcepts = await getCollection('concepts', ({ data }) => data.category === 'ai' && data.published !== false);
+const allArticles = await getCollection('articles', ({ data }) => data.category === 'ai' && data.published !== false);
+
+const sortByDate = (a: any, b: any) => new Date(b.data.publishedDate).getTime() - new Date(a.data.publishedDate).getTime();
+
+const glossary = allGlossary.sort(sortByDate);
+const guides = allGuides.sort(sortByDate);
+const concepts = allConcepts.sort(sortByDate);
+const articles = allArticles.sort(sortByDate);
+
+const totalCount = glossary.length + guides.length + concepts.length + articles.length;
+---
+
+<BaseLayout
+  title="AI for Startups"
+  description="Everything startup founders need to know about AI — glossary terms, guides, frameworks, and deep dives on building AI-powered products."
+  locale="en"
+>
+  <!-- Hero -->
+  <div class="bg-gradient-to-b from-indigo-50 to-white border-b border-indigo-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium mb-4">
+          <span class="w-2 h-2 bg-indigo-500 rounded-full"></span>
+          {totalCount} resources
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+          AI for Startups
+        </h1>
+        <p class="text-xl text-gray-600 leading-relaxed">
+          Everything founders, builders, and operators need to understand AI — from foundational concepts to practical guides on building, deploying, and scaling AI products.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+    <!-- Featured Articles -->
+    {articles.length > 0 && (
+      <section class="mb-16">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-2xl font-bold text-gray-900">Deep Dives</h2>
+          <a href="/articles" class="text-sm text-indigo-600 hover:text-indigo-800 font-medium no-underline">View all articles →</a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {articles.map((entry) => {
+            const slug = entry.id.split('/').pop()!.replace(/\.md$/, '');
+            return (
+              <ContentCard
+                title={entry.data.title}
+                description={entry.data.description}
+                href={`/articles/${slug}`}
+                tags={entry.data.tags}
+                difficulty={entry.data.difficulty}
+                section="articles"
+              />
+            );
+          })}
+        </div>
+      </section>
+    )}
+
+    <!-- Guides -->
+    {guides.length > 0 && (
+      <section class="mb-16">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-2xl font-bold text-gray-900">How-To Guides</h2>
+          <a href="/guides" class="text-sm text-indigo-600 hover:text-indigo-800 font-medium no-underline">View all guides →</a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {guides.map((entry) => {
+            const slug = entry.id.split('/').pop()!.replace(/\.md$/, '');
+            return (
+              <ContentCard
+                title={entry.data.title}
+                description={entry.data.description}
+                href={`/guides/${slug}`}
+                tags={entry.data.tags}
+                difficulty={entry.data.difficulty}
+                section="guides"
+              />
+            );
+          })}
+        </div>
+      </section>
+    )}
+
+    <!-- Concepts -->
+    {concepts.length > 0 && (
+      <section class="mb-16">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-2xl font-bold text-gray-900">Frameworks & Concepts</h2>
+          <a href="/concepts" class="text-sm text-indigo-600 hover:text-indigo-800 font-medium no-underline">View all concepts →</a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {concepts.map((entry) => {
+            const slug = entry.id.split('/').pop()!.replace(/\.md$/, '');
+            return (
+              <ContentCard
+                title={entry.data.title}
+                description={entry.data.description}
+                href={`/concepts/${slug}`}
+                tags={entry.data.tags}
+                difficulty={entry.data.difficulty}
+                section="concepts"
+              />
+            );
+          })}
+        </div>
+      </section>
+    )}
+
+    <!-- Glossary -->
+    {glossary.length > 0 && (
+      <section class="mb-16">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-2xl font-bold text-gray-900">AI Glossary</h2>
+          <a href="/glossary" class="text-sm text-indigo-600 hover:text-indigo-800 font-medium no-underline">View full glossary →</a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {glossary.map((entry) => {
+            const slug = entry.id.split('/').pop()!.replace(/\.md$/, '');
+            return (
+              <a
+                href={`/glossary/${slug}`}
+                class="group flex items-start gap-3 p-4 bg-white border border-gray-200 rounded-xl hover:border-indigo-300 hover:shadow-sm transition-all no-underline"
+              >
+                <div class="flex-1 min-w-0">
+                  <div class="text-sm font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors truncate">
+                    {entry.data.title}
+                  </div>
+                  <div class="text-xs text-gray-500 mt-0.5 line-clamp-2">
+                    {entry.data.description}
+                  </div>
+                </div>
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-indigo-500 shrink-0 mt-0.5 transition-colors" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            );
+          })}
+        </div>
+      </section>
+    )}
+
+  </div>
+</BaseLayout>
