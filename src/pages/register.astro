@@ -234,18 +234,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           stage: stage || null,
         }).eq('id', data.user.id);
 
-        if (marketing_consent) {
-          await supabase.functions.invoke('add-to-brevo', {
-            body: {
-              email,
-              firstName: first_name,
-              lastName: last_name,
-              role: role || null,
-              country: country || null,
-              stage: stage || null,
-            },
-          });
-        }
+        await supabase.functions.invoke('add-to-brevo', {
+          body: {
+            email,
+            firstName: first_name,
+            lastName: last_name,
+            role: role || null,
+            country: country || null,
+            stage: stage || null,
+            marketingConsent: marketing_consent,
+          },
+        });
       }
 
       window.dataLayer = window.dataLayer || [];

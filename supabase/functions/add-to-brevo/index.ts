@@ -15,7 +15,7 @@ serve(async (req) => {
   }
 
   try {
-    const { email, firstName, lastName, role, country, stage } = await req.json()
+    const { email, firstName, lastName, role, country, stage, marketingConsent } = await req.json()
 
     if (!email) {
       return new Response(JSON.stringify({ error: 'email is required' }), {
@@ -43,9 +43,10 @@ serve(async (req) => {
         attributes: {
           NOME: firstName ?? '',
           COGNOME: lastName ?? '',
-          ...(role    ? { JOB_TITLE: role }    : {}),
-          ...(country ? { COUNTRY: country }   : {}),
-          ...(stage   ? { STAGE: stage }       : {}),
+          ...(role              ? { JOB_TITLE: role }                    : {}),
+          ...(country           ? { COUNTRY: country }                  : {}),
+          ...(stage             ? { STAGE: stage }                      : {}),
+          MARKETING_CONSENT: marketingConsent ? 'true' : 'false',
         },
         listIds: [3],
         updateEnabled: true,
