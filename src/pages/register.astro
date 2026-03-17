@@ -131,9 +131,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       if (data.user) {
         await supabase.from('profiles').update({ first_name, last_name, marketing_consent }).eq('id', data.user.id);
 
-        if (marketing_consent) {
+        if (marketing_consent && data.session?.access_token) {
           await supabase.functions.invoke('add-to-brevo', {
             body: { email, firstName: first_name, lastName: last_name },
+            headers: { Authorization: 'Bearer ' + data.session.access_token },
           });
         }
       }
