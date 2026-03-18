@@ -454,11 +454,6 @@ const breadcrumbLd = {
         )}
       </article>
 
-      <!-- Comments -->
-      {slug && (
-        <Comments section={sectionSlug} slug={slug} />
-      )}
-
       <!-- Sidebar -->
       <aside data-pagefind-ignore class="mt-10 lg:mt-0 space-y-8">
         {headings.length > 1 && (
@@ -524,6 +519,11 @@ const breadcrumbLd = {
         />
       </aside>
     </div>
+
+    <!-- Comments (below the two-column grid, full width) -->
+    {slug && (
+      <Comments section={sectionSlug} slug={slug} />
+    )}
   </div>
 <!-- Share buttons script -->
 <script>
