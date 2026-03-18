@@ -5,6 +5,7 @@ import { join } from 'path';
 import DifficultyBadge from '../components/DifficultyBadge.astro';
 import TableOfContents from '../components/TableOfContents.astro';
 import RelatedContent from '../components/RelatedContent.astro';
+import Comments from '../components/Comments.astro';
 import { getTranslations, formatDate, localePath, slugifyTag } from '../utils/i18n';
 import type { Locale } from '../utils/i18n';
 import type { MarkdownHeading } from 'astro';
@@ -452,6 +453,11 @@ const breadcrumbLd = {
           </div>
         )}
       </article>
+
+      <!-- Comments -->
+      {slug && (
+        <Comments section={sectionSlug} slug={slug} />
+      )}
 
       <!-- Sidebar -->
       <aside data-pagefind-ignore class="mt-10 lg:mt-0 space-y-8">
