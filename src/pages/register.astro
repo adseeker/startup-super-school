@@ -234,8 +234,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           stage: stage || null,
         }).eq('id', data.user.id);
 
-        await supabase.functions.invoke('add-to-brevo', {
-          body: {
+        const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL;
+        const supabaseAnonKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
+        await fetch(`${supabaseUrl}/functions/v1/add-to-brevo`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'apikey': supabaseAnonKey,
+            'Authorization': `Bearer ${supabaseAnonKey}`,
+          },
+          body: JSON.stringify({
             email,
             firstName: first_name,
             lastName: last_name,
@@ -243,7 +251,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             country: country || null,
             stage: stage || null,
             marketingConsent: marketing_consent,
-          },
+          }),
         });
       }
 
