@@ -530,6 +530,39 @@ git push
 - If H2 headings change significantly, regenerate by re-running the same command (overwrites)
 - ContentLayout detects the file via `existsSync` at build time — no `infographic: true` frontmatter needed
 
+### SOP: Deploy di una Edge Function
+
+1. Prima del primo deploy in un nuovo ambiente, linka il CLI al progetto corretto:
+   ```bash
+   npx supabase link --project-ref <project-ref>
+   ```
+   Il project ref si trova in **Supabase Dashboard → Settings → General → Reference ID**.
+2. Deploya:
+   ```bash
+   npx supabase functions deploy <function-name>
+   ```
+3. I secrets (es. `BREVO_API_KEY`) vanno settati in **Dashboard → Edge Functions → Secrets** e sopravvivono ai redeploy.
+
+### SOP: Chiamare una Edge Function dal frontend
+
+Non usare `supabase.functions.invoke()` — fallisce con 401 quando non c'è una sessione attiva (es. subito dopo `signUp()`). Usare sempre `fetch()` diretto con la **legacy anon key** (`eyJ...`):
+
+```ts
+const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
+await fetch(`${supabaseUrl}/functions/v1/<function-name>`, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'apikey': supabaseAnonKey,
+    'Authorization': `Bearer ${supabaseAnonKey}`,
+  },
+  body: JSON.stringify({ ... }),
+});
+```
+
+**Nota**: `PUBLIC_SUPABASE_ANON_KEY` deve contenere la **legacy anon key** (`eyJ...`), non la nuova publishable key (`sb_publishable_...`). Le Edge Functions non accettano il nuovo formato. La legacy key si trova in **Dashboard → Settings → API → tab "Legacy anon, service_role API keys"**.
+
 ### SOP: Regenerate a video after content changes
 
 If an article's H2 headings change significantly:
