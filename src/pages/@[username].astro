@@ -1,0 +1,5 @@
+---
+export const prerender = false;
+const { username } = Astro.params;
+return Astro.redirect(`/u/${username}`, 301);
+---

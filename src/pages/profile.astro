@@ -144,7 +144,7 @@ const BIO_MAX = 200;
     <div class="border-b border-gray-200 bg-white sticky top-16 z-30">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav class="flex gap-0 -mb-px" aria-label="Profile tabs">
-          {['overview','progress','activity','account'].map((tab) => (
+          {['overview','progress','activity','notes','account'].map((tab) => (
             <button
               data-tab={tab}
               class:list={[
@@ -157,6 +157,7 @@ const BIO_MAX = 200;
               {tab === 'overview'  ? '📊 Overview'  : ''}
               {tab === 'progress'  ? '📈 Progress'  : ''}
               {tab === 'activity'  ? '⏱ Activity'   : ''}
+              {tab === 'notes'     ? '✏️ Notes'      : ''}
               {tab === 'account'   ? '⚙️ Account'   : ''}
             </button>
           ))}
@@ -270,6 +271,43 @@ const BIO_MAX = 200;
         </div>
       </div>
 
+      <!-- ── NOTES ──────────────────────────────────────────────────── -->
+      <div id="tab-notes" class="tab-panel hidden space-y-6">
+
+        <!-- Compose -->
+        <div class="bg-white rounded-2xl border border-gray-200 p-6">
+          <h2 class="text-base font-semibold text-gray-900 mb-4">Write a note</h2>
+          <div class="space-y-3">
+            <div>
+              <textarea id="note-body" rows="4" maxlength="500"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none"
+                placeholder="Share something you learned, a thought, or a question…"></textarea>
+              <div class="flex items-center justify-between mt-1">
+                <span id="note-counter" class="text-xs text-gray-400">0 / 500</span>
+                <span id="note-error" class="hidden text-xs text-red-600"></span>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <button id="note-submit" type="button"
+                class="px-5 py-2 bg-indigo-600 text-white text-sm font-semibold rounded-lg hover:bg-indigo-700 transition-colors">
+                Post note
+              </button>
+              <span id="note-username-hint" class="hidden text-xs text-amber-600">
+                Set a username in Account to get a public link for your notes.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Notes list -->
+        <div>
+          <h2 class="text-base font-semibold text-gray-900 mb-4">Your notes</h2>
+          <div id="notes-list" class="space-y-3">
+            <p class="text-sm text-gray-400">Loading notes…</p>
+          </div>
+        </div>
+      </div>
+
       <!-- ── ACCOUNT ────────────────────────────────────────────────── -->
       <div id="tab-account" class="tab-panel hidden">
         <div class="grid gap-8 lg:grid-cols-[1fr_220px]">
@@ -278,6 +316,26 @@ const BIO_MAX = 200;
           <div class="bg-white rounded-2xl border border-gray-200 p-6 sm:p-8">
             <h2 class="text-base font-semibold text-gray-900 mb-6">Personal info</h2>
             <form id="profile-form" class="space-y-5">
+
+              <!-- Username -->
+              <div>
+                <label for="username" class="block text-sm font-medium text-gray-700 mb-1.5">
+                  Username
+                  <span class="text-xs text-gray-400 font-normal ml-1">(your public profile URL)</span>
+                </label>
+                <div class="flex items-center border border-gray-300 rounded-lg focus-within:ring-2 focus-within:ring-indigo-500 focus-within:border-transparent overflow-hidden">
+                  <span class="px-3 py-2.5 text-sm text-gray-400 bg-gray-50 border-r border-gray-300">@</span>
+                  <input type="text" id="username" name="username"
+                    class="flex-1 px-3 py-2.5 text-sm outline-none bg-white"
+                    placeholder="yourname" maxlength="30" />
+                </div>
+                <div class="flex items-center justify-between mt-1">
+                  <p class="text-xs text-gray-400">3–30 chars. Letters, numbers, hyphens, underscores only.</p>
+                  <span id="username-status" class="text-xs hidden"></span>
+                </div>
+                <a id="username-public-link" href="" target="_blank"
+                  class="hidden mt-1 text-xs text-indigo-600 hover:text-indigo-800 inline-block"></a>
+              </div>
 
               <div class="grid sm:grid-cols-2 gap-4">
                 <div>
@@ -644,6 +702,107 @@ const BIO_MAX = 200;
       }).join('');
     }
 
+    // ── TAB: Notes — fetch + render + CRUD ────────────────────────────
+    const notesRes = await supabase
+      .from('notes')
+      .select('id, body, created_at')
+      .eq('user_id', user.id)
+      .order('created_at', { ascending: false });
+
+    let notes = notesRes.data ?? [];
+
+    function renderNotes() {
+      const list = document.getElementById('notes-list');
+      if (!list) return;
+      if (notes.length === 0) {
+        list.innerHTML = '<p class="text-sm text-gray-400">No notes yet. Write your first one!</p>';
+        return;
+      }
+      const currentUsername = document.getElementById('username').value.trim();
+      list.innerHTML = notes.map(n => {
+        const timeAgo = formatTimeAgo(n.created_at);
+        const publicLink = currentUsername
+          ? `<a href="/u/${currentUsername}/notes/${n.id}" target="_blank" class="text-xs text-indigo-500 hover:text-indigo-700 no-underline">View public link</a>`
+          : '';
+        return `
+          <div data-note-id="${n.id}" class="bg-white rounded-xl border border-gray-200 p-4 space-y-2">
+            <p class="text-sm text-gray-800 whitespace-pre-wrap">${escapeHtml(n.body)}</p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-gray-400">${timeAgo}</span>
+              <div class="flex items-center gap-3">
+                ${publicLink}
+                <button data-delete="${n.id}" class="text-xs text-red-400 hover:text-red-600 transition-colors">Delete</button>
+              </div>
+            </div>
+          </div>`;
+      }).join('');
+      list.querySelectorAll('[data-delete]').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          const id = btn.dataset.delete;
+          await supabase.from('notes').delete().eq('id', id).eq('user_id', user.id);
+          notes = notes.filter(n => String(n.id) !== String(id));
+          renderNotes();
+        });
+      });
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    }
+    function formatTimeAgo(iso) {
+      const diff = Date.now() - new Date(iso).getTime();
+      const mins = Math.floor(diff / 60000);
+      if (mins < 1)  return 'just now';
+      if (mins < 60) return `${mins}m ago`;
+      const hrs = Math.floor(mins / 60);
+      if (hrs < 24)  return `${hrs}h ago`;
+      const days = Math.floor(hrs / 24);
+      if (days < 30) return `${days}d ago`;
+      return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    }
+
+    renderNotes();
+
+    // Note compose
+    const noteBody    = document.getElementById('note-body');
+    const noteCounter = document.getElementById('note-counter');
+    const noteSubmit  = document.getElementById('note-submit');
+    const noteError   = document.getElementById('note-error');
+    const usernameHint= document.getElementById('note-username-hint');
+
+    noteBody.addEventListener('input', () => {
+      noteCounter.textContent = `${noteBody.value.length} / 500`;
+    });
+
+    noteSubmit.addEventListener('click', async () => {
+      const body = noteBody.value.trim();
+      if (!body) return;
+      noteError.classList.add('hidden');
+      noteSubmit.disabled = true;
+      noteSubmit.textContent = 'Posting…';
+      const { data: newNote, error: noteErr } = await supabase
+        .from('notes')
+        .insert({ user_id: user.id, body })
+        .select('id, body, created_at')
+        .single();
+      if (noteErr) {
+        noteError.textContent = noteErr.message;
+        noteError.classList.remove('hidden');
+      } else {
+        notes = [newNote, ...notes];
+        noteBody.value = '';
+        noteCounter.textContent = '0 / 500';
+        renderNotes();
+      }
+      noteSubmit.disabled = false;
+      noteSubmit.textContent = 'Post note';
+    });
+
+    // Show hint if no username set
+    if (!profile?.username) {
+      usernameHint.classList.remove('hidden');
+    }
+
     // ── TAB: Account — populate form ───────────────────────────────────
     const MAX_INTERESTS = 5;
     const BIO_MAX = 200;
@@ -651,6 +810,34 @@ const BIO_MAX = 200;
     textFields.forEach(field => {
       const el = document.getElementById(field);
       if (el && profile?.[field]) el.value = profile[field];
+    });
+
+    // Username
+    const usernameEl     = document.getElementById('username');
+    const usernameStatus = document.getElementById('username-status');
+    const publicLink     = document.getElementById('username-public-link');
+
+    if (profile?.username) {
+      usernameEl.value = profile.username;
+      publicLink.href        = `/u/${profile.username}`;
+      publicLink.textContent = `startupsuperschool.com/u/${profile.username}`;
+      publicLink.classList.remove('hidden');
+    }
+
+    // Live validation feedback
+    usernameEl.addEventListener('input', () => {
+      const val = usernameEl.value.trim().toLowerCase();
+      if (!val) { usernameStatus.classList.add('hidden'); publicLink.classList.add('hidden'); return; }
+      const valid = /^[a-z0-9_-]{3,30}$/.test(val);
+      usernameStatus.textContent = valid ? '' : 'Invalid format';
+      usernameStatus.className   = valid ? 'text-xs hidden' : 'text-xs text-red-500';
+      if (valid) {
+        publicLink.href        = `/u/${val}`;
+        publicLink.textContent = `startupsuperschool.com/u/${val}`;
+        publicLink.classList.remove('hidden');
+      } else {
+        publicLink.classList.add('hidden');
+      }
     });
 
     // Bio
@@ -738,11 +925,44 @@ const BIO_MAX = 200;
       updates.bio       = bioEl?.value || null;
       updates.interests = interests.length > 0 ? interests : null;
 
+      // Username: validate + check uniqueness
+      const newUsername = usernameEl.value.trim().toLowerCase() || null;
+      if (newUsername) {
+        if (!/^[a-z0-9_-]{3,30}$/.test(newUsername)) {
+          saveError.textContent = 'Username: 3–30 chars, letters/numbers/hyphens/underscores only.';
+          saveError.classList.remove('hidden');
+          saveBtn.textContent = 'Save changes';
+          saveBtn.disabled    = false;
+          return;
+        }
+        if (newUsername !== profile?.username) {
+          const { data: existing } = await supabase
+            .from('profiles')
+            .select('id')
+            .eq('username', newUsername)
+            .maybeSingle();
+          if (existing) {
+            saveError.textContent = `Username "@${newUsername}" is already taken.`;
+            saveError.classList.remove('hidden');
+            saveBtn.textContent = 'Save changes';
+            saveBtn.disabled    = false;
+            return;
+          }
+        }
+      }
+      updates.username = newUsername;
+
       const { error } = await supabase.from('profiles').update(updates).eq('id', user.id);
       if (error) {
         saveError.textContent = error.message;
         saveError.classList.remove('hidden');
       } else {
+        // Update in-memory profile so subsequent saves use the new username
+        if (profile) profile.username = newUsername;
+        // Update note-compose hint
+        if (newUsername) usernameHint.classList.add('hidden');
+        // Refresh notes list (public links update)
+        renderNotes();
         saveSuccess.classList.remove('hidden');
         setTimeout(() => saveSuccess.classList.add('hidden'), 3000);
       }

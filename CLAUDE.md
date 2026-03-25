@@ -22,7 +22,7 @@ It provides definitions, guides, concepts, and articles for founders, operators,
 | RSS | `@astrojs/rss` at `/rss.xml` |
 | Deployment | Vercel (`@astrojs/vercel` adapter, static mode) |
 | Video | Remotion 4 — programmatic React video, rendered locally |
-| Auth & DB | Supabase (client-side JS SDK) — `profiles`, `completions` tables |
+| Auth & DB | Supabase (client-side JS SDK + SSR for public profiles) — `profiles`, `completions`, `notes` tables |
 | Analytics | Google Tag Manager (GTM-5TNQT7V), installed in `BaseLayout.astro` |
 
 ---
@@ -64,7 +64,16 @@ src/
     ├── tags/[tag].astro     ← Tag listing pages
     ├── login.astro          ← Login form (signInWithPassword)
     ├── register.astro       ← Sign-up form (first_name, last_name, email, password)
-    ├── profile.astro        ← User profile: XP, level, streaks, curriculum progress, activity feed
+    ├── profile.astro        ← User profile: XP, level, streaks, curriculum progress, activity feed, notes
+    ├── u/
+    │   ├── [username].astro ← Public profile page (SSR, noindex) — notes feed
+    │   └── [username]/
+    │       └── notes/
+    │           └── [id].astro ← Single note page (SSR, noindex)
+    ├── @[username].astro    ← 301 redirect to /u/[username] (legacy, do not use)
+    ├── @[username]/
+    │   └── notes/
+    │       └── [id].astro   ← 301 redirect to /u/[username]/notes/[id] (legacy)
     ├── curriculum/
     │   ├── index.astro      ← All tracks overview
     │   └── [track].astro    ← Individual track page (slug from CURRICULUM_TRACKS)
@@ -457,14 +466,37 @@ This site is fully static — auth runs 100% client-side via `@supabase/supabase
 - `src/pages/login.astro` / `register.astro` — plain HTML forms, auth logic in `<script>` tags via `supabase.auth.signInWithPassword()` / `signUp()`
 - `src/pages/profile.astro` — fetches user + completions from Supabase client-side on page load
 - `src/components/Header.astro` — calls `supabase.auth.getUser()` in a `<script>` to show/hide auth nav items
-- `profiles` table has `id` (= `auth.users.id`), `first_name`, `last_name`, `bio`, `interests`, etc.
+- `profiles` table has `id` (= `auth.users.id`), `username` (unique, public), `first_name`, `last_name`, `bio`, `interests`, etc.
 - `completions` table has `user_id`, `section`, `slug`, `completed_at`
+- `notes` table has `id` (BIGSERIAL), `user_id`, `body` (max 500 chars), `created_at`
 
 **Setup checklist for a new environment**:
 1. Create Supabase project
-2. Run migrations: `profiles` table (linked to `auth.users`), `completions` table, RLS policies
+2. Run migrations: `profiles` table (linked to `auth.users`), `completions` table, `notes` table, RLS policies
 3. Add `PUBLIC_SUPABASE_URL` and `PUBLIC_SUPABASE_ANON_KEY` to `.env` (local) and Vercel env vars (production)
 4. In Supabase Dashboard → Auth → Providers → Email: disable "Confirm email" during dev (re-enable + add custom SMTP for production)
+
+**Migration SQL for notes + public profiles**:
+```sql
+-- Add username to profiles
+ALTER TABLE profiles ADD COLUMN username TEXT UNIQUE;
+CREATE UNIQUE INDEX profiles_username_lower_idx ON profiles (lower(username));
+
+-- Allow public read of profiles that have a username set
+CREATE POLICY "profiles_public_read" ON profiles
+  FOR SELECT USING (username IS NOT NULL);
+
+-- Notes table
+CREATE TABLE notes (
+  id         BIGSERIAL PRIMARY KEY,
+  user_id    UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
+  body       TEXT NOT NULL CHECK (char_length(body) >= 1 AND char_length(body) <= 500),
+  created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+ALTER TABLE notes ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "notes_public_read" ON notes FOR SELECT USING (true);
+CREATE POLICY "notes_owner_all"   ON notes FOR ALL    USING (auth.uid() = user_id);
+```
 
 **Key pattern — lazy-load Supabase for pages with many guest visitors**:
 For pages where most visitors are not logged in (content pages, homepage, curriculum), avoid loading the 46KB Supabase SDK unconditionally. Check localStorage first — Supabase stores its session token there:
@@ -563,6 +595,31 @@ await fetch(`${supabaseUrl}/functions/v1/<function-name>`, {
 
 **Nota**: `PUBLIC_SUPABASE_ANON_KEY` deve contenere la **legacy anon key** (`eyJ...`), non la nuova publishable key (`sb_publishable_...`). Le Edge Functions non accettano il nuovo formato. La legacy key si trova in **Dashboard → Settings → API → tab "Legacy anon, service_role API keys"**.
 
+### SOP: Public profiles and notes (SSR pages)
+
+Public profile pages and note pages are **SSR** (server-rendered at request time), not static. They use `export const prerender = false` in the Astro frontmatter.
+
+**URL structure**:
+- `/u/[username]` — public profile page with notes feed
+- `/u/[username]/notes/[id]` — single note page
+- Both pages are `noindex` (thin content, not for indexing)
+
+**Files**:
+- `src/pages/u/[username].astro` — fetches profile + notes from Supabase server-side
+- `src/pages/u/[username]/notes/[id].astro` — fetches note + author, redirects 301 if wrong username
+- `src/pages/@[username].astro` and `src/pages/@[username]/notes/[id].astro` — 301 redirects to `/u/` (do not edit)
+- `src/middleware.ts` — passthrough only, no rewrites
+
+**Why `/u/[username]` and not `/@username`**: Vite's dev server intercepts all `/@...` paths internally. The `@` routes would work in production (Vercel) but fail in local dev. Using `/u/[username]` avoids this entirely.
+
+**RLS requirement**: The `profiles` table needs a public read policy for SSR queries (which use the anon key, no session):
+```sql
+CREATE POLICY "profiles_public_read" ON profiles FOR SELECT USING (username IS NOT NULL);
+```
+Without this policy, the server-side Supabase query returns null and the page 404s.
+
+**Username rules**: 3–30 chars, `[a-z0-9_-]` only, unique across all profiles (enforced by DB unique constraint + app-level check before save).
+
 ### SOP: Regenerate a video after content changes
 
 If an article's H2 headings change significantly:
@@ -599,4 +656,7 @@ git push
 - **Build-time data for client scripts**: when a client-side `<script>` needs data computed at build time (e.g. tag lists, track mappings, title lookups), embed it as JSON in a hidden `data-*` attribute on a `<div>` in the Astro template, then read it with `JSON.parse(el.dataset.key)` in the script. This avoids API calls and is safe for static sites.
 - **`@astrojs/rss` adds trailing slashes to relative `link` URLs** — passing `link: '/section/slug'` gets normalized to `/section/slug/`. Fix: always use absolute URLs: `link: \`${siteBase}/${section}/${slug}\`` where `siteBase = context.site!.href.replace(/\/$/, '')`.
 - **WCAG AA contrast failures** — `text-gray-400` on white is 2.85:1 (fails). `text-gray-500` on `text-xs` (12px) is 4.48:1 (fails, needs 4.5:1). Colored text `-600` on same-color `-50` tinted backgrounds also fails (e.g. `text-emerald-600` on `bg-emerald-50`). Use `text-gray-500` for secondary text, `text-gray-600` for extra-small text, `-700` variants for colored text on tinted backgrounds.
+- **Vite dev server intercepts `/@...` URL paths** — Vite reserves paths starting with `/@` for internal virtual modules (`/@vite/client`, `/@id/...`). Any Astro page file named `@[param].astro` will return 404 in local dev (works in Vercel production but breaks DX). Use `/u/[username]` or another prefix instead. Never create routes with `@` as the first character of the URL path.
+- **SSR pages querying Supabase server-side need explicit RLS public read policies** — SSR frontmatter runs with the anon key and no user session. If `profiles` or other tables have RLS policies of `auth.uid() = id`, all server-side reads return null. Add a `FOR SELECT USING (...)` policy for any data that should be publicly readable.
+- **Astro middleware must export `onRequest` via `defineMiddleware`** — an empty `export {}` in `src/middleware.ts` causes a build error (`import { sequence } from 'astro:middleware'` fails). Use `export const onRequest = defineMiddleware((_ctx, next) => next())` for a no-op passthrough.
 - **esbuild fails on TypeScript generics in `<script>` blocks AND in Astro template expressions** — esbuild processes `<script>` blocks in transpile-only mode and chokes on TypeScript generics. Remove all of the following from `<script>` tags: `Record<string, X>`, `Array<{...}>`, `as const`, `as HTMLElement`, `: TypeAnnotation` on function params, `!` non-null assertions. The same restriction applies to JSX template expression contexts (inside `{...}` in the template section) — e.g., `(['a', 'b'] as const).map(...)` or a `.map((x: string) => ...)` callback inside the template will also fail. The error location reported by esbuild is often misleading; when debugging, scan both the `<script>` block and all `{...}` template expressions.
